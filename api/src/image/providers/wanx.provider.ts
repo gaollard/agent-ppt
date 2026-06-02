@@ -34,7 +34,7 @@ export class WanxProvider {
       throw new Error('wanx_api_key is not configured');
     }
 
-    console.log('generate image with prompt: ', prompt);
+    this.logger.log(`generateImage prompt="${prompt}"`);
 
     const { data: created } = await axios.post<WanxTaskResponse>(
       `${baseUrl}/services/aigc/text2image/image-synthesis`,

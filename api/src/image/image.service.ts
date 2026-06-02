@@ -19,7 +19,9 @@ export class ImageService {
   ) {}
 
   async resolveImages(content: PresentationContent): Promise<PresentationContent> {
-    console.log('resolve images with content: ', content);
+    this.logger.log(
+      `resolveImages title="${content.title}" slides=${content.slides.length}`,
+    );
     const tmpDir = join(tmpdir(), 'ppt-agent-images', randomUUID());
     await mkdir(tmpDir, { recursive: true });
 
@@ -62,19 +64,17 @@ export class ImageService {
   }
 
   private async generate(prompt: string, provider: string): Promise<Buffer> {
-    console.log('generate image with prompt: ', prompt, 'provider: ', provider);
+    this.logger.log(`generateImage provider=${provider} prompt="${prompt}"`);
     if (provider === 'wanx') {
       try {
         return await this.wanx.generate(prompt);
       } catch (error) {
-        console.log('Wanx failed, falling back to placeholder: ', error);
         this.logger.warn(
           `Wanx failed, falling back to placeholder: ${error instanceof Error ? error.message : error}`,
         );
         return this.placeholder.generate(prompt);
       }
     }
-    console.log('generate image with prompt: ', prompt, 'provider: ', provider, 'falling back to placeholder');
     return this.placeholder.generate(prompt);
   }
 }

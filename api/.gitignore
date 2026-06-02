@@ -4,4 +4,5 @@ dist/
 dev.config.yaml
 *.pptx
 output/
+logs/
 .DS_Store

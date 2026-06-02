@@ -2,6 +2,7 @@ import {
   BadRequestException,
   Injectable,
   InternalServerErrorException,
+  Logger,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import axios from 'axios';
@@ -16,6 +17,8 @@ import {
 
 @Injectable()
 export class AiService {
+  private readonly logger = new Logger(AiService.name);
+
   constructor(private readonly config: ConfigService) {}
 
   async generateContent(
@@ -23,15 +26,15 @@ export class AiService {
     slideCount: number,
   ): Promise<PresentationContent> {
     const outline = await this.generateOutline(topic, slideCount);
-    console.log('outline', outline);
+    this.logger.debug(JSON.stringify(outline, null, 2));
     const draft = await this.generateSlidesFromOutline(
       topic,
       slideCount,
       outline,
     );
-    console.log('draft', draft);
+    this.logger.debug(JSON.stringify(draft, null, 2));
     const polished = await this.polishContent(topic, draft);
-    console.log('polished', polished);
+    this.logger.debug(JSON.stringify(polished, null, 2));
     return polished;
   }
 
@@ -39,7 +42,7 @@ export class AiService {
     topic: string,
     slideCount: number,
   ): Promise<PresentationOutline> {
-    console.log('generateOutline', topic, slideCount);
+    this.logger.log(`generateOutline topic="${topic}" slideCount=${slideCount}`);
     const prompt = `Create a detailed ${slideCount}-slide presentation outline for "${topic}".
 
 Return JSON:

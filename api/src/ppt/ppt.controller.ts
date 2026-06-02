@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Logger,
   Post,
   Res,
   StreamableFile,
@@ -13,6 +14,8 @@ import { PptService } from './ppt.service';
 
 @Controller('ppt')
 export class PptController {
+  private readonly logger = new Logger(PptController.name);
+
   constructor(
     private readonly aiService: AiService,
     private readonly imageService: ImageService,
@@ -24,7 +27,9 @@ export class PptController {
     @Body() dto: GeneratePptDto,
     @Res({ passthrough: true }) res: Response,
   ): Promise<StreamableFile> {
-    console.log('generate ppt with topic: ', dto.topic, 'slideCount: ', dto.slideCount);
+    this.logger.log(
+      `generate ppt topic="${dto.topic}" slideCount=${dto.slideCount}`,
+    );
     let content = await this.aiService.generateContent(
       dto.topic,
       dto.slideCount,
