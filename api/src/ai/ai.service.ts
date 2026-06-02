@@ -9,10 +9,14 @@ import axios from 'axios';
 import {
   parseOutline,
   PresentationOutline,
+  SlideOutline,
 } from './types/presentation-outline';
 import {
+  DEFAULT_THEME,
   normalizeContent,
+  normalizeSlide,
   PresentationContent,
+  SlideContent,
 } from './types/slide-content';
 
 @Injectable()
@@ -30,15 +34,16 @@ export class AiService {
     this.logger.log(`generateOutline done slides=${outline.slides.length}`);
     this.logger.debug(JSON.stringify(outline, null, 2));
 
-    const draft = await this.generateSlidesFromOutline(
+    const draft = await this.expandSlidesFromOutline(
       topic,
       slideCount,
       outline,
     );
-    this.logger.log(`generateSlidesFromOutline done title="${draft.title}"`);
+    this.logger.log(`expandSlidesFromOutline done title="${draft.title}" slides=${draft.slides.length}`);
     this.logger.debug(JSON.stringify(draft, null, 2));
 
     const polished = await this.polishContent(topic, draft);
+    polished.theme = { ...DEFAULT_THEME };
     this.logger.log(`polishContent done slides=${polished.slides.length}`);
     this.logger.debug(JSON.stringify(polished, null, 2));
     return polished;
@@ -78,6 +83,7 @@ Rules:
       'You are a senior presentation strategist. Respond with valid JSON only.',
       prompt,
       0.5,
+      slideCount,
     );
     try {
       return parseOutline(raw);
@@ -88,60 +94,89 @@ Rules:
     }
   }
 
-  private async generateSlidesFromOutline(
+  private async expandSlidesFromOutline(
     topic: string,
     slideCount: number,
     outline: PresentationOutline,
   ): Promise<PresentationContent> {
-    const prompt = `Expand the following outline into a complete ${slideCount}-slide presentation JSON for topic "${topic}".
+    const slides = await Promise.all(
+      outline.slides.map(async (slideOutline, index) => {
+        this.logger.log(
+          `expandSlide ${index + 1}/${slideCount} title="${slideOutline.title}"`,
+        );
+        return this.expandSingleSlide(
+          topic,
+          index,
+          slideCount,
+          slideOutline,
+        );
+      }),
+    );
 
-Outline:
-${JSON.stringify(outline, null, 2)}
+    return normalizeContent({ title: outline.title, slides });
+  }
 
-Return JSON with this exact shape:
+  private async expandSingleSlide(
+    topic: string,
+    index: number,
+    slideCount: number,
+    slideOutline: SlideOutline,
+  ): Promise<SlideContent> {
+    const slideNo = index + 1;
+    const prompt = `Expand this outline entry into ONE presentation slide JSON for topic "${topic}".
+This is slide ${slideNo} of ${slideCount}.
+
+Outline entry:
+${JSON.stringify(slideOutline, null, 2)}
+
+Return JSON with this shape:
 {
-  "title": "presentation title",
-  "theme": {
-    "primary": "1E3A5F",
-    "accent": "3B82F6",
-    "background": "F8FAFC",
-    "text": "334155"
-  },
-  "slides": [
-    {
-      "title": "slide title",
-      "layout": "cover",
-      "bullets": ["subtitle or empty"],
-      "imagePrompt": "visual description for image generation, no text in image",
-      "columnB": { "title": "right column title", "bullets": ["point"] },
-      "chart": { "type": "bar", "labels": ["2023", "2024"], "values": [10, 20] }
-    }
-  ]
+  "title": "slide title",
+  "layout": "cover|title-bullets|image-left|image-right|full-image|two-column|chart",
+  "bullets": ["point 1", "point 2"],
+  "imagePrompt": "optional visual description, no text in image",
+  "columnB": { "title": "right column title", "bullets": ["point"] },
+  "chart": { "type": "bar", "labels": ["2023", "2024"], "values": [10, 20] }
 }
 
 Layout rules:
-- Follow suggestedLayout from the outline when appropriate.
+- Use suggestedLayout from the outline when valid.
 - Slide 1: layout=cover, include imagePrompt for background.
-- At least 40% of content slides use image-left or image-right with imagePrompt.
-- Comparison slides: layout=two-column with columnB (3-4 bullets per column).
+- Last slide: layout=full-image with imagePrompt.
+- Comparison: layout=two-column with columnB (3-4 bullets per column).
 - Numeric trends: layout=chart with realistic chart data.
-- Closing slide: layout=full-image with imagePrompt.
-- Other content slides: layout=title-bullets or image-left/image-right.
+- Content slides: prefer image-left/image-right when imagePrompt is present.
 
 Content rules:
-- Each content slide: 4-6 bullet points, each 20-50 words with specifics (data, examples, actionable insight).
-- Do NOT use generic filler like "important point" or "key takeaway" without substance.
-- imagePrompt: concise visual description, no text/words in the image.
-- Use the same language as the topic.
-- Exactly ${slideCount} slides in the slides array.`;
+- 4-6 bullet points, each 20-50 words with specifics (data, examples, actionable insight).
+- Do NOT use generic filler without substance.
+- imagePrompt: realistic photography style, natural lighting, clean composition, no text/words in image, avoid abstract illustration style.
+- Use the same language as the topic.`;
 
     const raw = await this.callLlm(
-      'expand',
+      `expand-slide-${slideNo}`,
       'You are a professional presentation writer. Always respond with valid JSON only.',
       prompt,
       0.7,
+      1,
     );
-    return this.parseContent(raw);
+    return this.parseSlide(raw, index);
+  }
+
+  private parseSlide(raw: string, index: number): SlideContent {
+    try {
+      const parsed = JSON.parse(raw) as SlideContent | { slide: SlideContent };
+      const slide =
+        'slide' in parsed && parsed.slide ? parsed.slide : (parsed as SlideContent);
+      if (!slide.title) {
+        throw new Error('Invalid slide structure');
+      }
+      return normalizeSlide(slide, index);
+    } catch {
+      throw new InternalServerErrorException(
+        `Failed to parse LLM slide response for slide ${index + 1}`,
+      );
+    }
   }
 
   private async polishContent(
@@ -155,10 +190,11 @@ ${JSON.stringify(content, null, 2)}
 
 Return the SAME JSON shape with these improvements:
 - Keep the same number of slides and layouts.
+- Keep theme minimal and neutral: primary=2B2B2B, accent=8B8B8B, background=F7F3EE, text=3C3C3C.
 - Enrich bullets: add missing specifics (numbers, names, comparisons), merge duplicates, ensure each bullet teaches something new.
 - Ensure two-column slides have balanced, substantive bullets in both columns.
 - Ensure chart slides have plausible labels/values aligned with the topic.
-- Improve imagePrompt descriptions to be vivid and layout-appropriate.
+- Improve imagePrompt descriptions to be realistic photo style and avoid abstract/illustration effects.
 - Titles should be clear and engaging, not generic.
 
 Respond with valid JSON only.`;
@@ -168,8 +204,16 @@ Respond with valid JSON only.`;
       'You are a presentation editor. Improve content quality without changing structure. Respond with valid JSON only.',
       prompt,
       0.4,
+      content.slides.length,
     );
     return this.parseContent(raw);
+  }
+
+  private resolveTimeoutMs(slideCount: number): number {
+    const base = this.config.get<number>('llm_timeout_ms') ?? 180_000;
+    const max = this.config.get<number>('llm_timeout_max_ms') ?? 600_000;
+    const perSlide = this.config.get<number>('llm_timeout_per_slide_ms') ?? 10_000;
+    return Math.min(base + slideCount * perSlide, max);
   }
 
   private async callLlm(
@@ -177,6 +221,7 @@ Respond with valid JSON only.`;
     systemContent: string,
     userContent: string,
     temperature: number,
+    slideCount = 1,
   ): Promise<string> {
     const apiKey = this.config.get<string>('llm_api_key');
     const baseUrl = this.config.get<string>('llm_base_url');
@@ -188,8 +233,11 @@ Respond with valid JSON only.`;
       );
     }
 
+    const timeoutMs = this.resolveTimeoutMs(slideCount);
     const startedAt = Date.now();
-    this.logger.log(`LLM ${phase} request start model=${model}`);
+    this.logger.log(
+      `LLM ${phase} request start model=${model} timeoutMs=${timeoutMs} slideCount=${slideCount}`,
+    );
 
     try {
       const { data } = await axios.post(
@@ -208,7 +256,7 @@ Respond with valid JSON only.`;
             Authorization: `Bearer ${apiKey}`,
             'Content-Type': 'application/json',
           },
-          timeout: 120_000,
+          timeout: timeoutMs,
         },
       );
 

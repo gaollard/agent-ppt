@@ -19,9 +19,10 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
     y: 4.3,
     w: 9,
     h: 1.0,
-    fontSize: 32,
+    fontSize: 28,
     bold: true,
     color: 'FFFFFF',
+    fit: 'shrink',
   });
 
   const subtitle = slide.bullets?.[0];
@@ -31,8 +32,9 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
       y: 5.0,
       w: 9,
       h: 0.5,
-      fontSize: 16,
-      color: 'E2E8F0',
+      fontSize: 14,
+      color: 'E7E2DB',
+      fit: 'shrink',
     });
   }
 }

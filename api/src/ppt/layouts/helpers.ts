@@ -24,9 +24,13 @@ export function addBullets(
     bullets.map((b) => ({ text: b, options: { bullet: true } })),
     {
       ...box,
-      fontSize: 18,
+      fontSize: 14,
       color,
       valign: 'top',
+      breakLine: false,
+      fit: 'shrink',
+      paraSpaceAfter: 10,
+      margin: 2,
     },
   );
 }

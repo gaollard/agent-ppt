@@ -28,16 +28,16 @@
     "hash": "ba6548b9de713dd45f65c519fe6a0c4a"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/ai.service.ts": {
-    "mtime": 1780373391.659404,
-    "hash": "8f5b3bb4afb6e645dcaa03863618a63b"
+    "mtime": 1780386827.9096522,
+    "hash": "445f418f58b275376940eafd43c17bfd"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/ai.module.ts": {
     "mtime": 1780362219.8171787,
     "hash": "ceaa84d6628926613ed87c1ff77ed9c4"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/slide-content.ts": {
-    "mtime": 1780364753.5477757,
-    "hash": "c5201acbd5102ef8acdc407a1fedfc65"
+    "mtime": 1780386583.1873407,
+    "hash": "d8e0f4c094aab670a5fab817a22bdc2e"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/presentation-outline.ts": {
     "mtime": 1780371856.0618124,
@@ -68,59 +68,63 @@
     "hash": "c045e174e558d1ec5d9ae8d6d534cc15"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/title-bullets.layout.ts": {
-    "mtime": 1780364788.0624053,
-    "hash": "575b3bda019cd43a4c631149756f86ce"
+    "mtime": 1780386596.5064578,
+    "hash": "ceedfc619f140fe8bc6f5db76febbcb0"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/helpers.ts": {
-    "mtime": 1780364784.3705301,
-    "hash": "cbc32a85a40fcf12ee1dfb42d0a630bc"
+    "mtime": 1780385370.7684784,
+    "hash": "ff325a237b5e15c4a53cc70efebe006f"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/full-image.layout.ts": {
-    "mtime": 1780364794.02593,
-    "hash": "2e0fd4e76854c88799388a16e70b7255"
+    "mtime": 1780386617.759552,
+    "hash": "6e8d10575fe3746b30a610bc52a34731"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/two-column.layout.ts": {
-    "mtime": 1780364796.6096656,
-    "hash": "d496ce0d94494ad38908b73d721b65a9"
+    "mtime": 1780386606.3195283,
+    "hash": "f3187ed806bd7486668caad699504690"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/image-side.layout.ts": {
-    "mtime": 1780364791.1888971,
-    "hash": "27d013f622eb2150975b6617082f91f9"
+    "mtime": 1780386601.3139422,
+    "hash": "08bcc77badaf16553e478b9d743fb2f6"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/index.ts": {
     "mtime": 1780364801.373026,
     "hash": "c501e75c465b80428a1d29860bcb5795"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/chart.layout.ts": {
-    "mtime": 1780364816.0405388,
-    "hash": "236ce2653a1c75e37f6a1ec15c18b872"
+    "mtime": 1780386672.9373078,
+    "hash": "639c78dce59ee177416fbee7b907a8ce"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/cover.layout.ts": {
-    "mtime": 1780364786.7325127,
-    "hash": "08ca648b63d3ea573ae7dabc6bffa5b5"
+    "mtime": 1780386615.0362554,
+    "hash": "f4ffe9e8ee73f232dc53d9dbb573d615"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/README.md": {
     "mtime": 1780363344.3075442,
     "hash": "f52d17b057c467327598041d4e8c1864"
   },
-  "/Users/xiong.gao/Desktop/smart-ppt/demo/01.md": {
-    "mtime": 1780367364.218279,
-    "hash": "197b9b9cf299ffbd3c557af5f2dc93b6"
+  "/Users/xiong.gao/Desktop/smart-ppt/demo/02-long.md": {
+    "mtime": 1780386007.4953163,
+    "hash": "8d0100baa2fce619ccd2974c8b0891ec"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/demo/01-short.md": {
+    "mtime": 1780386063.933849,
+    "hash": "8d0100baa2fce619ccd2974c8b0891ec"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md": {
     "mtime": 1780364639.218228,
     "hash": "d7831c479dfa3c31f5181411f90cd94a"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/docs/01.PPT\u751f\u6210\u6d41\u7a0b.md": {
-    "mtime": 1780372279.185885,
-    "hash": "6b98e1aa963950f27b9d6930ec813ef7"
+    "mtime": 1780373731.4772687,
+    "hash": "7f872bf91eb39eb595d9fbdf705ce996"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md": {
     "mtime": 1780371871.4514472,
     "hash": "a1aea6478363753aea95056b2b42cfe4"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/dev.config.yaml": {
-    "mtime": 1780366321.0507715,
-    "hash": "00d9ce5c5d042f0439f020e15602296a"
+    "mtime": 1780373417.8632197,
+    "hash": "30105d0feab5f55043d77f1fc6163223"
   }
 }

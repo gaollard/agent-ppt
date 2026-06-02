@@ -12,10 +12,10 @@ export function renderChart({ slide, page, theme }: LayoutContext): void {
 
   page.addText(slide.title, {
     x: 0.5,
-    y: 0.3,
+    y: 0.35,
     w: 9,
     h: 0.7,
-    fontSize: 26,
+    fontSize: 23,
     bold: true,
     color: theme.primary,
   });
@@ -34,10 +34,10 @@ export function renderChart({ slide, page, theme }: LayoutContext): void {
     ],
     {
       x: 0.5,
-      y: 1.0,
+      y: 1.05,
       w: 9,
-      h: 4.3,
-      chartColors: [theme.accent, theme.primary, '64748B', '94A3B8'],
+      h: 4.15,
+      chartColors: [theme.primary, theme.accent, 'A89F94', 'CDC5BC'],
       showLegend: false,
       showTitle: false,
     },

@@ -1,0 +1,4 @@
+curl -X POST http://localhost:3000/ppt/generate \
+  -H "Content-Type: application/json" \
+  -d '{"topic":"NestJS 入门","slideCount":5}' \
+  -o nestjs-intro.pptx

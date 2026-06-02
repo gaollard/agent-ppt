@@ -19,10 +19,11 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
     y: 2.2,
     w: 9,
     h: 1.5,
-    fontSize: 36,
+    fontSize: 32,
     bold: true,
     color: 'FFFFFF',
     align: 'center',
+    fit: 'shrink',
   });
 
   const subtitle = slide.bullets?.[0];
@@ -32,9 +33,10 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
       y: 3.8,
       w: 9,
       h: 0.8,
-      fontSize: 18,
-      color: 'CBD5E1',
+      fontSize: 16,
+      color: 'E7E2DB',
       align: 'center',
+      fit: 'shrink',
     });
   }
 }
