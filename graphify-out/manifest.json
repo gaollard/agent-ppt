@@ -1,0 +1,118 @@
+{
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/main.ts": {
+    "mtime": 1780363336.426113,
+    "hash": "389fbb444638b5ddf656da8dfd0c8d9c"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/app.module.ts": {
+    "mtime": 1780363334.9844456,
+    "hash": "25e3683a2ca18100ce877c45fe9f07c0"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/config/yaml.config.ts": {
+    "mtime": 1780363333.7565637,
+    "hash": "dcbdef9c173e41e8ce6a8b4c197dcba0"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/image/image.service.ts": {
+    "mtime": 1780366925.3685563,
+    "hash": "6c62edb8ba4269f2475464616c0561d2"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/image/image.module.ts": {
+    "mtime": 1780364777.652423,
+    "hash": "a779b84466e7743a0690d31ff7961f19"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/image/providers/wanx.provider.ts": {
+    "mtime": 1780366247.438197,
+    "hash": "8cd54a57ba415c44f9f5743871b4b5ea"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/image/providers/placeholder.provider.ts": {
+    "mtime": 1780364766.445254,
+    "hash": "ba6548b9de713dd45f65c519fe6a0c4a"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/ai.service.ts": {
+    "mtime": 1780371865.708979,
+    "hash": "ff416a2c0c76b9dc476c28d090d92b87"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/ai.module.ts": {
+    "mtime": 1780362219.8171787,
+    "hash": "ceaa84d6628926613ed87c1ff77ed9c4"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/slide-content.ts": {
+    "mtime": 1780364753.5477757,
+    "hash": "c5201acbd5102ef8acdc407a1fedfc65"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/presentation-outline.ts": {
+    "mtime": 1780371856.0618124,
+    "hash": "67bb4c667c90ab69c68da24285a153be"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/ppt.module.ts": {
+    "mtime": 1780364813.4824553,
+    "hash": "5296f9febd108c548ee42c61accd2ff9"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/ppt.controller.ts": {
+    "mtime": 1780366448.3371415,
+    "hash": "accd6188f6eaaa545c501c32008d01df"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/ppt.service.ts": {
+    "mtime": 1780364809.286348,
+    "hash": "b4b185faefba1907226dbb85926353b9"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/dto/generate-ppt.dto.ts": {
+    "mtime": 1780362222.0786982,
+    "hash": "c045e174e558d1ec5d9ae8d6d534cc15"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/title-bullets.layout.ts": {
+    "mtime": 1780364788.0624053,
+    "hash": "575b3bda019cd43a4c631149756f86ce"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/helpers.ts": {
+    "mtime": 1780364784.3705301,
+    "hash": "cbc32a85a40fcf12ee1dfb42d0a630bc"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/full-image.layout.ts": {
+    "mtime": 1780364794.02593,
+    "hash": "2e0fd4e76854c88799388a16e70b7255"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/two-column.layout.ts": {
+    "mtime": 1780364796.6096656,
+    "hash": "d496ce0d94494ad38908b73d721b65a9"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/image-side.layout.ts": {
+    "mtime": 1780364791.1888971,
+    "hash": "27d013f622eb2150975b6617082f91f9"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/index.ts": {
+    "mtime": 1780364801.373026,
+    "hash": "c501e75c465b80428a1d29860bcb5795"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/chart.layout.ts": {
+    "mtime": 1780364816.0405388,
+    "hash": "236ce2653a1c75e37f6a1ec15c18b872"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/cover.layout.ts": {
+    "mtime": 1780364786.7325127,
+    "hash": "08ca648b63d3ea573ae7dabc6bffa5b5"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/README.md": {
+    "mtime": 1780363344.3075442,
+    "hash": "f52d17b057c467327598041d4e8c1864"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/demo/01.md": {
+    "mtime": 1780367364.218279,
+    "hash": "197b9b9cf299ffbd3c557af5f2dc93b6"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md": {
+    "mtime": 1780364639.218228,
+    "hash": "d7831c479dfa3c31f5181411f90cd94a"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/docs/01.PPT\u751f\u6210\u6d41\u7a0b.md": {
+    "mtime": 1780368573.4070063,
+    "hash": "04d79b65b41039ad3b53fe05d339a865"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md": {
+    "mtime": 1780371871.4514472,
+    "hash": "a1aea6478363753aea95056b2b42cfe4"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/dev.config.yaml": {
+    "mtime": 1780366321.0507715,
+    "hash": "00d9ce5c5d042f0439f020e15602296a"
+  }
+}

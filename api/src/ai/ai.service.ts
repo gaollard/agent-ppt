@@ -6,6 +6,10 @@ import {
 import { ConfigService } from '@nestjs/config';
 import axios from 'axios';
 import {
+  parseOutline,
+  PresentationOutline,
+} from './types/presentation-outline';
+import {
   normalizeContent,
   PresentationContent,
 } from './types/slide-content';
@@ -18,63 +22,71 @@ export class AiService {
     topic: string,
     slideCount: number,
   ): Promise<PresentationContent> {
-    const apiKey = this.config.get<string>('llm_api_key');
-    const baseUrl = this.config.get<string>('llm_base_url');
-    const model = this.config.get<string>('llm_model');
+    const outline = await this.generateOutline(topic, slideCount);
+    console.log('outline', outline);
+    const draft = await this.generateSlidesFromOutline(
+      topic,
+      slideCount,
+      outline,
+    );
+    console.log('draft', draft);
+    const polished = await this.polishContent(topic, draft);
+    console.log('polished', polished);
+    return polished;
+  }
 
-    if (!apiKey || !baseUrl || !model) {
-      throw new BadRequestException(
-        'llm_api_key or llm_base_url is not configured in dev.config.yaml',
-      );
+  private async generateOutline(
+    topic: string,
+    slideCount: number,
+  ): Promise<PresentationOutline> {
+    console.log('generateOutline', topic, slideCount);
+    const prompt = `Create a detailed ${slideCount}-slide presentation outline for "${topic}".
+
+Return JSON:
+{
+  "title": "presentation title",
+  "slides": [
+    {
+      "title": "slide title",
+      "purpose": "what this slide should convey to the audience",
+      "keyPoints": ["specific fact or argument 1", "specific fact 2", "specific fact 3"],
+      "suggestedLayout": "cover|title-bullets|image-left|image-right|full-image|two-column|chart"
     }
+  ]
+}
 
-    const prompt = this.buildPrompt(topic, slideCount);
+Rules:
+- Exactly ${slideCount} slides.
+- Slide 1: suggestedLayout=cover.
+- Last slide: suggestedLayout=full-image (summary / call to action).
+- Include at least one two-column slide for comparisons and one chart slide if the topic has numeric trends.
+- keyPoints: 4-6 items per slide with concrete details (numbers, names, dates, examples) — not vague placeholders.
+- Use the same language as the topic.
+- Cover the topic in depth: background, core concepts, cases/data, challenges, outlook.`;
 
+    const raw = await this.callLlm(
+      'You are a senior presentation strategist. Respond with valid JSON only.',
+      prompt,
+      0.5,
+    );
     try {
-      const { data } = await axios.post(
-        `${baseUrl.replace(/\/$/, '')}/chat/completions`,
-        {
-          model,
-          temperature: 0.7,
-          response_format: { type: 'json_object' },
-          messages: [
-            {
-              role: 'system',
-              content:
-                'You are a professional presentation writer. Always respond with valid JSON only.',
-            },
-            { role: 'user', content: prompt },
-          ],
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-          },
-          timeout: 120_000,
-        },
+      return parseOutline(raw);
+    } catch {
+      throw new InternalServerErrorException(
+        'Failed to parse LLM outline response',
       );
-
-      const raw = data.choices?.[0]?.message?.content;
-      if (!raw) {
-        throw new InternalServerErrorException('Empty response from LLM');
-      }
-
-      return this.parseContent(raw);
-    } catch (error) {
-      if (axios.isAxiosError(error)) {
-        const message =
-          error.response?.data?.error?.message ?? error.message;
-        throw new InternalServerErrorException(
-          `LLM request failed: ${message}`,
-        );
-      }
-      throw error;
     }
   }
 
-  private buildPrompt(topic: string, slideCount: number): string {
-    return `Create a ${slideCount}-slide presentation about "${topic}".
+  private async generateSlidesFromOutline(
+    topic: string,
+    slideCount: number,
+    outline: PresentationOutline,
+  ): Promise<PresentationContent> {
+    const prompt = `Expand the following outline into a complete ${slideCount}-slide presentation JSON for topic "${topic}".
+
+Outline:
+${JSON.stringify(outline, null, 2)}
 
 Return JSON with this exact shape:
 {
@@ -98,16 +110,107 @@ Return JSON with this exact shape:
 }
 
 Layout rules:
+- Follow suggestedLayout from the outline when appropriate.
 - Slide 1: layout=cover, include imagePrompt for background.
 - At least 40% of content slides use image-left or image-right with imagePrompt.
-- Comparison topics: layout=two-column with columnB (right column title + bullets).
-- Numeric trends: layout=chart with chart object (type: bar|line|pie).
+- Comparison slides: layout=two-column with columnB (3-4 bullets per column).
+- Numeric trends: layout=chart with realistic chart data.
 - Closing slide: layout=full-image with imagePrompt.
 - Other content slides: layout=title-bullets or image-left/image-right.
-- Each content slide has 3-5 concise bullet points (chart slide may have empty bullets).
+
+Content rules:
+- Each content slide: 4-6 bullet points, each 20-50 words with specifics (data, examples, actionable insight).
+- Do NOT use generic filler like "important point" or "key takeaway" without substance.
 - imagePrompt: concise visual description, no text/words in the image.
 - Use the same language as the topic.
 - Exactly ${slideCount} slides in the slides array.`;
+
+    const raw = await this.callLlm(
+      'You are a professional presentation writer. Always respond with valid JSON only.',
+      prompt,
+      0.7,
+    );
+    return this.parseContent(raw);
+  }
+
+  private async polishContent(
+    topic: string,
+    content: PresentationContent,
+  ): Promise<PresentationContent> {
+    const prompt = `Polish this presentation about "${topic}" for depth and consistency.
+
+Current JSON:
+${JSON.stringify(content, null, 2)}
+
+Return the SAME JSON shape with these improvements:
+- Keep the same number of slides and layouts.
+- Enrich bullets: add missing specifics (numbers, names, comparisons), merge duplicates, ensure each bullet teaches something new.
+- Ensure two-column slides have balanced, substantive bullets in both columns.
+- Ensure chart slides have plausible labels/values aligned with the topic.
+- Improve imagePrompt descriptions to be vivid and layout-appropriate.
+- Titles should be clear and engaging, not generic.
+
+Respond with valid JSON only.`;
+
+    const raw = await this.callLlm(
+      'You are a presentation editor. Improve content quality without changing structure. Respond with valid JSON only.',
+      prompt,
+      0.4,
+    );
+    return this.parseContent(raw);
+  }
+
+  private async callLlm(
+    systemContent: string,
+    userContent: string,
+    temperature: number,
+  ): Promise<string> {
+    const apiKey = this.config.get<string>('llm_api_key');
+    const baseUrl = this.config.get<string>('llm_base_url');
+    const model = this.config.get<string>('llm_model');
+
+    if (!apiKey || !baseUrl || !model) {
+      throw new BadRequestException(
+        'llm_api_key or llm_base_url is not configured in dev.config.yaml',
+      );
+    }
+
+    try {
+      const { data } = await axios.post(
+        `${baseUrl.replace(/\/$/, '')}/chat/completions`,
+        {
+          model,
+          temperature,
+          response_format: { type: 'json_object' },
+          messages: [
+            { role: 'system', content: systemContent },
+            { role: 'user', content: userContent },
+          ],
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+          },
+          timeout: 120_000,
+        },
+      );
+
+      const raw = data.choices?.[0]?.message?.content;
+      if (!raw) {
+        throw new InternalServerErrorException('Empty response from LLM');
+      }
+      return raw;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        const message =
+          error.response?.data?.error?.message ?? error.message;
+        throw new InternalServerErrorException(
+          `LLM request failed: ${message}`,
+        );
+      }
+      throw error;
+    }
   }
 
   private parseContent(raw: string): PresentationContent {
