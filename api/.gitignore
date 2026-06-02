@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+dev.config.yaml
+*.pptx
+output/
+.DS_Store

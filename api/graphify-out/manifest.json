@@ -1,0 +1,102 @@
+{
+  "/Users/xiong.gao/Desktop/ppt-agent/src/main.ts": {
+    "mtime": 1780363336.426113,
+    "hash": "389fbb444638b5ddf656da8dfd0c8d9c"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/app.module.ts": {
+    "mtime": 1780363334.9844456,
+    "hash": "25e3683a2ca18100ce877c45fe9f07c0"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/config/yaml.config.ts": {
+    "mtime": 1780363333.7565637,
+    "hash": "dcbdef9c173e41e8ce6a8b4c197dcba0"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/image/image.service.ts": {
+    "mtime": 1780364776.7782304,
+    "hash": "bf02acef5c7c34bfc37987978ae507dd"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/image/image.module.ts": {
+    "mtime": 1780364777.652423,
+    "hash": "a779b84466e7743a0690d31ff7961f19"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/image/providers/wanx.provider.ts": {
+    "mtime": 1780364772.3482413,
+    "hash": "690764987a7be4dcdbaa30140a3fa8dd"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/image/providers/placeholder.provider.ts": {
+    "mtime": 1780364766.445254,
+    "hash": "ba6548b9de713dd45f65c519fe6a0c4a"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ai/ai.service.ts": {
+    "mtime": 1780364764.0859709,
+    "hash": "a4212ecad477cace6399990d4eaa8ffd"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ai/ai.module.ts": {
+    "mtime": 1780362219.8171787,
+    "hash": "ceaa84d6628926613ed87c1ff77ed9c4"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ai/types/slide-content.ts": {
+    "mtime": 1780364753.5477757,
+    "hash": "c5201acbd5102ef8acdc407a1fedfc65"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/ppt.module.ts": {
+    "mtime": 1780364813.4824553,
+    "hash": "5296f9febd108c548ee42c61accd2ff9"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/ppt.controller.ts": {
+    "mtime": 1780364812.654086,
+    "hash": "ca96aa66511d10f1e07baac629c35b11"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/ppt.service.ts": {
+    "mtime": 1780364809.286348,
+    "hash": "b4b185faefba1907226dbb85926353b9"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/dto/generate-ppt.dto.ts": {
+    "mtime": 1780362222.0786982,
+    "hash": "c045e174e558d1ec5d9ae8d6d534cc15"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/title-bullets.layout.ts": {
+    "mtime": 1780364788.0624053,
+    "hash": "575b3bda019cd43a4c631149756f86ce"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/helpers.ts": {
+    "mtime": 1780364784.3705301,
+    "hash": "cbc32a85a40fcf12ee1dfb42d0a630bc"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/full-image.layout.ts": {
+    "mtime": 1780364794.02593,
+    "hash": "2e0fd4e76854c88799388a16e70b7255"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/two-column.layout.ts": {
+    "mtime": 1780364796.6096656,
+    "hash": "d496ce0d94494ad38908b73d721b65a9"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/image-side.layout.ts": {
+    "mtime": 1780364791.1888971,
+    "hash": "27d013f622eb2150975b6617082f91f9"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/index.ts": {
+    "mtime": 1780364801.373026,
+    "hash": "c501e75c465b80428a1d29860bcb5795"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/chart.layout.ts": {
+    "mtime": 1780364816.0405388,
+    "hash": "236ce2653a1c75e37f6a1ec15c18b872"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/src/ppt/layouts/cover.layout.ts": {
+    "mtime": 1780364786.7325127,
+    "hash": "08ca648b63d3ea573ae7dabc6bffa5b5"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/dev.config.yaml": {
+    "mtime": 1780364814.7953343,
+    "hash": "88059db19cbeb7a9714479938da74ff7"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/README.md": {
+    "mtime": 1780363344.3075442,
+    "hash": "f52d17b057c467327598041d4e8c1864"
+  },
+  "/Users/xiong.gao/Desktop/ppt-agent/docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md": {
+    "mtime": 1780364639.218228,
+    "hash": "d7831c479dfa3c31f5181411f90cd94a"
+  }
+}
