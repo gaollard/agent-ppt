@@ -53,10 +53,10 @@ export interface PresentationContent {
 }
 
 export const DEFAULT_THEME: PresentationTheme = {
-  primary: '2B2B2B',
-  accent: '8B8B8B',
-  background: 'F7F3EE',
-  text: '3C3C3C',
+  primary: '1F2933',
+  accent: '2F6F66',
+  background: 'F8FAFC',
+  text: '344054',
 };
 
 export function mergeTheme(theme?: PresentationTheme): PresentationTheme {

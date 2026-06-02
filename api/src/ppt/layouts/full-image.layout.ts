@@ -33,7 +33,7 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
       w: 9,
       h: 0.5,
       fontSize: 14,
-      color: 'E7E2DB',
+      color: 'DCE3EC',
       fit: 'shrink',
     });
   }

@@ -9,7 +9,7 @@ export function renderImageLeft({ slide, page, theme }: LayoutContext): void {
     w: 4.9,
     h: 4.2,
     rectRadius: 0.08,
-    line: { color: 'D8D2CB', pt: 1 },
+    line: { color: 'DDE3EA', pt: 1 },
     fill: { color: 'FFFFFF' },
   });
 
@@ -42,7 +42,7 @@ export function renderImageRight({ slide, page, theme }: LayoutContext): void {
     w: 4.9,
     h: 4.2,
     rectRadius: 0.08,
-    line: { color: 'D8D2CB', pt: 1 },
+    line: { color: 'DDE3EA', pt: 1 },
     fill: { color: 'FFFFFF' },
   });
 

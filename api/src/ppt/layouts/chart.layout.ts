@@ -37,7 +37,7 @@ export function renderChart({ slide, page, theme }: LayoutContext): void {
       y: 1.05,
       w: 9,
       h: 4.15,
-      chartColors: [theme.primary, theme.accent, 'A89F94', 'CDC5BC'],
+      chartColors: [theme.primary, theme.accent, '7A8A9A', 'B8C4D1'],
       showLegend: false,
       showTitle: false,
     },

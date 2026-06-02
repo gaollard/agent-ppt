@@ -34,7 +34,7 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
       w: 9,
       h: 0.8,
       fontSize: 16,
-      color: 'E7E2DB',
+      color: 'DCE3EC',
       align: 'center',
       fit: 'shrink',
     });

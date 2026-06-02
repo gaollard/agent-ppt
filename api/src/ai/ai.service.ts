@@ -151,6 +151,7 @@ Content rules:
 - 4-6 bullet points, each 20-50 words with specifics (data, examples, actionable insight).
 - Do NOT use generic filler without substance.
 - imagePrompt: realistic photography style, natural lighting, clean composition, no text/words in image, avoid abstract illustration style.
+- Visual style: technical sharing minimalist, clean corporate look, restrained palette, avoid playful or decorative aesthetics.
 - Use the same language as the topic.`;
 
     const raw = await this.callLlm(
@@ -190,7 +191,7 @@ ${JSON.stringify(content, null, 2)}
 
 Return the SAME JSON shape with these improvements:
 - Keep the same number of slides and layouts.
-- Keep theme minimal and neutral: primary=2B2B2B, accent=8B8B8B, background=F7F3EE, text=3C3C3C.
+- Keep theme technical minimalist: primary=1F2933, accent=2F6F66, background=F8FAFC, text=344054.
 - Enrich bullets: add missing specifics (numbers, names, comparisons), merge duplicates, ensure each bullet teaches something new.
 - Ensure two-column slides have balanced, substantive bullets in both columns.
 - Ensure chart slides have plausible labels/values aligned with the topic.
