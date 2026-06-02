@@ -34,10 +34,13 @@ export class PptController {
       dto.topic,
       dto.slideCount,
     );
+    this.logger.log('AI content ready, resolving images…');
     content = await this.imageService.resolveImages(content);
+    this.logger.log('Images resolved, building pptx…');
     const buffer = await this.pptService.buildBuffer(content);
     const filename = `${this.sanitizeFilename(content.title)}.pptx`;
     const savedPath = await this.pptService.saveBuffer(buffer, filename);
+    this.logger.log(`PPT saved path=${savedPath}`);
 
     res.set({
       'Content-Type':

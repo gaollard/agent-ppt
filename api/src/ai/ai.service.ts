@@ -25,15 +25,21 @@ export class AiService {
     topic: string,
     slideCount: number,
   ): Promise<PresentationContent> {
+    this.logger.log(`generateContent start topic="${topic}" slideCount=${slideCount}`);
     const outline = await this.generateOutline(topic, slideCount);
+    this.logger.log(`generateOutline done slides=${outline.slides.length}`);
     this.logger.debug(JSON.stringify(outline, null, 2));
+
     const draft = await this.generateSlidesFromOutline(
       topic,
       slideCount,
       outline,
     );
+    this.logger.log(`generateSlidesFromOutline done title="${draft.title}"`);
     this.logger.debug(JSON.stringify(draft, null, 2));
+
     const polished = await this.polishContent(topic, draft);
+    this.logger.log(`polishContent done slides=${polished.slides.length}`);
     this.logger.debug(JSON.stringify(polished, null, 2));
     return polished;
   }
@@ -68,6 +74,7 @@ Rules:
 - Cover the topic in depth: background, core concepts, cases/data, challenges, outlook.`;
 
     const raw = await this.callLlm(
+      'outline',
       'You are a senior presentation strategist. Respond with valid JSON only.',
       prompt,
       0.5,
@@ -129,6 +136,7 @@ Content rules:
 - Exactly ${slideCount} slides in the slides array.`;
 
     const raw = await this.callLlm(
+      'expand',
       'You are a professional presentation writer. Always respond with valid JSON only.',
       prompt,
       0.7,
@@ -156,6 +164,7 @@ Return the SAME JSON shape with these improvements:
 Respond with valid JSON only.`;
 
     const raw = await this.callLlm(
+      'polish',
       'You are a presentation editor. Improve content quality without changing structure. Respond with valid JSON only.',
       prompt,
       0.4,
@@ -164,6 +173,7 @@ Respond with valid JSON only.`;
   }
 
   private async callLlm(
+    phase: string,
     systemContent: string,
     userContent: string,
     temperature: number,
@@ -177,6 +187,9 @@ Respond with valid JSON only.`;
         'llm_api_key or llm_base_url is not configured in dev.config.yaml',
       );
     }
+
+    const startedAt = Date.now();
+    this.logger.log(`LLM ${phase} request start model=${model}`);
 
     try {
       const { data } = await axios.post(
@@ -203,11 +216,20 @@ Respond with valid JSON only.`;
       if (!raw) {
         throw new InternalServerErrorException('Empty response from LLM');
       }
+
+      const elapsedMs = Date.now() - startedAt;
+      this.logger.log(
+        `LLM ${phase} request done elapsedMs=${elapsedMs} chars=${raw.length}`,
+      );
       return raw;
     } catch (error) {
+      const elapsedMs = Date.now() - startedAt;
       if (axios.isAxiosError(error)) {
         const message =
           error.response?.data?.error?.message ?? error.message;
+        this.logger.error(
+          `LLM ${phase} request failed elapsedMs=${elapsedMs}: ${message}`,
+        );
         throw new InternalServerErrorException(
           `LLM request failed: ${message}`,
         );
