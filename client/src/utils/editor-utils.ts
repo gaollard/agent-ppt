@@ -108,6 +108,9 @@ export function duplicateElement(el: SlideElement, offset = 3): SlideElement {
     x: Math.min(el.x + offset, 100 - el.w),
     y: Math.min(el.y + offset, 100 - el.h),
     locked: false,
+    table: el.table
+      ? { ...el.table, cells: el.table.cells.map((row) => [...row]) }
+      : undefined,
   };
 }
 

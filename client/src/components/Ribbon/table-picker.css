@@ -1,0 +1,66 @@
+.table-picker {
+  position: relative;
+}
+
+.table-picker-icon {
+  font-size: 1rem;
+  letter-spacing: -2px;
+}
+
+.table-picker-popover {
+  position: fixed;
+  z-index: 1000;
+  min-width: 220px;
+  padding: 12px 14px 14px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.table-picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.table-picker-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.table-picker-size {
+  font-size: 0.75rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+.table-picker-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.table-picker-grid-row {
+  display: flex;
+  gap: 3px;
+}
+
+.table-picker-cell {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  background: #f1f5f9;
+  cursor: pointer;
+}
+
+.table-picker-cell:hover,
+.table-picker-cell--active {
+  background: #3b82f6;
+  border-color: #2563eb;
+}

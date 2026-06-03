@@ -1,4 +1,5 @@
 import { GeneratePanel } from '../GeneratePanel/GeneratePanel';
+import { TablePicker } from './TablePicker';
 import './ribbon.css';
 
 export type RibbonTab = 'start' | 'insert' | 'view';
@@ -17,6 +18,7 @@ interface Props {
   onAddImage: () => void;
   onAddRect: () => void;
   onAddEllipse: () => void;
+  onInsertTable: (rows: number, cols: number) => void;
   onBringForward: () => void;
   onSendBackward: () => void;
   onCopy: () => void;
@@ -86,6 +88,7 @@ export function Ribbon({
   onAddImage,
   onAddRect,
   onAddEllipse,
+  onInsertTable,
   onBringForward,
   onSendBackward,
   onCopy,
@@ -162,6 +165,9 @@ export function Ribbon({
             <Group label="形状">
               <Tool icon="▭" label="矩形" onClick={onAddRect} active={activeShapeTool === 'rect'} />
               <Tool icon="○" label="椭圆" onClick={onAddEllipse} active={activeShapeTool === 'ellipse'} />
+            </Group>
+            <Group label="表格">
+              <TablePicker onInsert={onInsertTable} />
             </Group>
           </>
         )}

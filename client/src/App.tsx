@@ -281,6 +281,7 @@ export default function App() {
         onAddImage={() => canvasRef.current?.addImageBox()}
         onAddRect={() => setShapeTool('rect')}
         onAddEllipse={() => setShapeTool('ellipse')}
+        onInsertTable={(rows, cols) => canvasRef.current?.addTable(rows, cols)}
         onBringForward={() => canvasRef.current?.bringForward()}
         onSendBackward={() => canvasRef.current?.sendBackward()}
         onCopy={copyElement}

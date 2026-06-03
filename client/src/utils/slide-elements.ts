@@ -38,6 +38,37 @@ export function createImageElement(
   };
 }
 
+export function createTableCells(rows: number, cols: number): string[][] {
+  return Array.from({ length: rows }, () => Array.from({ length: cols }, () => ''));
+}
+
+export function createTableElement(
+  rows: number,
+  cols: number,
+  partial?: Partial<SlideElement>,
+): SlideElement {
+  const w = Math.min(cols * 10 + 4, 80);
+  const h = Math.min(rows * 7 + 4, 55);
+  return {
+    id: newElementId(),
+    type: 'table',
+    x: (100 - w) / 2,
+    y: (100 - h) / 2,
+    w,
+    h,
+    table: { rows, cols, cells: createTableCells(rows, cols) },
+    style: {
+      fontSize: 12,
+      color: '344054',
+      align: 'center',
+      borderColor: 'CBD5E1',
+      borderWidth: 1,
+    },
+    zIndex: 1,
+    ...partial,
+  };
+}
+
 export function createShapeElement(
   shapeKind: 'rect' | 'ellipse',
   partial: Partial<SlideElement> & Pick<SlideElement, 'x' | 'y' | 'w' | 'h'>,
@@ -267,13 +298,16 @@ export function layoutToElements(
     ];
   }
 
+  // title-bullets（新建幻灯片默认布局）
+  const contentX = 8;
+  const contentW = 84;
   return [
-    textEl(5, 6, 90, 10, slide.title, {
+    textEl(contentX, 6, contentW, 10, slide.title, {
       fontSize: 24,
       fontWeight: 'bold',
       color: theme.primary,
     }),
-    textEl(8, 20, 84, 72, bulletsText, {
+    textEl(contentX, 20, contentW, 72, bulletsText, {
       fontSize: 14,
       color: theme.text,
       bullets: true,

@@ -4,6 +4,7 @@ import {
   clamp,
   createImageElement,
   createShapeElement,
+  createTableElement,
   createTextElement,
 } from '../../utils/slide-elements';
 import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement } from '../../utils/editor-utils';
@@ -29,6 +30,7 @@ interface Props {
 export interface FreeformCanvasHandle {
   addTextBox: () => void;
   addImageBox: () => void;
+  addTable: (rows: number, cols: number) => void;
   bringForward: () => void;
   sendBackward: () => void;
 }
@@ -156,9 +158,13 @@ const CanvasElement = memo(function CanvasElement({
   showHandles,
   readOnly,
   editing,
+  editingCell,
   onStartDrag,
   onStartEdit,
   onEditBlur,
+  onStartCellEdit,
+  onCellBlur,
+  onTableCellPointerDown,
 }: {
   el: SlideElement;
   theme: PresentationTheme;
@@ -166,9 +172,13 @@ const CanvasElement = memo(function CanvasElement({
   showHandles: boolean;
   readOnly: boolean;
   editing: boolean;
+  editingCell: { row: number; col: number } | null;
   onStartDrag: (e: React.PointerEvent, handle?: ResizeHandle) => void;
   onStartEdit: () => void;
   onEditBlur: (content: string) => void;
+  onStartCellEdit: (row: number, col: number) => void;
+  onCellBlur: (row: number, col: number, value: string) => void;
+  onTableCellPointerDown: () => void;
 }) {
   const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
   const handles =
@@ -226,6 +236,84 @@ const CanvasElement = memo(function CanvasElement({
         ) : (
           <div className="freeform-image-placeholder">图片</div>
         )}
+        {el.locked && <span className="freeform-lock-badge">🔒</span>}
+        {handles}
+      </div>
+    );
+  }
+
+  if (el.type === 'table' && el.table) {
+    const s = el.style ?? {};
+    const border = s.borderColor ?? theme.primary;
+    return (
+      <div
+        className={`freeform-el freeform-el--table ${selected ? 'freeform-el--selected' : ''} ${el.locked ? 'freeform-el--locked' : ''}`}
+        style={commonStyle}
+        onPointerDown={(e) => {
+          if (e.target !== e.currentTarget) return;
+          onStartDrag(e);
+        }}
+      >
+        <table
+          className="freeform-table"
+          style={{
+            fontSize: s.fontSize,
+            color: s.color ? `#${s.color}` : `#${theme.text}`,
+            borderColor: `#${border}`,
+          }}
+        >
+          <tbody>
+            {el.table.cells.map((row, rowIdx) => (
+              <tr key={rowIdx}>
+                {row.map((cell, colIdx) => {
+                  const isEditing =
+                    editingCell?.row === rowIdx && editingCell?.col === colIdx;
+                  return (
+                    <td
+                      key={colIdx}
+                      style={{ textAlign: s.align ?? 'center' }}
+                      onPointerDown={(e) => {
+                        e.stopPropagation();
+                        onTableCellPointerDown();
+                      }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (readOnly || el.locked || isEditing) return;
+                        if (selected) onStartCellEdit(rowIdx, colIdx);
+                      }}
+                      onDoubleClick={(e) => {
+                        if (readOnly || el.locked) return;
+                        e.stopPropagation();
+                        e.preventDefault();
+                        onStartCellEdit(rowIdx, colIdx);
+                      }}
+                    >
+                      {isEditing ? (
+                        <input
+                          key={`${rowIdx}-${colIdx}`}
+                          className="freeform-table-cell-input"
+                          autoFocus
+                          defaultValue={cell}
+                          onBlur={(e) => onCellBlur(rowIdx, colIdx, e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter') e.currentTarget.blur();
+                            if (e.key === 'Escape') {
+                              e.currentTarget.blur();
+                            }
+                          }}
+                          onPointerDown={(e) => e.stopPropagation()}
+                          onClick={(e) => e.stopPropagation()}
+                        />
+                      ) : (
+                        cell || '\u00a0'
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
         {el.locked && <span className="freeform-lock-badge">🔒</span>}
         {handles}
       </div>
@@ -309,9 +397,13 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   const shapeToolRef = useRef(shapeTool);
   const onShapeToolChangeRef = useRef(onShapeToolChange);
   const selectedIdsRef = useRef(selectedIds);
+  const editingCellRef = useRef<{ elId: string; row: number; col: number } | null>(null);
 
   const [localElements, setLocalElements] = useState<SlideElement[] | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [editingCell, setEditingCell] = useState<{ elId: string; row: number; col: number } | null>(
+    null,
+  );
   const [draggingId, setDraggingId] = useState<string | null>(null);
   const [shapePreview, setShapePreview] = useState<Omit<ShapeDrawState, 'pointerId'> | null>(
     null,
@@ -327,6 +419,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   shapeToolRef.current = shapeTool;
   onShapeToolChangeRef.current = onShapeToolChange;
   selectedIdsRef.current = selectedIds;
+  editingCellRef.current = editingCell;
 
   const selectedSet = new Set(selectedIds);
 
@@ -649,11 +742,20 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
           onShapeToolChangeRef.current?.(null);
           return;
         }
+        if (editingCellRef.current) {
+          setEditingCell(null);
+          return;
+        }
         setSelectionMenu(null);
         setEditingId(null);
         onSelect([]);
       }
-      if ((e.key === 'Delete' || e.key === 'Backspace') && selectedIdsRef.current.length && !editingId) {
+      if (
+        (e.key === 'Delete' || e.key === 'Backspace') &&
+        selectedIdsRef.current.length &&
+        !editingId &&
+        !editingCellRef.current
+      ) {
         const ids = new Set(selectedIdsRef.current);
         const next = elements.filter((el) => {
           if (!ids.has(el.id)) return true;
@@ -724,6 +826,12 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     onSelect([el.id]);
   };
 
+  const addTable = (rows: number, cols: number) => {
+    const el = createTableElement(rows, cols);
+    commitElements([...baseElements, el]);
+    onSelect([el.id]);
+  };
+
   const bringForward = () => {
     const ids = selectedIdsRef.current;
     if (!ids.length) return;
@@ -747,6 +855,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     () => ({
       addTextBox,
       addImageBox,
+      addTable,
       bringForward,
       sendBackward,
     }),
@@ -931,16 +1040,40 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
               showHandles={selectedIds.length === 1}
               readOnly={readOnly}
               editing={editingId === el.id}
+              editingCell={editingCell?.elId === el.id ? { row: editingCell.row, col: editingCell.col } : null}
               onStartDrag={(e, handle) => startDrag(e, el, handle)}
               onStartEdit={() => {
                 onSelect([el.id]);
                 setEditingId(el.id);
+                setEditingCell(null);
               }}
               onEditBlur={(content) => {
                 const next = elements.map((item) =>
                   item.id === el.id ? { ...item, content } : item,
                 );
                 setEditingId(null);
+                commitElements(next);
+              }}
+              onStartCellEdit={(row, col) => {
+                onSelect([el.id]);
+                setEditingId(null);
+                setEditingCell({ elId: el.id, row, col });
+              }}
+              onTableCellPointerDown={() => {
+                if (!selectedSet.has(el.id)) {
+                  onSelect([el.id]);
+                }
+                setEditingId(null);
+              }}
+              onCellBlur={(row, col, value) => {
+                const next = elements.map((item) => {
+                  if (item.id !== el.id || !item.table) return item;
+                  const cells = item.table.cells.map((r, ri) =>
+                    r.map((c, ci) => (ri === row && ci === col ? value : c)),
+                  );
+                  return { ...item, table: { ...item.table, cells } };
+                });
+                setEditingCell(null);
                 commitElements(next);
               }}
             />

@@ -217,7 +217,13 @@ export function ElementInspector({
   }
 
   const typeLabel =
-    selected.type === 'text' ? '文本框' : selected.type === 'image' ? '图片' : '形状';
+    selected.type === 'text'
+      ? '文本框'
+      : selected.type === 'image'
+        ? '图片'
+        : selected.type === 'table'
+          ? '表格'
+          : '形状';
 
   return (
     <div className="element-inspector">
@@ -430,6 +436,43 @@ export function ElementInspector({
               step={0.05}
               value={selected.style?.opacity ?? 1}
               onChange={(e) => updateStyle({ opacity: Number(e.target.value) })}
+            />
+          </div>
+        </>
+      )}
+
+      {selected.type === 'table' && selected.table && (
+        <>
+          <p className="element-inspector-hint">
+            {selected.table.cols} 列 × {selected.table.rows} 行 · 双击单元格编辑
+          </p>
+          <div className="field-row">
+            <label>字号</label>
+            <input
+              type="number"
+              min={8}
+              max={48}
+              value={selected.style?.fontSize ?? 12}
+              onChange={(e) => updateStyle({ fontSize: Number(e.target.value) })}
+            />
+            <label>对齐</label>
+            <select
+              value={selected.style?.align ?? 'center'}
+              onChange={(e) =>
+                updateStyle({ align: e.target.value as 'left' | 'center' | 'right' })
+              }
+            >
+              <option value="left">左对齐</option>
+              <option value="center">居中</option>
+              <option value="right">右对齐</option>
+            </select>
+          </div>
+          <div className="field-row">
+            <label>边框</label>
+            <input
+              type="color"
+              value={`#${selected.style?.borderColor ?? 'CBD5E1'}`}
+              onChange={(e) => updateStyle({ borderColor: e.target.value.replace('#', '') })}
             />
           </div>
         </>

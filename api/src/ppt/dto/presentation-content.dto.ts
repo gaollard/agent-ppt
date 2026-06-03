@@ -43,9 +43,15 @@ class ElementStyleDto {
   @IsOptional() @IsNumber() opacity?: number;
 }
 
+class TableDataDto {
+  @IsNumber() rows!: number;
+  @IsNumber() cols!: number;
+  @IsArray() cells!: string[][];
+}
+
 class SlideElementDto {
   @IsString() id!: string;
-  @IsIn(['text', 'image', 'shape']) type!: 'text' | 'image' | 'shape';
+  @IsIn(['text', 'image', 'shape', 'table']) type!: 'text' | 'image' | 'shape' | 'table';
   @IsNumber() x!: number;
   @IsNumber() y!: number;
   @IsNumber() w!: number;
@@ -53,6 +59,7 @@ class SlideElementDto {
   @IsOptional() @IsString() content?: string;
   @IsOptional() @ValidateNested() @Type(() => ElementStyleDto) style?: ElementStyleDto;
   @IsOptional() @IsString() imagePath?: string;
+  @IsOptional() @ValidateNested() @Type(() => TableDataDto) table?: TableDataDto;
   @IsOptional() @IsNumber() zIndex?: number;
   @IsOptional() @IsBoolean() locked?: boolean;
   @IsOptional() @IsNumber() rotation?: number;

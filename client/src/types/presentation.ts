@@ -59,7 +59,13 @@ export interface ElementStyle {
   opacity?: number;
 }
 
-export type SlideElementType = 'text' | 'image' | 'shape';
+export type SlideElementType = 'text' | 'image' | 'shape' | 'table';
+
+export interface TableData {
+  rows: number;
+  cols: number;
+  cells: string[][];
+}
 
 export interface SlideElement {
   id: string;
@@ -71,6 +77,7 @@ export interface SlideElement {
   content?: string;
   style?: ElementStyle;
   imagePath?: string;
+  table?: TableData;
   zIndex?: number;
   locked?: boolean;
   rotation?: number;

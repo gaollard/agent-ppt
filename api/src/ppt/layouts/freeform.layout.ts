@@ -48,6 +48,29 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
       continue;
     }
 
+    if (el.type === 'table' && el.table?.cells?.length) {
+      const rows = el.table.cells.map((row) =>
+        row.map((text) => ({
+          text: text || '',
+            options: {
+            fontSize: style.fontSize ?? 11,
+            color: style.color ?? theme.text,
+            align: style.align ?? 'center',
+            valign: 'middle' as const,
+          },
+        })),
+      );
+      page.addTable(rows, {
+        ...box,
+        border: {
+          type: 'solid',
+          color: style.borderColor ?? 'CBD5E1',
+          pt: style.borderWidth ?? 1,
+        },
+      });
+      continue;
+    }
+
     if (el.type !== 'text') continue;
 
     if (style.background && el.w >= 99 && el.h >= 99) {

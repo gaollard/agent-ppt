@@ -36,8 +36,8 @@
     "hash": "ceaa84d6628926613ed87c1ff77ed9c4"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/slide-content.ts": {
-    "mtime": 1780497362.0464203,
-    "hash": "37e85ad4c734b4640cbd859cdead4958"
+    "mtime": 1780499715.724916,
+    "hash": "db508115d014eb87bf1d8eb0acde09d6"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ai/types/presentation-outline.ts": {
     "mtime": 1780371856.0618124,
@@ -68,8 +68,8 @@
     "hash": "a09092ae134a2ea700bc85ceec99d02e"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/dto/presentation-content.dto.ts": {
-    "mtime": 1780497369.0630898,
-    "hash": "33d44a150cf80e7abfac437ff57dd902"
+    "mtime": 1780499716.9588375,
+    "hash": "73c1afaaa9047611d71767c28ebd1457"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/dto/generate-ppt.dto.ts": {
     "mtime": 1780362222.0786982,
@@ -80,8 +80,8 @@
     "hash": "bbc547138fd612b94d11290148a5d79d"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/freeform.layout.ts": {
-    "mtime": 1780497351.9225047,
-    "hash": "ce32f11f270bd81718a7a9f754730264"
+    "mtime": 1780499751.671045,
+    "hash": "7c942868eb4fe4bb14c5083f2a6f184d"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/layouts/helpers.ts": {
     "mtime": 1780385370.7684784,
@@ -116,8 +116,8 @@
     "hash": "18b6133cb577d604a628f0a2852edcd6"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/App.tsx": {
-    "mtime": 1780498540.9701533,
-    "hash": "75bb11b5a14b117f9c7fcb336300c1b7"
+    "mtime": 1780499696.941541,
+    "hash": "654dc004f5c6b191313998cc5b23a56e"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/main.tsx": {
     "mtime": 1780448321.9466326,
@@ -128,16 +128,16 @@
     "hash": "0352474ba2918efe13895edbc3780d94"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/types/presentation.ts": {
-    "mtime": 1780498511.9175885,
-    "hash": "962a934713d71fb0d686649e6630a1af"
+    "mtime": 1780499687.7251108,
+    "hash": "942dff678aa56220b117e2fe3d980045"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/utils/editor-utils.ts": {
-    "mtime": 1780498512.0321724,
-    "hash": "37ed1e94b3c3210b81b4490943aa8e74"
+    "mtime": 1780499689.644993,
+    "hash": "84b37f5f0b3638ebc212c23a588e7c5c"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/utils/slide-elements.ts": {
-    "mtime": 1780497289.2171907,
-    "hash": "1e11a5a15bd40bb82c56ffe1c854a5a1"
+    "mtime": 1780499688.7152224,
+    "hash": "7aaecf658e2608b44d12611eb4fc42ce"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/slide-utils.ts": {
     "mtime": 1780448294.6079125,
@@ -152,24 +152,28 @@
     "hash": "0e374b5ca7d7155f56bdf180c447a041"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/ElementInspector/ElementInspector.tsx": {
-    "mtime": 1780498341.8093915,
-    "hash": "d8211712cb4e6c35198c61c13aee122f"
+    "mtime": 1780499746.0285156,
+    "hash": "151fb04de3c064222709559205b8674f"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/GeneratePanel/GeneratePanel.tsx": {
     "mtime": 1780448312.8096097,
     "hash": "b9b60d73c72f1cdee9db3c4ae0327b1b"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/FreeformCanvas/FreeformCanvas.tsx": {
-    "mtime": 1780498545.3751528,
-    "hash": "4faec576b5f1eb6212b06341d7851420"
+    "mtime": 1780499985.0867524,
+    "hash": "6d751d141d190ec139acf98949638899"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/FreeformCanvas/SelectionToolbar.tsx": {
     "mtime": 1780498512.0365946,
     "hash": "06924945f398f11df5525aee679c3db6"
   },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/Ribbon/TablePicker.tsx": {
+    "mtime": 1780499821.529782,
+    "hash": "04e35d8236fed29d1590586704bcb796"
+  },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/Ribbon/Ribbon.tsx": {
-    "mtime": 1780498133.868883,
-    "hash": "2c09e5dbde91076f2b1101963f7b1d95"
+    "mtime": 1780499697.736542,
+    "hash": "cf4031cb5c689e6ad756efd8e8f987bb"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/SlideCanvas/SlideCanvas.tsx": {
     "mtime": 1780449320.518643,
