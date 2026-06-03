@@ -57,6 +57,28 @@ export interface ElementStyle {
   borderColor?: string;
   borderWidth?: number;
   opacity?: number;
+  fontStyle?: 'normal' | 'italic';
+  underline?: boolean;
+  strikethrough?: boolean;
+}
+
+export interface TableCellStyle {
+  fontSize?: number;
+  fontWeight?: 'normal' | 'bold';
+  fontStyle?: 'normal' | 'italic';
+  underline?: boolean;
+  strikethrough?: boolean;
+  color?: string;
+  background?: string;
+  align?: 'left' | 'center' | 'right';
+  fontFamily?: string;
+}
+
+export interface TableCellData {
+  text: string;
+  style?: TableCellStyle;
+  colspan?: number;
+  rowspan?: number;
 }
 
 export type SlideElementType = 'text' | 'image' | 'shape' | 'table';
@@ -64,7 +86,8 @@ export type SlideElementType = 'text' | 'image' | 'shape' | 'table';
 export interface TableData {
   rows: number;
   cols: number;
-  cells: string[][];
+  cells: (string | TableCellData)[][];
+  headerRow?: boolean;
 }
 
 export interface SlideElement {

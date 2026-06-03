@@ -4,6 +4,7 @@ import type {
   SlideContent,
   SlideElement,
   ElementStyle,
+  TableCellData,
 } from '../types/presentation';
 
 let idCounter = 0;
@@ -38,8 +39,15 @@ export function createImageElement(
   };
 }
 
-export function createTableCells(rows: number, cols: number): string[][] {
-  return Array.from({ length: rows }, () => Array.from({ length: cols }, () => ''));
+export function createTableCells(rows: number, cols: number): TableCellData[][] {
+  return Array.from({ length: rows }, (_, r) =>
+    Array.from({ length: cols }, () => ({
+      text: '',
+      style: r === 0
+        ? { background: '2F6F66', color: 'FFFFFF', fontWeight: 'bold' as const, align: 'center' as const }
+        : { background: 'E8F4F3', align: 'center' as const },
+    })),
+  );
 }
 
 export function createTableElement(
@@ -56,7 +64,7 @@ export function createTableElement(
     y: (100 - h) / 2,
     w,
     h,
-    table: { rows, cols, cells: createTableCells(rows, cols) },
+    table: { rows, cols, cells: createTableCells(rows, cols), headerRow: true },
     style: {
       fontSize: 12,
       color: '344054',

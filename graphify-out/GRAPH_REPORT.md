@@ -1,16 +1,16 @@
 # Graph Report - smart-ppt  (2026-06-03)
 
 ## Corpus Check
-- 57 files · ~19,013 words
+- 59 files · ~21,106 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 372 nodes · 639 edges · 27 communities
+- 405 nodes · 716 edges · 27 communities (25 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b40526c5`
+- Built from commit: `30626f7f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,12 +43,12 @@
 2. `AiService` - 14 edges
 3. `FileLogger` - 12 edges
 4. `addBullets()` - 11 edges
-5. `LayoutContext` - 9 edges
-6. `normalizeContent()` - 8 edges
-7. `PptController` - 8 edges
-8. `addImageIfPresent()` - 8 edges
-9. `SlideContent` - 8 edges
-10. `newElementId()` - 8 edges
+5. `normalizeTable()` - 11 edges
+6. `LayoutContext` - 9 edges
+7. `normalizeContent()` - 8 edges
+8. `PptController` - 8 edges
+9. `addImageIfPresent()` - 8 edges
+10. `SlideContent` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `bootstrap()` --calls--> `createFileLogger()`  [EXTRACTED]
@@ -62,35 +62,35 @@
 - `renderSlide()` --calls--> `renderFreeform()`  [EXTRACTED]
   api/src/ppt/layouts/index.ts → api/src/ppt/layouts/freeform.layout.ts
 
-## Communities (27 total, 0 thin omitted)
+## Communities (27 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
-Nodes (39): ElementInspector(), Props, CanvasElement, ClickClearState, clientToCanvasPct(), DragState, FreeformCanvas, FreeformCanvasHandle (+31 more)
+Cohesion: 0.06
+Nodes (44): downloadBlob(), exportPptx(), generateContent(), FreeformCanvas, FreeformCanvasHandle, sortElements(), GeneratePanel(), Props (+36 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.09
-Nodes (33): downloadBlob(), exportPptx(), generateContent(), Updater, useHistory(), clearDraft(), loadDraft(), restoreDraftOnMount() (+25 more)
+Cohesion: 0.06
+Nodes (43): CanvasElement, ClickClearState, clientToCanvasPct(), DragState, MarqueeState, PendingTableDrag, Props, rectFromDrag() (+35 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.13
-Nodes (26): CHART_TYPES, renderChart(), renderCover(), renderFreeform(), toInches(), renderFullImage(), addBullets(), addImageIfPresent() (+18 more)
+Cohesion: 0.07
+Nodes (34): GeneratePptDto, ChartDto, ColumnDto, ElementStyleDto, PresentationContentDto, SlideDto, SlideElementDto, TableCellDataDto (+26 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.13
-Nodes (15): GeneratePptDto, ChartDto, ColumnDto, ElementStyleDto, PresentationContentDto, SlideDto, SlideElementDto, TableDataDto (+7 more)
+Cohesion: 0.19
+Nodes (18): CHART_TYPES, renderChart(), renderCover(), renderFreeform(), toInches(), renderFullImage(), addBullets(), addImageIfPresent() (+10 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.19
-Nodes (7): AiService, parseOutline(), PresentationOutline, SlideOutline, DEFAULT_THEME, normalizeLayout(), normalizeSlide()
-
-### Community 5 - "Community 5"
-Cohesion: 0.21
-Nodes (6): createFileLogger(), FileLogger, LogLevel, resolveLogDir(), AppModule, bootstrap()
-
-### Community 6 - "Community 6"
 Cohesion: 0.1
 Nodes (19): 1. 用户输入要求, 2. LLM 生成大纲, 3. 对每一个章节补充详细内容, 4. PPT 润色 + 图片补充, 4a 全文润色, 4b 图片补充, 4c 渲染 pptx, code:block1 (用户输入 → LLM 生成大纲 → 逐页补充详细内容 → 全文润色 → 图片补充 → 渲染 pptx) (+11 more)
+
+### Community 5 - "Community 5"
+Cohesion: 0.19
+Nodes (10): AiModule, DEFAULT_CONFIG_PATH, loadYamlConfig(), ImageModule, createFileLogger(), LogLevel, resolveLogDir(), PptModule (+2 more)
+
+### Community 6 - "Community 6"
+Cohesion: 0.21
+Nodes (16): ElementInspector(), Props, SlideElement, alignElement(), readImageFile(), createImageElement(), createShapeElement(), createTableCells() (+8 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.18
@@ -101,16 +101,8 @@ Cohesion: 0.2
 Nodes (12): effectiveLayout(), hexColor(), themeVars(), EditableBullets(), EditableBulletsProps, EditableText(), EditableTextProps, ChartPreview() (+4 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.21
-Nodes (7): AiModule, DEFAULT_CONFIG_PATH, loadYamlConfig(), resolve(), ImageModule, PptModule, PptService
-
-### Community 10 - "Community 10"
 Cohesion: 0.14
 Nodes (13): code:typescript (@Post('generate')), code:yaml (PORT: 3000), code:typescript (const DEFAULT_THEME: PresentationTheme = {), Controller 编排, 参考链接, 如何生成图文并茂的 PPT, 实施路线图, 常见问题 (+5 more)
-
-### Community 11 - "Community 11"
-Cohesion: 0.2
-Nodes (7): GeneratePanel(), Props, Props, Ribbon(), RibbonTab, Props, TablePicker()
 
 ### Community 12 - "Community 12"
 Cohesion: 0.18
@@ -138,11 +130,11 @@ Nodes (7): code:typescript (// src/ai/types/slide-content.ts), code:json ({), co
 
 ### Community 18 - "Community 18"
 Cohesion: 0.33
-Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
+Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageService（P1）, Step 3 — 拆分 layout 渲染（P2）, Step 4 — 串联 Controller（P2）, Step 5 — 主题色与图表（P3）, 改造步骤
 
 ### Community 19 - "Community 19"
 Cohesion: 0.33
-Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageService（P1）, Step 3 — 拆分 layout 渲染（P2）, Step 4 — 串联 Controller（P2）, Step 5 — 主题色与图表（P3）, 改造步骤
+Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
 
 ### Community 20 - "Community 20"
 Cohesion: 0.33
@@ -153,23 +145,24 @@ Cohesion: 0.67
 Nodes (3): code:mermaid (sequenceDiagram), code:block4 (src/), 目标架构
 
 ## Knowledge Gaps
-- **106 isolated node(s):** `DEFAULT_CONFIG_PATH`, `WanxTaskResponse`, `FALLBACK_PNG`, `SlideChart`, `SlideColumn` (+101 more)
+- **112 isolated node(s):** `DEFAULT_CONFIG_PATH`, `WanxTaskResponse`, `FALLBACK_PNG`, `SlideChart`, `SlideColumn` (+107 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PptService` connect `Community 9` to `Community 2`, `Community 3`?**
-  _High betweenness centrality (0.240) - this node is a cross-community bridge._
-- **Why does `resolve()` connect `Community 9` to `Community 1`?**
-  _High betweenness centrality (0.236) - this node is a cross-community bridge._
+- **Why does `PptService` connect `Community 2` to `Community 5`?**
+  _High betweenness centrality (0.256) - this node is a cross-community bridge._
+- **Why does `resolve()` connect `Community 0` to `Community 2`?**
+  _High betweenness centrality (0.254) - this node is a cross-community bridge._
+- **Why does `FileLogger` connect `Community 11` to `Community 5`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **What connects `DEFAULT_CONFIG_PATH`, `WanxTaskResponse`, `FALLBACK_PNG` to the rest of the system?**
-  _106 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _112 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07 - nodes in this community are weakly interconnected._

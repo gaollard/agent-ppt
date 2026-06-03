@@ -192,6 +192,10 @@
   pointer-events: auto;
 }
 
+.freeform-el--table.freeform-el--selected .freeform-table td {
+  cursor: move;
+}
+
 .freeform-table td {
   border: 1px solid;
   padding: 2px 4px;

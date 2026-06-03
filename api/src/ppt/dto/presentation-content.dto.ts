@@ -43,10 +43,30 @@ class ElementStyleDto {
   @IsOptional() @IsNumber() opacity?: number;
 }
 
+class TableCellStyleDto {
+  @IsOptional() @IsNumber() fontSize?: number;
+  @IsOptional() @IsIn(['normal', 'bold']) fontWeight?: 'normal' | 'bold';
+  @IsOptional() @IsIn(['normal', 'italic']) fontStyle?: 'normal' | 'italic';
+  @IsOptional() @IsBoolean() underline?: boolean;
+  @IsOptional() @IsBoolean() strikethrough?: boolean;
+  @IsOptional() @IsString() color?: string;
+  @IsOptional() @IsString() background?: string;
+  @IsOptional() @IsIn(['left', 'center', 'right']) align?: 'left' | 'center' | 'right';
+  @IsOptional() @IsString() fontFamily?: string;
+}
+
+class TableCellDataDto {
+  @IsString() text!: string;
+  @IsOptional() @ValidateNested() @Type(() => TableCellStyleDto) style?: TableCellStyleDto;
+  @IsOptional() @IsNumber() colspan?: number;
+  @IsOptional() @IsNumber() rowspan?: number;
+}
+
 class TableDataDto {
   @IsNumber() rows!: number;
   @IsNumber() cols!: number;
-  @IsArray() cells!: string[][];
+  @IsArray() cells!: (string | TableCellDataDto)[][];
+  @IsOptional() @IsBoolean() headerRow?: boolean;
 }
 
 class SlideElementDto {

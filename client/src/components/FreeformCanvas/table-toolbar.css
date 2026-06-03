@@ -1,0 +1,120 @@
+.table-toolbar {
+  position: fixed;
+  z-index: 1100;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  max-width: calc(100vw - 24px);
+  overflow-x: auto;
+}
+
+.table-toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.table-toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: #e5e5e5;
+  flex-shrink: 0;
+}
+
+.table-toolbar-btn {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+.table-toolbar-btn:hover {
+  background: #f3f3f3;
+  border-color: #ddd;
+}
+
+.table-toolbar-btn--active {
+  background: #fff3eb;
+  border-color: #e07a3a;
+  color: #e07a3a;
+}
+
+.table-toolbar-select {
+  height: 28px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 0 6px;
+  background: #fff;
+  color: #333;
+}
+
+.table-toolbar-select--sm {
+  width: 58px;
+}
+
+.table-toolbar-color {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table-toolbar-color:hover {
+  background: #f3f3f3;
+}
+
+.table-toolbar-color input[type='color'] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.table-toolbar-color-icon {
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+.table-toolbar-color-letter {
+  font-weight: 700;
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+.table-toolbar-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  color: #555;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.table-toolbar-check input {
+  margin: 0;
+}
+
+.freeform-table td.freeform-table-cell--active {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}

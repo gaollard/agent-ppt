@@ -1,4 +1,5 @@
 import type { SlideElement } from '../types/presentation';
+import { cloneTable } from './table-utils';
 
 export function isSelectableElement(el: SlideElement): boolean {
   const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
@@ -108,9 +109,7 @@ export function duplicateElement(el: SlideElement, offset = 3): SlideElement {
     x: Math.min(el.x + offset, 100 - el.w),
     y: Math.min(el.y + offset, 100 - el.h),
     locked: false,
-    table: el.table
-      ? { ...el.table, cells: el.table.cells.map((row) => [...row]) }
-      : undefined,
+    table: el.table ? cloneTable(el.table) : undefined,
   };
 }
 

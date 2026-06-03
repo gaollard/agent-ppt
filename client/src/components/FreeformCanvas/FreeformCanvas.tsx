@@ -9,7 +9,17 @@ import {
 } from '../../utils/slide-elements';
 import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement } from '../../utils/editor-utils';
 import { SelectionToolbar } from './SelectionToolbar';
+import { TableToolbar } from './TableToolbar';
+import {
+  cellStyleToCss,
+  cellText,
+  isCellVisible,
+  normalizeCell,
+  patchCellText,
+} from '../../utils/table-utils';
+import type { TableData } from '../../types/presentation';
 import './freeform.css';
+import './table-toolbar.css';
 
 type ResizeHandle = 'nw' | 'ne' | 'sw' | 'se';
 
@@ -70,6 +80,15 @@ interface SelectionMenuState {
   left: number;
   top: number;
 }
+
+interface PendingTableDrag {
+  el: SlideElement;
+  pointerId: number;
+  startX: number;
+  startY: number;
+}
+
+const TABLE_DRAG_THRESHOLD = 4;
 
 function clientToCanvasPct(clientX: number, clientY: number, canvas: HTMLDivElement) {
   const rect = canvas.getBoundingClientRect();
@@ -159,6 +178,7 @@ const CanvasElement = memo(function CanvasElement({
   readOnly,
   editing,
   editingCell,
+  activeCell,
   onStartDrag,
   onStartEdit,
   onEditBlur,
@@ -173,12 +193,13 @@ const CanvasElement = memo(function CanvasElement({
   readOnly: boolean;
   editing: boolean;
   editingCell: { row: number; col: number } | null;
+  activeCell: { row: number; col: number } | null;
   onStartDrag: (e: React.PointerEvent, handle?: ResizeHandle) => void;
   onStartEdit: () => void;
   onEditBlur: (content: string) => void;
   onStartCellEdit: (row: number, col: number) => void;
   onCellBlur: (row: number, col: number, value: string) => void;
-  onTableCellPointerDown: () => void;
+  onTableCellPointerDown: (row: number, col: number, e: React.PointerEvent) => void;
 }) {
   const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
   const handles =
@@ -250,7 +271,7 @@ const CanvasElement = memo(function CanvasElement({
         className={`freeform-el freeform-el--table ${selected ? 'freeform-el--selected' : ''} ${el.locked ? 'freeform-el--locked' : ''}`}
         style={commonStyle}
         onPointerDown={(e) => {
-          if (e.target !== e.currentTarget) return;
+          if ((e.target as HTMLElement).closest('td')) return;
           onStartDrag(e);
         }}
       >
@@ -258,23 +279,30 @@ const CanvasElement = memo(function CanvasElement({
           className="freeform-table"
           style={{
             fontSize: s.fontSize,
-            color: s.color ? `#${s.color}` : `#${theme.text}`,
             borderColor: `#${border}`,
           }}
         >
           <tbody>
             {el.table.cells.map((row, rowIdx) => (
               <tr key={rowIdx}>
-                {row.map((cell, colIdx) => {
+                {row.map((rawCell, colIdx) => {
+                  const cell = normalizeCell(rawCell);
+                  if (!isCellVisible(cell)) return null;
                   const isEditing =
                     editingCell?.row === rowIdx && editingCell?.col === colIdx;
+                  const isActive =
+                    activeCell?.row === rowIdx && activeCell?.col === colIdx;
+                  const cellCss = cellStyleToCss(cell.style);
                   return (
                     <td
                       key={colIdx}
-                      style={{ textAlign: s.align ?? 'center' }}
+                      colSpan={cell.colspan && cell.colspan > 1 ? cell.colspan : undefined}
+                      className={isActive ? 'freeform-table-cell--active' : undefined}
+                      style={cellCss}
                       onPointerDown={(e) => {
                         e.stopPropagation();
-                        onTableCellPointerDown();
+                        if (readOnly || el.locked || isEditing) return;
+                        onTableCellPointerDown(rowIdx, colIdx, e);
                       }}
                       onClick={(e) => {
                         e.stopPropagation();
@@ -293,19 +321,18 @@ const CanvasElement = memo(function CanvasElement({
                           key={`${rowIdx}-${colIdx}`}
                           className="freeform-table-cell-input"
                           autoFocus
-                          defaultValue={cell}
+                          defaultValue={cellText(cell)}
+                          style={cellCss}
                           onBlur={(e) => onCellBlur(rowIdx, colIdx, e.target.value)}
                           onKeyDown={(e) => {
                             if (e.key === 'Enter') e.currentTarget.blur();
-                            if (e.key === 'Escape') {
-                              e.currentTarget.blur();
-                            }
+                            if (e.key === 'Escape') e.currentTarget.blur();
                           }}
                           onPointerDown={(e) => e.stopPropagation()}
                           onClick={(e) => e.stopPropagation()}
                         />
                       ) : (
-                        cell || '\u00a0'
+                        cellText(cell) || '\u00a0'
                       )}
                     </td>
                   );
@@ -388,6 +415,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
 ) {
   const canvasRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<DragState | null>(null);
+  const pendingTableDragRef = useRef<PendingTableDrag | null>(null);
   const shapeDrawRef = useRef<ShapeDrawState | null>(null);
   const marqueeRef = useRef<MarqueeState | null>(null);
   const movedRef = useRef(false);
@@ -404,6 +432,16 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   const [editingCell, setEditingCell] = useState<{ elId: string; row: number; col: number } | null>(
     null,
   );
+  const [activeTableCell, setActiveTableCell] = useState<{
+    elId: string;
+    row: number;
+    col: number;
+  } | null>(null);
+  const [tableToolbarAnchor, setTableToolbarAnchor] = useState<{
+    top: number;
+    left: number;
+    width: number;
+  } | null>(null);
   const [draggingId, setDraggingId] = useState<string | null>(null);
   const [shapePreview, setShapePreview] = useState<Omit<ShapeDrawState, 'pointerId'> | null>(
     null,
@@ -554,6 +592,8 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   }, []);
 
   const endDrag = useCallback(() => {
+    pendingTableDragRef.current = null;
+
     if (shapeDrawRef.current) {
       finishShapeDraw();
       return;
@@ -577,6 +617,84 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
 
     if (drag) releaseCapture(drag.pointerId);
   }, [finishShapeDraw, finishMarquee]);
+
+  const beginElementDrag = useCallback(
+    (
+      pointer: Pick<React.PointerEvent, 'clientX' | 'clientY' | 'pointerId' | 'shiftKey'>,
+      el: SlideElement,
+      handle?: ResizeHandle,
+    ) => {
+      if (readOnly || el.locked) return;
+
+      const currentSelected = selectedIdsRef.current;
+
+      if (pointer.shiftKey) {
+        const next = currentSelected.includes(el.id)
+          ? currentSelected.filter((id) => id !== el.id)
+          : [...currentSelected, el.id];
+        onSelect(next);
+        return;
+      }
+
+      const allElements = slideRef.current.elements ?? [];
+      const groupIds = expandGroupSelection([el.id], allElements);
+
+      if (!currentSelected.includes(el.id)) {
+        onSelect(groupIds);
+        setSelectionMenu(null);
+      }
+
+      const activeSelection = currentSelected.includes(el.id) ? currentSelected : groupIds;
+      const moveIds =
+        !handle && activeSelection.includes(el.id) && activeSelection.length > 1
+          ? activeSelection.filter((id) => {
+              const target = allElements.find((item) => item.id === id);
+              return target && isSelectableElement(target);
+            })
+          : groupIds.length > 1
+            ? groupIds.filter((id) => {
+                const target = allElements.find((item) => item.id === id);
+                return target && isSelectableElement(target);
+              })
+            : [el.id];
+
+      setEditingId(null);
+      setEditingCell(null);
+      setDraggingId(el.id);
+      movedRef.current = false;
+      setLocalElements(sortElements(slideRef.current.elements ?? []));
+
+      const isMultiMove = !handle && moveIds.length > 1;
+      const origins: Record<string, SlideElement> = {};
+      if (isMultiMove) {
+        for (const id of moveIds) {
+          const target = (slideRef.current.elements ?? []).find((item) => item.id === id);
+          if (target) origins[id] = { ...target };
+        }
+      }
+
+      dragRef.current = {
+        kind: handle ? 'resize' : isMultiMove ? 'multi-move' : 'move',
+        id: el.id,
+        startX: pointer.clientX,
+        startY: pointer.clientY,
+        orig: { ...el },
+        origins: isMultiMove ? origins : undefined,
+        moveIds: isMultiMove ? moveIds : undefined,
+        handle,
+        pointerId: pointer.pointerId,
+      };
+
+      canvasRef.current?.setPointerCapture(pointer.pointerId);
+    },
+    [readOnly, onSelect],
+  );
+
+  const startDrag = (e: React.PointerEvent, el: SlideElement, handle?: ResizeHandle) => {
+    e.stopPropagation();
+    e.preventDefault();
+    beginElementDrag(e, el, handle);
+  };
 
   const handlePointerMove = useCallback(
     (e: React.PointerEvent) => {
@@ -609,6 +727,20 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
           currentX: x,
           currentY: y,
         });
+        return;
+      }
+
+      const pendingTable = pendingTableDragRef.current;
+      if (pendingTable && !dragRef.current && e.pointerId === pendingTable.pointerId) {
+        const dist = Math.hypot(
+          e.clientX - pendingTable.startX,
+          e.clientY - pendingTable.startY,
+        );
+        if (dist >= TABLE_DRAG_THRESHOLD) {
+          const { el, startX, startY, pointerId } = pendingTable;
+          pendingTableDragRef.current = null;
+          beginElementDrag({ clientX: startX, clientY: startY, pointerId, shiftKey: false }, el);
+        }
         return;
       }
 
@@ -657,74 +789,8 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
         h,
       });
     },
-    [patchDuringDrag, patchMultipleDuringDrag],
+    [patchDuringDrag, patchMultipleDuringDrag, beginElementDrag],
   );
-
-  const startDrag = (e: React.PointerEvent, el: SlideElement, handle?: ResizeHandle) => {
-    if (readOnly || el.locked) return;
-    e.stopPropagation();
-    e.preventDefault();
-
-    const currentSelected = selectedIdsRef.current;
-
-    if (e.shiftKey) {
-      const next = currentSelected.includes(el.id)
-        ? currentSelected.filter((id) => id !== el.id)
-        : [...currentSelected, el.id];
-      onSelect(next);
-      return;
-    }
-
-    const allElements = slideRef.current.elements ?? [];
-    const groupIds = expandGroupSelection([el.id], allElements);
-
-    if (!currentSelected.includes(el.id)) {
-      onSelect(groupIds);
-      setSelectionMenu(null);
-    }
-
-    const activeSelection = currentSelected.includes(el.id) ? currentSelected : groupIds;
-    const moveIds =
-      !handle && activeSelection.includes(el.id) && activeSelection.length > 1
-        ? activeSelection.filter((id) => {
-            const target = allElements.find((item) => item.id === id);
-            return target && isSelectableElement(target);
-          })
-        : groupIds.length > 1
-          ? groupIds.filter((id) => {
-              const target = allElements.find((item) => item.id === id);
-              return target && isSelectableElement(target);
-            })
-          : [el.id];
-
-    setEditingId(null);
-    setDraggingId(el.id);
-    movedRef.current = false;
-    setLocalElements(sortElements(slideRef.current.elements ?? []));
-
-    const isMultiMove = !handle && moveIds.length > 1;
-    const origins: Record<string, SlideElement> = {};
-    if (isMultiMove) {
-      for (const id of moveIds) {
-        const target = (slideRef.current.elements ?? []).find((item) => item.id === id);
-        if (target) origins[id] = { ...target };
-      }
-    }
-
-    dragRef.current = {
-      kind: handle ? 'resize' : isMultiMove ? 'multi-move' : 'move',
-      id: el.id,
-      startX: e.clientX,
-      startY: e.clientY,
-      orig: { ...el },
-      origins: isMultiMove ? origins : undefined,
-      moveIds: isMultiMove ? moveIds : undefined,
-      handle,
-      pointerId: e.pointerId,
-    };
-
-    canvasRef.current?.setPointerCapture(e.pointerId);
-  };
 
   useEffect(() => {
     if (readOnly) return;
@@ -792,6 +858,47 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     },
     [elements, commitElements],
   );
+
+  const selectedTableEl =
+    selectedIds.length === 1 ? elements.find((e) => e.id === selectedIds[0]) : undefined;
+
+  useEffect(() => {
+    if (readOnly || selectedIds.length !== 1) {
+      setTableToolbarAnchor(null);
+      return;
+    }
+    const el = elements.find((item) => item.id === selectedIds[0]);
+    if (!el || el.type !== 'table') {
+      setTableToolbarAnchor(null);
+      return;
+    }
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    setTableToolbarAnchor({
+      top: rect.top + (el.y / 100) * rect.height,
+      left: rect.left + (el.x / 100) * rect.width,
+      width: (el.w / 100) * rect.width,
+    });
+  }, [readOnly, selectedIds, elements, zoom, slide]);
+
+  const updateSelectedTable = useCallback(
+    (table: TableData) => {
+      const id = selectedIdsRef.current[0];
+      if (!id) return;
+      commitElements(
+        elements.map((item) => (item.id === id ? { ...item, table } : item)),
+      );
+    },
+    [elements, commitElements],
+  );
+
+  const tableToolbarOpen =
+    !readOnly && selectedTableEl?.type === 'table' && Boolean(selectedTableEl.table);
+  const tableToolbarCell =
+    activeTableCell && activeTableCell.elId === selectedTableEl?.id
+      ? { row: activeTableCell.row, col: activeTableCell.col }
+      : { row: 0, col: 0 };
 
   useEffect(() => {
     if (!selectionMenu?.visible || selectedIds.length < 2) return;
@@ -1018,6 +1125,16 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
               }}
             />
           )}
+          {tableToolbarOpen && selectedTableEl?.table && tableToolbarAnchor && (
+            <TableToolbar
+              open
+              anchor={tableToolbarAnchor}
+              table={selectedTableEl.table}
+              activeCell={tableToolbarCell}
+              theme={theme}
+              onUpdate={updateSelectedTable}
+            />
+          )}
           {selectionMenu?.visible && selectedIds.length >= 2 && (
             <SelectionToolbar
               left={selectionMenu.left}
@@ -1041,11 +1158,17 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
               readOnly={readOnly}
               editing={editingId === el.id}
               editingCell={editingCell?.elId === el.id ? { row: editingCell.row, col: editingCell.col } : null}
+              activeCell={
+                activeTableCell?.elId === el.id
+                  ? { row: activeTableCell.row, col: activeTableCell.col }
+                  : null
+              }
               onStartDrag={(e, handle) => startDrag(e, el, handle)}
               onStartEdit={() => {
                 onSelect([el.id]);
                 setEditingId(el.id);
                 setEditingCell(null);
+                setActiveTableCell(null);
               }}
               onEditBlur={(content) => {
                 const next = elements.map((item) =>
@@ -1058,20 +1181,26 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
                 onSelect([el.id]);
                 setEditingId(null);
                 setEditingCell({ elId: el.id, row, col });
+                setActiveTableCell({ elId: el.id, row, col });
               }}
-              onTableCellPointerDown={() => {
+              onTableCellPointerDown={(row, col, e) => {
                 if (!selectedSet.has(el.id)) {
                   onSelect([el.id]);
                 }
                 setEditingId(null);
+                setActiveTableCell({ elId: el.id, row, col });
+                pendingTableDragRef.current = {
+                  el,
+                  pointerId: e.pointerId,
+                  startX: e.clientX,
+                  startY: e.clientY,
+                };
               }}
               onCellBlur={(row, col, value) => {
+                if (!el.table) return;
                 const next = elements.map((item) => {
                   if (item.id !== el.id || !item.table) return item;
-                  const cells = item.table.cells.map((r, ri) =>
-                    r.map((c, ci) => (ri === row && ci === col ? value : c)),
-                  );
-                  return { ...item, table: { ...item.table, cells } };
+                  return { ...item, table: patchCellText(item.table, row, col, value) };
                 });
                 setEditingCell(null);
                 commitElements(next);

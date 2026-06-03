@@ -444,7 +444,7 @@ export function ElementInspector({
       {selected.type === 'table' && selected.table && (
         <>
           <p className="element-inspector-hint">
-            {selected.table.cols} 列 × {selected.table.rows} 行 · 双击单元格编辑
+            {selected.table.cols} 列 × {selected.table.rows} 行 · 选中表格后使用浮动工具栏编辑
           </p>
           <div className="field-row">
             <label>字号</label>
