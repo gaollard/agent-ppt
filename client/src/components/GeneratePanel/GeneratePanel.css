@@ -1,0 +1,63 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.modal {
+  width: min(440px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+}
+
+.modal h2 {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+  color: #0f172a;
+}
+
+.modal-desc {
+  margin: 0 0 20px;
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.modal .field {
+  margin-bottom: 16px;
+}
+
+.modal .field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.modal .field input[type='text'],
+.modal .field input:not([type='range']) {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.modal .field input[type='range'] {
+  width: 100%;
+}

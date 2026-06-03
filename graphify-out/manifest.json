@@ -1,7 +1,7 @@
 {
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/main.ts": {
-    "mtime": 1780373162.3287485,
-    "hash": "e4147c84bf6494164de77e67a51e41a3"
+    "mtime": 1780448275.1044796,
+    "hash": "3b3b90e600a73ef35e0be0e62773055d"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/app.module.ts": {
     "mtime": 1780363334.9844456,
@@ -56,12 +56,20 @@
     "hash": "5296f9febd108c548ee42c61accd2ff9"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/ppt.controller.ts": {
-    "mtime": 1780373393.2883775,
-    "hash": "b3b47bca82464bfd5e4e8ad21087059f"
+    "mtime": 1780448277.7127008,
+    "hash": "a4e1e8bfa978ccb74a6e72ddf18e18e5"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/ppt.service.ts": {
     "mtime": 1780364809.286348,
     "hash": "b4b185faefba1907226dbb85926353b9"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/image-utils.ts": {
+    "mtime": 1780448273.187622,
+    "hash": "a09092ae134a2ea700bc85ceec99d02e"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/dto/presentation-content.dto.ts": {
+    "mtime": 1780448275.0716739,
+    "hash": "9af68561d594c0c790b811381535b72c"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/api/src/ppt/dto/generate-ppt.dto.ts": {
     "mtime": 1780362222.0786982,
@@ -99,13 +107,57 @@
     "mtime": 1780387762.1430442,
     "hash": "94ec48b5571dced60db2ab28029b82ce"
   },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/vite.config.ts": {
+    "mtime": 1780448281.8118756,
+    "hash": "18b6133cb577d604a628f0a2852edcd6"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/App.tsx": {
+    "mtime": 1780448317.7854402,
+    "hash": "45ea2595f9cc1b5005142c2cbf431844"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/main.tsx": {
+    "mtime": 1780448321.9466326,
+    "hash": "3505bd2108c5b3bd8ad908ff83b48ace"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/vite-env.d.ts": {
+    "mtime": 1780448325.2311168,
+    "hash": "0352474ba2918efe13895edbc3780d94"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/types/presentation.ts": {
+    "mtime": 1780448286.7781522,
+    "hash": "6e39a771f299020f0ad63ad04002681e"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/slide-utils.ts": {
+    "mtime": 1780448294.6079125,
+    "hash": "05159b5e33ac2cab1d8f64e201cf1d9d"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/SlideList/SlideList.tsx": {
+    "mtime": 1780448304.139012,
+    "hash": "711dc53871c6230b4c8390cb3e16ce17"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/GeneratePanel/GeneratePanel.tsx": {
+    "mtime": 1780448312.8096097,
+    "hash": "b9b60d73c72f1cdee9db3c4ae0327b1b"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/SlideCanvas/SlideCanvas.tsx": {
+    "mtime": 1780448298.8978395,
+    "hash": "fdf7e986d20ccf87504f958d1c39581e"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/components/SlideEditor/SlideEditor.tsx": {
+    "mtime": 1780448310.219031,
+    "hash": "76e4cbd8be3f4b548bf32b16399e1d6c"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/src/api/ppt.ts": {
+    "mtime": 1780448288.1075025,
+    "hash": "7e8364140bae585c85cf67f26f6bc49f"
+  },
   "/Users/xiong.gao/Desktop/smart-ppt/README.md": {
     "mtime": 1780363344.3075442,
     "hash": "f52d17b057c467327598041d4e8c1864"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/demo/02-long.md": {
-    "mtime": 1780386007.4953163,
-    "hash": "8d0100baa2fce619ccd2974c8b0891ec"
+    "mtime": 1780388545.759807,
+    "hash": "d026d78d522f9fa60151387162505d33"
   },
   "/Users/xiong.gao/Desktop/smart-ppt/demo/01-short.md": {
     "mtime": 1780386063.933849,
@@ -126,5 +178,13 @@
   "/Users/xiong.gao/Desktop/smart-ppt/api/dev.config.yaml": {
     "mtime": 1780373417.8632197,
     "hash": "30105d0feab5f55043d77f1fc6163223"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/index.html": {
+    "mtime": 1780448284.5357728,
+    "hash": "62cc183c27b28ff941e2c5a94fa7edb3"
+  },
+  "/Users/xiong.gao/Desktop/smart-ppt/client/README.md": {
+    "mtime": 1780448322.6329486,
+    "hash": "07598064a28cb613ecc284f911c4439b"
   }
 }

@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/api/ppt.ts","./src/components/slide-utils.ts","./src/components/generatepanel/generatepanel.tsx","./src/components/slidecanvas/slidecanvas.tsx","./src/components/slideeditor/slideeditor.tsx","./src/components/slidelist/slidelist.tsx","./src/types/presentation.ts"],"version":"5.9.3"}

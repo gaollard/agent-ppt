@@ -1,0 +1,56 @@
+.slide-editor {
+  padding: 16px 18px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.slide-editor h3 {
+  margin: 0 0 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.8125rem;
+  background: #fff;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #2f6f66;
+  box-shadow: 0 0 0 3px rgba(47, 111, 102, 0.15);
+}
+
+.text-list-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.text-list-row input {
+  flex: 1;
+}

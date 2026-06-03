@@ -10,6 +10,7 @@ async function bootstrap() {
   Logger.overrideLogger(logger);
 
   const app = await NestFactory.create(AppModule, { logger });
+  app.enableCors();
   app.useGlobalPipes(
     new ValidationPipe({ whitelist: true, transform: true }),
   );
