@@ -421,7 +421,11 @@ export default function App() {
         onSendBackward={() => canvasRef.current?.sendBackward()}
         onCopy={copyElement}
         onPaste={pasteElement}
-        onPresent={() => setPresenting(true)}
+        onPresent={() => {
+          setSelectedElementIds([]);
+          setShapeTool(null);
+          setPresenting(true);
+        }}
         onExport={handleExport}
         exporting={exporting}
         onGenerate={handleGenerate}
@@ -465,7 +469,7 @@ export default function App() {
         />
       )}
 
-      <div className="app-body">
+      <div className={`app-body ${presenting ? 'app-body--hidden' : ''}`}>
         <input
           ref={bgInputRef}
           type="file"

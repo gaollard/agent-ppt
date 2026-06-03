@@ -1,7 +1,7 @@
 # Graph Report - smart-ppt  (2026-06-03)
 
 ## Corpus Check
-- 60 files · ~23,103 words
+- 60 files · ~23,242 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `26895118`
+- Built from commit: `89487f6d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -130,15 +130,15 @@ Nodes (7): code:typescript (// src/ai/types/slide-content.ts), code:json ({), co
 
 ### Community 18 - "Community 18"
 Cohesion: 0.33
-Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageService（P1）, Step 3 — 拆分 layout 渲染（P2）, Step 4 — 串联 Controller（P2）, Step 5 — 主题色与图表（P3）, 改造步骤
+Nodes (6): code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), 图文并茂验收清单, 开发阶段调试技巧, 当前 API 冒烟（纯文字）, 测试与验收
 
 ### Community 19 - "Community 19"
 Cohesion: 0.33
-Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
+Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageService（P1）, Step 3 — 拆分 layout 渲染（P2）, Step 4 — 串联 Controller（P2）, Step 5 — 主题色与图表（P3）, 改造步骤
 
 ### Community 20 - "Community 20"
 Cohesion: 0.33
-Nodes (6): code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), 图文并茂验收清单, 开发阶段调试技巧, 当前 API 冒烟（纯文字）, 测试与验收
+Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
 
 ### Community 21 - "Community 21"
 Cohesion: 0.67

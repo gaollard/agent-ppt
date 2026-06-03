@@ -63,6 +63,11 @@
   overflow: hidden;
 }
 
+.app-body--hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .app-workspace {
   flex: 1;
   display: flex;

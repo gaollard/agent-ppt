@@ -2844,7 +2844,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L27",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u73b0\u72b6\u4e0e\u5dee\u8ddd",
-      "community": 19,
+      "community": 20,
       "norm_label": "\u73b0\u72b6\u4e0e\u5dee\u8ddd"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L29",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d\u6d41\u7a0b",
-      "community": 19,
+      "community": 20,
       "norm_label": "\u5f53\u524d\u6d41\u7a0b"
     },
     {
@@ -2862,7 +2862,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L31",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_1",
-      "community": 19,
+      "community": 20,
       "norm_label": "code:block1 (post /ppt/generate { topic, slidecount })"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L50",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_json_\u7ed3\u6784",
-      "community": 19,
+      "community": 20,
       "norm_label": "\u5f53\u524d json \u7ed3\u6784"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L52",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_2",
-      "community": 19,
+      "community": 20,
       "norm_label": "code:json ({)"
     },
     {
@@ -2889,7 +2889,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L62",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5dee\u8ddd\u4e00\u89c8",
-      "community": 19,
+      "community": 20,
       "norm_label": "\u5dee\u8ddd\u4e00\u89c8"
     },
     {
@@ -2997,7 +2997,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L272",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6539\u9020\u6b65\u9aa4",
-      "community": 18,
+      "community": 19,
       "norm_label": "\u6539\u9020\u6b65\u9aa4"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L274",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_1_\u6269\u5c55\u7c7b\u578b\u4e0e_prompt_p0",
-      "community": 18,
+      "community": 19,
       "norm_label": "step 1 \u2014 \u6269\u5c55\u7c7b\u578b\u4e0e prompt(p0)"
     },
     {
@@ -3015,7 +3015,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L280",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_2_\u65b0\u589e_imageservice_p1",
-      "community": 18,
+      "community": 19,
       "norm_label": "step 2 \u2014 \u65b0\u589e imageservice(p1)"
     },
     {
@@ -3024,7 +3024,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L284",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_3_\u62c6\u5206_layout_\u6e32\u67d3_p2",
-      "community": 18,
+      "community": 19,
       "norm_label": "step 3 \u2014 \u62c6\u5206 layout \u6e32\u67d3(p2)"
     },
     {
@@ -3033,7 +3033,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L288",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_4_\u4e32\u8054_controller_p2",
-      "community": 18,
+      "community": 19,
       "norm_label": "step 4 \u2014 \u4e32\u8054 controller(p2)"
     },
     {
@@ -3042,7 +3042,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L292",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_5_\u4e3b\u9898\u8272\u4e0e\u56fe\u8868_p3",
-      "community": 18,
+      "community": 19,
       "norm_label": "step 5 \u2014 \u4e3b\u9898\u8272\u4e0e\u56fe\u8868(p3)"
     },
     {
@@ -3303,7 +3303,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L620",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6d4b\u8bd5\u4e0e\u9a8c\u6536",
-      "community": 20,
+      "community": 18,
       "norm_label": "\u6d4b\u8bd5\u4e0e\u9a8c\u6536"
     },
     {
@@ -3312,7 +3312,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L622",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_api_\u5192\u70df_\u7eaf\u6587\u5b57",
-      "community": 20,
+      "community": 18,
       "norm_label": "\u5f53\u524d api \u5192\u70df(\u7eaf\u6587\u5b57)"
     },
     {
@@ -3321,7 +3321,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L624",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_20",
-      "community": 20,
+      "community": 18,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -3330,7 +3330,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L635",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355",
-      "community": 20,
+      "community": 18,
       "norm_label": "\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355"
     },
     {
@@ -3339,7 +3339,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L645",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7",
-      "community": 20,
+      "community": 18,
       "norm_label": "\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7"
     },
     {
@@ -3348,7 +3348,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L647",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_21",
-      "community": 20,
+      "community": 18,
       "norm_label": "code:bash (# \u53ea\u6d4b llm json \u8f93\u51fa(\u4e34\u65f6\u5728 controller \u6253\u65e5\u5fd7))"
     },
     {
@@ -9630,9 +9630,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slidelist_dragstate",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_dragstate"
     },
     {
       "relation": "contains",
@@ -9660,9 +9660,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slidelist_useslidedragsort",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_useslidedragsort"
     },
     {
       "relation": "contains",
@@ -9724,9 +9724,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "slidelist_slidelist_slidelist",
-      "target": "slidelist_slidelist_useslidedragsort",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_useslidedragsort"
     },
     {
       "relation": "imports_from",
@@ -11596,5 +11596,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "26895118f3efe6ad2b90cf176bfe5dd1d06be193"
+  "built_at_commit": "89487f6d3c10d983d6cacf8b74be043a2e7022be"
 }
