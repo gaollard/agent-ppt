@@ -52,11 +52,18 @@ export interface ElementStyle {
   align?: 'left' | 'center' | 'right';
   bullets?: boolean;
   background?: string;
+  shapeKind?: 'rect' | 'ellipse';
+  fill?: string;
+  borderColor?: string;
+  borderWidth?: number;
+  opacity?: number;
 }
+
+export type SlideElementType = 'text' | 'image' | 'shape';
 
 export interface SlideElement {
   id: string;
-  type: 'text' | 'image';
+  type: SlideElementType;
   x: number;
   y: number;
   w: number;
@@ -65,6 +72,9 @@ export interface SlideElement {
   style?: ElementStyle;
   imagePath?: string;
   zIndex?: number;
+  locked?: boolean;
+  rotation?: number;
+  groupId?: string;
 }
 
 export interface SlideContent {
@@ -76,6 +86,9 @@ export interface SlideContent {
   columnB?: SlideColumn;
   chart?: SlideChart;
   elements?: SlideElement[];
+  backgroundColor?: string;
+  backgroundImage?: string;
+  notes?: string;
 }
 
 export interface PresentationContent {

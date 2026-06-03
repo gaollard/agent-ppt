@@ -14,7 +14,11 @@ function toInches(el: SlideElement) {
 }
 
 export function renderFreeform({ slide, page, theme }: LayoutContext): void {
-  page.background = { color: theme.background };
+  if (slide.backgroundImage) {
+    page.background = { path: slide.backgroundImage };
+  } else {
+    page.background = { color: slide.backgroundColor ?? theme.background };
+  }
 
   const elements = [...(slide.elements ?? [])].sort(
     (a, b) => (a.zIndex ?? 0) - (b.zIndex ?? 0),
@@ -23,9 +27,24 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
   for (const el of elements) {
     const box = toInches(el);
     const style = el.style ?? {};
+    const rotate = el.rotation ?? 0;
+
+    if (el.type === 'shape') {
+      const shapeName = style.shapeKind === 'ellipse' ? 'ellipse' : 'rect';
+      page.addShape(shapeName, {
+        ...box,
+        fill: { color: style.fill ?? theme.accent, transparency: style.opacity ? (1 - style.opacity) * 100 : 0 },
+        line: {
+          color: style.borderColor ?? theme.primary,
+          pt: style.borderWidth ?? 1,
+        },
+        rotate,
+      });
+      continue;
+    }
 
     if (el.type === 'image' && el.imagePath) {
-      page.addImage({ path: el.imagePath, ...box, rounding: true });
+      page.addImage({ path: el.imagePath, ...box, rounding: true, rotate });
       continue;
     }
 
@@ -53,6 +72,7 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
       align: style.align ?? 'left',
       valign: 'top',
       fit: 'shrink',
+      rotate,
     });
   }
 }

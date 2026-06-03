@@ -29,6 +29,13 @@
   line-height: 1.5;
 }
 
+.element-inspector-hint {
+  margin: 8px 0 16px;
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
 .element-inspector-actions {
   display: flex;
   flex-direction: column;
@@ -91,4 +98,64 @@
   gap: 6px;
   font-size: 0.8125rem;
   color: #334155;
+}
+
+.element-inspector-sub {
+  margin: 20px 0 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.color-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.color-input-row input[type='color'] {
+  width: 40px;
+  height: 36px;
+  padding: 2px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.color-input-row input[type='text'] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+}
+
+.align-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.align-btn {
+  padding: 6px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.align-btn:hover {
+  background: #f1f5f9;
+  border-color: #2f6f66;
+}
+
+.field-row-value {
+  font-size: 0.6875rem;
+  color: #64748b;
+  text-align: right;
+}
+
+.field-row input[type='range'] {
+  grid-column: span 2;
 }

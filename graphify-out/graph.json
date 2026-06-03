@@ -27,7 +27,7 @@
       "source_file": "api/src/app.module.ts",
       "source_location": "L1",
       "id": "api_src_app_module_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "app.module.ts"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L1",
       "id": "api_src_config_yaml_config_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "yaml.config.ts"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L5",
       "id": "config_yaml_config_default_config_path",
-      "community": 4,
+      "community": 5,
       "norm_label": "default_config_path"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L7",
       "id": "config_yaml_config_loadyamlconfig",
-      "community": 4,
+      "community": 5,
       "norm_label": "loadyamlconfig()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L1",
       "id": "api_src_image_image_service_ts",
-      "community": 4,
+      "community": 6,
       "norm_label": "image.service.ts"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L12",
       "id": "image_image_service_imageservice",
-      "community": 4,
+      "community": 6,
       "norm_label": "imageservice"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L15",
       "id": "image_image_service_imageservice_constructor",
-      "community": 4,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L21",
       "id": "image_image_service_imageservice_resolveimages",
-      "community": 4,
+      "community": 6,
       "norm_label": ".resolveimages()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L48",
       "id": "image_image_service_imageservice_fetchtolocal",
-      "community": 4,
+      "community": 6,
       "norm_label": ".fetchtolocal()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L66",
       "id": "image_image_service_imageservice_generate",
-      "community": 4,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "api/src/image/image.module.ts",
       "source_location": "L1",
       "id": "api_src_image_image_module_ts",
-      "community": 4,
+      "community": 6,
       "norm_label": "image.module.ts"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "api/src/image/image.module.ts",
       "source_location": "L10",
       "id": "image_image_module_imagemodule",
-      "community": 4,
+      "community": 5,
       "norm_label": "imagemodule"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_wanx_provider_ts",
-      "community": 4,
+      "community": 6,
       "norm_label": "wanx.provider.ts"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L5",
       "id": "providers_wanx_provider_wanxtaskresponse",
-      "community": 4,
+      "community": 6,
       "norm_label": "wanxtaskresponse"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L17",
       "id": "providers_wanx_provider_wanxprovider",
-      "community": 4,
+      "community": 6,
       "norm_label": "wanxprovider"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L20",
       "id": "providers_wanx_provider_wanxprovider_constructor",
-      "community": 4,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L22",
       "id": "providers_wanx_provider_wanxprovider_generate",
-      "community": 4,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L70",
       "id": "providers_wanx_provider_wanxprovider_polltask",
-      "community": 4,
+      "community": 6,
       "norm_label": ".polltask()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_placeholder_provider_ts",
-      "community": 4,
+      "community": 6,
       "norm_label": "placeholder.provider.ts"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L7",
       "id": "providers_placeholder_provider_fallback_png",
-      "community": 4,
+      "community": 6,
       "norm_label": "fallback_png"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L13",
       "id": "providers_placeholder_provider_placeholderprovider",
-      "community": 4,
+      "community": 6,
       "norm_label": "placeholderprovider"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L14",
       "id": "providers_placeholder_provider_placeholderprovider_generate",
-      "community": 4,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L23",
       "id": "ai_ai_service_aiservice",
-      "community": 8,
+      "community": 9,
       "norm_label": "aiservice"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L26",
       "id": "ai_ai_service_aiservice_constructor",
-      "community": 8,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L28",
       "id": "ai_ai_service_aiservice_generatecontent",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generatecontent()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L52",
       "id": "ai_ai_service_aiservice_generateoutline",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generateoutline()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L97",
       "id": "ai_ai_service_aiservice_expandslidesfromoutline",
-      "community": 8,
+      "community": 9,
       "norm_label": ".expandslidesfromoutline()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L119",
       "id": "ai_ai_service_aiservice_expandsingleslide",
-      "community": 8,
+      "community": 9,
       "norm_label": ".expandsingleslide()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L167",
       "id": "ai_ai_service_aiservice_parseslide",
-      "community": 8,
+      "community": 9,
       "norm_label": ".parseslide()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L183",
       "id": "ai_ai_service_aiservice_polishcontent",
-      "community": 8,
+      "community": 9,
       "norm_label": ".polishcontent()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L213",
       "id": "ai_ai_service_aiservice_resolvetimeoutms",
-      "community": 8,
+      "community": 9,
       "norm_label": ".resolvetimeoutms()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L220",
       "id": "ai_ai_service_aiservice_callllm",
-      "community": 8,
+      "community": 9,
       "norm_label": ".callllm()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L290",
       "id": "ai_ai_service_aiservice_parsecontent",
-      "community": 8,
+      "community": 9,
       "norm_label": ".parsecontent()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "api/src/ai/ai.module.ts",
       "source_location": "L1",
       "id": "api_src_ai_ai_module_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "ai.module.ts"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "api/src/ai/ai.module.ts",
       "source_location": "L8",
       "id": "ai_ai_module_aimodule",
-      "community": 4,
+      "community": 5,
       "norm_label": "aimodule"
     },
     {
@@ -421,7 +421,7 @@
       "label": "SlideElement",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L47",
+      "source_location": "L52",
       "id": "types_slide_content_slideelement",
       "community": 1,
       "norm_label": "slideelement"
@@ -430,7 +430,7 @@
       "label": "SlideContent",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L60",
+      "source_location": "L67",
       "id": "types_slide_content_slidecontent",
       "community": 1,
       "norm_label": "slidecontent"
@@ -439,7 +439,7 @@
       "label": "PresentationContent",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L72",
+      "source_location": "L82",
       "id": "types_slide_content_presentationcontent",
       "community": 1,
       "norm_label": "presentationcontent"
@@ -448,7 +448,7 @@
       "label": "DEFAULT_THEME",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L78",
+      "source_location": "L88",
       "id": "types_slide_content_default_theme",
       "community": 1,
       "norm_label": "default_theme"
@@ -457,7 +457,7 @@
       "label": "mergeTheme()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L85",
+      "source_location": "L95",
       "id": "types_slide_content_mergetheme",
       "community": 1,
       "norm_label": "mergetheme()"
@@ -466,7 +466,7 @@
       "label": "normalizeLayout()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L89",
+      "source_location": "L99",
       "id": "types_slide_content_normalizelayout",
       "community": 1,
       "norm_label": "normalizelayout()"
@@ -475,7 +475,7 @@
       "label": "normalizeSlide()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L99",
+      "source_location": "L109",
       "id": "types_slide_content_normalizeslide",
       "community": 1,
       "norm_label": "normalizeslide()"
@@ -484,7 +484,7 @@
       "label": "normalizeContent()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L108",
+      "source_location": "L118",
       "id": "types_slide_content_normalizecontent",
       "community": 1,
       "norm_label": "normalizecontent()"
@@ -567,7 +567,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L8",
       "id": "log_file_logger_filelogger",
-      "community": 5,
+      "community": 10,
       "norm_label": "filelogger"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L16",
       "id": "log_file_logger_filelogger_log",
-      "community": 5,
+      "community": 10,
       "norm_label": ".log()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L20",
       "id": "log_file_logger_filelogger_error",
-      "community": 5,
+      "community": 10,
       "norm_label": ".error()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L27",
       "id": "log_file_logger_filelogger_warn",
-      "community": 5,
+      "community": 10,
       "norm_label": ".warn()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L31",
       "id": "log_file_logger_filelogger_debug",
-      "community": 5,
+      "community": 10,
       "norm_label": ".debug()"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L35",
       "id": "log_file_logger_filelogger_verbose",
-      "community": 5,
+      "community": 10,
       "norm_label": ".verbose()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L39",
       "id": "log_file_logger_filelogger_write",
-      "community": 5,
+      "community": 10,
       "norm_label": ".write()"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L45",
       "id": "log_file_logger_filelogger_logfilepath",
-      "community": 5,
+      "community": 10,
       "norm_label": ".logfilepath()"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L50",
       "id": "log_file_logger_filelogger_formatline",
-      "community": 5,
+      "community": 10,
       "norm_label": ".formatline()"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L60",
       "id": "log_file_logger_filelogger_formatmessage",
-      "community": 5,
+      "community": 10,
       "norm_label": ".formatmessage()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L74",
       "id": "log_file_logger_filelogger_printtoconsole",
-      "community": 5,
+      "community": 10,
       "norm_label": ".printtoconsole()"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "api/src/ppt/ppt.module.ts",
       "source_location": "L1",
       "id": "api_src_ppt_ppt_module_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "ppt.module.ts"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "api/src/ppt/ppt.module.ts",
       "source_location": "L12",
       "id": "ppt_ppt_module_pptmodule",
-      "community": 4,
+      "community": 5,
       "norm_label": "pptmodule"
     },
     {
@@ -898,7 +898,7 @@
       "label": "SlideElementDto",
       "file_type": "code",
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
-      "source_location": "L41",
+      "source_location": "L46",
       "id": "dto_presentation_content_dto_slideelementdto",
       "community": 1,
       "norm_label": "slideelementdto"
@@ -907,7 +907,7 @@
       "label": "SlideDto",
       "file_type": "code",
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
-      "source_location": "L54",
+      "source_location": "L61",
       "id": "dto_presentation_content_dto_slidedto",
       "community": 1,
       "norm_label": "slidedto"
@@ -916,7 +916,7 @@
       "label": "PresentationContentDto",
       "file_type": "code",
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
-      "source_location": "L69",
+      "source_location": "L79",
       "id": "dto_presentation_content_dto_presentationcontentdto",
       "community": 1,
       "norm_label": "presentationcontentdto"
@@ -1179,7 +1179,7 @@
       "source_file": "client/vite.config.ts",
       "source_location": "L1",
       "id": "client_vite_config_ts",
-      "community": 14,
+      "community": 21,
       "norm_label": "vite.config.ts"
     },
     {
@@ -1195,7 +1195,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "client/src/App.tsx",
-      "source_location": "L21",
+      "source_location": "L33",
       "id": "src_app_app",
       "community": 0,
       "norm_label": "app()"
@@ -1215,7 +1215,7 @@
       "source_file": "client/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "client_src_vite_env_d_ts",
-      "community": 15,
+      "community": 22,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -1291,19 +1291,28 @@
       "norm_label": "elementstyle"
     },
     {
+      "label": "SlideElementType",
+      "file_type": "code",
+      "source_file": "client/src/types/presentation.ts",
+      "source_location": "L62",
+      "id": "types_presentation_slideelementtype",
+      "community": 0,
+      "norm_label": "slideelementtype"
+    },
+    {
       "label": "SlideElement",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L57",
+      "source_location": "L64",
       "id": "types_presentation_slideelement",
-      "community": 0,
+      "community": 2,
       "norm_label": "slideelement"
     },
     {
       "label": "SlideContent",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L70",
+      "source_location": "L80",
       "id": "types_presentation_slidecontent",
       "community": 0,
       "norm_label": "slidecontent"
@@ -1312,7 +1321,7 @@
       "label": "PresentationContent",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L81",
+      "source_location": "L94",
       "id": "types_presentation_presentationcontent",
       "community": 0,
       "norm_label": "presentationcontent"
@@ -1321,7 +1330,7 @@
       "label": "DEFAULT_THEME",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L87",
+      "source_location": "L100",
       "id": "types_presentation_default_theme",
       "community": 0,
       "norm_label": "default_theme"
@@ -1330,7 +1339,7 @@
       "label": "mergeTheme()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L94",
+      "source_location": "L107",
       "id": "types_presentation_mergetheme",
       "community": 0,
       "norm_label": "mergetheme()"
@@ -1339,7 +1348,7 @@
       "label": "createEmptySlide()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L98",
+      "source_location": "L111",
       "id": "types_presentation_createemptyslide",
       "community": 0,
       "norm_label": "createemptyslide()"
@@ -1348,10 +1357,91 @@
       "label": "createEmptyPresentation()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L106",
+      "source_location": "L119",
       "id": "types_presentation_createemptypresentation",
       "community": 0,
       "norm_label": "createemptypresentation()"
+    },
+    {
+      "label": "editor-utils.ts",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L1",
+      "id": "client_src_utils_editor_utils_ts",
+      "community": 2,
+      "norm_label": "editor-utils.ts"
+    },
+    {
+      "label": "snap()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L3",
+      "id": "utils_editor_utils_snap",
+      "community": 2,
+      "norm_label": "snap()"
+    },
+    {
+      "label": "alignElement()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L7",
+      "id": "utils_editor_utils_alignelement",
+      "community": 2,
+      "norm_label": "alignelement()"
+    },
+    {
+      "label": "alignElements()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L29",
+      "id": "utils_editor_utils_alignelements",
+      "community": 2,
+      "norm_label": "alignelements()"
+    },
+    {
+      "label": "groupElements()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L60",
+      "id": "utils_editor_utils_groupelements",
+      "community": 2,
+      "norm_label": "groupelements()"
+    },
+    {
+      "label": "getElementsBounds()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L67",
+      "id": "utils_editor_utils_getelementsbounds",
+      "community": 2,
+      "norm_label": "getelementsbounds()"
+    },
+    {
+      "label": "expandGroupSelection()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L86",
+      "id": "utils_editor_utils_expandgroupselection",
+      "community": 2,
+      "norm_label": "expandgroupselection()"
+    },
+    {
+      "label": "duplicateElement()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L99",
+      "id": "utils_editor_utils_duplicateelement",
+      "community": 2,
+      "norm_label": "duplicateelement()"
+    },
+    {
+      "label": "readImageFile()",
+      "file_type": "code",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L109",
+      "id": "utils_editor_utils_readimagefile",
+      "community": 2,
+      "norm_label": "readimagefile()"
     },
     {
       "label": "slide-elements.ts",
@@ -1359,7 +1449,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "id": "client_src_utils_slide_elements_ts",
-      "community": 0,
+      "community": 2,
       "norm_label": "slide-elements.ts"
     },
     {
@@ -1368,7 +1458,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L11",
       "id": "utils_slide_elements_newelementid",
-      "community": 0,
+      "community": 2,
       "norm_label": "newelementid()"
     },
     {
@@ -1377,7 +1467,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L16",
       "id": "utils_slide_elements_createtextelement",
-      "community": 0,
+      "community": 2,
       "norm_label": "createtextelement()"
     },
     {
@@ -1386,50 +1476,59 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L29",
       "id": "utils_slide_elements_createimageelement",
-      "community": 0,
+      "community": 2,
       "norm_label": "createimageelement()"
+    },
+    {
+      "label": "createShapeElement()",
+      "file_type": "code",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L41",
+      "id": "utils_slide_elements_createshapeelement",
+      "community": 2,
+      "norm_label": "createshapeelement()"
     },
     {
       "label": "textEl()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L41",
+      "source_location": "L60",
       "id": "utils_slide_elements_textel",
-      "community": 0,
+      "community": 2,
       "norm_label": "textel()"
     },
     {
       "label": "imgEl()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L53",
+      "source_location": "L72",
       "id": "utils_slide_elements_imgel",
-      "community": 0,
+      "community": 2,
       "norm_label": "imgel()"
     },
     {
       "label": "layoutToElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L64",
+      "source_location": "L83",
       "id": "utils_slide_elements_layouttoelements",
-      "community": 0,
+      "community": 2,
       "norm_label": "layouttoelements()"
     },
     {
       "label": "ensureSlideElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L266",
+      "source_location": "L285",
       "id": "utils_slide_elements_ensureslideelements",
-      "community": 0,
+      "community": 2,
       "norm_label": "ensureslideelements()"
     },
     {
       "label": "ensurePresentationElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L275",
+      "source_location": "L294",
       "id": "utils_slide_elements_ensurepresentationelements",
       "community": 0,
       "norm_label": "ensurepresentationelements()"
@@ -1438,18 +1537,18 @@
       "label": "syncSlideFromElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L288",
+      "source_location": "L307",
       "id": "utils_slide_elements_syncslidefromelements",
-      "community": 0,
+      "community": 2,
       "norm_label": "syncslidefromelements()"
     },
     {
       "label": "clamp()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L309",
+      "source_location": "L328",
       "id": "utils_slide_elements_clamp",
-      "community": 0,
+      "community": 2,
       "norm_label": "clamp()"
     },
     {
@@ -1501,7 +1600,7 @@
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L10",
+      "source_location": "L9",
       "id": "slidelist_slidelist_props",
       "community": 0,
       "norm_label": "props"
@@ -1516,19 +1615,10 @@
       "norm_label": "resolvelayout()"
     },
     {
-      "label": "MiniPreviewFromElements()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L23",
-      "id": "slidelist_slidelist_minipreviewfromelements",
-      "community": 0,
-      "norm_label": "minipreviewfromelements()"
-    },
-    {
       "label": "MiniPreview()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L55",
+      "source_location": "L23",
       "id": "slidelist_slidelist_minipreview",
       "community": 0,
       "norm_label": "minipreview()"
@@ -1537,10 +1627,37 @@
       "label": "SlideList()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L145",
+      "source_location": "L85",
       "id": "slidelist_slidelist_slidelist",
       "community": 0,
       "norm_label": "slidelist()"
+    },
+    {
+      "label": "PresentationMode.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_presentationmode_presentationmode_tsx",
+      "community": 0,
+      "norm_label": "presentationmode.tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L7",
+      "id": "presentationmode_presentationmode_props",
+      "community": 0,
+      "norm_label": "props"
+    },
+    {
+      "label": "PresentationMode()",
+      "file_type": "code",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L13",
+      "id": "presentationmode_presentationmode_presentationmode",
+      "community": 0,
+      "norm_label": "presentationmode()"
     },
     {
       "label": "ElementInspector.tsx",
@@ -1548,25 +1665,25 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "id": "client_src_components_elementinspector_elementinspector_tsx",
-      "community": 0,
+      "community": 2,
       "norm_label": "elementinspector.tsx"
     },
     {
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
-      "source_location": "L5",
+      "source_location": "L15",
       "id": "elementinspector_elementinspector_props",
-      "community": 0,
+      "community": 2,
       "norm_label": "props"
     },
     {
       "label": "ElementInspector()",
       "file_type": "code",
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
-      "source_location": "L12",
+      "source_location": "L24",
       "id": "elementinspector_elementinspector_elementinspector",
-      "community": 0,
+      "community": 2,
       "norm_label": "elementinspector()"
     },
     {
@@ -1602,53 +1719,251 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L1",
       "id": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "community": 0,
+      "community": 2,
       "norm_label": "freeformcanvas.tsx"
     },
     {
       "label": "ResizeHandle",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L10",
+      "source_location": "L13",
       "id": "freeformcanvas_freeformcanvas_resizehandle",
-      "community": 0,
+      "community": 2,
       "norm_label": "resizehandle"
     },
     {
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L12",
+      "source_location": "L15",
       "id": "freeformcanvas_freeformcanvas_props",
-      "community": 0,
+      "community": 2,
       "norm_label": "props"
+    },
+    {
+      "label": "FreeformCanvasHandle",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L29",
+      "id": "freeformcanvas_freeformcanvas_freeformcanvashandle",
+      "community": 0,
+      "norm_label": "freeformcanvashandle"
     },
     {
       "label": "DragState",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L20",
+      "source_location": "L36",
       "id": "freeformcanvas_freeformcanvas_dragstate",
-      "community": 0,
+      "community": 2,
       "norm_label": "dragstate"
+    },
+    {
+      "label": "ShapeDrawState",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L48",
+      "id": "freeformcanvas_freeformcanvas_shapedrawstate",
+      "community": 2,
+      "norm_label": "shapedrawstate"
+    },
+    {
+      "label": "MarqueeState",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L57",
+      "id": "freeformcanvas_freeformcanvas_marqueestate",
+      "community": 2,
+      "norm_label": "marqueestate"
+    },
+    {
+      "label": "ClickClearState",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L66",
+      "id": "freeformcanvas_freeformcanvas_clickclearstate",
+      "community": 2,
+      "norm_label": "clickclearstate"
+    },
+    {
+      "label": "SelectionMenuState",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L72",
+      "id": "freeformcanvas_freeformcanvas_selectionmenustate",
+      "community": 2,
+      "norm_label": "selectionmenustate"
+    },
+    {
+      "label": "clientToCanvasPct()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L78",
+      "id": "freeformcanvas_freeformcanvas_clienttocanvaspct",
+      "community": 2,
+      "norm_label": "clienttocanvaspct()"
+    },
+    {
+      "label": "rectFromPoints()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L86",
+      "id": "freeformcanvas_freeformcanvas_rectfrompoints",
+      "community": 2,
+      "norm_label": "rectfrompoints()"
+    },
+    {
+      "label": "rectsIntersect()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L95",
+      "id": "freeformcanvas_freeformcanvas_rectsintersect",
+      "community": 2,
+      "norm_label": "rectsintersect()"
+    },
+    {
+      "label": "isSelectableElement()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L108",
+      "id": "freeformcanvas_freeformcanvas_isselectableelement",
+      "community": 2,
+      "norm_label": "isselectableelement()"
+    },
+    {
+      "label": "rectFromDrag()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L113",
+      "id": "freeformcanvas_freeformcanvas_rectfromdrag",
+      "community": 2,
+      "norm_label": "rectfromdrag()"
     },
     {
       "label": "renderTextContent()",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L29",
+      "source_location": "L140",
       "id": "freeformcanvas_freeformcanvas_rendertextcontent",
-      "community": 0,
+      "community": 2,
       "norm_label": "rendertextcontent()"
     },
     {
-      "label": "FreeformCanvas()",
+      "label": "elementTransform()",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L44",
+      "source_location": "L155",
+      "id": "freeformcanvas_freeformcanvas_elementtransform",
+      "community": 2,
+      "norm_label": "elementtransform()"
+    },
+    {
+      "label": "sortElements()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L159",
+      "id": "freeformcanvas_freeformcanvas_sortelements",
+      "community": 2,
+      "norm_label": "sortelements()"
+    },
+    {
+      "label": "CanvasElement",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L163",
+      "id": "freeformcanvas_freeformcanvas_canvaselement",
+      "community": 2,
+      "norm_label": "canvaselement"
+    },
+    {
+      "label": "FreeformCanvas",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L296",
       "id": "freeformcanvas_freeformcanvas_freeformcanvas",
+      "community": 2,
+      "norm_label": "freeformcanvas"
+    },
+    {
+      "label": "SelectionToolbar.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/SelectionToolbar.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_freeformcanvas_selectiontoolbar_tsx",
+      "community": 2,
+      "norm_label": "selectiontoolbar.tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/SelectionToolbar.tsx",
+      "source_location": "L3",
+      "id": "freeformcanvas_selectiontoolbar_props",
+      "community": 2,
+      "norm_label": "props"
+    },
+    {
+      "label": "SelectionToolbar()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/SelectionToolbar.tsx",
+      "source_location": "L15",
+      "id": "freeformcanvas_selectiontoolbar_selectiontoolbar",
+      "community": 2,
+      "norm_label": "selectiontoolbar()"
+    },
+    {
+      "label": "Ribbon.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_ribbon_ribbon_tsx",
       "community": 0,
-      "norm_label": "freeformcanvas()"
+      "norm_label": "ribbon.tsx"
+    },
+    {
+      "label": "RibbonTab",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L4",
+      "id": "ribbon_ribbon_ribbontab",
+      "community": 0,
+      "norm_label": "ribbontab"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L6",
+      "id": "ribbon_ribbon_props",
+      "community": 0,
+      "norm_label": "props"
+    },
+    {
+      "label": "Group()",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L37",
+      "id": "ribbon_ribbon_group",
+      "community": 0,
+      "norm_label": "group()"
+    },
+    {
+      "label": "Tool()",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L46",
+      "id": "ribbon_ribbon_tool",
+      "community": 0,
+      "norm_label": "tool()"
+    },
+    {
+      "label": "Ribbon()",
+      "file_type": "code",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L75",
+      "id": "ribbon_ribbon_ribbon",
+      "community": 0,
+      "norm_label": "ribbon()"
     },
     {
       "label": "SlideCanvas.tsx",
@@ -1777,6 +2092,96 @@
       "norm_label": "slideeditor()"
     },
     {
+      "label": "useHistory.ts",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L1",
+      "id": "client_src_hooks_usehistory_ts",
+      "community": 0,
+      "norm_label": "usehistory.ts"
+    },
+    {
+      "label": "Updater",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L3",
+      "id": "hooks_usehistory_updater",
+      "community": 0,
+      "norm_label": "updater"
+    },
+    {
+      "label": "resolve()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L5",
+      "id": "hooks_usehistory_resolve",
+      "community": 0,
+      "norm_label": "resolve()"
+    },
+    {
+      "label": "useHistory()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L9",
+      "id": "hooks_usehistory_usehistory",
+      "community": 0,
+      "norm_label": "usehistory()"
+    },
+    {
+      "label": "useLocalDraft.ts",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L1",
+      "id": "client_src_hooks_uselocaldraft_ts",
+      "community": 0,
+      "norm_label": "uselocaldraft.ts"
+    },
+    {
+      "label": "saveDraft()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L6",
+      "id": "hooks_uselocaldraft_savedraft",
+      "community": 0,
+      "norm_label": "savedraft()"
+    },
+    {
+      "label": "loadDraft()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L14",
+      "id": "hooks_uselocaldraft_loaddraft",
+      "community": 0,
+      "norm_label": "loaddraft()"
+    },
+    {
+      "label": "clearDraft()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L23",
+      "id": "hooks_uselocaldraft_cleardraft",
+      "community": 0,
+      "norm_label": "cleardraft()"
+    },
+    {
+      "label": "useLocalDraft()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L27",
+      "id": "hooks_uselocaldraft_uselocaldraft",
+      "community": 0,
+      "norm_label": "uselocaldraft()"
+    },
+    {
+      "label": "restoreDraftOnMount()",
+      "file_type": "code",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L38",
+      "id": "hooks_uselocaldraft_restoredraftonmount",
+      "community": 0,
+      "norm_label": "restoredraftonmount()"
+    },
+    {
       "label": "ppt.ts",
       "file_type": "code",
       "source_file": "client/src/api/ppt.ts",
@@ -1818,7 +2223,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 9,
+      "community": 11,
       "norm_label": "readme.md"
     },
     {
@@ -1827,7 +2232,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "smart_ppt_readme_ppt_agent",
-      "community": 9,
+      "community": 11,
       "norm_label": "ppt-agent"
     },
     {
@@ -1836,7 +2241,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "smart_ppt_readme_\u529f\u80fd",
-      "community": 9,
+      "community": 11,
       "norm_label": "\u529f\u80fd"
     },
     {
@@ -1845,7 +2250,7 @@
       "source_file": "README.md",
       "source_location": "L10",
       "id": "smart_ppt_readme_\u5feb\u901f\u5f00\u59cb",
-      "community": 9,
+      "community": 11,
       "norm_label": "\u5feb\u901f\u5f00\u59cb"
     },
     {
@@ -1854,7 +2259,7 @@
       "source_file": "README.md",
       "source_location": "L12",
       "id": "smart_ppt_readme_codeblock_1",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:bash (npm install)"
     },
     {
@@ -1863,7 +2268,7 @@
       "source_file": "README.md",
       "source_location": "L21",
       "id": "smart_ppt_readme_api",
-      "community": 9,
+      "community": 11,
       "norm_label": "api"
     },
     {
@@ -1872,7 +2277,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "id": "smart_ppt_readme_codeblock_2",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:json ({)"
     },
     {
@@ -1881,7 +2286,7 @@
       "source_file": "README.md",
       "source_location": "L36",
       "id": "smart_ppt_readme_codeblock_3",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -1890,7 +2295,7 @@
       "source_file": "README.md",
       "source_location": "L43",
       "id": "smart_ppt_readme_\u914d\u7f6e_yaml",
-      "community": 9,
+      "community": 11,
       "norm_label": "\u914d\u7f6e(yaml)"
     },
     {
@@ -1899,7 +2304,7 @@
       "source_file": "README.md",
       "source_location": "L56",
       "id": "smart_ppt_readme_\u9879\u76ee\u7ed3\u6784",
-      "community": 9,
+      "community": 11,
       "norm_label": "\u9879\u76ee\u7ed3\u6784"
     },
     {
@@ -1908,7 +2313,7 @@
       "source_file": "README.md",
       "source_location": "L58",
       "id": "smart_ppt_readme_codeblock_4",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:block4 (src/)"
     },
     {
@@ -1917,7 +2322,7 @@
       "source_file": "demo/02-long.md",
       "source_location": "L1",
       "id": "demo_02_long_md",
-      "community": 16,
+      "community": 23,
       "norm_label": "02-long.md"
     },
     {
@@ -1926,7 +2331,7 @@
       "source_file": "demo/01-short.md",
       "source_location": "L1",
       "id": "demo_01_short_md",
-      "community": 17,
+      "community": 24,
       "norm_label": "01-short.md"
     },
     {
@@ -1935,7 +2340,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_md",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt.md"
     },
     {
@@ -1944,7 +2349,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684_ppt",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684 ppt"
     },
     {
@@ -1953,7 +2358,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L8",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u76ee\u5f55",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u76ee\u5f55"
     },
     {
@@ -1962,7 +2367,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L27",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u73b0\u72b6\u4e0e\u5dee\u8ddd",
-      "community": 2,
+      "community": 17,
       "norm_label": "\u73b0\u72b6\u4e0e\u5dee\u8ddd"
     },
     {
@@ -1971,7 +2376,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L29",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d\u6d41\u7a0b",
-      "community": 2,
+      "community": 17,
       "norm_label": "\u5f53\u524d\u6d41\u7a0b"
     },
     {
@@ -1980,7 +2385,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L31",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_1",
-      "community": 2,
+      "community": 17,
       "norm_label": "code:block1 (post /ppt/generate { topic, slidecount })"
     },
     {
@@ -1989,7 +2394,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L50",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_json_\u7ed3\u6784",
-      "community": 2,
+      "community": 17,
       "norm_label": "\u5f53\u524d json \u7ed3\u6784"
     },
     {
@@ -1998,7 +2403,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L52",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_2",
-      "community": 2,
+      "community": 17,
       "norm_label": "code:json ({)"
     },
     {
@@ -2007,7 +2412,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L62",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5dee\u8ddd\u4e00\u89c8",
-      "community": 2,
+      "community": 17,
       "norm_label": "\u5dee\u8ddd\u4e00\u89c8"
     },
     {
@@ -2016,7 +2421,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L74",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u8bbe\u8ba1\u539f\u5219",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u8bbe\u8ba1\u539f\u5219"
     },
     {
@@ -2025,7 +2430,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L84",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u76ee\u6807\u67b6\u6784",
-      "community": 2,
+      "community": 20,
       "norm_label": "\u76ee\u6807\u67b6\u6784"
     },
     {
@@ -2034,7 +2439,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L86",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_3",
-      "community": 2,
+      "community": 20,
       "norm_label": "code:mermaid (sequencediagram)"
     },
     {
@@ -2043,7 +2448,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L106",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_4",
-      "community": 2,
+      "community": 20,
       "norm_label": "code:block4 (src/)"
     },
     {
@@ -2052,7 +2457,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L133",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5b8c\u6574_json_schema",
-      "community": 13,
+      "community": 16,
       "norm_label": "\u5b8c\u6574 json schema"
     },
     {
@@ -2061,7 +2466,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L135",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_typescript_\u7c7b\u578b_\u76ee\u6807",
-      "community": 13,
+      "community": 16,
       "norm_label": "typescript \u7c7b\u578b(\u76ee\u6807)"
     },
     {
@@ -2070,7 +2475,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L137",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_5",
-      "community": 13,
+      "community": 16,
       "norm_label": "code:typescript (// src/ai/types/slide-content.ts)"
     },
     {
@@ -2079,7 +2484,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L184",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_llm_\u8f93\u51fa\u793a\u4f8b_8_\u9875",
-      "community": 13,
+      "community": 16,
       "norm_label": "llm \u8f93\u51fa\u793a\u4f8b(8 \u9875)"
     },
     {
@@ -2088,7 +2493,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L186",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_6",
-      "community": 13,
+      "community": 16,
       "norm_label": "code:json ({)"
     },
     {
@@ -2097,7 +2502,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L237",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_prompt_\u6539\u9020\u8981\u70b9",
-      "community": 13,
+      "community": 16,
       "norm_label": "prompt \u6539\u9020\u8981\u70b9"
     },
     {
@@ -2106,7 +2511,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L241",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_7",
-      "community": 13,
+      "community": 16,
       "norm_label": "code:block7 (return json with this shape:)"
     },
     {
@@ -2115,7 +2520,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L272",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6539\u9020\u6b65\u9aa4",
-      "community": 2,
+      "community": 19,
       "norm_label": "\u6539\u9020\u6b65\u9aa4"
     },
     {
@@ -2124,7 +2529,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L274",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_1_\u6269\u5c55\u7c7b\u578b\u4e0e_prompt_p0",
-      "community": 2,
+      "community": 19,
       "norm_label": "step 1 \u2014 \u6269\u5c55\u7c7b\u578b\u4e0e prompt(p0)"
     },
     {
@@ -2133,7 +2538,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L280",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_2_\u65b0\u589e_imageservice_p1",
-      "community": 2,
+      "community": 19,
       "norm_label": "step 2 \u2014 \u65b0\u589e imageservice(p1)"
     },
     {
@@ -2142,7 +2547,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L284",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_3_\u62c6\u5206_layout_\u6e32\u67d3_p2",
-      "community": 2,
+      "community": 19,
       "norm_label": "step 3 \u2014 \u62c6\u5206 layout \u6e32\u67d3(p2)"
     },
     {
@@ -2151,7 +2556,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L288",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_4_\u4e32\u8054_controller_p2",
-      "community": 2,
+      "community": 19,
       "norm_label": "step 4 \u2014 \u4e32\u8054 controller(p2)"
     },
     {
@@ -2160,7 +2565,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L292",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_step_5_\u4e3b\u9898\u8272\u4e0e\u56fe\u8868_p3",
-      "community": 2,
+      "community": 19,
       "norm_label": "step 5 \u2014 \u4e3b\u9898\u8272\u4e0e\u56fe\u8868(p3)"
     },
     {
@@ -2169,7 +2574,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L299",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u56fe\u7247\u670d\u52a1",
-      "community": 2,
+      "community": 12,
       "norm_label": "\u56fe\u7247\u670d\u52a1"
     },
     {
@@ -2178,7 +2583,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L301",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7b56\u7565\u9009\u62e9",
-      "community": 2,
+      "community": 12,
       "norm_label": "\u7b56\u7565\u9009\u62e9"
     },
     {
@@ -2187,7 +2592,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L312",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_imageservice_\u63a5\u53e3_\u63a8\u8350",
-      "community": 2,
+      "community": 12,
       "norm_label": "imageservice \u63a5\u53e3(\u63a8\u8350)"
     },
     {
@@ -2196,7 +2601,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L314",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_8",
-      "community": 2,
+      "community": 12,
       "norm_label": "code:typescript (// src/image/image.service.ts)"
     },
     {
@@ -2205,7 +2610,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L358",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u767e\u70bc\u901a\u4e49\u4e07\u76f8_\u793a\u4f8b",
-      "community": 2,
+      "community": 12,
       "norm_label": "\u767e\u70bc\u901a\u4e49\u4e07\u76f8(\u793a\u4f8b)"
     },
     {
@@ -2214,7 +2619,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L362",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_9",
-      "community": 2,
+      "community": 12,
       "norm_label": "code:block9 (post /api/v1/services/aigc/text2image/image-synthesis)"
     },
     {
@@ -2223,7 +2628,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L372",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_10",
-      "community": 2,
+      "community": 12,
       "norm_label": "code:yaml (image_provider: wanx          # wanx | unsplash | placeholde)"
     },
     {
@@ -2232,7 +2637,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L378",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_pptxgenjs_\u5d4c\u5165\u65b9\u5f0f",
-      "community": 2,
+      "community": 12,
       "norm_label": "pptxgenjs \u5d4c\u5165\u65b9\u5f0f"
     },
     {
@@ -2241,7 +2646,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L380",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_11",
-      "community": 2,
+      "community": 12,
       "norm_label": "code:typescript (// \u63a8\u8350:\u672c\u5730\u8def\u5f84(imageservice \u4e0b\u8f7d\u540e))"
     },
     {
@@ -2250,7 +2655,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L398",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_oss_\u4e0a\u4f20_\u53ef\u9009",
-      "community": 2,
+      "community": 12,
       "norm_label": "oss \u4e0a\u4f20(\u53ef\u9009)"
     },
     {
@@ -2259,7 +2664,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L402",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_12",
-      "community": 2,
+      "community": 12,
       "norm_label": "code:typescript (// \u4e0a\u4f20\u540e\u5f97\u5230 https://tx-res-01.oss-cn-guangzhou.aliyuncs.com/pro)"
     },
     {
@@ -2268,7 +2673,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L413",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7248\u5f0f\u4e0e\u5750\u6807",
-      "community": 10,
+      "community": 13,
       "norm_label": "\u7248\u5f0f\u4e0e\u5750\u6807"
     },
     {
@@ -2277,7 +2682,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L417",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7248\u5f0f\u7ebf\u6846",
-      "community": 10,
+      "community": 13,
       "norm_label": "\u7248\u5f0f\u7ebf\u6846"
     },
     {
@@ -2286,7 +2691,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L419",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_13",
-      "community": 10,
+      "community": 13,
       "norm_label": "code:block13 (cover                 image-right              two-column)"
     },
     {
@@ -2295,7 +2700,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L437",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5750\u6807\u8868",
-      "community": 10,
+      "community": 13,
       "norm_label": "\u5750\u6807\u8868"
     },
     {
@@ -2304,7 +2709,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L458",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_layout_\u8c03\u5ea6_\u63a8\u8350",
-      "community": 10,
+      "community": 13,
       "norm_label": "layout \u8c03\u5ea6(\u63a8\u8350)"
     },
     {
@@ -2313,7 +2718,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L460",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_14",
-      "community": 10,
+      "community": 13,
       "norm_label": "code:typescript (// src/ppt/layouts/index.ts)"
     },
     {
@@ -2322,7 +2727,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L488",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_image_right_\u793a\u4f8b",
-      "community": 10,
+      "community": 13,
       "norm_label": "image-right \u793a\u4f8b"
     },
     {
@@ -2331,7 +2736,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L490",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_15",
-      "community": 10,
+      "community": 13,
       "norm_label": "code:typescript (export function renderimageright({ slide, page, theme }: lay)"
     },
     {
@@ -2340,7 +2745,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L516",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_full_image_\u534a\u900f\u660e\u906e\u7f69",
-      "community": 10,
+      "community": 13,
       "norm_label": "full-image \u534a\u900f\u660e\u906e\u7f69"
     },
     {
@@ -2349,7 +2754,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L518",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_16",
-      "community": 10,
+      "community": 13,
       "norm_label": "code:typescript (page.addimage({ path: slide.imagepath, x: 0, y: 0, w: 10, h:)"
     },
     {
@@ -2358,7 +2763,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L532",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_controller_\u7f16\u6392",
-      "community": 2,
+      "community": 8,
       "norm_label": "controller \u7f16\u6392"
     },
     {
@@ -2367,7 +2772,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L536",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_17",
-      "community": 2,
+      "community": 8,
       "norm_label": "code:typescript (@post('generate'))"
     },
     {
@@ -2376,7 +2781,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L559",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u914d\u7f6e\u9879",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u914d\u7f6e\u9879"
     },
     {
@@ -2385,7 +2790,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L563",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_18",
-      "community": 2,
+      "community": 8,
       "norm_label": "code:yaml (port: 3000)"
     },
     {
@@ -2394,7 +2799,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L587",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u964d\u7ea7\u4e0e\u5bb9\u9519",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u964d\u7ea7\u4e0e\u5bb9\u9519"
     },
     {
@@ -2403,7 +2808,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L599",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_19",
-      "community": 2,
+      "community": 8,
       "norm_label": "code:typescript (const default_theme: presentationtheme = {)"
     },
     {
@@ -2412,7 +2817,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L610",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6027\u80fd\u5efa\u8bae",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u6027\u80fd\u5efa\u8bae"
     },
     {
@@ -2421,7 +2826,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L620",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6d4b\u8bd5\u4e0e\u9a8c\u6536",
-      "community": 2,
+      "community": 18,
       "norm_label": "\u6d4b\u8bd5\u4e0e\u9a8c\u6536"
     },
     {
@@ -2430,7 +2835,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L622",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_api_\u5192\u70df_\u7eaf\u6587\u5b57",
-      "community": 2,
+      "community": 18,
       "norm_label": "\u5f53\u524d api \u5192\u70df(\u7eaf\u6587\u5b57)"
     },
     {
@@ -2439,7 +2844,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L624",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_20",
-      "community": 2,
+      "community": 18,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -2448,7 +2853,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L635",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355",
-      "community": 2,
+      "community": 18,
       "norm_label": "\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355"
     },
     {
@@ -2457,7 +2862,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L645",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7",
-      "community": 2,
+      "community": 18,
       "norm_label": "\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7"
     },
     {
@@ -2466,7 +2871,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L647",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_21",
-      "community": 2,
+      "community": 18,
       "norm_label": "code:bash (# \u53ea\u6d4b llm json \u8f93\u51fa(\u4e34\u65f6\u5728 controller \u6253\u65e5\u5fd7))"
     },
     {
@@ -2475,7 +2880,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L657",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5e38\u89c1\u95ee\u9898",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u5e38\u89c1\u95ee\u9898"
     },
     {
@@ -2484,7 +2889,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L676",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5b9e\u65bd\u8def\u7ebf\u56fe",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u5b9e\u65bd\u8def\u7ebf\u56fe"
     },
     {
@@ -2493,7 +2898,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L690",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u53c2\u8003\u94fe\u63a5",
-      "community": 2,
+      "community": 8,
       "norm_label": "\u53c2\u8003\u94fe\u63a5"
     },
     {
@@ -2502,7 +2907,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L1",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_md",
-      "community": 6,
+      "community": 4,
       "norm_label": "01.ppt\u751f\u6210\u6d41\u7a0b.md"
     },
     {
@@ -2511,7 +2916,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L1",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_ppt_\u751f\u6210\u6d41\u7a0b",
-      "community": 6,
+      "community": 4,
       "norm_label": "ppt \u751f\u6210\u6d41\u7a0b"
     },
     {
@@ -2520,7 +2925,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L3",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u6982\u89c8",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u6982\u89c8"
     },
     {
@@ -2529,7 +2934,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L5",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_1",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:block1 (\u7528\u6237\u8f93\u5165 \u2192 llm \u751f\u6210\u5927\u7eb2 \u2192 \u9010\u9875\u8865\u5145\u8be6\u7ec6\u5185\u5bb9 \u2192 \u5168\u6587\u6da6\u8272 \u2192 \u56fe\u7247\u8865\u5145 \u2192 \u6e32\u67d3 pptx)"
     },
     {
@@ -2538,7 +2943,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L9",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_2",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:mermaid (sequencediagram)"
     },
     {
@@ -2547,7 +2952,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L32",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u56db\u6b65\u8be6\u89e3",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u56db\u6b65\u8be6\u89e3"
     },
     {
@@ -2556,7 +2961,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L34",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_1_\u7528\u6237\u8f93\u5165\u8981\u6c42",
-      "community": 6,
+      "community": 4,
       "norm_label": "1. \u7528\u6237\u8f93\u5165\u8981\u6c42"
     },
     {
@@ -2565,7 +2970,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L38",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_3",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:json ({ \"topic\": \"nestjs \u5165\u95e8\", \"slidecount\": 20 })"
     },
     {
@@ -2574,7 +2979,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L46",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_2_llm_\u751f\u6210\u5927\u7eb2",
-      "community": 6,
+      "community": 4,
       "norm_label": "2. llm \u751f\u6210\u5927\u7eb2"
     },
     {
@@ -2583,7 +2988,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L54",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_4",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:json ({)"
     },
     {
@@ -2592,7 +2997,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L72",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_3_\u5bf9\u6bcf\u4e00\u4e2a\u7ae0\u8282\u8865\u5145\u8be6\u7ec6\u5185\u5bb9",
-      "community": 6,
+      "community": 4,
       "norm_label": "3. \u5bf9\u6bcf\u4e00\u4e2a\u7ae0\u8282\u8865\u5145\u8be6\u7ec6\u5185\u5bb9"
     },
     {
@@ -2601,7 +3006,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L80",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_5",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:block5 (expandslide 1/20 title=\"\u5c01\u9762\")"
     },
     {
@@ -2610,7 +3015,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L97",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4_ppt_\u6da6\u8272_\u56fe\u7247\u8865\u5145",
-      "community": 6,
+      "community": 4,
       "norm_label": "4. ppt \u6da6\u8272 + \u56fe\u7247\u8865\u5145"
     },
     {
@@ -2619,7 +3024,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L99",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4a_\u5168\u6587\u6da6\u8272",
-      "community": 6,
+      "community": 4,
       "norm_label": "4a \u5168\u6587\u6da6\u8272"
     },
     {
@@ -2628,7 +3033,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L107",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4b_\u56fe\u7247\u8865\u5145",
-      "community": 6,
+      "community": 4,
       "norm_label": "4b \u56fe\u7247\u8865\u5145"
     },
     {
@@ -2637,7 +3042,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L115",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4c_\u6e32\u67d3_pptx",
-      "community": 6,
+      "community": 4,
       "norm_label": "4c \u6e32\u67d3 pptx"
     },
     {
@@ -2646,7 +3051,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L123",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u4ee3\u7801\u6620\u5c04",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u4ee3\u7801\u6620\u5c04"
     },
     {
@@ -2655,7 +3060,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L134",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_llm_\u8c03\u7528\u6b21\u6570",
-      "community": 6,
+      "community": 4,
       "norm_label": "llm \u8c03\u7528\u6b21\u6570"
     },
     {
@@ -2664,7 +3069,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L143",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u914d\u7f6e",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u914d\u7f6e"
     },
     {
@@ -2673,7 +3078,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L155",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u76f8\u5173\u6587\u6863",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u76f8\u5173\u6587\u6863"
     },
     {
@@ -2682,7 +3087,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L1",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_md",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md"
     },
     {
@@ -2691,7 +3096,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L1",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc"
     },
     {
@@ -2700,7 +3105,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L3",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u73b0\u8c61",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u73b0\u8c61"
     },
     {
@@ -2709,7 +3114,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L7",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u6839\u56e0",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u6839\u56e0"
     },
     {
@@ -2718,7 +3123,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L15",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u65b9\u6848_\u5df2\u5b9e\u73b0",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u65b9\u6848(\u5df2\u5b9e\u73b0)"
     },
     {
@@ -2727,7 +3132,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L19",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_codeblock_1",
-      "community": 11,
+      "community": 14,
       "norm_label": "code:mermaid (flowchart lr)"
     },
     {
@@ -2736,7 +3141,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L33",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u4ee3\u4ef7\u4e0e\u6ce8\u610f",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u4ee3\u4ef7\u4e0e\u6ce8\u610f"
     },
     {
@@ -2745,7 +3150,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L39",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u9a8c\u8bc1",
-      "community": 11,
+      "community": 14,
       "norm_label": "\u9a8c\u8bc1"
     },
     {
@@ -2754,7 +3159,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L41",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_codeblock_2",
-      "community": 11,
+      "community": 14,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -2763,7 +3168,7 @@
       "source_file": "client/README.md",
       "source_location": "L1",
       "id": "client_readme_md",
-      "community": 12,
+      "community": 15,
       "norm_label": "readme.md"
     },
     {
@@ -2772,7 +3177,7 @@
       "source_file": "client/README.md",
       "source_location": "L1",
       "id": "client_readme_smart_ppt_client",
-      "community": 12,
+      "community": 15,
       "norm_label": "smart ppt client"
     },
     {
@@ -2781,7 +3186,7 @@
       "source_file": "client/README.md",
       "source_location": "L5",
       "id": "client_readme_\u524d\u7f6e\u6761\u4ef6",
-      "community": 12,
+      "community": 15,
       "norm_label": "\u524d\u7f6e\u6761\u4ef6"
     },
     {
@@ -2790,7 +3195,7 @@
       "source_file": "client/README.md",
       "source_location": "L9",
       "id": "client_readme_\u5f00\u53d1",
-      "community": 12,
+      "community": 15,
       "norm_label": "\u5f00\u53d1"
     },
     {
@@ -2799,7 +3204,7 @@
       "source_file": "client/README.md",
       "source_location": "L11",
       "id": "client_readme_codeblock_1",
-      "community": 12,
+      "community": 15,
       "norm_label": "code:bash (cd client)"
     },
     {
@@ -2808,26 +3213,35 @@
       "source_file": "client/README.md",
       "source_location": "L19",
       "id": "client_readme_\u529f\u80fd",
-      "community": 12,
+      "community": 15,
       "norm_label": "\u529f\u80fd"
     },
     {
       "label": "\u6784\u5efa",
       "file_type": "document",
       "source_file": "client/README.md",
-      "source_location": "L26",
+      "source_location": "L30",
       "id": "client_readme_\u6784\u5efa",
-      "community": 12,
+      "community": 15,
       "norm_label": "\u6784\u5efa"
     },
     {
       "label": "code:bash (pnpm build)",
       "file_type": "document",
       "source_file": "client/README.md",
-      "source_location": "L28",
+      "source_location": "L32",
       "id": "client_readme_codeblock_2",
-      "community": 12,
+      "community": 15,
       "norm_label": "code:bash (pnpm build)"
+    },
+    {
+      "label": "MiniPreviewFromElements()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L24",
+      "community": 0,
+      "norm_label": "minipreviewfromelements()",
+      "id": "slidelist_slidelist_minipreviewfromelements"
     },
     {
       "label": "Bullets()",
@@ -2843,7 +3257,7 @@
       "file_type": "document",
       "source_file": "demo/01.md",
       "source_location": "L1",
-      "community": 18,
+      "community": 25,
       "norm_label": "01.md",
       "id": "demo_01_md"
     },
@@ -2852,7 +3266,7 @@
       "file_type": "code",
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L92",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generateslidesfromoutline()",
       "id": "ai_ai_service_aiservice_generateslidesfromoutline"
     }
@@ -3939,9 +4353,9 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ai_types_slide_content_ts",
-      "target": "types_slide_content_elementstyle",
-      "confidence_score": 1.0
+      "target": "types_slide_content_elementstyle"
     },
     {
       "relation": "contains",
@@ -3949,9 +4363,9 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ai_types_slide_content_ts",
-      "target": "types_slide_content_slideelement",
-      "confidence_score": 1.0
+      "target": "types_slide_content_slideelement"
     },
     {
       "relation": "contains",
@@ -4074,9 +4488,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "api_src_ai_types_slide_content_ts",
-      "confidence_score": 1.0
+      "target": "api_src_ai_types_slide_content_ts"
     },
     {
       "relation": "imports_from",
@@ -4151,9 +4565,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "types_slide_content_slideelement",
-      "confidence_score": 1.0
+      "target": "types_slide_content_slideelement"
     },
     {
       "relation": "imports",
@@ -5018,6 +5432,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "api/src/ppt/ppt.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "ppt_ppt_service_pptservice_savebuffer",
+      "target": "hooks_usehistory_resolve"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/src/ppt/ppt.service.ts",
@@ -5082,9 +5507,9 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_dto_presentation_content_dto_ts",
-      "target": "dto_presentation_content_dto_elementstyledto",
-      "confidence_score": 1.0
+      "target": "dto_presentation_content_dto_elementstyledto"
     },
     {
       "relation": "contains",
@@ -5092,9 +5517,9 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_dto_presentation_content_dto_ts",
-      "target": "dto_presentation_content_dto_slideelementdto",
-      "confidence_score": 1.0
+      "target": "dto_presentation_content_dto_slideelementdto"
     },
     {
       "relation": "contains",
@@ -5209,9 +5634,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "api_src_ppt_layouts_helpers_ts",
-      "confidence_score": 1.0
+      "target": "api_src_ppt_layouts_helpers_ts"
     },
     {
       "relation": "imports",
@@ -5220,9 +5645,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "layouts_helpers_addbullets",
-      "confidence_score": 1.0
+      "target": "layouts_helpers_addbullets"
     },
     {
       "relation": "imports",
@@ -5231,9 +5656,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "layouts_helpers_layoutcontext",
-      "confidence_score": 1.0
+      "target": "layouts_helpers_layoutcontext"
     },
     {
       "relation": "contains",
@@ -5241,9 +5666,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "layouts_freeform_layout_toinches",
-      "confidence_score": 1.0
+      "target": "layouts_freeform_layout_toinches"
     },
     {
       "relation": "contains",
@@ -5251,9 +5676,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_freeform_layout_ts",
-      "target": "layouts_freeform_layout_renderfreeform",
-      "confidence_score": 1.0
+      "target": "layouts_freeform_layout_renderfreeform"
     },
     {
       "relation": "imports_from",
@@ -5262,9 +5687,9 @@
       "source_file": "api/src/ppt/layouts/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_index_ts",
-      "target": "api_src_ppt_layouts_freeform_layout_ts",
-      "confidence_score": 1.0
+      "target": "api_src_ppt_layouts_freeform_layout_ts"
     },
     {
       "relation": "calls",
@@ -5273,9 +5698,9 @@
       "source_file": "api/src/ppt/layouts/freeform.layout.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "layouts_freeform_layout_renderfreeform",
-      "target": "layouts_freeform_layout_toinches",
-      "confidence_score": 1.0
+      "target": "layouts_freeform_layout_toinches"
     },
     {
       "relation": "imports",
@@ -5284,9 +5709,9 @@
       "source_file": "api/src/ppt/layouts/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_src_ppt_layouts_index_ts",
-      "target": "layouts_freeform_layout_renderfreeform",
-      "confidence_score": 1.0
+      "target": "layouts_freeform_layout_renderfreeform"
     },
     {
       "relation": "calls",
@@ -5935,6 +6360,17 @@
       "target": "types_presentation_slidecontent"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "types_presentation_slideelement"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6007,9 +6443,9 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_app_tsx",
-      "target": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "confidence_score": 1.0
+      "target": "client_src_components_freeformcanvas_freeformcanvas_tsx"
     },
     {
       "relation": "imports",
@@ -6018,20 +6454,9 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_app_tsx",
-      "target": "freeformcanvas_freeformcanvas_freeformcanvas",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "client_src_components_elementinspector_elementinspector_tsx",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_freeformcanvas_freeformcanvas"
     },
     {
       "relation": "imports",
@@ -6040,9 +6465,239 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_app_tsx",
-      "target": "elementinspector_elementinspector_elementinspector",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_freeformcanvas_freeformcanvashandle"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_components_elementinspector_elementinspector_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "elementinspector_elementinspector_elementinspector"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_components_ribbon_ribbon_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "ribbon_ribbon_ribbon"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "ribbon_ribbon_ribbontab"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_components_presentationmode_presentationmode_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "presentationmode_presentationmode_presentationmode"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_hooks_usehistory_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "hooks_usehistory_usehistory"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_hooks_uselocaldraft_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "hooks_uselocaldraft_cleardraft"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "hooks_uselocaldraft_restoredraftonmount"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "hooks_uselocaldraft_uselocaldraft"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_utils_slide_elements_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_ensurepresentationelements"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_ensureslideelements"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_syncslidefromelements"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_utils_editor_utils_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_editor_utils_duplicateelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_main_tsx",
+      "target": "client_src_app_tsx"
     },
     {
       "relation": "imports_from",
@@ -6065,71 +6720,6 @@
       "confidence_score": 1.0,
       "source": "client_src_app_tsx",
       "target": "generatepanel_generatepanel_generatepanel"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "client_src_utils_slide_elements_ts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "utils_slide_elements_ensurepresentationelements",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "utils_slide_elements_ensureslideelements",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "utils_slide_elements_syncslidefromelements",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/App.tsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_app_tsx",
-      "target": "src_app_app"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/main.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_main_tsx",
-      "target": "client_src_app_tsx"
     },
     {
       "relation": "imports_from",
@@ -6174,6 +6764,61 @@
       "confidence_score": 1.0,
       "source": "client_src_app_tsx",
       "target": "slideeditor_slideeditor_slideeditor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/App.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_uselocaldraft_restoredraftonmount"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/App.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_usehistory_usehistory"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/App.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "utils_slide_elements_ensurepresentationelements"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/App.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "types_presentation_createemptypresentation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/App.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_uselocaldraft_uselocaldraft"
     },
     {
       "relation": "contains",
@@ -6241,9 +6886,19 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_types_presentation_ts",
-      "target": "types_presentation_elementstyle",
-      "confidence_score": 1.0
+      "target": "types_presentation_elementstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/types/presentation.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_types_presentation_ts",
+      "target": "types_presentation_slideelementtype"
     },
     {
       "relation": "contains",
@@ -6251,9 +6906,9 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_types_presentation_ts",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "contains",
@@ -6319,12 +6974,23 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -6352,12 +7018,23 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -6366,9 +7043,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -6396,6 +7073,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/api/ppt.ts",
       "source_location": "L1",
       "weight": 1.0,
@@ -6410,9 +7098,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "types_presentation_slidelayout",
-      "confidence_score": 1.0
+      "target": "types_presentation_slidelayout"
     },
     {
       "relation": "imports",
@@ -6440,17 +7128,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "types_presentation_layout_labels",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
       "source_location": "L1",
       "weight": 1.0,
@@ -6462,12 +7139,23 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "types_presentation_layout_labels"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "types_presentation_presentationtheme",
-      "confidence_score": 1.0
+      "target": "types_presentation_presentationtheme"
     },
     {
       "relation": "imports",
@@ -6484,12 +7172,23 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_elementinspector_elementinspector_tsx",
+      "target": "types_presentation_presentationtheme"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "types_presentation_presentationtheme",
-      "confidence_score": 1.0
+      "target": "types_presentation_presentationtheme"
     },
     {
       "relation": "imports",
@@ -6509,9 +7208,20 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "types_presentation_elementstyle",
-      "confidence_score": 1.0
+      "target": "types_presentation_elementstyle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -6520,9 +7230,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -6531,9 +7241,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -6542,9 +7252,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -6553,9 +7263,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "types_presentation_slidecontent",
-      "confidence_score": 1.0
+      "target": "types_presentation_slidecontent"
     },
     {
       "relation": "imports",
@@ -6575,9 +7285,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "types_presentation_slidecontent",
-      "confidence_score": 1.0
+      "target": "types_presentation_slidecontent"
     },
     {
       "relation": "imports",
@@ -6586,9 +7296,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "types_presentation_slidecontent",
-      "confidence_score": 1.0
+      "target": "types_presentation_slidecontent"
     },
     {
       "relation": "imports",
@@ -6619,9 +7329,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "types_presentation_presentationcontent",
-      "confidence_score": 1.0
+      "target": "types_presentation_presentationcontent"
     },
     {
       "relation": "imports",
@@ -6632,6 +7342,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "types_presentation_presentationcontent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "types_presentation_presentationcontent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
       "target": "types_presentation_presentationcontent"
     },
     {
@@ -6657,6 +7389,17 @@
       "target": "types_presentation_mergetheme"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "types_presentation_mergetheme"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -6670,12 +7413,191 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_snap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_alignelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_alignelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_groupelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_getelementsbounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_expandgroupselection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_duplicateelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/editor-utils.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_editor_utils_ts",
+      "target": "utils_editor_utils_readimagefile"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_elementinspector_elementinspector_tsx",
+      "target": "client_src_utils_editor_utils_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "client_src_utils_editor_utils_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_editor_utils_snap"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_elementinspector_elementinspector_tsx",
+      "target": "utils_editor_utils_alignelement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_editor_utils_alignelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_editor_utils_groupelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_editor_utils_getelementsbounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_editor_utils_expandgroupselection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_elementinspector_elementinspector_tsx",
+      "target": "utils_editor_utils_readimagefile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "contains",
@@ -6683,9 +7605,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_createtextelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createtextelement"
     },
     {
       "relation": "contains",
@@ -6693,9 +7615,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_createimageelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createimageelement"
     },
     {
       "relation": "contains",
@@ -6703,9 +7625,19 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_textel",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createshapeelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_slide_elements_ts",
+      "target": "utils_slide_elements_textel"
     },
     {
       "relation": "contains",
@@ -6713,9 +7645,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_imgel",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_imgel"
     },
     {
       "relation": "contains",
@@ -6723,9 +7655,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_layouttoelements",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_layouttoelements"
     },
     {
       "relation": "contains",
@@ -6733,9 +7665,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_ensureslideelements",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_ensureslideelements"
     },
     {
       "relation": "contains",
@@ -6743,9 +7675,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_ensurepresentationelements",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_ensurepresentationelements"
     },
     {
       "relation": "contains",
@@ -6753,9 +7685,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_syncslidefromelements",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_syncslidefromelements"
     },
     {
       "relation": "contains",
@@ -6763,9 +7695,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L309",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
-      "target": "utils_slide_elements_clamp",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_clamp"
     },
     {
       "relation": "imports_from",
@@ -6774,9 +7706,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "client_src_utils_slide_elements_ts",
-      "confidence_score": 1.0
+      "target": "client_src_utils_slide_elements_ts"
     },
     {
       "relation": "imports_from",
@@ -6785,9 +7717,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "client_src_utils_slide_elements_ts",
-      "confidence_score": 1.0
+      "target": "client_src_utils_slide_elements_ts"
     },
     {
       "relation": "calls",
@@ -6796,9 +7728,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_createtextelement",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "calls",
@@ -6807,9 +7739,20 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_createimageelement",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_slide_elements_createshapeelement",
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "calls",
@@ -6818,9 +7761,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_textel",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "calls",
@@ -6829,9 +7772,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_imgel",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "calls",
@@ -6840,9 +7783,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_layouttoelements",
-      "target": "utils_slide_elements_newelementid",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_newelementid"
     },
     {
       "relation": "imports",
@@ -6851,9 +7794,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "utils_slide_elements_createtextelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createtextelement"
     },
     {
       "relation": "imports",
@@ -6862,9 +7805,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "utils_slide_elements_createtextelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createtextelement"
     },
     {
       "relation": "imports",
@@ -6873,9 +7816,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "utils_slide_elements_createimageelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createimageelement"
     },
     {
       "relation": "imports",
@@ -6884,9 +7827,31 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "utils_slide_elements_createimageelement",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_createimageelement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_elementinspector_elementinspector_tsx",
+      "target": "utils_slide_elements_createshapeelement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "utils_slide_elements_createshapeelement"
     },
     {
       "relation": "calls",
@@ -6895,9 +7860,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_layouttoelements",
-      "target": "utils_slide_elements_textel",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_textel"
     },
     {
       "relation": "calls",
@@ -6906,9 +7871,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_layouttoelements",
-      "target": "utils_slide_elements_imgel",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_imgel"
     },
     {
       "relation": "calls",
@@ -6917,9 +7882,9 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_slide_elements_ensureslideelements",
-      "target": "utils_slide_elements_layouttoelements",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_layouttoelements"
     },
     {
       "relation": "imports",
@@ -6928,9 +7893,31 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "utils_slide_elements_clamp",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "freeformcanvas_freeformcanvas_clienttocanvaspct",
+      "target": "utils_slide_elements_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "freeformcanvas_freeformcanvas_rectfromdrag",
+      "target": "utils_slide_elements_clamp"
     },
     {
       "relation": "contains",
@@ -7044,19 +8031,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slidelist_resolvelayout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slidelist_minipreviewfromelements",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_resolvelayout"
     },
     {
       "relation": "contains",
@@ -7064,9 +8041,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slidelist_minipreview",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_minipreview"
     },
     {
       "relation": "contains",
@@ -7077,6 +8054,16 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
       "target": "slidelist_slidelist_slidelist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slidelist_minipreviewfromelements"
     },
     {
       "relation": "imports_from",
@@ -7107,9 +8094,51 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "slidelist_slidelist_minipreview",
-      "target": "slidelist_slidelist_resolvelayout",
-      "confidence_score": 1.0
+      "target": "slidelist_slidelist_resolvelayout"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "client_src_components_freeformcanvas_freeformcanvas_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "freeformcanvas_freeformcanvas_freeformcanvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "presentationmode_presentationmode_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "presentationmode_presentationmode_presentationmode"
     },
     {
       "relation": "contains",
@@ -7117,9 +8146,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "elementinspector_elementinspector_props",
-      "confidence_score": 1.0
+      "target": "elementinspector_elementinspector_props"
     },
     {
       "relation": "contains",
@@ -7127,9 +8156,9 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_elementinspector_elementinspector_tsx",
-      "target": "elementinspector_elementinspector_elementinspector",
-      "confidence_score": 1.0
+      "target": "elementinspector_elementinspector_elementinspector"
     },
     {
       "relation": "contains",
@@ -7152,14 +8181,58 @@
       "target": "generatepanel_generatepanel_generatepanel"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "client_src_components_generatepanel_generatepanel_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "generatepanel_generatepanel_generatepanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L10",
       "weight": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_resizehandle",
+      "target": "client_src_components_freeformcanvas_selectiontoolbar_tsx",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_selectiontoolbar_selectiontoolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_resizehandle"
     },
     {
       "relation": "contains",
@@ -7167,9 +8240,19 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_props",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_freeformcanvas_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_freeformcanvashandle"
     },
     {
       "relation": "contains",
@@ -7177,9 +8260,99 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_dragstate",
+      "target": "freeformcanvas_freeformcanvas_dragstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_shapedrawstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_marqueestate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_clickclearstate",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_selectionmenustate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_clienttocanvaspct"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_rectfrompoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_rectsintersect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_isselectableelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_rectfromdrag"
     },
     {
       "relation": "contains",
@@ -7187,9 +8360,39 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_rendertextcontent",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_freeformcanvas_rendertextcontent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_elementtransform"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_sortelements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_canvaselement"
     },
     {
       "relation": "contains",
@@ -7197,9 +8400,90 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_freeformcanvas",
+      "target": "freeformcanvas_freeformcanvas_freeformcanvas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L214",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "freeformcanvas_freeformcanvas_freeformcanvas",
+      "target": "freeformcanvas_freeformcanvas_sortelements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/SelectionToolbar.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_selectiontoolbar_tsx",
+      "target": "freeformcanvas_selectiontoolbar_props",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/SelectionToolbar.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_selectiontoolbar_tsx",
+      "target": "freeformcanvas_selectiontoolbar_selectiontoolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "ribbon_ribbon_ribbontab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "ribbon_ribbon_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "ribbon_ribbon_group"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "ribbon_ribbon_tool"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/Ribbon/Ribbon.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_ribbon_ribbon_tsx",
+      "target": "ribbon_ribbon_ribbon"
     },
     {
       "relation": "imports_from",
@@ -7208,9 +8492,9 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "client_src_components_slidecanvas_editablefield_tsx",
-      "confidence_score": 1.0
+      "target": "client_src_components_slidecanvas_editablefield_tsx"
     },
     {
       "relation": "imports",
@@ -7219,9 +8503,9 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_editablefield_editabletext",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editabletext"
     },
     {
       "relation": "imports",
@@ -7230,9 +8514,9 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_editablefield_editablebullets",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editablebullets"
     },
     {
       "relation": "contains",
@@ -7250,9 +8534,9 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_tonumbers",
-      "confidence_score": 1.0
+      "target": "slidecanvas_slidecanvas_tonumbers"
     },
     {
       "relation": "contains",
@@ -7291,9 +8575,9 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "slidecanvas_slidecanvas_chartpreview",
-      "target": "slidecanvas_slidecanvas_tonumbers",
-      "confidence_score": 1.0
+      "target": "slidecanvas_slidecanvas_tonumbers"
     },
     {
       "relation": "contains",
@@ -7301,9 +8585,9 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editabletextprops",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editabletextprops"
     },
     {
       "relation": "contains",
@@ -7311,9 +8595,9 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editabletext",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editabletext"
     },
     {
       "relation": "contains",
@@ -7321,9 +8605,9 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editablebulletsprops",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editablebulletsprops"
     },
     {
       "relation": "contains",
@@ -7331,9 +8615,9 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editablebullets",
-      "confidence_score": 1.0
+      "target": "slidecanvas_editablefield_editablebullets"
     },
     {
       "relation": "contains",
@@ -7364,6 +8648,97 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slideeditor_slideeditor_tsx",
       "target": "slideeditor_slideeditor_slideeditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_usehistory_ts",
+      "target": "hooks_usehistory_updater"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_usehistory_ts",
+      "target": "hooks_usehistory_resolve"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useHistory.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_usehistory_ts",
+      "target": "hooks_usehistory_usehistory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "hooks_uselocaldraft_savedraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "hooks_uselocaldraft_loaddraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "hooks_uselocaldraft_cleardraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "hooks_uselocaldraft_uselocaldraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_hooks_uselocaldraft_ts",
+      "target": "hooks_uselocaldraft_restoredraftonmount"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/hooks/useLocalDraft.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hooks_uselocaldraft_restoredraftonmount",
+      "target": "hooks_uselocaldraft_loaddraft"
     },
     {
       "relation": "contains",
@@ -8457,5 +9832,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "964d0a6de590037294d8f16f7e5757029a9661fb"
+  "built_at_commit": "90a399088598c8ec18e6e83468741ab868ce23d7"
 }

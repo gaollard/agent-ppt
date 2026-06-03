@@ -36,11 +36,16 @@ class ElementStyleDto {
   @IsOptional() @IsIn(['left', 'center', 'right']) align?: 'left' | 'center' | 'right';
   @IsOptional() @IsBoolean() bullets?: boolean;
   @IsOptional() @IsString() background?: string;
+  @IsOptional() @IsIn(['rect', 'ellipse']) shapeKind?: 'rect' | 'ellipse';
+  @IsOptional() @IsString() fill?: string;
+  @IsOptional() @IsString() borderColor?: string;
+  @IsOptional() @IsNumber() borderWidth?: number;
+  @IsOptional() @IsNumber() opacity?: number;
 }
 
 class SlideElementDto {
   @IsString() id!: string;
-  @IsIn(['text', 'image']) type!: 'text' | 'image';
+  @IsIn(['text', 'image', 'shape']) type!: 'text' | 'image' | 'shape';
   @IsNumber() x!: number;
   @IsNumber() y!: number;
   @IsNumber() w!: number;
@@ -49,6 +54,8 @@ class SlideElementDto {
   @IsOptional() @ValidateNested() @Type(() => ElementStyleDto) style?: ElementStyleDto;
   @IsOptional() @IsString() imagePath?: string;
   @IsOptional() @IsNumber() zIndex?: number;
+  @IsOptional() @IsBoolean() locked?: boolean;
+  @IsOptional() @IsNumber() rotation?: number;
 }
 
 class SlideDto {
@@ -59,6 +66,9 @@ class SlideDto {
   @IsOptional() @IsString() imagePath?: string;
   @IsOptional() @ValidateNested() @Type(() => ColumnDto) columnB?: ColumnDto;
   @IsOptional() @ValidateNested() @Type(() => ChartDto) chart?: ChartDto;
+  @IsOptional() @IsString() backgroundColor?: string;
+  @IsOptional() @IsString() backgroundImage?: string;
+  @IsOptional() @IsString() notes?: string;
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })

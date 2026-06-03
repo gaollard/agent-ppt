@@ -1,0 +1,53 @@
+.presentation-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-mode-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.presentation-mode-stage .freeform-wrap {
+  max-width: min(1200px, 100%);
+}
+
+.presentation-mode-stage .freeform-toolbar {
+  display: none;
+}
+
+.presentation-mode-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #e2e8f0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.presentation-mode-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.presentation-mode-bar .btn-ghost {
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.presentation-mode-bar .btn-ghost:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.presentation-mode-bar .btn-ghost:disabled {
+  opacity: 0.35;
+}

@@ -38,6 +38,25 @@ export function createImageElement(
   };
 }
 
+export function createShapeElement(
+  shapeKind: 'rect' | 'ellipse',
+  partial: Partial<SlideElement> & Pick<SlideElement, 'x' | 'y' | 'w' | 'h'>,
+): SlideElement {
+  return {
+    id: newElementId(),
+    type: 'shape',
+    zIndex: 0,
+    style: {
+      shapeKind,
+      fill: '2F6F66',
+      borderColor: '1F2933',
+      borderWidth: 1,
+      opacity: 1,
+    },
+    ...partial,
+  };
+}
+
 function textEl(
   x: number,
   y: number,

@@ -1,48 +1,84 @@
 .freeform-wrap {
-  width: 100%;
-  max-width: 960px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  width: min(960px, 100%);
 }
 
-.freeform-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-}
-
-.freeform-toolbar-hint {
-  margin-left: auto;
-  font-size: 0.6875rem;
-  color: #94a3b8;
+.freeform-zoom-wrap {
+  transform-origin: center center;
 }
 
 .freeform-canvas {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow:
-    0 1px 3px rgba(15, 23, 42, 0.08),
-    0 8px 24px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   user-select: none;
+  background-color: #fff;
+}
+
+.freeform-canvas--snap {
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
   background-size: 5% 5%;
+}
+
+.freeform-canvas--dragging {
+  cursor: grabbing;
+}
+
+.freeform-canvas--dragging .freeform-el {
+  cursor: grabbing;
+}
+
+.freeform-canvas--shape-tool {
+  cursor: crosshair;
+}
+
+.freeform-canvas--shape-tool .freeform-el {
+  cursor: crosshair;
+}
+
+.freeform-canvas--drawing-shape {
+  cursor: crosshair;
+}
+
+.freeform-shape-preview {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px dashed #e07a3a;
+  background: rgba(224, 122, 58, 0.12);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.freeform-shape-preview--ellipse {
+  border-radius: 50%;
+}
+
+.freeform-marquee {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid #e07a3a;
+  background: rgba(224, 122, 58, 0.1);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+.freeform-canvas--marquee {
+  cursor: crosshair;
 }
 
 .freeform-el {
   position: absolute;
   box-sizing: border-box;
+  touch-action: none;
 }
 
 .freeform-el--text {
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 4px 6px;
   overflow: hidden;
 }
@@ -52,14 +88,32 @@
 }
 
 .freeform-el--selected {
-  border-color: #2f6f66 !important;
-  box-shadow: 0 0 0 1px #2f6f66;
+  border-color: #e07a3a !important;
+  box-shadow: 0 0 0 1px #e07a3a;
 }
 
 .freeform-el--bg {
   padding: 0;
   border: none !important;
   box-shadow: none !important;
+  pointer-events: none;
+}
+
+.freeform-el--locked {
+  cursor: not-allowed;
+}
+
+.freeform-el--shape {
+  box-sizing: border-box;
+}
+
+.freeform-lock-badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.625rem;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .freeform-el--image img {
@@ -67,7 +121,6 @@
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-  border-radius: 4px;
 }
 
 .freeform-image-placeholder {
@@ -78,7 +131,6 @@
   background: #e2e8f0;
   color: #64748b;
   font-size: 0.75rem;
-  border-radius: 4px;
 }
 
 .freeform-text-display,
@@ -114,15 +166,19 @@
 
 .freeform-handle {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #fff;
-  border: 2px solid #2f6f66;
-  border-radius: 2px;
+  border: 2px solid #e07a3a;
+  border-radius: 1px;
   z-index: 10;
 }
 
-.freeform-handle--nw { top: -5px; left: -5px; cursor: nwse-resize; }
-.freeform-handle--ne { top: -5px; right: -5px; cursor: nesw-resize; }
-.freeform-handle--sw { bottom: -5px; left: -5px; cursor: nesw-resize; }
-.freeform-handle--se { bottom: -5px; right: -5px; cursor: nwse-resize; }
+.freeform-handle--nw { top: -4px; left: -4px; cursor: nwse-resize; }
+.freeform-handle--ne { top: -4px; right: -4px; cursor: nesw-resize; }
+.freeform-handle--sw { bottom: -4px; left: -4px; cursor: nesw-resize; }
+.freeform-handle--se { bottom: -4px; right: -4px; cursor: nwse-resize; }
+
+.freeform-toolbar {
+  display: none;
+}
