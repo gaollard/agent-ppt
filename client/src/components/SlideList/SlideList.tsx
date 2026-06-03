@@ -20,6 +20,38 @@ function resolveLayout(slide: SlideContent, index: number): SlideLayout {
   return slide.layout ?? (index === 0 ? 'cover' : 'title-bullets');
 }
 
+function MiniPreviewFromElements({
+  slide,
+  background,
+}: {
+  slide: SlideContent;
+  background: string;
+}) {
+  const elements = slide.elements ?? [];
+  if (!elements.length) return null;
+
+  return (
+    <div className="mini-preview mini-preview--elements" style={{ background: `#${background}` }}>
+      {elements.map((el) => (
+        <div
+          key={el.id}
+          className={`mini-el mini-el--${el.type}`}
+          style={{
+            left: `${el.x}%`,
+            top: `${el.y}%`,
+            width: `${el.w}%`,
+            height: `${el.h}%`,
+            background: el.style?.background ? `#${el.style.background}` : undefined,
+            zIndex: el.zIndex,
+          }}
+        >
+          {el.type === 'image' && el.imagePath && <img src={el.imagePath} alt="" />}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function MiniPreview({
   slide,
   index,
@@ -33,6 +65,10 @@ function MiniPreview({
   accent: string;
   background: string;
 }) {
+  if (slide.elements?.length) {
+    return <MiniPreviewFromElements slide={slide} background={background} />;
+  }
+
   const layout = resolveLayout(slide, index);
   const title = slide.title || `幻灯片 ${index + 1}`;
 

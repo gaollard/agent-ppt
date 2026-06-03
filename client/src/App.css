@@ -180,10 +180,18 @@
 }
 
 .preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 12px;
   font-size: 0.75rem;
   color: #64748b;
   font-weight: 500;
+}
+
+.preview-hint {
+  font-weight: 400;
+  color: #94a3b8;
 }
 
 .preview-stage {

@@ -1,6 +1,7 @@
 import { Type } from 'class-transformer';
 import {
   IsArray,
+  IsBoolean,
   IsIn,
   IsNumber,
   IsOptional,
@@ -28,6 +29,28 @@ class ColumnDto {
   @IsArray() @IsString({ each: true }) bullets!: string[];
 }
 
+class ElementStyleDto {
+  @IsOptional() @IsNumber() fontSize?: number;
+  @IsOptional() @IsIn(['normal', 'bold']) fontWeight?: 'normal' | 'bold';
+  @IsOptional() @IsString() color?: string;
+  @IsOptional() @IsIn(['left', 'center', 'right']) align?: 'left' | 'center' | 'right';
+  @IsOptional() @IsBoolean() bullets?: boolean;
+  @IsOptional() @IsString() background?: string;
+}
+
+class SlideElementDto {
+  @IsString() id!: string;
+  @IsIn(['text', 'image']) type!: 'text' | 'image';
+  @IsNumber() x!: number;
+  @IsNumber() y!: number;
+  @IsNumber() w!: number;
+  @IsNumber() h!: number;
+  @IsOptional() @IsString() content?: string;
+  @IsOptional() @ValidateNested() @Type(() => ElementStyleDto) style?: ElementStyleDto;
+  @IsOptional() @IsString() imagePath?: string;
+  @IsOptional() @IsNumber() zIndex?: number;
+}
+
 class SlideDto {
   @IsString() @MinLength(1) title!: string;
   @IsArray() @IsString({ each: true }) bullets!: string[];
@@ -36,6 +59,11 @@ class SlideDto {
   @IsOptional() @IsString() imagePath?: string;
   @IsOptional() @ValidateNested() @Type(() => ColumnDto) columnB?: ColumnDto;
   @IsOptional() @ValidateNested() @Type(() => ChartDto) chart?: ChartDto;
+  @IsOptional()
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => SlideElementDto)
+  elements?: SlideElementDto[];
 }
 
 export class PresentationContentDto {

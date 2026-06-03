@@ -8,14 +8,22 @@ import {
 } from './types/presentation';
 import { generateContent, exportPptx, downloadBlob } from './api/ppt';
 import { SlideList } from './components/SlideList/SlideList';
-import { SlideCanvas } from './components/SlideCanvas/SlideCanvas';
-import { SlideEditor } from './components/SlideEditor/SlideEditor';
+import { FreeformCanvas } from './components/FreeformCanvas/FreeformCanvas';
+import { ElementInspector } from './components/ElementInspector/ElementInspector';
 import { GeneratePanel } from './components/GeneratePanel/GeneratePanel';
+import {
+  ensurePresentationElements,
+  ensureSlideElements,
+  syncSlideFromElements,
+} from './utils/slide-elements';
 import './App.css';
 
 export default function App() {
-  const [content, setContent] = useState<PresentationContent>(createEmptyPresentation);
+  const [content, setContent] = useState<PresentationContent>(() =>
+    ensurePresentationElements(createEmptyPresentation()),
+  );
   const [activeIndex, setActiveIndex] = useState(0);
+  const [selectedElementId, setSelectedElementId] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -23,24 +31,22 @@ export default function App() {
   const theme = mergeTheme(content.theme);
   const activeSlide = content.slides[activeIndex];
 
-  const updateSlide = useCallback(
-    (index: number, slide: SlideContent) => {
-      setContent((prev) => {
-        const slides = [...prev.slides];
-        slides[index] = slide;
-        return { ...prev, slides };
-      });
-    },
-    [],
-  );
+  const updateSlide = useCallback((index: number, slide: SlideContent) => {
+    setContent((prev) => {
+      const slides = [...prev.slides];
+      slides[index] = syncSlideFromElements(slide);
+      return { ...prev, slides };
+    });
+  }, []);
 
   const handleGenerate = async (topic: string, slideCount: number) => {
     setLoading(true);
     setError(null);
     try {
       const result = await generateContent(topic, slideCount);
-      setContent(result);
+      setContent(ensurePresentationElements(result));
       setActiveIndex(0);
+      setSelectedElementId(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : '生成失败');
     } finally {
@@ -52,7 +58,8 @@ export default function App() {
     setExporting(true);
     setError(null);
     try {
-      const blob = await exportPptx(content);
+      const exportContent = ensurePresentationElements(content);
+      const blob = await exportPptx(exportContent);
       const safeName = content.title.replace(/[^\w\u4e00-\u9fff\-]+/g, '_') || 'presentation';
       downloadBlob(blob, `${safeName}.pptx`);
     } catch (e) {
@@ -70,6 +77,7 @@ export default function App() {
       return { ...prev, slides };
     });
     setActiveIndex(to);
+    setSelectedElementId(null);
   };
 
   const handleDelete = (index: number) => {
@@ -78,14 +86,30 @@ export default function App() {
       slides: prev.slides.filter((_, i) => i !== index),
     }));
     setActiveIndex((i) => Math.max(0, Math.min(i, content.slides.length - 2)));
+    setSelectedElementId(null);
   };
 
   const handleAdd = () => {
-    setContent((prev) => ({
-      ...prev,
-      slides: [...prev.slides, createEmptySlide(prev.slides.length)],
-    }));
+    setContent((prev) => {
+      const slide = ensureSlideElements(
+        createEmptySlide(prev.slides.length),
+        mergeTheme(prev.theme),
+        prev.slides.length,
+      );
+      return { ...prev, slides: [...prev.slides, slide] };
+    });
     setActiveIndex(content.slides.length);
+    setSelectedElementId(null);
+  };
+
+  const handleSelectSlide = (index: number) => {
+    setActiveIndex(index);
+    setSelectedElementId(null);
+    setContent((prev) => {
+      const slides = [...prev.slides];
+      slides[index] = ensureSlideElements(slides[index], mergeTheme(prev.theme), index);
+      return { ...prev, slides };
+    });
   };
 
   return (
@@ -134,7 +158,7 @@ export default function App() {
         <SlideList
           content={content}
           activeIndex={activeIndex}
-          onSelect={setActiveIndex}
+          onSelect={handleSelectSlide}
           onReorder={handleReorder}
           onDelete={handleDelete}
           onAdd={handleAdd}
@@ -143,15 +167,18 @@ export default function App() {
         <section className="preview-pane">
           <div className="preview-toolbar">
             <span>
-              预览 · {activeIndex + 1} / {content.slides.length}
+              编辑 · {activeIndex + 1} / {content.slides.length}
             </span>
+            <span className="preview-hint">自由拖拽 · 角点缩放 · 双击编辑文本</span>
           </div>
           <div className="preview-stage">
             {activeSlide && (
-              <SlideCanvas
+              <FreeformCanvas
                 slide={activeSlide}
-                index={activeIndex}
                 theme={theme}
+                selectedId={selectedElementId}
+                onSelect={setSelectedElementId}
+                onChange={(s) => updateSlide(activeIndex, s)}
               />
             )}
           </div>
@@ -159,10 +186,11 @@ export default function App() {
 
         <aside className="editor-pane">
           {activeSlide && (
-            <SlideEditor
+            <ElementInspector
               slide={activeSlide}
-              index={activeIndex}
+              selectedId={selectedElementId}
               onChange={(s) => updateSlide(activeIndex, s)}
+              onSelect={setSelectedElementId}
             />
           )}
         </aside>

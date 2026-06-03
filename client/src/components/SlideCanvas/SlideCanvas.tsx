@@ -1,5 +1,6 @@
 import type { SlideContent, PresentationTheme } from '../../types/presentation';
 import { hexColor, themeVars, effectiveLayout } from '../slide-utils';
+import { EditableText, EditableBullets } from './EditableField';
 import './slide.css';
 
 interface Props {
@@ -7,17 +8,8 @@ interface Props {
   index: number;
   theme: PresentationTheme;
   compact?: boolean;
-}
-
-function Bullets({ items, color }: { items: string[]; color: string }) {
-  if (!items.length) return null;
-  return (
-    <ul className="slide-bullets" style={{ color: `#${color}` }}>
-      {items.map((b, i) => (
-        <li key={i}>{b}</li>
-      ))}
-    </ul>
-  );
+  editable?: boolean;
+  onChange?: (slide: SlideContent) => void;
 }
 
 function toNumbers(values: number[]): number[] {
@@ -164,7 +156,16 @@ function ChartPreview({
   );
 }
 
-export function SlideCanvas({ slide, index, theme, compact }: Props) {
+export function SlideCanvas({
+  slide,
+  index,
+  theme,
+  compact,
+  editable,
+  onChange,
+}: Props) {
+  const patch = (p: Partial<SlideContent>) => onChange?.({ ...slide, ...p });
+
   const hasImage = Boolean(slide.imagePath);
   const chartValues = slide.chart?.values?.map((v) => Number(v) || 0) ?? [];
   const chartLabels = slide.chart?.labels ?? [];
@@ -176,7 +177,13 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
   const hasColumnB = Boolean(slide.columnB?.bullets?.length);
   const layout = effectiveLayout(slide.layout, index, hasImage, hasChart, hasColumnB);
 
-  const cls = ['slide-canvas', compact && 'slide-canvas--compact'].filter(Boolean).join(' ');
+  const cls = [
+    'slide-canvas',
+    compact && 'slide-canvas--compact',
+    editable && 'slide-canvas--editable',
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   if (layout === 'cover') {
     return (
@@ -193,8 +200,24 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
           <div className="slide-cover-solid" style={{ background: `#${theme.primary}` }} />
         )}
         <div className="slide-cover-content">
-          <h1>{slide.title}</h1>
-          {slide.bullets[0] && <p>{slide.bullets[0]}</p>}
+          <EditableText
+            tag="h1"
+            value={slide.title}
+            editable={editable}
+            placeholder="演示标题"
+            onChange={(title) => patch({ title })}
+          />
+          <EditableText
+            tag="p"
+            value={slide.bullets[0] ?? ''}
+            editable={editable}
+            placeholder="副标题"
+            onChange={(subtitle) =>
+              patch({
+                bullets: [subtitle, ...slide.bullets.slice(1)],
+              })
+            }
+          />
         </div>
       </div>
     );
@@ -215,8 +238,22 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
           <div className="slide-cover-solid" style={{ background: `#${theme.primary}` }} />
         )}
         <div className="slide-full-caption">
-          <h2>{slide.title}</h2>
-          {slide.bullets[0] && <p>{slide.bullets[0]}</p>}
+          <EditableText
+            tag="h2"
+            className="slide-full-caption-title"
+            value={slide.title}
+            editable={editable}
+            onChange={(title) => patch({ title })}
+          />
+          <EditableText
+            tag="p"
+            value={slide.bullets[0] ?? ''}
+            editable={editable}
+            placeholder="说明文字"
+            onChange={(subtitle) =>
+              patch({ bullets: [subtitle, ...slide.bullets.slice(1)] })
+            }
+          />
         </div>
       </div>
     );
@@ -226,7 +263,13 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
     const imageFirst = layout === 'image-left';
     return (
       <div className={`${cls} slide-split`} style={themeVars(theme)}>
-        <h2 className="slide-split-title">{slide.title}</h2>
+        <EditableText
+          tag="h2"
+          className="slide-split-title"
+          value={slide.title}
+          editable={editable}
+          onChange={(title) => patch({ title })}
+        />
         <div className={`slide-split-body ${imageFirst ? '' : 'slide-split-body--reverse'}`}>
           <div className="slide-split-image">
             {hasImage ? (
@@ -236,7 +279,12 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
             )}
           </div>
           <div className="slide-split-text">
-            <Bullets items={slide.bullets} color={theme.text} />
+            <EditableBullets
+              items={slide.bullets}
+              color={theme.text}
+              editable={editable}
+              onChange={(bullets) => patch({ bullets })}
+            />
           </div>
         </div>
       </div>
@@ -248,13 +296,37 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
       <div className={`${cls} slide-two-col`} style={themeVars(theme)}>
         <div className="slide-two-col-grid">
           <div>
-            <h2>{slide.title}</h2>
-            <Bullets items={slide.bullets} color={theme.text} />
+            <EditableText
+              tag="h2"
+              value={slide.title}
+              editable={editable}
+              onChange={(title) => patch({ title })}
+            />
+            <EditableBullets
+              items={slide.bullets}
+              color={theme.text}
+              editable={editable}
+              onChange={(bullets) => patch({ bullets })}
+            />
           </div>
           <div className="slide-two-col-divider" style={{ background: `#${theme.accent}` }} />
           <div>
-            <h2>{slide.columnB.title}</h2>
-            <Bullets items={slide.columnB.bullets} color={theme.text} />
+            <EditableText
+              tag="h2"
+              value={slide.columnB.title}
+              editable={editable}
+              onChange={(title) =>
+                patch({ columnB: { ...slide.columnB!, title } })
+              }
+            />
+            <EditableBullets
+              items={slide.columnB.bullets}
+              color={theme.text}
+              editable={editable}
+              onChange={(bullets) =>
+                patch({ columnB: { ...slide.columnB!, bullets } })
+              }
+            />
           </div>
         </div>
       </div>
@@ -264,22 +336,40 @@ export function SlideCanvas({ slide, index, theme, compact }: Props) {
   if (layout === 'chart' && slide.chart) {
     return (
       <div className={`${cls} slide-chart-layout`} style={themeVars(theme)}>
-        <h2>{slide.title}</h2>
+        <EditableText
+          tag="h2"
+          value={slide.title}
+          editable={editable}
+          onChange={(title) => patch({ title })}
+        />
         <ChartPreview
           labels={chartLabels}
           values={chartValues}
           type={slide.chart.type}
           theme={theme}
         />
+        {editable && (
+          <p className="slide-chart-hint">图表数据请在右侧面板编辑</p>
+        )}
       </div>
     );
   }
 
   return (
     <div className={`${cls} slide-bullets-layout`} style={themeVars(theme)}>
-      <h2>{slide.title}</h2>
+      <EditableText
+        tag="h2"
+        value={slide.title}
+        editable={editable}
+        onChange={(title) => patch({ title })}
+      />
       <div className="slide-card">
-        <Bullets items={slide.bullets} color={theme.text} />
+        <EditableBullets
+          items={slide.bullets}
+          color={theme.text}
+          editable={editable}
+          onChange={(bullets) => patch({ bullets })}
+        />
       </div>
     </div>
   );

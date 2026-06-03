@@ -26,8 +26,9 @@ function TextList({
       <label>{label}</label>
       {items.map((item, i) => (
         <div key={i} className="text-list-row">
-          <input
+          <textarea
             value={item}
+            rows={2}
             onChange={(e) => {
               const next = [...items];
               next[i] = e.target.value;

@@ -1,6 +1,7 @@
 import { SlideLayout } from '../../ai/types/slide-content';
 import { renderChart } from './chart.layout';
 import { renderCover } from './cover.layout';
+import { renderFreeform } from './freeform.layout';
 import { renderFullImage } from './full-image.layout';
 import { effectiveLayout, LayoutContext } from './helpers';
 import { renderImageLeft, renderImageRight } from './image-side.layout';
@@ -18,6 +19,10 @@ const renderers: Record<SlideLayout, (ctx: LayoutContext) => void> = {
 };
 
 export function renderSlide(ctx: LayoutContext): void {
+  if (ctx.slide.elements?.length) {
+    renderFreeform(ctx);
+    return;
+  }
   const layout = effectiveLayout(ctx);
   const fn = renderers[layout] ?? renderTitleBullets;
   fn(ctx);

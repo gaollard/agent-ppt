@@ -35,6 +35,28 @@ export interface SlideColumn {
   bullets: string[];
 }
 
+export interface ElementStyle {
+  fontSize?: number;
+  fontWeight?: 'normal' | 'bold';
+  color?: string;
+  align?: 'left' | 'center' | 'right';
+  bullets?: boolean;
+  background?: string;
+}
+
+export interface SlideElement {
+  id: string;
+  type: 'text' | 'image';
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  content?: string;
+  style?: ElementStyle;
+  imagePath?: string;
+  zIndex?: number;
+}
+
 export interface SlideContent {
   title: string;
   bullets: string[];
@@ -44,6 +66,7 @@ export interface SlideContent {
   columnB?: SlideColumn;
   chart?: SlideChart;
   iconKeywords?: string[];
+  elements?: SlideElement[];
 }
 
 export interface PresentationContent {
