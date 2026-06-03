@@ -1,0 +1,136 @@
+.slide-ctx-menu {
+  position: fixed;
+  z-index: 2000;
+  min-width: 220px;
+  padding: 6px 0;
+  background: #f7f7f7;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  font-size: 0.8125rem;
+  color: #333;
+  user-select: none;
+}
+
+.slide-ctx-icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px 6px;
+}
+
+.slide-ctx-icon-btn {
+  width: 32px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.slide-ctx-icon-btn:hover:not(:disabled) {
+  background: #ebebeb;
+}
+
+.slide-ctx-icon-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.slide-ctx-divider {
+  height: 1px;
+  margin: 4px 0;
+  background: #e0e0e0;
+}
+
+.slide-ctx-item {
+  display: grid;
+  grid-template-columns: 22px 1fr auto auto;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  padding: 6px 12px 6px 10px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.slide-ctx-item:hover:not(:disabled) {
+  background: #e8e8e8;
+}
+
+.slide-ctx-item:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.slide-ctx-item-icon {
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.slide-ctx-item-label {
+  white-space: nowrap;
+}
+
+.slide-ctx-item-shortcut {
+  font-size: 0.6875rem;
+  color: #888;
+  margin-left: 12px;
+}
+
+.slide-ctx-item-arrow {
+  font-size: 0.875rem;
+  color: #888;
+  margin-left: 4px;
+}
+
+.slide-ctx-submenu {
+  position: relative;
+}
+
+.slide-ctx-submenu-panel {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -4px;
+  min-width: 160px;
+  padding: 4px 0;
+  margin-left: 2px;
+  background: #f7f7f7;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.slide-ctx-submenu--open .slide-ctx-submenu-panel {
+  display: block;
+}
+
+.slide-ctx-subitem {
+  display: block;
+  width: 100%;
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.slide-ctx-subitem:hover {
+  background: #e8e8e8;
+}
+
+.slide-ctx-subitem--active {
+  color: #e07a3a;
+  font-weight: 600;
+}

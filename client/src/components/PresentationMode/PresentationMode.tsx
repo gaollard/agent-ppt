@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { PresentationContent } from '../../types/presentation';
 import { mergeTheme } from '../../types/presentation';
 import { FreeformCanvas } from '../FreeformCanvas/FreeformCanvas';
@@ -10,28 +10,35 @@ interface Props {
   onClose: () => void;
 }
 
+function visibleIndices(slides: PresentationContent['slides']) {
+  return slides.map((s, i) => (s.hidden ? -1 : i)).filter((i) => i >= 0);
+}
+
 export function PresentationMode({ content, startIndex = 0, onClose }: Props) {
-  const [index, setIndex] = useState(startIndex);
+  const indices = useMemo(() => visibleIndices(content.slides), [content.slides]);
+  const initialPos = Math.max(0, indices.indexOf(startIndex));
+  const [pos, setPos] = useState(initialPos);
   const theme = mergeTheme(content.theme);
-  const slide = content.slides[index];
+  const slideIndex = indices[pos] ?? 0;
+  const slide = content.slides[slideIndex];
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
       if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
         e.preventDefault();
-        setIndex((i) => Math.min(i + 1, content.slides.length - 1));
+        setPos((i) => Math.min(i + 1, indices.length - 1));
       }
       if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
         e.preventDefault();
-        setIndex((i) => Math.max(i - 1, 0));
+        setPos((i) => Math.max(i - 1, 0));
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [content.slides.length, onClose]);
+  }, [indices.length, onClose]);
 
-  if (!slide) return null;
+  if (!slide || !indices.length) return null;
 
   return (
     <div className="presentation-mode">
@@ -49,22 +56,22 @@ export function PresentationMode({ content, startIndex = 0, onClose }: Props) {
           退出 (Esc)
         </button>
         <span>
-          {index + 1} / {content.slides.length}
+          {pos + 1} / {indices.length}
         </span>
         <div className="presentation-mode-nav">
           <button
             type="button"
             className="btn btn-ghost btn-sm"
-            disabled={index === 0}
-            onClick={() => setIndex((i) => i - 1)}
+            disabled={pos === 0}
+            onClick={() => setPos((i) => i - 1)}
           >
             上一页
           </button>
           <button
             type="button"
             className="btn btn-ghost btn-sm"
-            disabled={index === content.slides.length - 1}
-            onClick={() => setIndex((i) => i + 1)}
+            disabled={pos === indices.length - 1}
+            onClick={() => setPos((i) => i + 1)}
           >
             下一页
           </button>

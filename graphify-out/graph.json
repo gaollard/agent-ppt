@@ -72,7 +72,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L1",
       "id": "api_src_image_image_service_ts",
-      "community": 7,
+      "community": 6,
       "norm_label": "image.service.ts"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L12",
       "id": "image_image_service_imageservice",
-      "community": 7,
+      "community": 6,
       "norm_label": "imageservice"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L15",
       "id": "image_image_service_imageservice_constructor",
-      "community": 7,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L21",
       "id": "image_image_service_imageservice_resolveimages",
-      "community": 7,
+      "community": 6,
       "norm_label": ".resolveimages()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L48",
       "id": "image_image_service_imageservice_fetchtolocal",
-      "community": 7,
+      "community": 6,
       "norm_label": ".fetchtolocal()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L66",
       "id": "image_image_service_imageservice_generate",
-      "community": 7,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "api/src/image/image.module.ts",
       "source_location": "L1",
       "id": "api_src_image_image_module_ts",
-      "community": 7,
+      "community": 6,
       "norm_label": "image.module.ts"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_wanx_provider_ts",
-      "community": 7,
+      "community": 6,
       "norm_label": "wanx.provider.ts"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L5",
       "id": "providers_wanx_provider_wanxtaskresponse",
-      "community": 7,
+      "community": 6,
       "norm_label": "wanxtaskresponse"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L17",
       "id": "providers_wanx_provider_wanxprovider",
-      "community": 7,
+      "community": 6,
       "norm_label": "wanxprovider"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L20",
       "id": "providers_wanx_provider_wanxprovider_constructor",
-      "community": 7,
+      "community": 6,
       "norm_label": ".constructor()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L22",
       "id": "providers_wanx_provider_wanxprovider_generate",
-      "community": 7,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L70",
       "id": "providers_wanx_provider_wanxprovider_polltask",
-      "community": 7,
+      "community": 6,
       "norm_label": ".polltask()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_placeholder_provider_ts",
-      "community": 7,
+      "community": 6,
       "norm_label": "placeholder.provider.ts"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L7",
       "id": "providers_placeholder_provider_fallback_png",
-      "community": 7,
+      "community": 6,
       "norm_label": "fallback_png"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L13",
       "id": "providers_placeholder_provider_placeholderprovider",
-      "community": 7,
+      "community": 6,
       "norm_label": "placeholderprovider"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L14",
       "id": "providers_placeholder_provider_placeholderprovider_generate",
-      "community": 7,
+      "community": 6,
       "norm_label": ".generate()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L23",
       "id": "ai_ai_service_aiservice",
-      "community": 10,
+      "community": 9,
       "norm_label": "aiservice"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L26",
       "id": "ai_ai_service_aiservice_constructor",
-      "community": 10,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L28",
       "id": "ai_ai_service_aiservice_generatecontent",
-      "community": 10,
+      "community": 9,
       "norm_label": ".generatecontent()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L52",
       "id": "ai_ai_service_aiservice_generateoutline",
-      "community": 10,
+      "community": 9,
       "norm_label": ".generateoutline()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L97",
       "id": "ai_ai_service_aiservice_expandslidesfromoutline",
-      "community": 10,
+      "community": 9,
       "norm_label": ".expandslidesfromoutline()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L119",
       "id": "ai_ai_service_aiservice_expandsingleslide",
-      "community": 10,
+      "community": 9,
       "norm_label": ".expandsingleslide()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L167",
       "id": "ai_ai_service_aiservice_parseslide",
-      "community": 10,
+      "community": 9,
       "norm_label": ".parseslide()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L183",
       "id": "ai_ai_service_aiservice_polishcontent",
-      "community": 10,
+      "community": 9,
       "norm_label": ".polishcontent()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L213",
       "id": "ai_ai_service_aiservice_resolvetimeoutms",
-      "community": 10,
+      "community": 9,
       "norm_label": ".resolvetimeoutms()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L220",
       "id": "ai_ai_service_aiservice_callllm",
-      "community": 10,
+      "community": 9,
       "norm_label": ".callllm()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L290",
       "id": "ai_ai_service_aiservice_parsecontent",
-      "community": 10,
+      "community": 9,
       "norm_label": ".parsecontent()"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L64",
       "id": "types_slide_content_tablecelldata",
-      "community": 2,
+      "community": 3,
       "norm_label": "tablecelldata"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L78",
       "id": "types_slide_content_slideelement",
-      "community": 2,
+      "community": 3,
       "norm_label": "slideelement"
     },
     {
@@ -466,7 +466,7 @@
       "label": "PresentationContent",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L109",
+      "source_location": "L110",
       "id": "types_slide_content_presentationcontent",
       "community": 2,
       "norm_label": "presentationcontent"
@@ -475,7 +475,7 @@
       "label": "DEFAULT_THEME",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L115",
+      "source_location": "L116",
       "id": "types_slide_content_default_theme",
       "community": 2,
       "norm_label": "default_theme"
@@ -484,7 +484,7 @@
       "label": "mergeTheme()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L122",
+      "source_location": "L123",
       "id": "types_slide_content_mergetheme",
       "community": 2,
       "norm_label": "mergetheme()"
@@ -493,7 +493,7 @@
       "label": "normalizeLayout()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L126",
+      "source_location": "L127",
       "id": "types_slide_content_normalizelayout",
       "community": 2,
       "norm_label": "normalizelayout()"
@@ -502,7 +502,7 @@
       "label": "normalizeSlide()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L136",
+      "source_location": "L137",
       "id": "types_slide_content_normalizeslide",
       "community": 2,
       "norm_label": "normalizeslide()"
@@ -511,7 +511,7 @@
       "label": "normalizeContent()",
       "file_type": "code",
       "source_file": "api/src/ai/types/slide-content.ts",
-      "source_location": "L145",
+      "source_location": "L146",
       "id": "types_slide_content_normalizecontent",
       "community": 2,
       "norm_label": "normalizecontent()"
@@ -970,7 +970,7 @@
       "label": "PresentationContentDto",
       "file_type": "code",
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
-      "source_location": "L106",
+      "source_location": "L107",
       "id": "dto_presentation_content_dto_presentationcontentdto",
       "community": 2,
       "norm_label": "presentationcontentdto"
@@ -1188,7 +1188,7 @@
       "source_file": "api/src/ppt/layouts/index.ts",
       "source_location": "L21",
       "id": "layouts_index_renderslide",
-      "community": 3,
+      "community": 2,
       "norm_label": "renderslide()"
     },
     {
@@ -1258,7 +1258,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "client/src/App.tsx",
-      "source_location": "L33",
+      "source_location": "L37",
       "id": "src_app_app",
       "community": 0,
       "norm_label": "app()"
@@ -1323,7 +1323,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L30",
       "id": "types_presentation_presentationtheme",
-      "community": 8,
+      "community": 7,
       "norm_label": "presentationtheme"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L93",
       "id": "types_presentation_slideelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "slideelement"
     },
     {
@@ -1411,7 +1411,7 @@
       "label": "PresentationContent",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L124",
+      "source_location": "L125",
       "id": "types_presentation_presentationcontent",
       "community": 0,
       "norm_label": "presentationcontent"
@@ -1420,7 +1420,7 @@
       "label": "DEFAULT_THEME",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L130",
+      "source_location": "L131",
       "id": "types_presentation_default_theme",
       "community": 0,
       "norm_label": "default_theme"
@@ -1429,7 +1429,7 @@
       "label": "mergeTheme()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L137",
+      "source_location": "L138",
       "id": "types_presentation_mergetheme",
       "community": 0,
       "norm_label": "mergetheme()"
@@ -1438,7 +1438,7 @@
       "label": "createEmptySlide()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L141",
+      "source_location": "L142",
       "id": "types_presentation_createemptyslide",
       "community": 0,
       "norm_label": "createemptyslide()"
@@ -1447,7 +1447,7 @@
       "label": "createEmptyPresentation()",
       "file_type": "code",
       "source_file": "client/src/types/presentation.ts",
-      "source_location": "L149",
+      "source_location": "L150",
       "id": "types_presentation_createemptypresentation",
       "community": 0,
       "norm_label": "createemptypresentation()"
@@ -1485,7 +1485,7 @@
       "source_file": "client/src/utils/editor-utils.ts",
       "source_location": "L13",
       "id": "utils_editor_utils_alignelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "alignelement()"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "client/src/utils/editor-utils.ts",
       "source_location": "L116",
       "id": "utils_editor_utils_readimagefile",
-      "community": 6,
+      "community": 0,
       "norm_label": "readimagefile()"
     },
     {
@@ -1548,104 +1548,131 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L1",
       "id": "client_src_utils_slide_elements_ts",
-      "community": 6,
+      "community": 0,
       "norm_label": "slide-elements.ts"
     },
     {
       "label": "newElementId()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "utils_slide_elements_newelementid",
-      "community": 6,
+      "community": 0,
       "norm_label": "newelementid()"
     },
     {
       "label": "createTextElement()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "utils_slide_elements_createtextelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "createtextelement()"
     },
     {
       "label": "createImageElement()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "utils_slide_elements_createimageelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "createimageelement()"
     },
     {
       "label": "createTableCells()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "utils_slide_elements_createtablecells",
-      "community": 6,
+      "community": 0,
       "norm_label": "createtablecells()"
     },
     {
       "label": "createTableElement()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "utils_slide_elements_createtableelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "createtableelement()"
     },
     {
       "label": "createShapeElement()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L80",
+      "source_location": "L81",
       "id": "utils_slide_elements_createshapeelement",
-      "community": 6,
+      "community": 0,
       "norm_label": "createshapeelement()"
     },
     {
       "label": "textEl()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L99",
+      "source_location": "L100",
       "id": "utils_slide_elements_textel",
-      "community": 6,
+      "community": 0,
       "norm_label": "textel()"
     },
     {
       "label": "imgEl()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L111",
+      "source_location": "L112",
       "id": "utils_slide_elements_imgel",
-      "community": 6,
+      "community": 0,
       "norm_label": "imgel()"
     },
     {
       "label": "layoutToElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L122",
+      "source_location": "L123",
       "id": "utils_slide_elements_layouttoelements",
-      "community": 6,
+      "community": 0,
       "norm_label": "layouttoelements()"
     },
     {
       "label": "ensureSlideElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L327",
+      "source_location": "L328",
       "id": "utils_slide_elements_ensureslideelements",
-      "community": 6,
+      "community": 0,
       "norm_label": "ensureslideelements()"
+    },
+    {
+      "label": "applySlideLayout()",
+      "file_type": "code",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L337",
+      "id": "utils_slide_elements_applyslidelayout",
+      "community": 0,
+      "norm_label": "applyslidelayout()"
+    },
+    {
+      "label": "resetSlideFromLayout()",
+      "file_type": "code",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L347",
+      "id": "utils_slide_elements_resetslidefromlayout",
+      "community": 0,
+      "norm_label": "resetslidefromlayout()"
+    },
+    {
+      "label": "cloneSlide()",
+      "file_type": "code",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L356",
+      "id": "utils_slide_elements_cloneslide",
+      "community": 0,
+      "norm_label": "cloneslide()"
     },
     {
       "label": "ensurePresentationElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L336",
+      "source_location": "L362",
       "id": "utils_slide_elements_ensurepresentationelements",
       "community": 0,
       "norm_label": "ensurepresentationelements()"
@@ -1654,16 +1681,16 @@
       "label": "syncSlideFromElements()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L349",
+      "source_location": "L375",
       "id": "utils_slide_elements_syncslidefromelements",
-      "community": 6,
+      "community": 0,
       "norm_label": "syncslidefromelements()"
     },
     {
       "label": "clamp()",
       "file_type": "code",
       "source_file": "client/src/utils/slide-elements.ts",
-      "source_location": "L370",
+      "source_location": "L396",
       "id": "utils_slide_elements_clamp",
       "community": 1,
       "norm_label": "clamp()"
@@ -1845,7 +1872,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L1",
       "id": "client_src_components_slide_utils_ts",
-      "community": 8,
+      "community": 7,
       "norm_label": "slide-utils.ts"
     },
     {
@@ -1854,7 +1881,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L3",
       "id": "components_slide_utils_hexcolor",
-      "community": 8,
+      "community": 7,
       "norm_label": "hexcolor()"
     },
     {
@@ -1863,7 +1890,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L11",
       "id": "components_slide_utils_themevars",
-      "community": 8,
+      "community": 7,
       "norm_label": "themevars()"
     },
     {
@@ -1872,8 +1899,71 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L20",
       "id": "components_slide_utils_effectivelayout",
-      "community": 8,
+      "community": 7,
       "norm_label": "effectivelayout()"
+    },
+    {
+      "label": "SlideContextMenu.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "community": 0,
+      "norm_label": "slidecontextmenu.tsx"
+    },
+    {
+      "label": "SlideContextMenuState",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L11",
+      "id": "slidelist_slidecontextmenu_slidecontextmenustate",
+      "community": 0,
+      "norm_label": "slidecontextmenustate"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L17",
+      "id": "slidelist_slidecontextmenu_props",
+      "community": 0,
+      "norm_label": "props"
+    },
+    {
+      "label": "IconBtn()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L36",
+      "id": "slidelist_slidecontextmenu_iconbtn",
+      "community": 0,
+      "norm_label": "iconbtn()"
+    },
+    {
+      "label": "MenuItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L60",
+      "id": "slidelist_slidecontextmenu_menuitem",
+      "community": 0,
+      "norm_label": "menuitem()"
+    },
+    {
+      "label": "SubMenu()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L85",
+      "id": "slidelist_slidecontextmenu_submenu",
+      "community": 0,
+      "norm_label": "submenu()"
+    },
+    {
+      "label": "SlideContextMenu()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L112",
+      "id": "slidelist_slidecontextmenu_slidecontextmenu",
+      "community": 0,
+      "norm_label": "slidecontextmenu()"
     },
     {
       "label": "SlideList.tsx",
@@ -1888,16 +1978,25 @@
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L9",
+      "source_location": "L12",
       "id": "slidelist_slidelist_props",
       "community": 0,
       "norm_label": "props"
     },
     {
+      "label": "DragState",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L33",
+      "id": "slidelist_slidelist_dragstate",
+      "community": 0,
+      "norm_label": "dragstate"
+    },
+    {
       "label": "resolveLayout()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L19",
+      "source_location": "L39",
       "id": "slidelist_slidelist_resolvelayout",
       "community": 0,
       "norm_label": "resolvelayout()"
@@ -1906,16 +2005,25 @@
       "label": "MiniPreview()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L23",
+      "source_location": "L43",
       "id": "slidelist_slidelist_minipreview",
       "community": 0,
       "norm_label": "minipreview()"
     },
     {
+      "label": "useSlideDragSort()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L128",
+      "id": "slidelist_slidelist_useslidedragsort",
+      "community": 0,
+      "norm_label": "useslidedragsort()"
+    },
+    {
       "label": "SlideList()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L85",
+      "source_location": "L244",
       "id": "slidelist_slidelist_slidelist",
       "community": 0,
       "norm_label": "slidelist()"
@@ -1939,10 +2047,19 @@
       "norm_label": "props"
     },
     {
-      "label": "PresentationMode()",
+      "label": "visibleIndices()",
       "file_type": "code",
       "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
       "source_location": "L13",
+      "id": "presentationmode_presentationmode_visibleindices",
+      "community": 0,
+      "norm_label": "visibleindices()"
+    },
+    {
+      "label": "PresentationMode()",
+      "file_type": "code",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L17",
       "id": "presentationmode_presentationmode_presentationmode",
       "community": 0,
       "norm_label": "presentationmode()"
@@ -1953,7 +2070,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "id": "client_src_components_elementinspector_elementinspector_tsx",
-      "community": 6,
+      "community": 0,
       "norm_label": "elementinspector.tsx"
     },
     {
@@ -1962,7 +2079,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L15",
       "id": "elementinspector_elementinspector_props",
-      "community": 6,
+      "community": 0,
       "norm_label": "props"
     },
     {
@@ -1971,7 +2088,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L24",
       "id": "elementinspector_elementinspector_elementinspector",
-      "community": 6,
+      "community": 0,
       "norm_label": "elementinspector()"
     },
     {
@@ -1980,7 +2097,7 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L1",
       "id": "client_src_components_generatepanel_generatepanel_tsx",
-      "community": 0,
+      "community": 10,
       "norm_label": "generatepanel.tsx"
     },
     {
@@ -1989,7 +2106,7 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L4",
       "id": "generatepanel_generatepanel_props",
-      "community": 0,
+      "community": 10,
       "norm_label": "props"
     },
     {
@@ -1998,7 +2115,7 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L9",
       "id": "generatepanel_generatepanel_generatepanel",
-      "community": 0,
+      "community": 10,
       "norm_label": "generatepanel()"
     },
     {
@@ -2034,7 +2151,7 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L40",
       "id": "freeformcanvas_freeformcanvas_freeformcanvashandle",
-      "community": 0,
+      "community": 1,
       "norm_label": "freeformcanvashandle"
     },
     {
@@ -2142,7 +2259,7 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L169",
       "id": "freeformcanvas_freeformcanvas_sortelements",
-      "community": 0,
+      "community": 1,
       "norm_label": "sortelements()"
     },
     {
@@ -2160,7 +2277,7 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L400",
       "id": "freeformcanvas_freeformcanvas_freeformcanvas",
-      "community": 0,
+      "community": 1,
       "norm_label": "freeformcanvas"
     },
     {
@@ -2250,7 +2367,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L1",
       "id": "client_src_components_ribbon_tablepicker_tsx",
-      "community": 0,
+      "community": 10,
       "norm_label": "tablepicker.tsx"
     },
     {
@@ -2259,7 +2376,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L8",
       "id": "ribbon_tablepicker_props",
-      "community": 0,
+      "community": 10,
       "norm_label": "props"
     },
     {
@@ -2268,7 +2385,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L12",
       "id": "ribbon_tablepicker_tablepicker",
-      "community": 0,
+      "community": 10,
       "norm_label": "tablepicker()"
     },
     {
@@ -2277,7 +2394,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L1",
       "id": "client_src_components_ribbon_ribbon_tsx",
-      "community": 0,
+      "community": 10,
       "norm_label": "ribbon.tsx"
     },
     {
@@ -2286,7 +2403,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L5",
       "id": "ribbon_ribbon_ribbontab",
-      "community": 0,
+      "community": 10,
       "norm_label": "ribbontab"
     },
     {
@@ -2295,7 +2412,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L7",
       "id": "ribbon_ribbon_props",
-      "community": 0,
+      "community": 10,
       "norm_label": "props"
     },
     {
@@ -2304,7 +2421,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L39",
       "id": "ribbon_ribbon_group",
-      "community": 0,
+      "community": 10,
       "norm_label": "group()"
     },
     {
@@ -2313,7 +2430,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L48",
       "id": "ribbon_ribbon_tool",
-      "community": 0,
+      "community": 10,
       "norm_label": "tool()"
     },
     {
@@ -2322,7 +2439,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L77",
       "id": "ribbon_ribbon_ribbon",
-      "community": 0,
+      "community": 10,
       "norm_label": "ribbon()"
     },
     {
@@ -2331,7 +2448,7 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L1",
       "id": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "community": 8,
+      "community": 7,
       "norm_label": "slidecanvas.tsx"
     },
     {
@@ -2340,7 +2457,7 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L6",
       "id": "slidecanvas_slidecanvas_props",
-      "community": 8,
+      "community": 7,
       "norm_label": "props"
     },
     {
@@ -2349,7 +2466,7 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L15",
       "id": "slidecanvas_slidecanvas_tonumbers",
-      "community": 8,
+      "community": 7,
       "norm_label": "tonumbers()"
     },
     {
@@ -2358,7 +2475,7 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L19",
       "id": "slidecanvas_slidecanvas_chartpreview",
-      "community": 8,
+      "community": 7,
       "norm_label": "chartpreview()"
     },
     {
@@ -2367,7 +2484,7 @@
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L159",
       "id": "slidecanvas_slidecanvas_slidecanvas",
-      "community": 8,
+      "community": 7,
       "norm_label": "slidecanvas()"
     },
     {
@@ -2376,7 +2493,7 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L1",
       "id": "client_src_components_slidecanvas_editablefield_tsx",
-      "community": 8,
+      "community": 7,
       "norm_label": "editablefield.tsx"
     },
     {
@@ -2385,7 +2502,7 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L3",
       "id": "slidecanvas_editablefield_editabletextprops",
-      "community": 8,
+      "community": 7,
       "norm_label": "editabletextprops"
     },
     {
@@ -2394,7 +2511,7 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L13",
       "id": "slidecanvas_editablefield_editabletext",
-      "community": 8,
+      "community": 7,
       "norm_label": "editabletext()"
     },
     {
@@ -2403,7 +2520,7 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L54",
       "id": "slidecanvas_editablefield_editablebulletsprops",
-      "community": 8,
+      "community": 7,
       "norm_label": "editablebulletsprops"
     },
     {
@@ -2412,7 +2529,7 @@
       "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
       "source_location": "L61",
       "id": "slidecanvas_editablefield_editablebullets",
-      "community": 8,
+      "community": 7,
       "norm_label": "editablebullets()"
     },
     {
@@ -2700,7 +2817,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_md",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt.md"
     },
     {
@@ -2709,7 +2826,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684_ppt",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684 ppt"
     },
     {
@@ -2718,7 +2835,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L8",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u76ee\u5f55",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u76ee\u5f55"
     },
     {
@@ -2781,7 +2898,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L74",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u8bbe\u8ba1\u539f\u5219",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u8bbe\u8ba1\u539f\u5219"
     },
     {
@@ -3123,7 +3240,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L532",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_controller_\u7f16\u6392",
-      "community": 9,
+      "community": 8,
       "norm_label": "controller \u7f16\u6392"
     },
     {
@@ -3132,7 +3249,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L536",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_17",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:typescript (@post('generate'))"
     },
     {
@@ -3141,7 +3258,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L559",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u914d\u7f6e\u9879",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u914d\u7f6e\u9879"
     },
     {
@@ -3150,7 +3267,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L563",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_18",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:yaml (port: 3000)"
     },
     {
@@ -3159,7 +3276,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L587",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u964d\u7ea7\u4e0e\u5bb9\u9519",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u964d\u7ea7\u4e0e\u5bb9\u9519"
     },
     {
@@ -3168,7 +3285,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L599",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_19",
-      "community": 9,
+      "community": 8,
       "norm_label": "code:typescript (const default_theme: presentationtheme = {)"
     },
     {
@@ -3177,7 +3294,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L610",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6027\u80fd\u5efa\u8bae",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u6027\u80fd\u5efa\u8bae"
     },
     {
@@ -3240,7 +3357,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L657",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5e38\u89c1\u95ee\u9898",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u5e38\u89c1\u95ee\u9898"
     },
     {
@@ -3249,7 +3366,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L676",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5b9e\u65bd\u8def\u7ebf\u56fe",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u5b9e\u65bd\u8def\u7ebf\u56fe"
     },
     {
@@ -3258,7 +3375,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L690",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u53c2\u8003\u94fe\u63a5",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u53c2\u8003\u94fe\u63a5"
     },
     {
@@ -3626,7 +3743,7 @@
       "file_type": "code",
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L12",
-      "community": 8,
+      "community": 7,
       "norm_label": "bullets()",
       "id": "slidecanvas_slidecanvas_bullets"
     },
@@ -3644,7 +3761,7 @@
       "file_type": "code",
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L92",
-      "community": 10,
+      "community": 9,
       "norm_label": ".generateslidesfromoutline()",
       "id": "ai_ai_service_aiservice_generateslidesfromoutline"
     }
@@ -6830,6 +6947,17 @@
       "target": "types_presentation_slideelement"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "types_presentation_slidelayout"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7087,6 +7215,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "client/src/App.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_applyslidelayout"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_cloneslide"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7103,6 +7253,17 @@
       "confidence_score": 1.0,
       "source": "client_src_app_tsx",
       "target": "utils_slide_elements_ensureslideelements"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "utils_slide_elements_resetslidefromlayout"
     },
     {
       "relation": "imports",
@@ -7518,6 +7679,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -7617,6 +7789,28 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_slide_elements_ts",
+      "target": "types_presentation_slidelayout"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "types_presentation_slidelayout"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L1",
       "weight": 1.0,
@@ -7639,12 +7833,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "types_presentation_slide_layouts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_slideeditor_slideeditor_tsx",
       "target": "types_presentation_slide_layouts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "types_presentation_layout_labels"
     },
     {
       "relation": "imports",
@@ -7886,6 +8102,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_utils_slide_elements_ts",
+      "target": "types_presentation_slidecontent"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
       "target": "types_presentation_slidecontent"
     },
     {
@@ -8368,6 +8595,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L337",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_slide_elements_ts",
+      "target": "utils_slide_elements_applyslidelayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L347",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_slide_elements_ts",
+      "target": "utils_slide_elements_resetslidefromlayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L356",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_utils_slide_elements_ts",
+      "target": "utils_slide_elements_cloneslide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L275",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8613,6 +8870,28 @@
       "confidence_score": 1.0,
       "source": "utils_slide_elements_ensureslideelements",
       "target": "utils_slide_elements_layouttoelements"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L344",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_slide_elements_applyslidelayout",
+      "target": "utils_slide_elements_layouttoelements"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/utils/slide-elements.ts",
+      "source_location": "L353",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "utils_slide_elements_resetslidefromlayout",
+      "target": "utils_slide_elements_applyslidelayout"
     },
     {
       "relation": "imports",
@@ -9245,12 +9524,115 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_slidecontextmenustate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_iconbtn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_menuitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_submenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_slidecontextmenu"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "client_src_components_slidelist_slidecontextmenu_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slidecontextmenu_slidecontextmenustate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slidecontextmenu_slidecontextmenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
       "target": "slidelist_slidelist_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slidelist_dragstate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9271,6 +9653,16 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
       "target": "slidelist_slidelist_minipreview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slidelist_useslidedragsort",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9326,6 +9718,17 @@
       "target": "slidelist_slidelist_resolvelayout"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "slidelist_slidelist_slidelist",
+      "target": "slidelist_slidelist_useslidedragsort",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9356,6 +9759,16 @@
       "confidence_score": 1.0,
       "source": "client_src_components_presentationmode_presentationmode_tsx",
       "target": "presentationmode_presentationmode_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_presentationmode_presentationmode_tsx",
+      "target": "presentationmode_presentationmode_visibleindices"
     },
     {
       "relation": "contains",
@@ -9549,9 +9962,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_pendingtabledrag",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_freeformcanvas_pendingtabledrag"
     },
     {
       "relation": "contains",
@@ -11183,5 +11596,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "30626f7f83edcaf01313fa7252c4fbe7da6ee061"
+  "built_at_commit": "26895118f3efe6ad2b90cf176bfe5dd1d06be193"
 }

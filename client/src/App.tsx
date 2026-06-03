@@ -6,6 +6,7 @@ import {
   type PresentationContent,
   type SlideContent,
   type SlideElement,
+  type SlideLayout,
 } from './types/presentation';
 import { generateContent, exportPptx, downloadBlob } from './api/ppt';
 import { SlideList } from './components/SlideList/SlideList';
@@ -23,8 +24,11 @@ import {
   useLocalDraft,
 } from './hooks/useLocalDraft';
 import {
+  applySlideLayout,
+  cloneSlide,
   ensurePresentationElements,
   ensureSlideElements,
+  resetSlideFromLayout,
   syncSlideFromElements,
 } from './utils/slide-elements';
 import { duplicateElement, isSelectableElement } from './utils/editor-utils';
@@ -58,6 +62,14 @@ export default function App() {
   const [shapeTool, setShapeTool] = useState<'rect' | 'ellipse' | null>(null);
 
   const clipboardRef = useRef<SlideElement | null>(null);
+  const slideClipboardRef = useRef<{
+    slide: SlideContent;
+    cut: boolean;
+    cutIndex?: number;
+  } | null>(null);
+  const bgInputRef = useRef<HTMLInputElement>(null);
+  const bgTargetIndexRef = useRef(0);
+  const [canPasteSlide, setCanPasteSlide] = useState(false);
   useLocalDraft(content);
 
   const theme = mergeTheme(content.theme);
@@ -129,13 +141,19 @@ export default function App() {
   };
 
   const handleReorder = (from: number, to: number) => {
+    if (from === to) return;
     setContent((prev) => {
       const slides = [...prev.slides];
       const [item] = slides.splice(from, 1);
       slides.splice(to, 0, item);
       return { ...prev, slides };
     }, true);
-    setActiveIndex(to);
+    setActiveIndex((current) => {
+      if (current === from) return to;
+      if (from < current && to >= current) return current - 1;
+      if (from > current && to <= current) return current + 1;
+      return current;
+    });
     setSelectedElementIds([]);
   };
 
@@ -164,16 +182,20 @@ export default function App() {
     setSelectedElementIds([]);
   };
 
-  const handleAdd = () => {
+  const handleAdd = (layout?: SlideLayout, afterIndex?: number) => {
     setContent((prev) => {
+      const insertAt = afterIndex !== undefined ? afterIndex + 1 : prev.slides.length;
       const slide = ensureSlideElements(
-        createEmptySlide(prev.slides.length),
+        { ...createEmptySlide(insertAt), ...(layout ? { layout } : {}) },
         mergeTheme(prev.theme),
-        prev.slides.length,
+        insertAt,
       );
-      return { ...prev, slides: [...prev.slides, slide] };
+      const slides = [...prev.slides];
+      slides.splice(insertAt, 0, slide);
+      return { ...prev, slides };
     }, true);
-    setActiveIndex(content.slides.length);
+    const nextIndex = afterIndex !== undefined ? afterIndex + 1 : content.slides.length;
+    setActiveIndex(nextIndex);
     setSelectedElementIds([]);
   };
 
@@ -189,6 +211,119 @@ export default function App() {
       }),
       false,
     );
+  };
+
+  const handleCopySlide = (index: number) => {
+    const slide = ensureSlideElements(content.slides[index], theme, index);
+    slideClipboardRef.current = { slide: cloneSlide(slide), cut: false };
+    setCanPasteSlide(true);
+  };
+
+  const handleCutSlide = (index: number) => {
+    if (content.slides.length <= 1) return;
+    const slide = ensureSlideElements(content.slides[index], theme, index);
+    slideClipboardRef.current = { slide: cloneSlide(slide), cut: true, cutIndex: index };
+    setCanPasteSlide(true);
+  };
+
+  const handlePasteSlide = (afterIndex: number) => {
+    const clip = slideClipboardRef.current;
+    if (!clip) return;
+
+    setContent((prev) => {
+      const slides = [...prev.slides];
+      let insertAt = afterIndex + 1;
+
+      if (clip.cut && clip.cutIndex !== undefined) {
+        const [removed] = slides.splice(clip.cutIndex, 1);
+        if (clip.cutIndex <= afterIndex) insertAt -= 1;
+        slides.splice(insertAt, 0, removed);
+        slideClipboardRef.current = null;
+        setCanPasteSlide(false);
+      } else {
+        slides.splice(insertAt, 0, cloneSlide(clip.slide));
+      }
+
+      return { ...prev, slides };
+    }, true);
+    setActiveIndex(afterIndex + 1);
+    setSelectedElementIds([]);
+  };
+
+  const handleToggleHidden = (index: number) => {
+    setContent(
+      (prev) => ({
+        ...prev,
+        slides: prev.slides.map((s, i) =>
+          i === index ? { ...s, hidden: !s.hidden } : s,
+        ),
+      }),
+      true,
+    );
+  };
+
+  const handleChangeBackground = (index: number) => {
+    bgTargetIndexRef.current = index;
+    bgInputRef.current?.click();
+  };
+
+  const handleBackgroundFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const dataUrl = reader.result as string;
+      const index = bgTargetIndexRef.current;
+      setContent(
+        (prev) => ({
+          ...prev,
+          slides: prev.slides.map((s, i) =>
+            i === index ? { ...s, backgroundImage: dataUrl } : s,
+          ),
+        }),
+        true,
+      );
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleRemoveBackground = (index: number) => {
+    setContent(
+      (prev) => ({
+        ...prev,
+        slides: prev.slides.map((s, i) =>
+          i === index ? { ...s, backgroundImage: undefined } : s,
+        ),
+      }),
+      true,
+    );
+  };
+
+  const handleChangeLayout = (index: number, layout: SlideLayout) => {
+    setContent(
+      (prev) => ({
+        ...prev,
+        slides: prev.slides.map((s, i) =>
+          i === index ? applySlideLayout(s, layout, mergeTheme(prev.theme), i) : s,
+        ),
+      }),
+      true,
+    );
+    setSelectedElementIds([]);
+  };
+
+  const handleResetSlide = (index: number) => {
+    setContent(
+      (prev) => ({
+        ...prev,
+        slides: prev.slides.map((s, i) =>
+          i === index ? resetSlideFromLayout(s, mergeTheme(prev.theme), i) : s,
+        ),
+      }),
+      true,
+    );
+    setSelectedElementIds([]);
   };
 
   const copyElement = useCallback(() => {
@@ -331,14 +466,30 @@ export default function App() {
       )}
 
       <div className="app-body">
+        <input
+          ref={bgInputRef}
+          type="file"
+          accept="image/*"
+          hidden
+          onChange={handleBackgroundFile}
+        />
         <SlideList
           content={content}
           activeIndex={activeIndex}
+          canPasteSlide={canPasteSlide}
           onSelect={handleSelectSlide}
           onReorder={handleReorder}
           onDelete={handleDelete}
           onDuplicate={handleDuplicateSlide}
           onAdd={handleAdd}
+          onCopySlide={handleCopySlide}
+          onCutSlide={handleCutSlide}
+          onPasteSlide={handlePasteSlide}
+          onToggleHidden={handleToggleHidden}
+          onChangeBackground={handleChangeBackground}
+          onRemoveBackground={handleRemoveBackground}
+          onChangeLayout={handleChangeLayout}
+          onResetSlide={handleResetSlide}
         />
 
         <div className="app-workspace">

@@ -119,6 +119,7 @@ export interface SlideContent {
   backgroundColor?: string;
   backgroundImage?: string;
   notes?: string;
+  hidden?: boolean;
 }
 
 export interface PresentationContent {

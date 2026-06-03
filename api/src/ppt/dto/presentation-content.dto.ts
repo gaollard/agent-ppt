@@ -96,6 +96,7 @@ class SlideDto {
   @IsOptional() @IsString() backgroundColor?: string;
   @IsOptional() @IsString() backgroundImage?: string;
   @IsOptional() @IsString() notes?: string;
+  @IsOptional() @IsBoolean() hidden?: boolean;
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })

@@ -5,6 +5,7 @@ import type {
   SlideElement,
   ElementStyle,
   TableCellData,
+  SlideLayout,
 } from '../types/presentation';
 
 let idCounter = 0;
@@ -332,6 +333,31 @@ export function ensureSlideElements(
   if (slide.elements?.length) return slide;
   return { ...slide, elements: layoutToElements(slide, theme, index) };
 }
+
+export function applySlideLayout(
+  slide: SlideContent,
+  layout: SlideLayout,
+  theme: PresentationTheme,
+  index: number,
+): SlideContent {
+  const next = { ...slide, layout };
+  return { ...next, elements: layoutToElements(next, theme, index) };
+}
+
+export function resetSlideFromLayout(
+  slide: SlideContent,
+  theme: PresentationTheme,
+  index: number,
+): SlideContent {
+  const layout = slide.layout ?? (index === 0 ? 'cover' : 'title-bullets');
+  return applySlideLayout(slide, layout, theme, index);
+}
+
+function cloneSlide(slide: SlideContent): SlideContent {
+  return structuredClone(slide);
+}
+
+export { cloneSlide };
 
 export function ensurePresentationElements(content: PresentationContent): PresentationContent {
   const theme = content.theme ?? {
