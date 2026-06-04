@@ -9,7 +9,7 @@
       "source_file": "api/src/main.ts",
       "source_location": "L1",
       "id": "api_src_main_ts",
-      "community": 6,
+      "community": 7,
       "norm_label": "main.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "api/src/main.ts",
       "source_location": "L8",
       "id": "src_main_bootstrap",
-      "community": 6,
+      "community": 7,
       "norm_label": "bootstrap()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "api/src/app.module.ts",
       "source_location": "L1",
       "id": "api_src_app_module_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "app.module.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "api/src/app.module.ts",
       "source_location": "L17",
       "id": "src_app_module_appmodule",
-      "community": 6,
+      "community": 7,
       "norm_label": "appmodule"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L1",
       "id": "api_src_config_yaml_config_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "yaml.config.ts"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L5",
       "id": "config_yaml_config_default_config_path",
-      "community": 3,
+      "community": 4,
       "norm_label": "default_config_path"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "api/src/config/yaml.config.ts",
       "source_location": "L7",
       "id": "config_yaml_config_loadyamlconfig",
-      "community": 3,
+      "community": 4,
       "norm_label": "loadyamlconfig()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L1",
       "id": "api_src_image_image_service_ts",
-      "community": 8,
+      "community": 9,
       "norm_label": "image.service.ts"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L12",
       "id": "image_image_service_imageservice",
-      "community": 8,
+      "community": 9,
       "norm_label": "imageservice"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L15",
       "id": "image_image_service_imageservice_constructor",
-      "community": 8,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L21",
       "id": "image_image_service_imageservice_resolveimages",
-      "community": 8,
+      "community": 9,
       "norm_label": ".resolveimages()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L48",
       "id": "image_image_service_imageservice_fetchtolocal",
-      "community": 8,
+      "community": 9,
       "norm_label": ".fetchtolocal()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "api/src/image/image.service.ts",
       "source_location": "L66",
       "id": "image_image_service_imageservice_generate",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generate()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "api/src/image/image.module.ts",
       "source_location": "L1",
       "id": "api_src_image_image_module_ts",
-      "community": 8,
+      "community": 9,
       "norm_label": "image.module.ts"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "api/src/image/image.module.ts",
       "source_location": "L10",
       "id": "image_image_module_imagemodule",
-      "community": 3,
+      "community": 4,
       "norm_label": "imagemodule"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_wanx_provider_ts",
-      "community": 8,
+      "community": 9,
       "norm_label": "wanx.provider.ts"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L5",
       "id": "providers_wanx_provider_wanxtaskresponse",
-      "community": 8,
+      "community": 9,
       "norm_label": "wanxtaskresponse"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L17",
       "id": "providers_wanx_provider_wanxprovider",
-      "community": 8,
+      "community": 9,
       "norm_label": "wanxprovider"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L20",
       "id": "providers_wanx_provider_wanxprovider_constructor",
-      "community": 8,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L22",
       "id": "providers_wanx_provider_wanxprovider_generate",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generate()"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "api/src/image/providers/wanx.provider.ts",
       "source_location": "L70",
       "id": "providers_wanx_provider_wanxprovider_polltask",
-      "community": 8,
+      "community": 9,
       "norm_label": ".polltask()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L1",
       "id": "api_src_image_providers_placeholder_provider_ts",
-      "community": 8,
+      "community": 9,
       "norm_label": "placeholder.provider.ts"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L7",
       "id": "providers_placeholder_provider_fallback_png",
-      "community": 8,
+      "community": 9,
       "norm_label": "fallback_png"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L13",
       "id": "providers_placeholder_provider_placeholderprovider",
-      "community": 8,
+      "community": 9,
       "norm_label": "placeholderprovider"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "api/src/image/providers/placeholder.provider.ts",
       "source_location": "L14",
       "id": "providers_placeholder_provider_placeholderprovider_generate",
-      "community": 8,
+      "community": 9,
       "norm_label": ".generate()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L23",
       "id": "ai_ai_service_aiservice",
-      "community": 11,
+      "community": 12,
       "norm_label": "aiservice"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L26",
       "id": "ai_ai_service_aiservice_constructor",
-      "community": 11,
+      "community": 12,
       "norm_label": ".constructor()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L28",
       "id": "ai_ai_service_aiservice_generatecontent",
-      "community": 11,
+      "community": 12,
       "norm_label": ".generatecontent()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L52",
       "id": "ai_ai_service_aiservice_generateoutline",
-      "community": 11,
+      "community": 12,
       "norm_label": ".generateoutline()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L97",
       "id": "ai_ai_service_aiservice_expandslidesfromoutline",
-      "community": 11,
+      "community": 12,
       "norm_label": ".expandslidesfromoutline()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L119",
       "id": "ai_ai_service_aiservice_expandsingleslide",
-      "community": 11,
+      "community": 12,
       "norm_label": ".expandsingleslide()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L167",
       "id": "ai_ai_service_aiservice_parseslide",
-      "community": 11,
+      "community": 12,
       "norm_label": ".parseslide()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L183",
       "id": "ai_ai_service_aiservice_polishcontent",
-      "community": 11,
+      "community": 12,
       "norm_label": ".polishcontent()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L213",
       "id": "ai_ai_service_aiservice_resolvetimeoutms",
-      "community": 11,
+      "community": 12,
       "norm_label": ".resolvetimeoutms()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L220",
       "id": "ai_ai_service_aiservice_callllm",
-      "community": 11,
+      "community": 12,
       "norm_label": ".callllm()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L290",
       "id": "ai_ai_service_aiservice_parsecontent",
-      "community": 11,
+      "community": 12,
       "norm_label": ".parsecontent()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "api/src/ai/ai.module.ts",
       "source_location": "L1",
       "id": "api_src_ai_ai_module_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "ai.module.ts"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "api/src/ai/ai.module.ts",
       "source_location": "L8",
       "id": "ai_ai_module_aimodule",
-      "community": 3,
+      "community": 4,
       "norm_label": "aimodule"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L10",
       "id": "types_slide_content_slide_layouts",
-      "community": 3,
+      "community": 4,
       "norm_label": "slide_layouts"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L110",
       "id": "types_slide_content_presentationcontent",
-      "community": 3,
+      "community": 4,
       "norm_label": "presentationcontent"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L123",
       "id": "types_slide_content_mergetheme",
-      "community": 3,
+      "community": 4,
       "norm_label": "mergetheme()"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "api/src/ai/types/slide-content.ts",
       "source_location": "L146",
       "id": "types_slide_content_normalizecontent",
-      "community": 3,
+      "community": 4,
       "norm_label": "normalizecontent()"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "api/src/log/resolve-log-dir.ts",
       "source_location": "L1",
       "id": "api_src_log_resolve_log_dir_ts",
-      "community": 6,
+      "community": 7,
       "norm_label": "resolve-log-dir.ts"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "api/src/log/resolve-log-dir.ts",
       "source_location": "L5",
       "id": "log_resolve_log_dir_resolvelogdir",
-      "community": 6,
+      "community": 7,
       "norm_label": "resolvelogdir()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L1",
       "id": "api_src_log_file_logger_ts",
-      "community": 6,
+      "community": 7,
       "norm_label": "file-logger.ts"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L6",
       "id": "log_file_logger_loglevel",
-      "community": 6,
+      "community": 7,
       "norm_label": "loglevel"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L8",
       "id": "log_file_logger_filelogger",
-      "community": 6,
+      "community": 7,
       "norm_label": "filelogger"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L11",
       "id": "log_file_logger_filelogger_constructor",
-      "community": 6,
+      "community": 7,
       "norm_label": ".constructor()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L16",
       "id": "log_file_logger_filelogger_log",
-      "community": 6,
+      "community": 7,
       "norm_label": ".log()"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L20",
       "id": "log_file_logger_filelogger_error",
-      "community": 6,
+      "community": 7,
       "norm_label": ".error()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L27",
       "id": "log_file_logger_filelogger_warn",
-      "community": 6,
+      "community": 7,
       "norm_label": ".warn()"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L31",
       "id": "log_file_logger_filelogger_debug",
-      "community": 6,
+      "community": 7,
       "norm_label": ".debug()"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L35",
       "id": "log_file_logger_filelogger_verbose",
-      "community": 6,
+      "community": 7,
       "norm_label": ".verbose()"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L39",
       "id": "log_file_logger_filelogger_write",
-      "community": 6,
+      "community": 7,
       "norm_label": ".write()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L45",
       "id": "log_file_logger_filelogger_logfilepath",
-      "community": 6,
+      "community": 7,
       "norm_label": ".logfilepath()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L50",
       "id": "log_file_logger_filelogger_formatline",
-      "community": 6,
+      "community": 7,
       "norm_label": ".formatline()"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L60",
       "id": "log_file_logger_filelogger_formatmessage",
-      "community": 6,
+      "community": 7,
       "norm_label": ".formatmessage()"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L74",
       "id": "log_file_logger_filelogger_printtoconsole",
-      "community": 6,
+      "community": 7,
       "norm_label": ".printtoconsole()"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "api/src/log/file-logger.ts",
       "source_location": "L92",
       "id": "log_file_logger_createfilelogger",
-      "community": 6,
+      "community": 7,
       "norm_label": "createfilelogger()"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "api/src/ppt/ppt.module.ts",
       "source_location": "L1",
       "id": "api_src_ppt_ppt_module_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "ppt.module.ts"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "api/src/ppt/ppt.module.ts",
       "source_location": "L12",
       "id": "ppt_ppt_module_pptmodule",
-      "community": 3,
+      "community": 4,
       "norm_label": "pptmodule"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L1",
       "id": "api_src_ppt_ppt_controller_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "ppt.controller.ts"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L25",
       "id": "ppt_ppt_controller_pptcontroller",
-      "community": 3,
+      "community": 4,
       "norm_label": "pptcontroller"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L28",
       "id": "ppt_ppt_controller_pptcontroller_constructor",
-      "community": 3,
+      "community": 4,
       "norm_label": ".constructor()"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L35",
       "id": "ppt_ppt_controller_pptcontroller_generatecontent",
-      "community": 3,
+      "community": 4,
       "norm_label": ".generatecontent()"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L50",
       "id": "ppt_ppt_controller_pptcontroller_export",
-      "community": 3,
+      "community": 4,
       "norm_label": ".export()"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L74",
       "id": "ppt_ppt_controller_pptcontroller_generate",
-      "community": 3,
+      "community": 4,
       "norm_label": ".generate()"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L103",
       "id": "ppt_ppt_controller_pptcontroller_sanitizefilename",
-      "community": 3,
+      "community": 4,
       "norm_label": ".sanitizefilename()"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "api/src/ppt/ppt.controller.ts",
       "source_location": "L107",
       "id": "ppt_ppt_controller_pptcontroller_buildcontentdisposition",
-      "community": 3,
+      "community": 4,
       "norm_label": ".buildcontentdisposition()"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L1",
       "id": "api_src_ppt_ppt_service_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "ppt.service.ts"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L13",
       "id": "ppt_ppt_service_pptservice",
-      "community": 3,
+      "community": 4,
       "norm_label": "pptservice"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L14",
       "id": "ppt_ppt_service_pptservice_constructor",
-      "community": 3,
+      "community": 4,
       "norm_label": ".constructor()"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L16",
       "id": "ppt_ppt_service_pptservice_savebuffer",
-      "community": 3,
+      "community": 4,
       "norm_label": ".savebuffer()"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L29",
       "id": "ppt_ppt_service_pptservice_buildbuffer",
-      "community": 3,
+      "community": 4,
       "norm_label": ".buildbuffer()"
     },
     {
@@ -846,7 +846,7 @@
       "source_file": "api/src/ppt/ppt.service.ts",
       "source_location": "L46",
       "id": "ppt_ppt_service_pptservice_timestamp",
-      "community": 3,
+      "community": 4,
       "norm_label": ".timestamp()"
     },
     {
@@ -855,7 +855,7 @@
       "source_file": "api/src/ppt/image-utils.ts",
       "source_location": "L1",
       "id": "api_src_ppt_image_utils_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "image-utils.ts"
     },
     {
@@ -864,7 +864,7 @@
       "source_file": "api/src/ppt/image-utils.ts",
       "source_location": "L7",
       "id": "ppt_image_utils_embedimagesasdataurls",
-      "community": 3,
+      "community": 4,
       "norm_label": "embedimagesasdataurls()"
     },
     {
@@ -873,7 +873,7 @@
       "source_file": "api/src/ppt/image-utils.ts",
       "source_location": "L26",
       "id": "ppt_image_utils_resolvedataurlimages",
-      "community": 3,
+      "community": 4,
       "norm_label": "resolvedataurlimages()"
     },
     {
@@ -882,7 +882,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L1",
       "id": "api_src_ppt_dto_presentation_content_dto_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "presentation-content.dto.ts"
     },
     {
@@ -891,7 +891,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L14",
       "id": "dto_presentation_content_dto_themedto",
-      "community": 3,
+      "community": 4,
       "norm_label": "themedto"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L21",
       "id": "dto_presentation_content_dto_chartdto",
-      "community": 3,
+      "community": 4,
       "norm_label": "chartdto"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L27",
       "id": "dto_presentation_content_dto_columndto",
-      "community": 3,
+      "community": 4,
       "norm_label": "columndto"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L32",
       "id": "dto_presentation_content_dto_elementstyledto",
-      "community": 3,
+      "community": 4,
       "norm_label": "elementstyledto"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L53",
       "id": "dto_presentation_content_dto_tablecellstyledto",
-      "community": 3,
+      "community": 4,
       "norm_label": "tablecellstyledto"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L65",
       "id": "dto_presentation_content_dto_tablecelldatadto",
-      "community": 3,
+      "community": 4,
       "norm_label": "tablecelldatadto"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L72",
       "id": "dto_presentation_content_dto_tabledatadto",
-      "community": 3,
+      "community": 4,
       "norm_label": "tabledatadto"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L79",
       "id": "dto_presentation_content_dto_slideelementdto",
-      "community": 3,
+      "community": 4,
       "norm_label": "slideelementdto"
     },
     {
@@ -963,7 +963,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L95",
       "id": "dto_presentation_content_dto_slidedto",
-      "community": 3,
+      "community": 4,
       "norm_label": "slidedto"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "api/src/ppt/dto/presentation-content.dto.ts",
       "source_location": "L114",
       "id": "dto_presentation_content_dto_presentationcontentdto",
-      "community": 3,
+      "community": 4,
       "norm_label": "presentationcontentdto"
     },
     {
@@ -981,7 +981,7 @@
       "source_file": "api/src/ppt/dto/generate-ppt.dto.ts",
       "source_location": "L1",
       "id": "api_src_ppt_dto_generate_ppt_dto_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "generate-ppt.dto.ts"
     },
     {
@@ -990,7 +990,7 @@
       "source_file": "api/src/ppt/dto/generate-ppt.dto.ts",
       "source_location": "L3",
       "id": "dto_generate_ppt_dto_generatepptdto",
-      "community": 3,
+      "community": 4,
       "norm_label": "generatepptdto"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "client/vite.config.ts",
       "source_location": "L1",
       "id": "client_vite_config_ts",
-      "community": 22,
+      "community": 23,
       "norm_label": "vite.config.ts"
     },
     {
@@ -1260,16 +1260,16 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L1",
       "id": "client_src_app_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "app.tsx"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "client/src/App.tsx",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "src_app_app",
-      "community": 0,
+      "community": 3,
       "norm_label": "app()"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "client/src/main.tsx",
       "source_location": "L1",
       "id": "client_src_main_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "main.tsx"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "client/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "client_src_vite_env_d_ts",
-      "community": 23,
+      "community": 24,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L1",
       "id": "types_presentation_slidelayout",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidelayout"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L10",
       "id": "types_presentation_slide_layouts",
-      "community": 0,
+      "community": 5,
       "norm_label": "slide_layouts"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L20",
       "id": "types_presentation_layout_labels",
-      "community": 0,
+      "community": 5,
       "norm_label": "layout_labels"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L30",
       "id": "types_presentation_presentationtheme",
-      "community": 4,
+      "community": 0,
       "norm_label": "presentationtheme"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L48",
       "id": "types_presentation_elementstyle",
-      "community": 4,
+      "community": 0,
       "norm_label": "elementstyle"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L67",
       "id": "types_presentation_tablecellstyle",
-      "community": 5,
+      "community": 6,
       "norm_label": "tablecellstyle"
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L79",
       "id": "types_presentation_tablecelldata",
-      "community": 0,
+      "community": 6,
       "norm_label": "tablecelldata"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L88",
       "id": "types_presentation_tabledata",
-      "community": 5,
+      "community": 6,
       "norm_label": "tabledata"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L95",
       "id": "types_presentation_slideelement",
-      "community": 4,
+      "community": 0,
       "norm_label": "slideelement"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L127",
       "id": "types_presentation_presentationcontent",
-      "community": 0,
+      "community": 3,
       "norm_label": "presentationcontent"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L140",
       "id": "types_presentation_mergetheme",
-      "community": 0,
+      "community": 3,
       "norm_label": "mergetheme()"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L144",
       "id": "types_presentation_createemptyslide",
-      "community": 0,
+      "community": 3,
       "norm_label": "createemptyslide()"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "client/src/types/presentation.ts",
       "source_location": "L152",
       "id": "types_presentation_createemptypresentation",
-      "community": 0,
+      "community": 3,
       "norm_label": "createemptypresentation()"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L1",
       "id": "client_src_types_shapes_ts",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapes.ts"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L3",
       "id": "types_shapes_shapekind",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapekind"
     },
     {
@@ -1485,7 +1485,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L12",
       "id": "types_shapes_shapecatalogitem",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapecatalogitem"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L17",
       "id": "types_shapes_shape_catalog",
-      "community": 4,
+      "community": 0,
       "norm_label": "shape_catalog"
     },
     {
@@ -1503,7 +1503,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L27",
       "id": "types_shapes_shapetooloptions",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapetooloptions"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L35",
       "id": "types_shapes_shapelabel",
-      "community": 0,
+      "community": 3,
       "norm_label": "shapelabel()"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L39",
       "id": "types_shapes_islinelikeshape",
-      "community": 4,
+      "community": 0,
       "norm_label": "islinelikeshape()"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "client/src/types/shapes.ts",
       "source_location": "L43",
       "id": "types_shapes_defaultshapestyle",
-      "community": 4,
+      "community": 0,
       "norm_label": "defaultshapestyle()"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "client/src/utils/shape-utils.ts",
       "source_location": "L1",
       "id": "client_src_utils_shape_utils_ts",
-      "community": 4,
+      "community": 0,
       "norm_label": "shape-utils.ts"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "client/src/utils/shape-utils.ts",
       "source_location": "L5",
       "id": "utils_shape_utils_boundsfromshapedrag",
-      "community": 4,
+      "community": 0,
       "norm_label": "boundsfromshapedrag()"
     },
     {
@@ -1557,7 +1557,7 @@
       "source_file": "client/src/utils/shape-utils.ts",
       "source_location": "L48",
       "id": "utils_shape_utils_getshapeclassname",
-      "community": 4,
+      "community": 0,
       "norm_label": "getshapeclassname()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "client/src/utils/shape-utils.ts",
       "source_location": "L52",
       "id": "utils_shape_utils_getshapesurfacestyle",
-      "community": 4,
+      "community": 0,
       "norm_label": "getshapesurfacestyle()"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "client/src/utils/shape-utils.ts",
       "source_location": "L102",
       "id": "utils_shape_utils_pptxshapename",
-      "community": 4,
+      "community": 0,
       "norm_label": "pptxshapename()"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L83",
       "id": "utils_slide_elements_createshapeelement",
-      "community": 4,
+      "community": 0,
       "norm_label": "createshapeelement()"
     },
     {
@@ -1872,7 +1872,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L355",
       "id": "utils_slide_elements_cloneslide",
-      "community": 0,
+      "community": 3,
       "norm_label": "cloneslide()"
     },
     {
@@ -1881,7 +1881,7 @@
       "source_file": "client/src/utils/slide-elements.ts",
       "source_location": "L361",
       "id": "utils_slide_elements_ensurepresentationelements",
-      "community": 0,
+      "community": 3,
       "norm_label": "ensurepresentationelements()"
     },
     {
@@ -1908,7 +1908,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L1",
       "id": "client_src_utils_table_utils_ts",
-      "community": 5,
+      "community": 6,
       "norm_label": "table-utils.ts"
     },
     {
@@ -1917,7 +1917,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L3",
       "id": "utils_table_utils_normalizecell",
-      "community": 5,
+      "community": 6,
       "norm_label": "normalizecell()"
     },
     {
@@ -1926,7 +1926,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L8",
       "id": "utils_table_utils_normalizetable",
-      "community": 5,
+      "community": 6,
       "norm_label": "normalizetable()"
     },
     {
@@ -1935,7 +1935,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L15",
       "id": "utils_table_utils_normalizetableelement",
-      "community": 5,
+      "community": 6,
       "norm_label": "normalizetableelement()"
     },
     {
@@ -1944,7 +1944,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L20",
       "id": "utils_table_utils_celltext",
-      "community": 1,
+      "community": 0,
       "norm_label": "celltext()"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L24",
       "id": "utils_table_utils_emptycell",
-      "community": 5,
+      "community": 6,
       "norm_label": "emptycell()"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L40",
       "id": "utils_table_utils_defaultrowstyle",
-      "community": 5,
+      "community": 6,
       "norm_label": "defaultrowstyle()"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L46",
       "id": "utils_table_utils_insertrow",
-      "community": 5,
+      "community": 6,
       "norm_label": "insertrow()"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L57",
       "id": "utils_table_utils_insertcol",
-      "community": 5,
+      "community": 6,
       "norm_label": "insertcol()"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L68",
       "id": "utils_table_utils_deleterow",
-      "community": 5,
+      "community": 6,
       "norm_label": "deleterow()"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L75",
       "id": "utils_table_utils_deletecol",
-      "community": 5,
+      "community": 6,
       "norm_label": "deletecol()"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L82",
       "id": "utils_table_utils_mergeright",
-      "community": 5,
+      "community": 6,
       "norm_label": "mergeright()"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L101",
       "id": "utils_table_utils_iscellvisible",
-      "community": 1,
+      "community": 0,
       "norm_label": "iscellvisible()"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L105",
       "id": "utils_table_utils_patchcellstyle",
-      "community": 5,
+      "community": 6,
       "norm_label": "patchcellstyle()"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L129",
       "id": "utils_table_utils_patchcelltext",
-      "community": 5,
+      "community": 6,
       "norm_label": "patchcelltext()"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L141",
       "id": "utils_table_utils_togglecellflag",
-      "community": 5,
+      "community": 6,
       "norm_label": "togglecellflag()"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L162",
       "id": "utils_table_utils_applyheaderrow",
-      "community": 5,
+      "community": 6,
       "norm_label": "applyheaderrow()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "client/src/utils/table-utils.ts",
       "source_location": "L183",
       "id": "utils_table_utils_cellstyletocss",
-      "community": 1,
+      "community": 0,
       "norm_label": "cellstyletocss()"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L1",
       "id": "client_src_components_slide_utils_ts",
-      "community": 9,
+      "community": 10,
       "norm_label": "slide-utils.ts"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L3",
       "id": "components_slide_utils_hexcolor",
-      "community": 9,
+      "community": 10,
       "norm_label": "hexcolor()"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L11",
       "id": "components_slide_utils_themevars",
-      "community": 9,
+      "community": 10,
       "norm_label": "themevars()"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "client/src/components/slide-utils.ts",
       "source_location": "L20",
       "id": "components_slide_utils_effectivelayout",
-      "community": 9,
+      "community": 10,
       "norm_label": "effectivelayout()"
     },
     {
@@ -2115,62 +2115,53 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L1",
       "id": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidecontextmenu.tsx"
     },
     {
       "label": "SlideContextMenuState",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L11",
+      "source_location": "L16",
       "id": "slidelist_slidecontextmenu_slidecontextmenustate",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidecontextmenustate"
     },
     {
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L17",
+      "source_location": "L22",
       "id": "slidelist_slidecontextmenu_props",
-      "community": 0,
+      "community": 5,
       "norm_label": "props"
-    },
-    {
-      "label": "IconBtn()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L36",
-      "id": "slidelist_slidecontextmenu_iconbtn",
-      "community": 0,
-      "norm_label": "iconbtn()"
-    },
-    {
-      "label": "MenuItem()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L60",
-      "id": "slidelist_slidecontextmenu_menuitem",
-      "community": 0,
-      "norm_label": "menuitem()"
-    },
-    {
-      "label": "SubMenu()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L85",
-      "id": "slidelist_slidecontextmenu_submenu",
-      "community": 0,
-      "norm_label": "submenu()"
     },
     {
       "label": "SlideContextMenu()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L112",
+      "source_location": "L41",
       "id": "slidelist_slidecontextmenu_slidecontextmenu",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidecontextmenu()"
+    },
+    {
+      "label": "slide-list-actions.ts",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/slide-list-actions.ts",
+      "source_location": "L1",
+      "id": "client_src_components_slidelist_slide_list_actions_ts",
+      "community": 5,
+      "norm_label": "slide-list-actions.ts"
+    },
+    {
+      "label": "SlideListActions",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/slide-list-actions.ts",
+      "source_location": "L3",
+      "id": "slidelist_slide_list_actions_slidelistactions",
+      "community": 5,
+      "norm_label": "slidelistactions"
     },
     {
       "label": "SlideList.tsx",
@@ -2178,7 +2169,7 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L1",
       "id": "client_src_components_slidelist_slidelist_tsx",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidelist.tsx"
     },
     {
@@ -2187,52 +2178,52 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L12",
       "id": "slidelist_slidelist_props",
-      "community": 0,
+      "community": 5,
       "norm_label": "props"
     },
     {
       "label": "DragState",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L33",
+      "source_location": "L22",
       "id": "slidelist_slidelist_dragstate",
-      "community": 0,
+      "community": 5,
       "norm_label": "dragstate"
     },
     {
       "label": "resolveLayout()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L39",
+      "source_location": "L28",
       "id": "slidelist_slidelist_resolvelayout",
-      "community": 0,
+      "community": 5,
       "norm_label": "resolvelayout()"
     },
     {
       "label": "MiniPreview()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L43",
+      "source_location": "L32",
       "id": "slidelist_slidelist_minipreview",
-      "community": 0,
+      "community": 5,
       "norm_label": "minipreview()"
     },
     {
       "label": "useSlideDragSort()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L128",
+      "source_location": "L117",
       "id": "slidelist_slidelist_useslidedragsort",
-      "community": 0,
+      "community": 5,
       "norm_label": "useslidedragsort()"
     },
     {
       "label": "SlideList()",
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L244",
+      "source_location": "L233",
       "id": "slidelist_slidelist_slidelist",
-      "community": 0,
+      "community": 5,
       "norm_label": "slidelist()"
     },
     {
@@ -2241,7 +2232,7 @@
       "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
       "source_location": "L1",
       "id": "client_src_components_presentationmode_presentationmode_tsx",
-      "community": 0,
+      "community": 3,
       "norm_label": "presentationmode.tsx"
     },
     {
@@ -2250,7 +2241,7 @@
       "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
       "source_location": "L7",
       "id": "presentationmode_presentationmode_props",
-      "community": 0,
+      "community": 3,
       "norm_label": "props"
     },
     {
@@ -2259,7 +2250,7 @@
       "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
       "source_location": "L13",
       "id": "presentationmode_presentationmode_visibleindices",
-      "community": 0,
+      "community": 3,
       "norm_label": "visibleindices()"
     },
     {
@@ -2268,7 +2259,7 @@
       "source_file": "client/src/components/PresentationMode/PresentationMode.tsx",
       "source_location": "L17",
       "id": "presentationmode_presentationmode_presentationmode",
-      "community": 0,
+      "community": 3,
       "norm_label": "presentationmode()"
     },
     {
@@ -2277,7 +2268,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L1",
       "id": "client_src_components_elementinspector_elementinspector_tsx",
-      "community": 4,
+      "community": 0,
       "norm_label": "elementinspector.tsx"
     },
     {
@@ -2286,7 +2277,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L16",
       "id": "elementinspector_elementinspector_props",
-      "community": 4,
+      "community": 0,
       "norm_label": "props"
     },
     {
@@ -2295,7 +2286,7 @@
       "source_file": "client/src/components/ElementInspector/ElementInspector.tsx",
       "source_location": "L25",
       "id": "elementinspector_elementinspector_elementinspector",
-      "community": 4,
+      "community": 0,
       "norm_label": "elementinspector()"
     },
     {
@@ -2304,7 +2295,7 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L1",
       "id": "client_src_components_generatepanel_generatepanel_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "generatepanel.tsx"
     },
     {
@@ -2313,7 +2304,7 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L4",
       "id": "generatepanel_generatepanel_props",
-      "community": 4,
+      "community": 3,
       "norm_label": "props"
     },
     {
@@ -2322,8 +2313,89 @@
       "source_file": "client/src/components/GeneratePanel/GeneratePanel.tsx",
       "source_location": "L9",
       "id": "generatepanel_generatepanel_generatepanel",
-      "community": 4,
+      "community": 3,
       "norm_label": "generatepanel()"
+    },
+    {
+      "label": "ContextMenu.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_contextmenu_contextmenu_tsx",
+      "community": 5,
+      "norm_label": "contextmenu.tsx"
+    },
+    {
+      "label": "stopMenuEvent()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L5",
+      "id": "contextmenu_contextmenu_stopmenuevent",
+      "community": 5,
+      "norm_label": "stopmenuevent()"
+    },
+    {
+      "label": "ContextMenuDivider()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L10",
+      "id": "contextmenu_contextmenu_contextmenudivider",
+      "community": 5,
+      "norm_label": "contextmenudivider()"
+    },
+    {
+      "label": "ContextMenuIconBtn()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L14",
+      "id": "contextmenu_contextmenu_contextmenuiconbtn",
+      "community": 5,
+      "norm_label": "contextmenuiconbtn()"
+    },
+    {
+      "label": "ContextMenuItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L54",
+      "id": "contextmenu_contextmenu_contextmenuitem",
+      "community": 5,
+      "norm_label": "contextmenuitem()"
+    },
+    {
+      "label": "ContextMenuSubItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L100",
+      "id": "contextmenu_contextmenu_contextmenusubitem",
+      "community": 5,
+      "norm_label": "contextmenusubitem()"
+    },
+    {
+      "label": "ContextMenuSub()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L132",
+      "id": "contextmenu_contextmenu_contextmenusub",
+      "community": 5,
+      "norm_label": "contextmenusub()"
+    },
+    {
+      "label": "ContextMenuShellProps",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L157",
+      "id": "contextmenu_contextmenu_contextmenushellprops",
+      "community": 5,
+      "norm_label": "contextmenushellprops"
+    },
+    {
+      "label": "ContextMenuShell()",
+      "file_type": "code",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L168",
+      "id": "contextmenu_contextmenu_contextmenushell",
+      "community": 5,
+      "norm_label": "contextmenushell()"
     },
     {
       "label": "FreeformCanvas.tsx",
@@ -2333,15 +2405,6 @@
       "id": "client_src_components_freeformcanvas_freeformcanvas_tsx",
       "community": 1,
       "norm_label": "freeformcanvas.tsx"
-    },
-    {
-      "label": "ResizeHandle",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L33",
-      "id": "freeformcanvas_freeformcanvas_resizehandle",
-      "community": 1,
-      "norm_label": "resizehandle"
     },
     {
       "label": "Props",
@@ -2358,7 +2421,7 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L53",
       "id": "freeformcanvas_freeformcanvas_freeformcanvashandle",
-      "community": 1,
+      "community": 3,
       "norm_label": "freeformcanvashandle"
     },
     {
@@ -2407,94 +2470,67 @@
       "norm_label": "pendingtabledrag"
     },
     {
-      "label": "clientToCanvasPct()",
+      "label": "FreeformCanvas",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L106",
-      "id": "freeformcanvas_freeformcanvas_clienttocanvaspct",
+      "id": "freeformcanvas_freeformcanvas_freeformcanvas",
+      "community": 3,
+      "norm_label": "freeformcanvas"
+    },
+    {
+      "label": "canvas-geometry.ts",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L1",
+      "id": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "community": 1,
+      "norm_label": "canvas-geometry.ts"
+    },
+    {
+      "label": "clientToCanvasPct()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L4",
+      "id": "freeformcanvas_canvas_geometry_clienttocanvaspct",
       "community": 1,
       "norm_label": "clienttocanvaspct()"
     },
     {
       "label": "hitElementAtPoint()",
       "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L114",
-      "id": "freeformcanvas_freeformcanvas_hitelementatpoint",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L12",
+      "id": "freeformcanvas_canvas_geometry_hitelementatpoint",
       "community": 1,
       "norm_label": "hitelementatpoint()"
     },
     {
       "label": "rectFromPoints()",
       "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L122",
-      "id": "freeformcanvas_freeformcanvas_rectfrompoints",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L20",
+      "id": "freeformcanvas_canvas_geometry_rectfrompoints",
       "community": 1,
       "norm_label": "rectfrompoints()"
     },
     {
       "label": "rectsIntersect()",
       "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L131",
-      "id": "freeformcanvas_freeformcanvas_rectsintersect",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L29",
+      "id": "freeformcanvas_canvas_geometry_rectsintersect",
       "community": 1,
       "norm_label": "rectsintersect()"
     },
     {
-      "label": "renderTextContent()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L144",
-      "id": "freeformcanvas_freeformcanvas_rendertextcontent",
-      "community": 1,
-      "norm_label": "rendertextcontent()"
-    },
-    {
-      "label": "elementTransform()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L159",
-      "id": "freeformcanvas_freeformcanvas_elementtransform",
-      "community": 1,
-      "norm_label": "elementtransform()"
-    },
-    {
-      "label": "ShapeLineVisual()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L168",
-      "id": "freeformcanvas_freeformcanvas_shapelinevisual",
-      "community": 1,
-      "norm_label": "shapelinevisual()"
-    },
-    {
       "label": "sortElements()",
       "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L192",
-      "id": "freeformcanvas_freeformcanvas_sortelements",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L42",
+      "id": "freeformcanvas_canvas_geometry_sortelements",
       "community": 1,
       "norm_label": "sortelements()"
-    },
-    {
-      "label": "CanvasElement",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L196",
-      "id": "freeformcanvas_freeformcanvas_canvaselement",
-      "community": 1,
-      "norm_label": "canvaselement"
-    },
-    {
-      "label": "FreeformCanvas",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L438",
-      "id": "freeformcanvas_freeformcanvas_freeformcanvas",
-      "community": 1,
-      "norm_label": "freeformcanvas"
     },
     {
       "label": "ShapeToolbar.tsx",
@@ -2502,7 +2538,7 @@
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L1",
       "id": "client_src_components_freeformcanvas_shapetoolbar_tsx",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapetoolbar.tsx"
     },
     {
@@ -2511,7 +2547,7 @@
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L6",
       "id": "freeformcanvas_shapetoolbar_props",
-      "community": 4,
+      "community": 0,
       "norm_label": "props"
     },
     {
@@ -2520,8 +2556,71 @@
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L14",
       "id": "freeformcanvas_shapetoolbar_shapetoolbar",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapetoolbar()"
+    },
+    {
+      "label": "CanvasElement.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L1",
+      "id": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "community": 0,
+      "norm_label": "canvaselement.tsx"
+    },
+    {
+      "label": "ResizeHandle",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L12",
+      "id": "freeformcanvas_canvaselement_resizehandle",
+      "community": 0,
+      "norm_label": "resizehandle"
+    },
+    {
+      "label": "CanvasElementProps",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L14",
+      "id": "freeformcanvas_canvaselement_canvaselementprops",
+      "community": 0,
+      "norm_label": "canvaselementprops"
+    },
+    {
+      "label": "renderTextContent()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L32",
+      "id": "freeformcanvas_canvaselement_rendertextcontent",
+      "community": 0,
+      "norm_label": "rendertextcontent()"
+    },
+    {
+      "label": "elementTransform()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L47",
+      "id": "freeformcanvas_canvaselement_elementtransform",
+      "community": 0,
+      "norm_label": "elementtransform()"
+    },
+    {
+      "label": "ShapeLineVisual()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L56",
+      "id": "freeformcanvas_canvaselement_shapelinevisual",
+      "community": 0,
+      "norm_label": "shapelinevisual()"
+    },
+    {
+      "label": "CanvasElement",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L80",
+      "id": "freeformcanvas_canvaselement_canvaselement",
+      "community": 0,
+      "norm_label": "canvaselement"
     },
     {
       "label": "TableToolbar.tsx",
@@ -2529,7 +2628,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L1",
       "id": "client_src_components_freeformcanvas_tabletoolbar_tsx",
-      "community": 5,
+      "community": 6,
       "norm_label": "tabletoolbar.tsx"
     },
     {
@@ -2538,7 +2637,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L16",
       "id": "freeformcanvas_tabletoolbar_props",
-      "community": 5,
+      "community": 6,
       "norm_label": "props"
     },
     {
@@ -2547,7 +2646,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L25",
       "id": "freeformcanvas_tabletoolbar_font_sizes",
-      "community": 5,
+      "community": 6,
       "norm_label": "font_sizes"
     },
     {
@@ -2556,7 +2655,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L26",
       "id": "freeformcanvas_tabletoolbar_font_families",
-      "community": 5,
+      "community": 6,
       "norm_label": "font_families"
     },
     {
@@ -2565,7 +2664,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L33",
       "id": "freeformcanvas_tabletoolbar_toolbtn",
-      "community": 5,
+      "community": 6,
       "norm_label": "toolbtn()"
     },
     {
@@ -2574,7 +2673,7 @@
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L56",
       "id": "freeformcanvas_tabletoolbar_tabletoolbar",
-      "community": 1,
+      "community": 6,
       "norm_label": "tabletoolbar()"
     },
     {
@@ -2583,79 +2682,34 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "id": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "community": 1,
+      "community": 5,
       "norm_label": "elementcontextmenu.tsx"
     },
     {
       "label": "ElementContextMenuState",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L6",
+      "source_location": "L10",
       "id": "freeformcanvas_elementcontextmenu_elementcontextmenustate",
-      "community": 1,
+      "community": 5,
       "norm_label": "elementcontextmenustate"
     },
     {
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L12",
+      "source_location": "L16",
       "id": "freeformcanvas_elementcontextmenu_props",
-      "community": 1,
+      "community": 5,
       "norm_label": "props"
-    },
-    {
-      "label": "stopMenuEvent()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L28",
-      "id": "freeformcanvas_elementcontextmenu_stopmenuevent",
-      "community": 1,
-      "norm_label": "stopmenuevent()"
-    },
-    {
-      "label": "IconBtn()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L33",
-      "id": "freeformcanvas_elementcontextmenu_iconbtn",
-      "community": 1,
-      "norm_label": "iconbtn()"
-    },
-    {
-      "label": "MenuItem()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L61",
-      "id": "freeformcanvas_elementcontextmenu_menuitem",
-      "community": 1,
-      "norm_label": "menuitem()"
-    },
-    {
-      "label": "SubMenuItem()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L96",
-      "id": "freeformcanvas_elementcontextmenu_submenuitem",
-      "community": 1,
-      "norm_label": "submenuitem()"
-    },
-    {
-      "label": "SubMenu()",
-      "file_type": "code",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L111",
-      "id": "freeformcanvas_elementcontextmenu_submenu",
-      "community": 1,
-      "norm_label": "submenu()"
     },
     {
       "label": "ElementContextMenu()",
       "file_type": "code",
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L134",
+      "source_location": "L32",
       "id": "freeformcanvas_elementcontextmenu_elementcontextmenu",
-      "community": 1,
+      "community": 5,
       "norm_label": "elementcontextmenu()"
     },
     {
@@ -2691,7 +2745,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L1",
       "id": "client_src_components_ribbon_tablepicker_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "tablepicker.tsx"
     },
     {
@@ -2700,7 +2754,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L8",
       "id": "ribbon_tablepicker_props",
-      "community": 4,
+      "community": 3,
       "norm_label": "props"
     },
     {
@@ -2709,7 +2763,7 @@
       "source_file": "client/src/components/Ribbon/TablePicker.tsx",
       "source_location": "L12",
       "id": "ribbon_tablepicker_tablepicker",
-      "community": 4,
+      "community": 3,
       "norm_label": "tablepicker()"
     },
     {
@@ -2718,7 +2772,7 @@
       "source_file": "client/src/components/Ribbon/ShapePicker.tsx",
       "source_location": "L1",
       "id": "client_src_components_ribbon_shapepicker_tsx",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapepicker.tsx"
     },
     {
@@ -2727,7 +2781,7 @@
       "source_file": "client/src/components/Ribbon/ShapePicker.tsx",
       "source_location": "L11",
       "id": "ribbon_shapepicker_props",
-      "community": 4,
+      "community": 0,
       "norm_label": "props"
     },
     {
@@ -2736,7 +2790,7 @@
       "source_file": "client/src/components/Ribbon/ShapePicker.tsx",
       "source_location": "L17",
       "id": "ribbon_shapepicker_shapepreview",
-      "community": 4,
+      "community": 0,
       "norm_label": "shapepreview()"
     },
     {
@@ -2745,7 +2799,7 @@
       "source_file": "client/src/components/Ribbon/ShapePicker.tsx",
       "source_location": "L38",
       "id": "ribbon_shapepicker_shapepicker",
-      "community": 4,
+      "community": 3,
       "norm_label": "shapepicker()"
     },
     {
@@ -2754,7 +2808,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L1",
       "id": "client_src_components_ribbon_ribbon_tsx",
-      "community": 4,
+      "community": 3,
       "norm_label": "ribbon.tsx"
     },
     {
@@ -2763,7 +2817,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L8",
       "id": "ribbon_ribbon_ribbontab",
-      "community": 4,
+      "community": 3,
       "norm_label": "ribbontab"
     },
     {
@@ -2772,7 +2826,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L10",
       "id": "ribbon_ribbon_props",
-      "community": 4,
+      "community": 3,
       "norm_label": "props"
     },
     {
@@ -2781,7 +2835,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L42",
       "id": "ribbon_ribbon_group",
-      "community": 4,
+      "community": 3,
       "norm_label": "group()"
     },
     {
@@ -2790,7 +2844,7 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L51",
       "id": "ribbon_ribbon_tool",
-      "community": 4,
+      "community": 3,
       "norm_label": "tool()"
     },
     {
@@ -2799,134 +2853,8 @@
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
       "source_location": "L80",
       "id": "ribbon_ribbon_ribbon",
-      "community": 4,
+      "community": 3,
       "norm_label": "ribbon()"
-    },
-    {
-      "label": "SlideCanvas.tsx",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L1",
-      "id": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "community": 9,
-      "norm_label": "slidecanvas.tsx"
-    },
-    {
-      "label": "Props",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L6",
-      "id": "slidecanvas_slidecanvas_props",
-      "community": 9,
-      "norm_label": "props"
-    },
-    {
-      "label": "toNumbers()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L15",
-      "id": "slidecanvas_slidecanvas_tonumbers",
-      "community": 9,
-      "norm_label": "tonumbers()"
-    },
-    {
-      "label": "ChartPreview()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L19",
-      "id": "slidecanvas_slidecanvas_chartpreview",
-      "community": 9,
-      "norm_label": "chartpreview()"
-    },
-    {
-      "label": "SlideCanvas()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L159",
-      "id": "slidecanvas_slidecanvas_slidecanvas",
-      "community": 9,
-      "norm_label": "slidecanvas()"
-    },
-    {
-      "label": "EditableField.tsx",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L1",
-      "id": "client_src_components_slidecanvas_editablefield_tsx",
-      "community": 9,
-      "norm_label": "editablefield.tsx"
-    },
-    {
-      "label": "EditableTextProps",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L3",
-      "id": "slidecanvas_editablefield_editabletextprops",
-      "community": 9,
-      "norm_label": "editabletextprops"
-    },
-    {
-      "label": "EditableText()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L13",
-      "id": "slidecanvas_editablefield_editabletext",
-      "community": 9,
-      "norm_label": "editabletext()"
-    },
-    {
-      "label": "EditableBulletsProps",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L54",
-      "id": "slidecanvas_editablefield_editablebulletsprops",
-      "community": 9,
-      "norm_label": "editablebulletsprops"
-    },
-    {
-      "label": "EditableBullets()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L61",
-      "id": "slidecanvas_editablefield_editablebullets",
-      "community": 9,
-      "norm_label": "editablebullets()"
-    },
-    {
-      "label": "SlideEditor.tsx",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L1",
-      "id": "client_src_components_slideeditor_slideeditor_tsx",
-      "community": 0,
-      "norm_label": "slideeditor.tsx"
-    },
-    {
-      "label": "Props",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L9",
-      "id": "slideeditor_slideeditor_props",
-      "community": 0,
-      "norm_label": "props"
-    },
-    {
-      "label": "TextList()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L15",
-      "id": "slideeditor_slideeditor_textlist",
-      "community": 0,
-      "norm_label": "textlist()"
-    },
-    {
-      "label": "SlideEditor()",
-      "file_type": "code",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L60",
-      "id": "slideeditor_slideeditor_slideeditor",
-      "community": 0,
-      "norm_label": "slideeditor()"
     },
     {
       "label": "useHistory.ts",
@@ -2934,7 +2862,7 @@
       "source_file": "client/src/hooks/useHistory.ts",
       "source_location": "L1",
       "id": "client_src_hooks_usehistory_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "usehistory.ts"
     },
     {
@@ -2943,7 +2871,7 @@
       "source_file": "client/src/hooks/useHistory.ts",
       "source_location": "L3",
       "id": "hooks_usehistory_updater",
-      "community": 0,
+      "community": 3,
       "norm_label": "updater"
     },
     {
@@ -2952,7 +2880,7 @@
       "source_file": "client/src/hooks/useHistory.ts",
       "source_location": "L5",
       "id": "hooks_usehistory_resolve",
-      "community": 0,
+      "community": 3,
       "norm_label": "resolve()"
     },
     {
@@ -2961,7 +2889,7 @@
       "source_file": "client/src/hooks/useHistory.ts",
       "source_location": "L9",
       "id": "hooks_usehistory_usehistory",
-      "community": 0,
+      "community": 3,
       "norm_label": "usehistory()"
     },
     {
@@ -2970,7 +2898,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L1",
       "id": "client_src_hooks_uselocaldraft_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "uselocaldraft.ts"
     },
     {
@@ -2979,7 +2907,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L6",
       "id": "hooks_uselocaldraft_savedraft",
-      "community": 0,
+      "community": 3,
       "norm_label": "savedraft()"
     },
     {
@@ -2988,7 +2916,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L14",
       "id": "hooks_uselocaldraft_loaddraft",
-      "community": 0,
+      "community": 3,
       "norm_label": "loaddraft()"
     },
     {
@@ -2997,7 +2925,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L23",
       "id": "hooks_uselocaldraft_cleardraft",
-      "community": 0,
+      "community": 3,
       "norm_label": "cleardraft()"
     },
     {
@@ -3006,7 +2934,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L27",
       "id": "hooks_uselocaldraft_uselocaldraft",
-      "community": 0,
+      "community": 3,
       "norm_label": "uselocaldraft()"
     },
     {
@@ -3015,7 +2943,7 @@
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L38",
       "id": "hooks_uselocaldraft_restoredraftonmount",
-      "community": 0,
+      "community": 3,
       "norm_label": "restoredraftonmount()"
     },
     {
@@ -3024,7 +2952,7 @@
       "source_file": "client/src/api/ppt.ts",
       "source_location": "L1",
       "id": "client_src_api_ppt_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "ppt.ts"
     },
     {
@@ -3033,7 +2961,7 @@
       "source_file": "client/src/api/ppt.ts",
       "source_location": "L3",
       "id": "api_ppt_generatecontent",
-      "community": 0,
+      "community": 3,
       "norm_label": "generatecontent()"
     },
     {
@@ -3042,7 +2970,7 @@
       "source_file": "client/src/api/ppt.ts",
       "source_location": "L19",
       "id": "api_ppt_exportpptx",
-      "community": 0,
+      "community": 3,
       "norm_label": "exportpptx()"
     },
     {
@@ -3051,7 +2979,7 @@
       "source_file": "client/src/api/ppt.ts",
       "source_location": "L32",
       "id": "api_ppt_downloadblob",
-      "community": 0,
+      "community": 3,
       "norm_label": "downloadblob()"
     },
     {
@@ -3060,7 +2988,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 12,
+      "community": 13,
       "norm_label": "readme.md"
     },
     {
@@ -3069,7 +2997,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "smart_ppt_readme_ppt_agent",
-      "community": 12,
+      "community": 13,
       "norm_label": "ppt-agent"
     },
     {
@@ -3078,7 +3006,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "smart_ppt_readme_\u529f\u80fd",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u529f\u80fd"
     },
     {
@@ -3087,7 +3015,7 @@
       "source_file": "README.md",
       "source_location": "L10",
       "id": "smart_ppt_readme_\u5feb\u901f\u5f00\u59cb",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u5feb\u901f\u5f00\u59cb"
     },
     {
@@ -3096,7 +3024,7 @@
       "source_file": "README.md",
       "source_location": "L12",
       "id": "smart_ppt_readme_codeblock_1",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:bash (npm install)"
     },
     {
@@ -3105,7 +3033,7 @@
       "source_file": "README.md",
       "source_location": "L21",
       "id": "smart_ppt_readme_api",
-      "community": 12,
+      "community": 13,
       "norm_label": "api"
     },
     {
@@ -3114,7 +3042,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "id": "smart_ppt_readme_codeblock_2",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:json ({)"
     },
     {
@@ -3123,7 +3051,7 @@
       "source_file": "README.md",
       "source_location": "L36",
       "id": "smart_ppt_readme_codeblock_3",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -3132,7 +3060,7 @@
       "source_file": "README.md",
       "source_location": "L43",
       "id": "smart_ppt_readme_\u914d\u7f6e_yaml",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u914d\u7f6e(yaml)"
     },
     {
@@ -3141,7 +3069,7 @@
       "source_file": "README.md",
       "source_location": "L56",
       "id": "smart_ppt_readme_\u9879\u76ee\u7ed3\u6784",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u9879\u76ee\u7ed3\u6784"
     },
     {
@@ -3150,7 +3078,7 @@
       "source_file": "README.md",
       "source_location": "L58",
       "id": "smart_ppt_readme_codeblock_4",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:block4 (src/)"
     },
     {
@@ -3159,7 +3087,7 @@
       "source_file": "demo/02-long.md",
       "source_location": "L1",
       "id": "demo_02_long_md",
-      "community": 24,
+      "community": 25,
       "norm_label": "02-long.md"
     },
     {
@@ -3168,7 +3096,7 @@
       "source_file": "demo/01-short.md",
       "source_location": "L1",
       "id": "demo_01_short_md",
-      "community": 25,
+      "community": 26,
       "norm_label": "01-short.md"
     },
     {
@@ -3177,7 +3105,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt.md"
     },
     {
@@ -3186,7 +3114,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L1",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684_ppt",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8302\u7684 ppt"
     },
     {
@@ -3195,7 +3123,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L8",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u76ee\u5f55",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u76ee\u5f55"
     },
     {
@@ -3204,7 +3132,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L27",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u73b0\u72b6\u4e0e\u5dee\u8ddd",
-      "community": 18,
+      "community": 21,
       "norm_label": "\u73b0\u72b6\u4e0e\u5dee\u8ddd"
     },
     {
@@ -3213,7 +3141,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L29",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d\u6d41\u7a0b",
-      "community": 18,
+      "community": 21,
       "norm_label": "\u5f53\u524d\u6d41\u7a0b"
     },
     {
@@ -3222,7 +3150,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L31",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_1",
-      "community": 18,
+      "community": 21,
       "norm_label": "code:block1 (post /ppt/generate { topic, slidecount })"
     },
     {
@@ -3231,7 +3159,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L50",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_json_\u7ed3\u6784",
-      "community": 18,
+      "community": 21,
       "norm_label": "\u5f53\u524d json \u7ed3\u6784"
     },
     {
@@ -3240,7 +3168,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L52",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_2",
-      "community": 18,
+      "community": 21,
       "norm_label": "code:json ({)"
     },
     {
@@ -3249,7 +3177,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L62",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5dee\u8ddd\u4e00\u89c8",
-      "community": 18,
+      "community": 21,
       "norm_label": "\u5dee\u8ddd\u4e00\u89c8"
     },
     {
@@ -3258,7 +3186,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L74",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u8bbe\u8ba1\u539f\u5219",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u8bbe\u8ba1\u539f\u5219"
     },
     {
@@ -3267,7 +3195,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L84",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u76ee\u6807\u67b6\u6784",
-      "community": 21,
+      "community": 22,
       "norm_label": "\u76ee\u6807\u67b6\u6784"
     },
     {
@@ -3276,7 +3204,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L86",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_3",
-      "community": 21,
+      "community": 22,
       "norm_label": "code:mermaid (sequencediagram)"
     },
     {
@@ -3285,7 +3213,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L106",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_4",
-      "community": 21,
+      "community": 22,
       "norm_label": "code:block4 (src/)"
     },
     {
@@ -3294,7 +3222,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L133",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5b8c\u6574_json_schema",
-      "community": 17,
+      "community": 18,
       "norm_label": "\u5b8c\u6574 json schema"
     },
     {
@@ -3303,7 +3231,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L135",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_typescript_\u7c7b\u578b_\u76ee\u6807",
-      "community": 17,
+      "community": 18,
       "norm_label": "typescript \u7c7b\u578b(\u76ee\u6807)"
     },
     {
@@ -3312,7 +3240,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L137",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_5",
-      "community": 17,
+      "community": 18,
       "norm_label": "code:typescript (// src/ai/types/slide-content.ts)"
     },
     {
@@ -3321,7 +3249,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L184",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_llm_\u8f93\u51fa\u793a\u4f8b_8_\u9875",
-      "community": 17,
+      "community": 18,
       "norm_label": "llm \u8f93\u51fa\u793a\u4f8b(8 \u9875)"
     },
     {
@@ -3330,7 +3258,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L186",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_6",
-      "community": 17,
+      "community": 18,
       "norm_label": "code:json ({)"
     },
     {
@@ -3339,7 +3267,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L237",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_prompt_\u6539\u9020\u8981\u70b9",
-      "community": 17,
+      "community": 18,
       "norm_label": "prompt \u6539\u9020\u8981\u70b9"
     },
     {
@@ -3348,7 +3276,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L241",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_7",
-      "community": 17,
+      "community": 18,
       "norm_label": "code:block7 (return json with this shape:)"
     },
     {
@@ -3411,7 +3339,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L299",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u56fe\u7247\u670d\u52a1",
-      "community": 13,
+      "community": 14,
       "norm_label": "\u56fe\u7247\u670d\u52a1"
     },
     {
@@ -3420,7 +3348,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L301",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7b56\u7565\u9009\u62e9",
-      "community": 13,
+      "community": 14,
       "norm_label": "\u7b56\u7565\u9009\u62e9"
     },
     {
@@ -3429,7 +3357,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L312",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_imageservice_\u63a5\u53e3_\u63a8\u8350",
-      "community": 13,
+      "community": 14,
       "norm_label": "imageservice \u63a5\u53e3(\u63a8\u8350)"
     },
     {
@@ -3438,7 +3366,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L314",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_8",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:typescript (// src/image/image.service.ts)"
     },
     {
@@ -3447,7 +3375,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L358",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u767e\u70bc\u901a\u4e49\u4e07\u76f8_\u793a\u4f8b",
-      "community": 13,
+      "community": 14,
       "norm_label": "\u767e\u70bc\u901a\u4e49\u4e07\u76f8(\u793a\u4f8b)"
     },
     {
@@ -3456,7 +3384,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L362",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_9",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:block9 (post /api/v1/services/aigc/text2image/image-synthesis)"
     },
     {
@@ -3465,7 +3393,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L372",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_10",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:yaml (image_provider: wanx          # wanx | unsplash | placeholde)"
     },
     {
@@ -3474,7 +3402,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L378",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_pptxgenjs_\u5d4c\u5165\u65b9\u5f0f",
-      "community": 13,
+      "community": 14,
       "norm_label": "pptxgenjs \u5d4c\u5165\u65b9\u5f0f"
     },
     {
@@ -3483,7 +3411,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L380",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_11",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:typescript (// \u63a8\u8350:\u672c\u5730\u8def\u5f84(imageservice \u4e0b\u8f7d\u540e))"
     },
     {
@@ -3492,7 +3420,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L398",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_oss_\u4e0a\u4f20_\u53ef\u9009",
-      "community": 13,
+      "community": 14,
       "norm_label": "oss \u4e0a\u4f20(\u53ef\u9009)"
     },
     {
@@ -3501,7 +3429,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L402",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_12",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:typescript (// \u4e0a\u4f20\u540e\u5f97\u5230 https://tx-res-01.oss-cn-guangzhou.aliyuncs.com/pro)"
     },
     {
@@ -3510,7 +3438,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L413",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7248\u5f0f\u4e0e\u5750\u6807",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u7248\u5f0f\u4e0e\u5750\u6807"
     },
     {
@@ -3519,7 +3447,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L417",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u7248\u5f0f\u7ebf\u6846",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u7248\u5f0f\u7ebf\u6846"
     },
     {
@@ -3528,7 +3456,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L419",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_13",
-      "community": 14,
+      "community": 15,
       "norm_label": "code:block13 (cover                 image-right              two-column)"
     },
     {
@@ -3537,7 +3465,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L437",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5750\u6807\u8868",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u5750\u6807\u8868"
     },
     {
@@ -3546,7 +3474,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L458",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_layout_\u8c03\u5ea6_\u63a8\u8350",
-      "community": 14,
+      "community": 15,
       "norm_label": "layout \u8c03\u5ea6(\u63a8\u8350)"
     },
     {
@@ -3555,7 +3483,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L460",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_14",
-      "community": 14,
+      "community": 15,
       "norm_label": "code:typescript (// src/ppt/layouts/index.ts)"
     },
     {
@@ -3564,7 +3492,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L488",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_image_right_\u793a\u4f8b",
-      "community": 14,
+      "community": 15,
       "norm_label": "image-right \u793a\u4f8b"
     },
     {
@@ -3573,7 +3501,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L490",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_15",
-      "community": 14,
+      "community": 15,
       "norm_label": "code:typescript (export function renderimageright({ slide, page, theme }: lay)"
     },
     {
@@ -3582,7 +3510,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L516",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_full_image_\u534a\u900f\u660e\u906e\u7f69",
-      "community": 14,
+      "community": 15,
       "norm_label": "full-image \u534a\u900f\u660e\u906e\u7f69"
     },
     {
@@ -3591,7 +3519,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L518",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_16",
-      "community": 14,
+      "community": 15,
       "norm_label": "code:typescript (page.addimage({ path: slide.imagepath, x: 0, y: 0, w: 10, h:)"
     },
     {
@@ -3600,7 +3528,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L532",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_controller_\u7f16\u6392",
-      "community": 10,
+      "community": 11,
       "norm_label": "controller \u7f16\u6392"
     },
     {
@@ -3609,7 +3537,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L536",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_17",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:typescript (@post('generate'))"
     },
     {
@@ -3618,7 +3546,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L559",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u914d\u7f6e\u9879",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u914d\u7f6e\u9879"
     },
     {
@@ -3627,7 +3555,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L563",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_18",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:yaml (port: 3000)"
     },
     {
@@ -3636,7 +3564,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L587",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u964d\u7ea7\u4e0e\u5bb9\u9519",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u964d\u7ea7\u4e0e\u5bb9\u9519"
     },
     {
@@ -3645,7 +3573,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L599",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_19",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:typescript (const default_theme: presentationtheme = {)"
     },
     {
@@ -3654,7 +3582,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L610",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6027\u80fd\u5efa\u8bae",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u6027\u80fd\u5efa\u8bae"
     },
     {
@@ -3717,7 +3645,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L657",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5e38\u89c1\u95ee\u9898",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u5e38\u89c1\u95ee\u9898"
     },
     {
@@ -3726,7 +3654,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L676",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5b9e\u65bd\u8def\u7ebf\u56fe",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u5b9e\u65bd\u8def\u7ebf\u56fe"
     },
     {
@@ -3735,7 +3663,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L690",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u53c2\u8003\u94fe\u63a5",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u53c2\u8003\u94fe\u63a5"
     },
     {
@@ -3744,7 +3672,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L1",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_md",
-      "community": 7,
+      "community": 8,
       "norm_label": "01.ppt\u751f\u6210\u6d41\u7a0b.md"
     },
     {
@@ -3753,7 +3681,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L1",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_ppt_\u751f\u6210\u6d41\u7a0b",
-      "community": 7,
+      "community": 8,
       "norm_label": "ppt \u751f\u6210\u6d41\u7a0b"
     },
     {
@@ -3762,7 +3690,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L3",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u6982\u89c8",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u6982\u89c8"
     },
     {
@@ -3771,7 +3699,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L5",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_1",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block1 (\u7528\u6237\u8f93\u5165 \u2192 llm \u751f\u6210\u5927\u7eb2 \u2192 \u9010\u9875\u8865\u5145\u8be6\u7ec6\u5185\u5bb9 \u2192 \u5168\u6587\u6da6\u8272 \u2192 \u56fe\u7247\u8865\u5145 \u2192 \u6e32\u67d3 pptx)"
     },
     {
@@ -3780,7 +3708,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L9",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_2",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:mermaid (sequencediagram)"
     },
     {
@@ -3789,7 +3717,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L32",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u56db\u6b65\u8be6\u89e3",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u56db\u6b65\u8be6\u89e3"
     },
     {
@@ -3798,7 +3726,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L34",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_1_\u7528\u6237\u8f93\u5165\u8981\u6c42",
-      "community": 7,
+      "community": 8,
       "norm_label": "1. \u7528\u6237\u8f93\u5165\u8981\u6c42"
     },
     {
@@ -3807,7 +3735,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L38",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_3",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:json ({ \"topic\": \"nestjs \u5165\u95e8\", \"slidecount\": 20 })"
     },
     {
@@ -3816,7 +3744,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L46",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_2_llm_\u751f\u6210\u5927\u7eb2",
-      "community": 7,
+      "community": 8,
       "norm_label": "2. llm \u751f\u6210\u5927\u7eb2"
     },
     {
@@ -3825,7 +3753,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L54",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_4",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:json ({)"
     },
     {
@@ -3834,7 +3762,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L72",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_3_\u5bf9\u6bcf\u4e00\u4e2a\u7ae0\u8282\u8865\u5145\u8be6\u7ec6\u5185\u5bb9",
-      "community": 7,
+      "community": 8,
       "norm_label": "3. \u5bf9\u6bcf\u4e00\u4e2a\u7ae0\u8282\u8865\u5145\u8be6\u7ec6\u5185\u5bb9"
     },
     {
@@ -3843,7 +3771,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L80",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_codeblock_5",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block5 (expandslide 1/20 title=\"\u5c01\u9762\")"
     },
     {
@@ -3852,7 +3780,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L97",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4_ppt_\u6da6\u8272_\u56fe\u7247\u8865\u5145",
-      "community": 7,
+      "community": 8,
       "norm_label": "4. ppt \u6da6\u8272 + \u56fe\u7247\u8865\u5145"
     },
     {
@@ -3861,7 +3789,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L99",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4a_\u5168\u6587\u6da6\u8272",
-      "community": 7,
+      "community": 8,
       "norm_label": "4a \u5168\u6587\u6da6\u8272"
     },
     {
@@ -3870,7 +3798,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L107",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4b_\u56fe\u7247\u8865\u5145",
-      "community": 7,
+      "community": 8,
       "norm_label": "4b \u56fe\u7247\u8865\u5145"
     },
     {
@@ -3879,7 +3807,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L115",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_4c_\u6e32\u67d3_pptx",
-      "community": 7,
+      "community": 8,
       "norm_label": "4c \u6e32\u67d3 pptx"
     },
     {
@@ -3888,7 +3816,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L123",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u4ee3\u7801\u6620\u5c04",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u4ee3\u7801\u6620\u5c04"
     },
     {
@@ -3897,7 +3825,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L134",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_llm_\u8c03\u7528\u6b21\u6570",
-      "community": 7,
+      "community": 8,
       "norm_label": "llm \u8c03\u7528\u6b21\u6570"
     },
     {
@@ -3906,7 +3834,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L143",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u914d\u7f6e",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u914d\u7f6e"
     },
     {
@@ -3915,7 +3843,7 @@
       "source_file": "docs/01.PPT\u751f\u6210\u6d41\u7a0b.md",
       "source_location": "L155",
       "id": "docs_01_ppt\u751f\u6210\u6d41\u7a0b_\u76f8\u5173\u6587\u6863",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u76f8\u5173\u6587\u6863"
     },
     {
@@ -3924,7 +3852,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L1",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md"
     },
     {
@@ -3933,7 +3861,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L1",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc"
     },
     {
@@ -3942,7 +3870,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L3",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u73b0\u8c61",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u73b0\u8c61"
     },
     {
@@ -3951,7 +3879,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L7",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u6839\u56e0",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u6839\u56e0"
     },
     {
@@ -3960,7 +3888,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L15",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u65b9\u6848_\u5df2\u5b9e\u73b0",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u65b9\u6848(\u5df2\u5b9e\u73b0)"
     },
     {
@@ -3969,7 +3897,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L19",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_codeblock_1",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:mermaid (flowchart lr)"
     },
     {
@@ -3978,7 +3906,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L33",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u4ee3\u4ef7\u4e0e\u6ce8\u610f",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u4ee3\u4ef7\u4e0e\u6ce8\u610f"
     },
     {
@@ -3987,7 +3915,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L39",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_\u9a8c\u8bc1",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u9a8c\u8bc1"
     },
     {
@@ -3996,7 +3924,7 @@
       "source_file": "docs/\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc.md",
       "source_location": "L41",
       "id": "docs_\u5185\u5bb9\u4e0d\u591f\u4e30\u5bcc_codeblock_2",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -4005,7 +3933,7 @@
       "source_file": "client/README.md",
       "source_location": "L1",
       "id": "client_readme_md",
-      "community": 16,
+      "community": 17,
       "norm_label": "readme.md"
     },
     {
@@ -4014,7 +3942,7 @@
       "source_file": "client/README.md",
       "source_location": "L1",
       "id": "client_readme_smart_ppt_client",
-      "community": 16,
+      "community": 17,
       "norm_label": "smart ppt client"
     },
     {
@@ -4023,7 +3951,7 @@
       "source_file": "client/README.md",
       "source_location": "L5",
       "id": "client_readme_\u524d\u7f6e\u6761\u4ef6",
-      "community": 16,
+      "community": 17,
       "norm_label": "\u524d\u7f6e\u6761\u4ef6"
     },
     {
@@ -4032,7 +3960,7 @@
       "source_file": "client/README.md",
       "source_location": "L9",
       "id": "client_readme_\u5f00\u53d1",
-      "community": 16,
+      "community": 17,
       "norm_label": "\u5f00\u53d1"
     },
     {
@@ -4041,7 +3969,7 @@
       "source_file": "client/README.md",
       "source_location": "L11",
       "id": "client_readme_codeblock_1",
-      "community": 16,
+      "community": 17,
       "norm_label": "code:bash (cd client)"
     },
     {
@@ -4050,7 +3978,7 @@
       "source_file": "client/README.md",
       "source_location": "L19",
       "id": "client_readme_\u529f\u80fd",
-      "community": 16,
+      "community": 17,
       "norm_label": "\u529f\u80fd"
     },
     {
@@ -4059,7 +3987,7 @@
       "source_file": "client/README.md",
       "source_location": "L30",
       "id": "client_readme_\u6784\u5efa",
-      "community": 16,
+      "community": 17,
       "norm_label": "\u6784\u5efa"
     },
     {
@@ -4068,8 +3996,296 @@
       "source_file": "client/README.md",
       "source_location": "L32",
       "id": "client_readme_codeblock_2",
-      "community": 16,
+      "community": 17,
       "norm_label": "code:bash (pnpm build)"
+    },
+    {
+      "label": "IconBtn()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L36",
+      "community": 5,
+      "norm_label": "iconbtn()",
+      "id": "slidelist_slidecontextmenu_iconbtn"
+    },
+    {
+      "label": "MenuItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L60",
+      "community": 5,
+      "norm_label": "menuitem()",
+      "id": "slidelist_slidecontextmenu_menuitem"
+    },
+    {
+      "label": "SubMenu()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L85",
+      "community": 5,
+      "norm_label": "submenu()",
+      "id": "slidelist_slidecontextmenu_submenu"
+    },
+    {
+      "label": "ResizeHandle",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L33",
+      "community": 1,
+      "norm_label": "resizehandle",
+      "id": "freeformcanvas_freeformcanvas_resizehandle"
+    },
+    {
+      "label": "clientToCanvasPct()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L106",
+      "community": 1,
+      "norm_label": "clienttocanvaspct()",
+      "id": "freeformcanvas_freeformcanvas_clienttocanvaspct"
+    },
+    {
+      "label": "hitElementAtPoint()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L114",
+      "community": 1,
+      "norm_label": "hitelementatpoint()",
+      "id": "freeformcanvas_freeformcanvas_hitelementatpoint"
+    },
+    {
+      "label": "rectFromPoints()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L122",
+      "community": 1,
+      "norm_label": "rectfrompoints()",
+      "id": "freeformcanvas_freeformcanvas_rectfrompoints"
+    },
+    {
+      "label": "rectsIntersect()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L131",
+      "community": 1,
+      "norm_label": "rectsintersect()",
+      "id": "freeformcanvas_freeformcanvas_rectsintersect"
+    },
+    {
+      "label": "renderTextContent()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L144",
+      "community": 1,
+      "norm_label": "rendertextcontent()",
+      "id": "freeformcanvas_freeformcanvas_rendertextcontent"
+    },
+    {
+      "label": "elementTransform()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L159",
+      "community": 1,
+      "norm_label": "elementtransform()",
+      "id": "freeformcanvas_freeformcanvas_elementtransform"
+    },
+    {
+      "label": "ShapeLineVisual()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L168",
+      "community": 1,
+      "norm_label": "shapelinevisual()",
+      "id": "freeformcanvas_freeformcanvas_shapelinevisual"
+    },
+    {
+      "label": "sortElements()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L192",
+      "community": 3,
+      "norm_label": "sortelements()",
+      "id": "freeformcanvas_freeformcanvas_sortelements"
+    },
+    {
+      "label": "CanvasElement",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L196",
+      "community": 1,
+      "norm_label": "canvaselement",
+      "id": "freeformcanvas_freeformcanvas_canvaselement"
+    },
+    {
+      "label": "stopMenuEvent()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L28",
+      "community": 5,
+      "norm_label": "stopmenuevent()",
+      "id": "freeformcanvas_elementcontextmenu_stopmenuevent"
+    },
+    {
+      "label": "IconBtn()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L33",
+      "community": 5,
+      "norm_label": "iconbtn()",
+      "id": "freeformcanvas_elementcontextmenu_iconbtn"
+    },
+    {
+      "label": "MenuItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L61",
+      "community": 5,
+      "norm_label": "menuitem()",
+      "id": "freeformcanvas_elementcontextmenu_menuitem"
+    },
+    {
+      "label": "SubMenuItem()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L96",
+      "community": 5,
+      "norm_label": "submenuitem()",
+      "id": "freeformcanvas_elementcontextmenu_submenuitem"
+    },
+    {
+      "label": "SubMenu()",
+      "file_type": "code",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L111",
+      "community": 5,
+      "norm_label": "submenu()",
+      "id": "freeformcanvas_elementcontextmenu_submenu"
+    },
+    {
+      "label": "SlideCanvas.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L1",
+      "community": 10,
+      "norm_label": "slidecanvas.tsx",
+      "id": "client_src_components_slidecanvas_slidecanvas_tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L6",
+      "community": 10,
+      "norm_label": "props",
+      "id": "slidecanvas_slidecanvas_props"
+    },
+    {
+      "label": "toNumbers()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L15",
+      "community": 10,
+      "norm_label": "tonumbers()",
+      "id": "slidecanvas_slidecanvas_tonumbers"
+    },
+    {
+      "label": "ChartPreview()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L19",
+      "community": 10,
+      "norm_label": "chartpreview()",
+      "id": "slidecanvas_slidecanvas_chartpreview"
+    },
+    {
+      "label": "SlideCanvas()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L159",
+      "community": 10,
+      "norm_label": "slidecanvas()",
+      "id": "slidecanvas_slidecanvas_slidecanvas"
+    },
+    {
+      "label": "EditableField.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L1",
+      "community": 10,
+      "norm_label": "editablefield.tsx",
+      "id": "client_src_components_slidecanvas_editablefield_tsx"
+    },
+    {
+      "label": "EditableTextProps",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L3",
+      "community": 10,
+      "norm_label": "editabletextprops",
+      "id": "slidecanvas_editablefield_editabletextprops"
+    },
+    {
+      "label": "EditableText()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L13",
+      "community": 10,
+      "norm_label": "editabletext()",
+      "id": "slidecanvas_editablefield_editabletext"
+    },
+    {
+      "label": "EditableBulletsProps",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L54",
+      "community": 10,
+      "norm_label": "editablebulletsprops",
+      "id": "slidecanvas_editablefield_editablebulletsprops"
+    },
+    {
+      "label": "EditableBullets()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L61",
+      "community": 10,
+      "norm_label": "editablebullets()",
+      "id": "slidecanvas_editablefield_editablebullets"
+    },
+    {
+      "label": "SlideEditor.tsx",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "slideeditor.tsx",
+      "id": "client_src_components_slideeditor_slideeditor_tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L9",
+      "community": 5,
+      "norm_label": "props",
+      "id": "slideeditor_slideeditor_props"
+    },
+    {
+      "label": "TextList()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L15",
+      "community": 5,
+      "norm_label": "textlist()",
+      "id": "slideeditor_slideeditor_textlist"
+    },
+    {
+      "label": "SlideEditor()",
+      "file_type": "code",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L60",
+      "community": 5,
+      "norm_label": "slideeditor()",
+      "id": "slideeditor_slideeditor_slideeditor"
     },
     {
       "label": "rectFromDrag()",
@@ -4103,7 +4319,7 @@
       "file_type": "code",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L24",
-      "community": 0,
+      "community": 5,
       "norm_label": "minipreviewfromelements()",
       "id": "slidelist_slidelist_minipreviewfromelements"
     },
@@ -4112,7 +4328,7 @@
       "file_type": "code",
       "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
       "source_location": "L12",
-      "community": 9,
+      "community": 10,
       "norm_label": "bullets()",
       "id": "slidecanvas_slidecanvas_bullets"
     },
@@ -4121,7 +4337,7 @@
       "file_type": "document",
       "source_file": "demo/01.md",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "norm_label": "01.md",
       "id": "demo_01_md"
     },
@@ -4130,7 +4346,7 @@
       "file_type": "code",
       "source_file": "api/src/ai/ai.service.ts",
       "source_location": "L92",
-      "community": 11,
+      "community": 12,
       "norm_label": ".generateslidesfromoutline()",
       "id": "ai_ai_service_aiservice_generateslidesfromoutline"
     }
@@ -7418,6 +7634,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "client/src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "client_src_components_slidelist_slide_list_actions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "client_src_app_tsx",
+      "target": "slidelist_slide_list_actions_slidelistactions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/App.tsx",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8157,6 +8395,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/slide-list-actions.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slide_list_actions_ts",
+      "target": "client_src_types_presentation_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -8201,12 +8450,34 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "client_src_types_presentation_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_shapetoolbar_tsx",
       "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "client_src_types_presentation_ts",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -8245,28 +8516,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "client_src_types_presentation_ts"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slideeditor_slideeditor_tsx",
-      "target": "client_src_types_presentation_ts"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "client/src/hooks/useLocalDraft.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -8283,6 +8532,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_api_ppt_ts",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "client_src_types_presentation_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slideeditor_slideeditor_tsx",
       "target": "client_src_types_presentation_ts"
     },
     {
@@ -8306,6 +8577,17 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
       "target": "types_presentation_slidelayout"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/slide-list-actions.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slide_list_actions_ts",
+      "target": "types_presentation_slidelayout",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8460,6 +8742,17 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_shapetoolbar_tsx",
       "target": "types_presentation_presentationtheme"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "types_presentation_presentationtheme",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8685,12 +8978,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "types_presentation_slideelement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_shapetoolbar_tsx",
       "target": "types_presentation_slideelement"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "types_presentation_slideelement",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -8986,6 +9301,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "client_src_types_shapes_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/Ribbon/ShapePicker.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -9058,6 +9384,17 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_shapetoolbar_tsx",
       "target": "types_shapes_shapekind"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "types_shapes_shapekind",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -9192,6 +9529,17 @@
       "target": "types_shapes_islinelikeshape"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "types_shapes_islinelikeshape",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -9309,6 +9657,17 @@
       "target": "client_src_utils_shape_utils_ts"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "client_src_utils_shape_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9334,12 +9693,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_shape_utils_getshapeclassname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
       "target": "utils_shape_utils_getshapesurfacestyle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_shape_utils_getshapesurfacestyle",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -9968,6 +10349,17 @@
       "target": "client_src_utils_slide_elements_ts"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "client_src_utils_slide_elements_ts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -10199,6 +10591,28 @@
       "target": "utils_slide_elements_clamp"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "utils_slide_elements_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "freeformcanvas_canvas_geometry_clienttocanvaspct",
+      "target": "utils_slide_elements_clamp"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -10415,6 +10829,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "client_src_utils_table_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/TableToolbar.tsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -10448,12 +10873,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L13",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "utils_table_utils_normalizecell"
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_table_utils_normalizecell",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10464,6 +10889,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_tabletoolbar_tsx",
+      "target": "utils_table_utils_normalizecell"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
       "target": "utils_table_utils_normalizecell"
     },
     {
@@ -10580,6 +11016,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_table_utils_celltext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -10646,6 +11093,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_table_utils_iscellvisible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -10707,6 +11165,17 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_tabletoolbar_tsx",
       "target": "utils_table_utils_applyheaderrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "utils_table_utils_cellstyletocss",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -10816,6 +11285,83 @@
       "target": "components_slide_utils_effectivelayout"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "client_src_components_contextmenu_contextmenu_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenudivider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuiconbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenushell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusubitem",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
@@ -10834,6 +11380,27 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
       "target": "slidelist_slidecontextmenu_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
+      "target": "slidelist_slidecontextmenu_slidecontextmenu"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "client_src_components_slidelist_slidecontextmenu_tsx"
     },
     {
       "relation": "contains",
@@ -10866,27 +11433,6 @@
       "target": "slidelist_slidecontextmenu_submenu"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
-      "source_location": "L112",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "slidelist_slidecontextmenu_slidecontextmenu"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideList/SlideList.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "client_src_components_slidelist_slidecontextmenu_tsx"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10907,6 +11453,38 @@
       "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
       "target": "slidelist_slidecontextmenu_slidecontextmenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/slide-list-actions.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slide_list_actions_ts",
+      "target": "slidelist_slide_list_actions_slidelistactions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "client_src_components_slidelist_slide_list_actions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideList/SlideList.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "client_src_components_slidelist_slidelist_tsx",
+      "target": "slidelist_slide_list_actions_slidelistactions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11137,6 +11715,163 @@
       "target": "generatepanel_generatepanel_generatepanel"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_stopmenuevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenudivider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuiconbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusubitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenushellprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "client_src_components_contextmenu_contextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenushell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "client_src_components_contextmenu_contextmenu_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenudivider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuiconbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenuitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusubitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenusub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "contextmenu_contextmenu_contextmenushell",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -11236,14 +11971,114 @@
       "target": "freeformcanvas_elementcontextmenu_elementcontextmenustate"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L10",
+      "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_resizehandle"
+      "target": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvaselement_canvaselement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvaselement_shapelinevisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvaselement_resizehandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvas_geometry_hitelementatpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvas_geometry_rectfrompoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvas_geometry_rectsintersect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_canvas_geometry_sortelements",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11314,6 +12149,26 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
       "target": "freeformcanvas_freeformcanvas_pendingtabledrag"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_freeformcanvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
+      "target": "freeformcanvas_freeformcanvas_resizehandle"
     },
     {
       "relation": "contains",
@@ -11409,16 +12264,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
-      "source_location": "L44",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_freeformcanvas_freeformcanvas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L62",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11459,6 +12304,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "freeformcanvas_canvas_geometry_hitelementatpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "freeformcanvas_canvas_geometry_rectfrompoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "freeformcanvas_canvas_geometry_rectsintersect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
+      "target": "freeformcanvas_canvas_geometry_sortelements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/ShapeToolbar.tsx",
       "source_location": "L6",
       "weight": 1.0,
@@ -11475,6 +12370,66 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_shapetoolbar_tsx",
       "target": "freeformcanvas_shapetoolbar_shapetoolbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_resizehandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_canvaselementprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_rendertextcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_elementtransform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_shapelinevisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "client_src_components_freeformcanvas_canvaselement_tsx",
+      "target": "freeformcanvas_canvaselement_canvaselement",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11550,11 +12505,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
+      "target": "freeformcanvas_elementcontextmenu_elementcontextmenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "freeformcanvas_elementcontextmenu_stopmenuevent",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_elementcontextmenu_stopmenuevent"
     },
     {
       "relation": "contains",
@@ -11582,9 +12547,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "freeformcanvas_elementcontextmenu_submenuitem",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_elementcontextmenu_submenuitem"
     },
     {
       "relation": "contains",
@@ -11595,16 +12560,6 @@
       "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
       "target": "freeformcanvas_elementcontextmenu_submenu"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
-      "source_location": "L99",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "freeformcanvas_elementcontextmenu_elementcontextmenu"
     },
     {
       "relation": "contains",
@@ -11769,170 +12724,6 @@
       "confidence_score": 1.0,
       "source": "client_src_components_ribbon_ribbon_tsx",
       "target": "ribbon_ribbon_ribbon"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "client_src_components_slidecanvas_editablefield_tsx"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_editablefield_editabletext"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_editablefield_editablebullets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_props"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_tonumbers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_chartpreview"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_slidecanvas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
-      "target": "slidecanvas_slidecanvas_bullets"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "slidecanvas_slidecanvas_chartpreview",
-      "target": "slidecanvas_slidecanvas_tonumbers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editabletextprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editabletext"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editablebulletsprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slidecanvas_editablefield_tsx",
-      "target": "slidecanvas_editablefield_editablebullets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slideeditor_slideeditor_tsx",
-      "target": "slideeditor_slideeditor_props"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slideeditor_slideeditor_tsx",
-      "target": "slideeditor_slideeditor_textlist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
-      "source_location": "L59",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "client_src_components_slideeditor_slideeditor_tsx",
-      "target": "slideeditor_slideeditor_slideeditor"
     },
     {
       "relation": "contains",
@@ -13114,8 +13905,172 @@
       "confidence_score": 1.0,
       "source": "client_readme_\u6784\u5efa",
       "target": "client_readme_codeblock_2"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "client_src_components_slidecanvas_editablefield_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_editablefield_editabletext"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_editablefield_editablebullets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_slidecanvas_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_slidecanvas_tonumbers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_slidecanvas_chartpreview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_slidecanvas_slidecanvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_slidecanvas_tsx",
+      "target": "slidecanvas_slidecanvas_bullets"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/SlideCanvas.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "slidecanvas_slidecanvas_chartpreview",
+      "target": "slidecanvas_slidecanvas_tonumbers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_editablefield_tsx",
+      "target": "slidecanvas_editablefield_editabletextprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_editablefield_tsx",
+      "target": "slidecanvas_editablefield_editabletext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_editablefield_tsx",
+      "target": "slidecanvas_editablefield_editablebulletsprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideCanvas/EditableField.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slidecanvas_editablefield_tsx",
+      "target": "slidecanvas_editablefield_editablebullets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slideeditor_slideeditor_tsx",
+      "target": "slideeditor_slideeditor_props"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slideeditor_slideeditor_tsx",
+      "target": "slideeditor_slideeditor_textlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client/src/components/SlideEditor/SlideEditor.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "client_src_components_slideeditor_slideeditor_tsx",
+      "target": "slideeditor_slideeditor_slideeditor"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d11abeb31f5225fdd1d31e2780d69ca6e8f96ca4"
+  "built_at_commit": "cbf87bc29d1c0be577db80ab957667d33adacb77"
 }

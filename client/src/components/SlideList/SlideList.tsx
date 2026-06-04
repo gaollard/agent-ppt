@@ -6,7 +6,7 @@ import {
   type SlideLayout,
 } from '../../types/presentation';
 import { SlideContextMenu, type SlideContextMenuState } from './SlideContextMenu';
-import './SlideContextMenu.css';
+import type { SlideListActions } from './slide-list-actions';
 import './SlideList.css';
 
 interface Props {
@@ -14,18 +14,7 @@ interface Props {
   activeIndex: number;
   canPasteSlide: boolean;
   onSelect: (index: number) => void;
-  onReorder: (from: number, to: number) => void;
-  onDelete: (index: number) => void;
-  onDuplicate: (index: number) => void;
-  onAdd: (layout?: SlideLayout, afterIndex?: number) => void;
-  onCopySlide: (index: number) => void;
-  onCutSlide: (index: number) => void;
-  onPasteSlide: (afterIndex: number) => void;
-  onToggleHidden: (index: number) => void;
-  onChangeBackground: (index: number) => void;
-  onRemoveBackground: (index: number) => void;
-  onChangeLayout: (index: number, layout: SlideLayout) => void;
-  onResetSlide: (index: number) => void;
+  actions: SlideListActions;
 }
 
 const SLIDE_DRAG_THRESHOLD = 6;
@@ -246,19 +235,22 @@ export function SlideList({
   activeIndex,
   canPasteSlide,
   onSelect,
-  onReorder,
-  onDelete,
-  onDuplicate,
-  onAdd,
-  onCopySlide,
-  onCutSlide,
-  onPasteSlide,
-  onToggleHidden,
-  onChangeBackground,
-  onRemoveBackground,
-  onChangeLayout,
-  onResetSlide,
+  actions,
 }: Props) {
+  const {
+    onReorder,
+    onDelete,
+    onDuplicate,
+    onAdd,
+    onCopySlide,
+    onCutSlide,
+    onPasteSlide,
+    onToggleHidden,
+    onChangeBackground,
+    onRemoveBackground,
+    onChangeLayout,
+    onResetSlide,
+  } = actions;
   const theme = mergeTheme(content.theme);
   const [sidebarTab, setSidebarTab] = useState<'slides' | 'outline'>('slides');
   const [contextMenu, setContextMenu] = useState<SlideContextMenuState | null>(null);

@@ -10,6 +10,7 @@ import {
 } from './types/presentation';
 import { generateContent, exportPptx, downloadBlob } from './api/ppt';
 import { SlideList } from './components/SlideList/SlideList';
+import type { SlideListActions } from './components/SlideList/slide-list-actions';
 import {
   FreeformCanvas,
   type FreeformCanvasHandle,
@@ -329,6 +330,21 @@ export default function App() {
     setSelectedElementIds([]);
   };
 
+  const slideListActions: SlideListActions = {
+    onReorder: handleReorder,
+    onDelete: handleDelete,
+    onDuplicate: handleDuplicateSlide,
+    onAdd: handleAdd,
+    onCopySlide: handleCopySlide,
+    onCutSlide: handleCutSlide,
+    onPasteSlide: handlePasteSlide,
+    onToggleHidden: handleToggleHidden,
+    onChangeBackground: handleChangeBackground,
+    onRemoveBackground: handleRemoveBackground,
+    onChangeLayout: handleChangeLayout,
+    onResetSlide: handleResetSlide,
+  };
+
   const copyElement = useCallback((id?: string) => {
     const targetId = id ?? selectedElementIds[0];
     const el = activeSlide?.elements?.find((e) => e.id === targetId);
@@ -506,18 +522,7 @@ export default function App() {
           activeIndex={activeIndex}
           canPasteSlide={canPasteSlide}
           onSelect={handleSelectSlide}
-          onReorder={handleReorder}
-          onDelete={handleDelete}
-          onDuplicate={handleDuplicateSlide}
-          onAdd={handleAdd}
-          onCopySlide={handleCopySlide}
-          onCutSlide={handleCutSlide}
-          onPasteSlide={handlePasteSlide}
-          onToggleHidden={handleToggleHidden}
-          onChangeBackground={handleChangeBackground}
-          onRemoveBackground={handleRemoveBackground}
-          onChangeLayout={handleChangeLayout}
-          onResetSlide={handleResetSlide}
+          actions={slideListActions}
         />
 
         <div className="app-workspace">
