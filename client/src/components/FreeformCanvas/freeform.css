@@ -38,10 +38,20 @@
 
 .freeform-canvas--shape-tool .freeform-el {
   cursor: crosshair;
+  pointer-events: none;
+}
+
+.freeform-canvas--shape-tool .freeform-el * {
+  pointer-events: none;
 }
 
 .freeform-canvas--drawing-shape {
   cursor: crosshair;
+}
+
+.freeform-canvas--drawing-shape .freeform-el,
+.freeform-canvas--drawing-shape .freeform-el * {
+  pointer-events: none;
 }
 
 .freeform-shape-preview {

@@ -9,7 +9,7 @@ import {
   createImageElement,
   createShapeElement,
 } from '../../utils/slide-elements';
-import { alignElement, readImageFile } from '../../utils/editor-utils';
+import { alignElement, readImageFile, withTopZIndex } from '../../utils/editor-utils';
 import './ElementInspector.css';
 
 interface Props {
@@ -151,7 +151,10 @@ export function ElementInspector({
             type="button"
             className="btn btn-ghost btn-sm"
             onClick={() => {
-              const el = createTextElement({ x: 15, y: 20, w: 40, h: 20, content: '文本框' });
+              const el = withTopZIndex(
+                createTextElement({ x: 15, y: 20, w: 40, h: 20, content: '文本框' }),
+                elements,
+              );
               const next = { ...slide, elements: [...elements, el] };
               onChange(next);
               onCommit(next);
@@ -164,7 +167,10 @@ export function ElementInspector({
             type="button"
             className="btn btn-ghost btn-sm"
             onClick={() => {
-              const el = createImageElement({ x: 20, y: 20, w: 35, h: 45 });
+              const el = withTopZIndex(
+                createImageElement({ x: 20, y: 20, w: 35, h: 45 }),
+                elements,
+              );
               const next = { ...slide, elements: [...elements, el] };
               onChange(next);
               onCommit(next);
@@ -177,7 +183,10 @@ export function ElementInspector({
             type="button"
             className="btn btn-ghost btn-sm"
             onClick={() => {
-              const el = createShapeElement('rect', { x: 30, y: 30, w: 25, h: 25 });
+              const el = withTopZIndex(
+                createShapeElement('rect', { x: 30, y: 30, w: 25, h: 25 }),
+                elements,
+              );
               const next = { ...slide, elements: [...elements, el] };
               onChange(next);
               onCommit(next);
@@ -190,7 +199,10 @@ export function ElementInspector({
             type="button"
             className="btn btn-ghost btn-sm"
             onClick={() => {
-              const el = createShapeElement('ellipse', { x: 30, y: 30, w: 25, h: 25 });
+              const el = withTopZIndex(
+                createShapeElement('ellipse', { x: 30, y: 30, w: 25, h: 25 }),
+                elements,
+              );
               const next = { ...slide, elements: [...elements, el] };
               onChange(next);
               onCommit(next);

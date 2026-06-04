@@ -1,16 +1,16 @@
-# Graph Report - smart-ppt  (2026-06-03)
+# Graph Report - smart-ppt  (2026-06-04)
 
 ## Corpus Check
-- 60 files · ~23,242 words
+- 60 files · ~23,336 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 418 nodes · 744 edges · 27 communities (25 shown, 2 thin omitted)
+- 420 nodes · 750 edges · 22 communities (20 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `89487f6d`
+- Built from commit: `e7210fe2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,11 +32,6 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `如何生成图文并茂的 PPT` - 17 edges
@@ -51,18 +46,18 @@
 10. `addImageIfPresent()` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `renderSlide()` --calls--> `renderFreeform()`  [EXTRACTED]
-  api/src/ppt/layouts/index.ts → api/src/ppt/layouts/freeform.layout.ts
-- `renderSlide()` --calls--> `effectiveLayout()`  [EXTRACTED]
-  api/src/ppt/layouts/index.ts → api/src/ppt/layouts/helpers.ts
 - `bootstrap()` --calls--> `createFileLogger()`  [EXTRACTED]
   api/src/main.ts → api/src/log/file-logger.ts
 - `bootstrap()` --calls--> `resolveLogDir()`  [EXTRACTED]
   api/src/main.ts → api/src/log/resolve-log-dir.ts
 - `renderTitleBullets()` --calls--> `addBullets()`  [EXTRACTED]
   api/src/ppt/layouts/title-bullets.layout.ts → api/src/ppt/layouts/helpers.ts
+- `renderFreeform()` --calls--> `addBullets()`  [EXTRACTED]
+  api/src/ppt/layouts/freeform.layout.ts → api/src/ppt/layouts/helpers.ts
+- `renderSlide()` --calls--> `renderFreeform()`  [EXTRACTED]
+  api/src/ppt/layouts/index.ts → api/src/ppt/layouts/freeform.layout.ts
 
-## Communities (27 total, 2 thin omitted)
+## Communities (22 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -70,35 +65,35 @@ Nodes (58): downloadBlob(), exportPptx(), generateContent(), ElementInspector(),
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
-Nodes (46): CanvasElement, ClickClearState, clientToCanvasPct(), DragState, FreeformCanvas, FreeformCanvasHandle, MarqueeState, PendingTableDrag (+38 more)
+Nodes (48): CanvasElement, ClickClearState, clientToCanvasPct(), DragState, FreeformCanvas, FreeformCanvasHandle, MarqueeState, PendingTableDrag (+40 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
-Nodes (33): GeneratePptDto, ChartDto, ColumnDto, ElementStyleDto, PresentationContentDto, SlideDto, SlideElementDto, TableCellDataDto (+25 more)
+Nodes (34): GeneratePptDto, ChartDto, ColumnDto, ElementStyleDto, PresentationContentDto, SlideDto, SlideElementDto, TableCellDataDto (+26 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.17
-Nodes (19): CHART_TYPES, renderChart(), renderCover(), renderFreeform(), toInches(), renderFullImage(), addBullets(), addImageIfPresent() (+11 more)
+Cohesion: 0.05
+Nodes (41): code:block1 (POST /ppt/generate { topic, slideCount }), code:typescript (@Post('generate')), code:yaml (PORT: 3000), code:typescript (const DEFAULT_THEME: PresentationTheme = {), code:json ({), code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), code:mermaid (sequenceDiagram) (+33 more)
 
 ### Community 4 - "Community 4"
+Cohesion: 0.19
+Nodes (18): CHART_TYPES, renderChart(), renderCover(), renderFreeform(), toInches(), renderFullImage(), addBullets(), addImageIfPresent() (+10 more)
+
+### Community 5 - "Community 5"
 Cohesion: 0.1
 Nodes (19): 1. 用户输入要求, 2. LLM 生成大纲, 3. 对每一个章节补充详细内容, 4. PPT 润色 + 图片补充, 4a 全文润色, 4b 图片补充, 4c 渲染 pptx, code:block1 (用户输入 → LLM 生成大纲 → 逐页补充详细内容 → 全文润色 → 图片补充 → 渲染 pptx) (+11 more)
 
-### Community 5 - "Community 5"
+### Community 6 - "Community 6"
 Cohesion: 0.19
 Nodes (10): AiModule, DEFAULT_CONFIG_PATH, loadYamlConfig(), ImageModule, createFileLogger(), LogLevel, resolveLogDir(), PptModule (+2 more)
 
-### Community 6 - "Community 6"
+### Community 7 - "Community 7"
 Cohesion: 0.18
 Nodes (5): ImageService, FALLBACK_PNG, PlaceholderProvider, WanxProvider, WanxTaskResponse
 
-### Community 7 - "Community 7"
+### Community 8 - "Community 8"
 Cohesion: 0.2
 Nodes (12): effectiveLayout(), hexColor(), themeVars(), EditableBullets(), EditableBulletsProps, EditableText(), EditableTextProps, ChartPreview() (+4 more)
-
-### Community 8 - "Community 8"
-Cohesion: 0.14
-Nodes (13): code:typescript (@Post('generate')), code:yaml (PORT: 3000), code:typescript (const DEFAULT_THEME: PresentationTheme = {), Controller 编排, 参考链接, 如何生成图文并茂的 PPT, 实施路线图, 常见问题 (+5 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.2
@@ -124,26 +119,6 @@ Nodes (8): code:mermaid (flowchart LR), code:bash (curl -X POST http://localhost
 Cohesion: 0.25
 Nodes (7): code:bash (cd client), code:bash (pnpm build), Smart PPT Client, 前置条件, 功能, 开发, 构建
 
-### Community 17 - "Community 17"
-Cohesion: 0.29
-Nodes (7): code:typescript (// src/ai/types/slide-content.ts), code:json ({), code:block7 (Return JSON with this shape:), LLM 输出示例（8 页）, Prompt 改造要点, TypeScript 类型（目标）, 完整 JSON Schema
-
-### Community 18 - "Community 18"
-Cohesion: 0.33
-Nodes (6): code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), 图文并茂验收清单, 开发阶段调试技巧, 当前 API 冒烟（纯文字）, 测试与验收
-
-### Community 19 - "Community 19"
-Cohesion: 0.33
-Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageService（P1）, Step 3 — 拆分 layout 渲染（P2）, Step 4 — 串联 Controller（P2）, Step 5 — 主题色与图表（P3）, 改造步骤
-
-### Community 20 - "Community 20"
-Cohesion: 0.33
-Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
-
-### Community 21 - "Community 21"
-Cohesion: 0.67
-Nodes (3): code:mermaid (sequenceDiagram), code:block4 (src/), 目标架构
-
 ## Knowledge Gaps
 - **114 isolated node(s):** `DEFAULT_CONFIG_PATH`, `WanxTaskResponse`, `FALLBACK_PNG`, `SlideChart`, `SlideColumn` (+109 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -152,11 +127,11 @@ Nodes (3): code:mermaid (sequenceDiagram), code:block4 (src/), 目标架构
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PptService` connect `Community 2` to `Community 5`?**
+- **Why does `PptService` connect `Community 2` to `Community 6`?**
   _High betweenness centrality (0.261) - this node is a cross-community bridge._
 - **Why does `resolve()` connect `Community 0` to `Community 2`?**
-  _High betweenness centrality (0.259) - this node is a cross-community bridge._
-- **Why does `FileLogger` connect `Community 11` to `Community 5`?**
+  _High betweenness centrality (0.260) - this node is a cross-community bridge._
+- **Why does `FileLogger` connect `Community 11` to `Community 6`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **What connects `DEFAULT_CONFIG_PATH`, `WanxTaskResponse`, `FALLBACK_PNG` to the rest of the system?**
   _114 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -31,7 +31,7 @@ import {
   resetSlideFromLayout,
   syncSlideFromElements,
 } from './utils/slide-elements';
-import { duplicateElement, isSelectableElement } from './utils/editor-utils';
+import { duplicateElement, isSelectableElement, nextElementZIndex } from './utils/editor-utils';
 import './App.css';
 
 export default function App() {
@@ -335,10 +335,11 @@ export default function App() {
   const pasteElement = useCallback(() => {
     const source = clipboardRef.current;
     if (!source || !activeSlide) return;
-    const el = duplicateElement(source);
+    const existing = activeSlide.elements ?? [];
+    const el = duplicateElement(source, 3, nextElementZIndex(existing));
     commitSlide(activeIndex, {
       ...activeSlide,
-      elements: [...(activeSlide.elements ?? []), el],
+      elements: [...existing, el],
     });
     setSelectedElementIds([el.id]);
   }, [activeSlide, activeIndex, commitSlide]);
@@ -367,9 +368,11 @@ export default function App() {
         e.preventDefault();
         if (!activeSlide || !selectedElementIds.length) return;
         const idSet = new Set(selectedElementIds);
-        const copies = (activeSlide.elements ?? [])
+        const existing = activeSlide.elements ?? [];
+        let z = nextElementZIndex(existing);
+        const copies = existing
           .filter((el) => idSet.has(el.id))
-          .map((el) => duplicateElement(el));
+          .map((el) => duplicateElement(el, 3, z++));
         if (!copies.length) return;
         commitSlide(activeIndex, {
           ...activeSlide,

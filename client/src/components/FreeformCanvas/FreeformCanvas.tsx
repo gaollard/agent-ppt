@@ -7,7 +7,7 @@ import {
   createTableElement,
   createTextElement,
 } from '../../utils/slide-elements';
-import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement } from '../../utils/editor-utils';
+import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement, withTopZIndex } from '../../utils/editor-utils';
 import { SelectionToolbar } from './SelectionToolbar';
 import { TableToolbar } from './TableToolbar';
 import {
@@ -459,6 +459,13 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   selectedIdsRef.current = selectedIds;
   editingCellRef.current = editingCell;
 
+  useEffect(() => {
+    if (!shapeTool) return;
+    setEditingId(null);
+    setEditingCell(null);
+    setSelectionMenu(null);
+  }, [shapeTool]);
+
   const selectedSet = new Set(selectedIds);
 
   const baseElements = sortElements(slide.elements ?? []);
@@ -532,7 +539,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     }
 
     const base = sortElements(slideRef.current.elements ?? []);
-    const el = createShapeElement(draw.kind, { x, y, w, h });
+    const el = withTopZIndex(createShapeElement(draw.kind, { x, y, w, h }), base);
     onCommitRef.current?.({ ...slideRef.current, elements: [...base, el] });
     onSelect([el.id]);
     onShapeToolChangeRef.current?.(null);
@@ -915,26 +922,32 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     ).size > 1;
 
   const addTextBox = () => {
-    const el = createTextElement({ x: 15, y: 20, w: 40, h: 20, content: '文本框' });
+    const el = withTopZIndex(
+      createTextElement({ x: 15, y: 20, w: 40, h: 20, content: '文本框' }),
+      baseElements,
+    );
     commitElements([...baseElements, el]);
     onSelect([el.id]);
     setEditingId(el.id);
   };
 
   const addImageBox = () => {
-    const el = createImageElement({
-      x: 20,
-      y: 20,
-      w: 35,
-      h: 45,
-      imagePath: slide.imagePath ?? '',
-    });
+    const el = withTopZIndex(
+      createImageElement({
+        x: 20,
+        y: 20,
+        w: 35,
+        h: 45,
+        imagePath: slide.imagePath ?? '',
+      }),
+      baseElements,
+    );
     commitElements([...baseElements, el]);
     onSelect([el.id]);
   };
 
   const addTable = (rows: number, cols: number) => {
-    const el = createTableElement(rows, cols);
+    const el = withTopZIndex(createTableElement(rows, cols), baseElements);
     commitElements([...baseElements, el]);
     onSelect([el.id]);
   };
@@ -1051,6 +1064,8 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
             const canvas = canvasRef.current;
             if (tool && canvas) {
               e.preventDefault();
+              setEditingId(null);
+              setEditingCell(null);
               const { x, y } = clientToCanvasPct(e.clientX, e.clientY, canvas);
               shapeDrawRef.current = {
                 kind: tool,

@@ -102,12 +102,26 @@ export function expandGroupSelection(ids: string[], elements: SlideElement[]): s
   return [...expanded];
 }
 
-export function duplicateElement(el: SlideElement, offset = 3): SlideElement {
+export function nextElementZIndex(elements: SlideElement[]): number {
+  if (!elements.length) return 1;
+  return Math.max(...elements.map((e) => e.zIndex ?? 0)) + 1;
+}
+
+export function withTopZIndex(el: SlideElement, elements: SlideElement[]): SlideElement {
+  return { ...el, zIndex: nextElementZIndex(elements) };
+}
+
+export function duplicateElement(
+  el: SlideElement,
+  offset = 3,
+  zIndex?: number,
+): SlideElement {
   return {
     ...el,
     id: `el-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
     x: Math.min(el.x + offset, 100 - el.w),
     y: Math.min(el.y + offset, 100 - el.h),
+    zIndex: zIndex ?? el.zIndex,
     locked: false,
     table: el.table ? cloneTable(el.table) : undefined,
   };
