@@ -1,5 +1,8 @@
 import { GeneratePanel } from '../GeneratePanel/GeneratePanel';
 import { TablePicker } from './TablePicker';
+import { ShapePicker } from './ShapePicker';
+import type { PresentationTheme } from '../../types/presentation';
+import type { ShapeToolOptions } from '../../types/shapes';
 import './ribbon.css';
 
 export type RibbonTab = 'start' | 'insert' | 'view';
@@ -7,6 +10,7 @@ export type RibbonTab = 'start' | 'insert' | 'view';
 interface Props {
   activeTab: RibbonTab;
   onTabChange: (tab: RibbonTab) => void;
+  theme: PresentationTheme;
   canUndo: boolean;
   canRedo: boolean;
   onUndo: () => void;
@@ -16,8 +20,7 @@ interface Props {
   onDeleteSlide: () => void;
   onAddText: () => void;
   onAddImage: () => void;
-  onAddRect: () => void;
-  onAddEllipse: () => void;
+  onSelectShape: (tool: ShapeToolOptions) => void;
   onInsertTable: (rows: number, cols: number) => void;
   onBringForward: () => void;
   onSendBackward: () => void;
@@ -33,7 +36,7 @@ interface Props {
   zoom: number;
   onZoomChange: (v: number) => void;
   hasSelection: boolean;
-  activeShapeTool?: 'rect' | 'ellipse' | null;
+  activeShapeTool?: ShapeToolOptions | null;
 }
 
 function Group({ label, children }: { label: string; children: React.ReactNode }) {
@@ -77,6 +80,7 @@ function Tool({
 export function Ribbon({
   activeTab,
   onTabChange,
+  theme,
   canUndo,
   canRedo,
   onUndo,
@@ -86,8 +90,7 @@ export function Ribbon({
   onDeleteSlide,
   onAddText,
   onAddImage,
-  onAddRect,
-  onAddEllipse,
+  onSelectShape,
   onInsertTable,
   onBringForward,
   onSendBackward,
@@ -163,8 +166,7 @@ export function Ribbon({
               <Tool icon="🖼" label="图片" onClick={onAddImage} accent />
             </Group>
             <Group label="形状">
-              <Tool icon="▭" label="矩形" onClick={onAddRect} active={activeShapeTool === 'rect'} />
-              <Tool icon="○" label="椭圆" onClick={onAddEllipse} active={activeShapeTool === 'ellipse'} />
+              <ShapePicker theme={theme} activeTool={activeShapeTool ?? null} onSelect={onSelectShape} />
             </Group>
             <Group label="表格">
               <TablePicker onInsert={onInsertTable} />

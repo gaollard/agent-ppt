@@ -36,7 +36,14 @@ class ElementStyleDto {
   @IsOptional() @IsIn(['left', 'center', 'right']) align?: 'left' | 'center' | 'right';
   @IsOptional() @IsBoolean() bullets?: boolean;
   @IsOptional() @IsString() background?: string;
-  @IsOptional() @IsIn(['rect', 'ellipse']) shapeKind?: 'rect' | 'ellipse';
+  @IsOptional() @IsIn(['rect', 'roundRect', 'ellipse', 'triangle', 'diamond', 'line', 'arrow']) shapeKind?:
+    | 'rect'
+    | 'roundRect'
+    | 'ellipse'
+    | 'triangle'
+    | 'diamond'
+    | 'line'
+    | 'arrow';
   @IsOptional() @IsString() fill?: string;
   @IsOptional() @IsString() borderColor?: string;
   @IsOptional() @IsNumber() borderWidth?: number;

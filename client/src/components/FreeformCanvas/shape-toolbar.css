@@ -1,0 +1,112 @@
+.shape-toolbar {
+  position: fixed;
+  z-index: 1100;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.shape-toolbar-select {
+  height: 28px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 0 6px;
+}
+
+.shape-toolbar-color {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shape-toolbar-color:hover {
+  background: #f3f3f3;
+}
+
+.shape-toolbar-color input[type='color'] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.shape-toolbar-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.shape-toolbar-swatch--border {
+  background: transparent !important;
+  border: 2px solid currentColor;
+}
+
+.shape-toolbar-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  color: #666;
+}
+
+.shape-toolbar-field input[type='number'] {
+  width: 36px;
+  height: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 0 4px;
+}
+
+.shape-toolbar-field input[type='range'] {
+  width: 64px;
+}
+
+.freeform-shape-line-body {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: var(--line-width, 2px);
+  background: var(--line-color, #1f2933);
+  border-radius: 1px;
+}
+
+.freeform-shape-line-body--arrow {
+  width: 88%;
+}
+
+.freeform-shape-line-body--line {
+  width: 100%;
+}
+
+.freeform-shape-line-head {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: calc(var(--line-width, 2px) * 3) solid transparent;
+  border-bottom: calc(var(--line-width, 2px) * 3) solid transparent;
+  border-left: calc(var(--line-width, 2px) * 4) solid var(--line-color, #1f2933);
+}
+
+.freeform-el--shape-triangle,
+.freeform-el--shape-diamond {
+  border: none !important;
+}

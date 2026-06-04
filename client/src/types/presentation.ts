@@ -52,7 +52,7 @@ export interface ElementStyle {
   align?: 'left' | 'center' | 'right';
   bullets?: boolean;
   background?: string;
-  shapeKind?: 'rect' | 'ellipse';
+  shapeKind?: 'rect' | 'roundRect' | 'ellipse' | 'triangle' | 'diamond' | 'line' | 'arrow';
   fill?: string;
   borderColor?: string;
   borderWidth?: number;
@@ -60,6 +60,8 @@ export interface ElementStyle {
   fontStyle?: 'normal' | 'italic';
   underline?: boolean;
   strikethrough?: boolean;
+  flipH?: boolean;
+  flipV?: boolean;
 }
 
 export interface TableCellStyle {

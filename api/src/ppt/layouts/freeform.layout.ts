@@ -1,6 +1,24 @@
 import { addBullets, LayoutContext } from './helpers';
 import { SlideElement, TableCellData } from '../../ai/types/slide-content';
 
+function pptxShapeName(kind: string | undefined): string {
+  switch (kind) {
+    case 'ellipse':
+      return 'ellipse';
+    case 'roundRect':
+      return 'roundRect';
+    case 'triangle':
+      return 'triangle';
+    case 'diamond':
+      return 'diamond';
+    case 'line':
+    case 'arrow':
+      return 'line';
+    default:
+      return 'rect';
+  }
+}
+
 const SLIDE_W = 10;
 const SLIDE_H = 5.625;
 
@@ -35,15 +53,24 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
     const rotate = el.rotation ?? 0;
 
     if (el.type === 'shape') {
-      const shapeName = style.shapeKind === 'ellipse' ? 'ellipse' : 'rect';
-      page.addShape(shapeName, {
+      const shapeKind = style.shapeKind ?? 'rect';
+      const shapeName = pptxShapeName(shapeKind);
+      const lineLike = shapeKind === 'line' || shapeKind === 'arrow';
+      page.addShape(shapeName as 'rect', {
         ...box,
-        fill: { color: style.fill ?? theme.accent, transparency: style.opacity ? (1 - style.opacity) * 100 : 0 },
+        fill: lineLike
+          ? { type: 'none' }
+          : {
+              color: style.fill ?? theme.accent,
+              transparency: style.opacity ? (1 - style.opacity) * 100 : 0,
+            },
         line: {
           color: style.borderColor ?? theme.primary,
-          pt: style.borderWidth ?? 1,
+          pt: style.borderWidth ?? (lineLike ? 2 : 1),
+          endArrowType: shapeKind === 'arrow' ? 'triangle' : undefined,
         },
         rotate,
+        ...(shapeKind === 'roundRect' ? { rectRadius: 0.15 } : {}),
       });
       continue;
     }

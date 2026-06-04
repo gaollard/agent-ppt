@@ -7,9 +7,17 @@ import {
   createTableElement,
   createTextElement,
 } from '../../utils/slide-elements';
-import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement, withTopZIndex } from '../../utils/editor-utils';
+import { snap, alignElements, groupElements, getElementsBounds, expandGroupSelection, isSelectableElement, withTopZIndex, reorderElements, rotateElements, flipElements, centerElementsOnPage, duplicateElement, nextElementZIndex } from '../../utils/editor-utils';
 import { SelectionToolbar } from './SelectionToolbar';
 import { TableToolbar } from './TableToolbar';
+import { ShapeToolbar } from './ShapeToolbar';
+import { ElementContextMenu, type ElementContextMenuState } from './ElementContextMenu';
+import {
+  boundsFromShapeDrag,
+  getShapeClassName,
+  getShapeSurfaceStyle,
+} from '../../utils/shape-utils';
+import { isLineLikeShape, type ShapeKind, type ShapeToolOptions } from '../../types/shapes';
 import {
   cellStyleToCss,
   cellText,
@@ -20,6 +28,7 @@ import {
 import type { TableData } from '../../types/presentation';
 import './freeform.css';
 import './table-toolbar.css';
+import './shape-toolbar.css';
 
 type ResizeHandle = 'nw' | 'ne' | 'sw' | 'se';
 
@@ -33,8 +42,12 @@ interface Props {
   snapToGrid?: boolean;
   zoom?: number;
   hideToolbar?: boolean;
-  shapeTool?: 'rect' | 'ellipse' | null;
-  onShapeToolChange?: (tool: 'rect' | 'ellipse' | null) => void;
+  shapeTool?: ShapeToolOptions | null;
+  onShapeToolChange?: (tool: ShapeToolOptions | null) => void;
+  onCopy?: (id?: string) => void;
+  onCut?: (ids?: string[]) => void;
+  onPaste?: () => void;
+  canPaste?: boolean;
 }
 
 export interface FreeformCanvasHandle {
@@ -58,7 +71,7 @@ interface DragState {
 }
 
 interface ShapeDrawState {
-  kind: 'rect' | 'ellipse';
+  kind: ShapeKind;
   startX: number;
   startY: number;
   currentX: number;
@@ -98,6 +111,14 @@ function clientToCanvasPct(clientX: number, clientY: number, canvas: HTMLDivElem
   };
 }
 
+function hitElementAtPoint(elements: SlideElement[], x: number, y: number): SlideElement | null {
+  const sorted = [...elements].sort((a, b) => (b.zIndex ?? 0) - (a.zIndex ?? 0));
+  for (const el of sorted) {
+    if (x >= el.x && x <= el.x + el.w && y >= el.y && y <= el.y + el.h) return el;
+  }
+  return null;
+}
+
 function rectFromPoints(x1: number, y1: number, x2: number, y2: number) {
   return {
     x: Math.min(x1, x2),
@@ -120,33 +141,6 @@ function rectsIntersect(
   return ax < bx + bw && ax + aw > bx && ay < by + bh && ay + ah > by;
 }
 
-function rectFromDrag(
-  x1: number,
-  y1: number,
-  x2: number,
-  y2: number,
-  minSize = 4,
-): { x: number; y: number; w: number; h: number } {
-  let x = Math.min(x1, x2);
-  let y = Math.min(y1, y2);
-  let w = Math.abs(x2 - x1);
-  let h = Math.abs(y2 - y1);
-
-  if (w < 1 && h < 1) {
-    w = minSize;
-    h = minSize;
-    x = clamp(x1 - minSize / 2, 0, 100 - minSize);
-    y = clamp(y1 - minSize / 2, 0, 100 - minSize);
-  } else {
-    w = Math.max(w, 2);
-    h = Math.max(h, 2);
-    x = clamp(x, 0, 100 - w);
-    y = clamp(y, 0, 100 - h);
-  }
-
-  return { x, y, w, h };
-}
-
 function renderTextContent(el: SlideElement) {
   const lines = (el.content ?? '').split('\n');
   if (el.style?.bullets) {
@@ -163,7 +157,36 @@ function renderTextContent(el: SlideElement) {
 }
 
 function elementTransform(el: SlideElement) {
-  return el.rotation ? `rotate(${el.rotation}deg)` : undefined;
+  const parts: string[] = [];
+  const sx = el.style?.flipH ? -1 : 1;
+  const sy = el.style?.flipV ? -1 : 1;
+  if (sx !== 1 || sy !== 1) parts.push(`scale(${sx}, ${sy})`);
+  if (el.rotation) parts.push(`rotate(${el.rotation}deg)`);
+  return parts.length ? parts.join(' ') : undefined;
+}
+
+function ShapeLineVisual({
+  kind,
+  borderColor,
+  borderWidth,
+}: {
+  kind: ShapeKind;
+  borderColor: string;
+  borderWidth: number;
+}) {
+  const css = {
+    ['--line-color' as string]: `#${borderColor}`,
+    ['--line-width' as string]: `${borderWidth}px`,
+  };
+  return (
+    <>
+      <span
+        className={`freeform-shape-line-body freeform-shape-line-body--${kind}`}
+        style={css}
+      />
+      {kind === 'arrow' && <span className="freeform-shape-line-head" style={css} />}
+    </>
+  );
 }
 
 function sortElements(els: SlideElement[]) {
@@ -185,6 +208,7 @@ const CanvasElement = memo(function CanvasElement({
   onStartCellEdit,
   onCellBlur,
   onTableCellPointerDown,
+  onContextMenu,
 }: {
   el: SlideElement;
   theme: PresentationTheme;
@@ -200,6 +224,7 @@ const CanvasElement = memo(function CanvasElement({
   onStartCellEdit: (row: number, col: number) => void;
   onCellBlur: (row: number, col: number, value: string) => void;
   onTableCellPointerDown: (row: number, col: number, e: React.PointerEvent) => void;
+  onContextMenu: (e: React.MouseEvent) => void;
 }) {
   const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
   const handles =
@@ -227,18 +252,23 @@ const CanvasElement = memo(function CanvasElement({
 
   if (el.type === 'shape') {
     const s = el.style ?? {};
+    const kind = s.shapeKind ?? 'rect';
+    const lineLike = isLineLikeShape(kind);
+    const borderColor = s.borderColor ?? theme.primary;
+    const borderWidth = s.borderWidth ?? (lineLike ? 2 : 1);
     return (
       <div
-        className={`freeform-el freeform-el--shape ${selected ? 'freeform-el--selected' : ''} ${el.locked ? 'freeform-el--locked' : ''}`}
+        className={`freeform-el freeform-el--shape ${getShapeClassName(kind)} ${selected ? 'freeform-el--selected' : ''} ${el.locked ? 'freeform-el--locked' : ''}`}
         style={{
           ...commonStyle,
-          background: s.fill ? `#${s.fill}` : `#${theme.accent}`,
-          border: `${s.borderWidth ?? 1}px solid #${s.borderColor ?? theme.primary}`,
-          borderRadius: s.shapeKind === 'ellipse' ? '50%' : '6px',
-          opacity: s.opacity ?? 1,
+          ...getShapeSurfaceStyle(kind, s, theme),
         }}
         onPointerDown={(e) => onStartDrag(e)}
+        onContextMenu={onContextMenu}
       >
+        {lineLike && (
+          <ShapeLineVisual kind={kind} borderColor={borderColor} borderWidth={borderWidth} />
+        )}
         {el.locked && <span className="freeform-lock-badge">🔒</span>}
         {handles}
       </div>
@@ -251,6 +281,7 @@ const CanvasElement = memo(function CanvasElement({
         className={`freeform-el freeform-el--image ${selected ? 'freeform-el--selected' : ''} ${el.locked ? 'freeform-el--locked' : ''}`}
         style={commonStyle}
         onPointerDown={(e) => onStartDrag(e)}
+        onContextMenu={onContextMenu}
       >
         {el.imagePath ? (
           <img src={el.imagePath} alt="" draggable={false} />
@@ -274,6 +305,7 @@ const CanvasElement = memo(function CanvasElement({
           if ((e.target as HTMLElement).closest('td')) return;
           onStartDrag(e);
         }}
+        onContextMenu={onContextMenu}
       >
         <table
           className="freeform-table"
@@ -301,6 +333,7 @@ const CanvasElement = memo(function CanvasElement({
                       style={cellCss}
                       onPointerDown={(e) => {
                         e.stopPropagation();
+                        if (e.button !== 0) return;
                         if (readOnly || el.locked || isEditing) return;
                         onTableCellPointerDown(rowIdx, colIdx, e);
                       }}
@@ -314,6 +347,10 @@ const CanvasElement = memo(function CanvasElement({
                         e.stopPropagation();
                         e.preventDefault();
                         onStartCellEdit(rowIdx, colIdx);
+                      }}
+                      onContextMenu={(e) => {
+                        e.stopPropagation();
+                        onContextMenu(e);
                       }}
                     >
                       {isEditing ? (
@@ -363,6 +400,7 @@ const CanvasElement = memo(function CanvasElement({
         e.stopPropagation();
         onStartEdit();
       }}
+      onContextMenu={onContextMenu}
     >
       {editing ? (
         <textarea
@@ -410,6 +448,10 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     hideToolbar = false,
     shapeTool = null,
     onShapeToolChange,
+    onCopy,
+    onCut,
+    onPaste,
+    canPaste = false,
   },
   ref,
 ) {
@@ -442,6 +484,11 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     left: number;
     width: number;
   } | null>(null);
+  const [shapeToolbarAnchor, setShapeToolbarAnchor] = useState<{
+    top: number;
+    left: number;
+    width: number;
+  } | null>(null);
   const [draggingId, setDraggingId] = useState<string | null>(null);
   const [shapePreview, setShapePreview] = useState<Omit<ShapeDrawState, 'pointerId'> | null>(
     null,
@@ -450,6 +497,10 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     null,
   );
   const [selectionMenu, setSelectionMenu] = useState<SelectionMenuState | null>(null);
+  const [elementContextMenu, setElementContextMenu] = useState<ElementContextMenuState | null>(null);
+  const contextTargetIdsRef = useRef<string[]>([]);
+  const menuOpenRef = useRef(false);
+  menuOpenRef.current = Boolean(elementContextMenu);
 
   slideRef.current = slide;
   snapRef.current = snapToGrid;
@@ -465,6 +516,17 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     setEditingCell(null);
     setSelectionMenu(null);
   }, [shapeTool]);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas || readOnly) return;
+    const onCtx = (e: MouseEvent) => {
+      if (!canvas.contains(e.target as Node)) return;
+      e.preventDefault();
+    };
+    canvas.addEventListener('contextmenu', onCtx, { capture: true });
+    return () => canvas.removeEventListener('contextmenu', onCtx, { capture: true });
+  }, [readOnly]);
 
   const selectedSet = new Set(selectedIds);
 
@@ -523,27 +585,50 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     if (!draw) return;
     releaseCapture(draw.pointerId);
 
-    let { x, y, w, h } = rectFromDrag(
+    let bounds = boundsFromShapeDrag(
+      draw.kind,
       draw.startX,
       draw.startY,
       draw.currentX,
       draw.currentY,
     );
-    if (snapRef.current) {
-      x = snap(x, 2);
-      y = snap(y, 2);
-      w = snap(w, 2);
-      h = snap(h, 2);
-      x = clamp(x, 0, 100 - w);
-      y = clamp(y, 0, 100 - h);
+    if (snapRef.current && !isLineLikeShape(draw.kind)) {
+      bounds = {
+        ...bounds,
+        x: snap(bounds.x, 2),
+        y: snap(bounds.y, 2),
+        w: snap(bounds.w, 2),
+        h: snap(bounds.h, 2),
+      };
+      bounds.x = clamp(bounds.x, 0, 100 - bounds.w);
+      bounds.y = clamp(bounds.y, 0, 100 - bounds.h);
     }
 
     const base = sortElements(slideRef.current.elements ?? []);
-    const el = withTopZIndex(createShapeElement(draw.kind, { x, y, w, h }), base);
+    const tool = shapeToolRef.current;
+    const el = withTopZIndex(
+      createShapeElement(
+        draw.kind,
+        {
+          x: bounds.x,
+          y: bounds.y,
+          w: bounds.w,
+          h: bounds.h,
+          rotation: bounds.rotation,
+        },
+        theme,
+        tool
+          ? { fill: tool.fill, borderColor: tool.borderColor, borderWidth: tool.borderWidth }
+          : undefined,
+      ),
+      base,
+    );
     onCommitRef.current?.({ ...slideRef.current, elements: [...base, el] });
     onSelect([el.id]);
-    onShapeToolChangeRef.current?.(null);
-  }, [onSelect]);
+    if (!tool?.keepDrawing) {
+      onShapeToolChangeRef.current?.(null);
+    }
+  }, [onSelect, theme]);
 
   const finishMarquee = useCallback(() => {
     const marquee = marqueeRef.current;
@@ -631,7 +716,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
       el: SlideElement,
       handle?: ResizeHandle,
     ) => {
-      if (readOnly || el.locked) return;
+      if (readOnly || el.locked || menuOpenRef.current) return;
 
       const currentSelected = selectedIdsRef.current;
 
@@ -698,6 +783,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   );
 
   const startDrag = (e: React.PointerEvent, el: SlideElement, handle?: ResizeHandle) => {
+    if (e.button !== 0) return;
     e.stopPropagation();
     e.preventDefault();
     beginElementDrag(e, el, handle);
@@ -866,6 +952,42 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     [elements, commitElements],
   );
 
+  const selectedShapeEl =
+    selectedIds.length === 1 ? elements.find((e) => e.id === selectedIds[0]) : undefined;
+
+  useEffect(() => {
+    if (readOnly || selectedIds.length !== 1) {
+      setShapeToolbarAnchor(null);
+      return;
+    }
+    const el = elements.find((item) => item.id === selectedIds[0]);
+    if (!el || el.type !== 'shape') {
+      setShapeToolbarAnchor(null);
+      return;
+    }
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    setShapeToolbarAnchor({
+      top: rect.top + (el.y / 100) * rect.height,
+      left: rect.left + (el.x / 100) * rect.width,
+      width: (el.w / 100) * rect.width,
+    });
+  }, [readOnly, selectedIds, elements, zoom, slide]);
+
+  const updateSelectedShape = useCallback(
+    (patch: Partial<SlideElement>) => {
+      const id = selectedIdsRef.current[0];
+      if (!id) return;
+      commitElements(
+        elements.map((item) => (item.id === id ? { ...item, ...patch } : item)),
+      );
+    },
+    [elements, commitElements],
+  );
+
+  const shapeToolbarOpen = !readOnly && selectedShapeEl?.type === 'shape';
+
   const selectedTableEl =
     selectedIds.length === 1 ? elements.find((e) => e.id === selectedIds[0]) : undefined;
 
@@ -955,20 +1077,129 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
   const bringForward = () => {
     const ids = selectedIdsRef.current;
     if (!ids.length) return;
-    const maxZ = Math.max(...elements.map((e) => e.zIndex ?? 0), 0);
-    commitElements(
-      elements.map((e) => (ids.includes(e.id) ? { ...e, zIndex: maxZ + 1 } : e)),
-    );
+    commitElements(reorderElements(elements, ids, 'forward'));
   };
 
   const sendBackward = () => {
     const ids = selectedIdsRef.current;
     if (!ids.length) return;
-    const minZ = Math.min(...elements.map((e) => e.zIndex ?? 0), 0);
-    commitElements(
-      elements.map((e) => (ids.includes(e.id) ? { ...e, zIndex: minZ - 1 } : e)),
-    );
+    commitElements(reorderElements(elements, ids, 'backward'));
   };
+
+  const releaseActivePointerCapture = useCallback(() => {
+    if (dragRef.current) {
+      releaseCapture(dragRef.current.pointerId);
+      dragRef.current = null;
+      setDraggingId(null);
+    }
+    if (marqueeRef.current) {
+      releaseCapture(marqueeRef.current.pointerId);
+      marqueeRef.current = null;
+      setMarqueePreview(null);
+    }
+    if (shapeDrawRef.current) {
+      releaseCapture(shapeDrawRef.current.pointerId);
+      shapeDrawRef.current = null;
+      setShapePreview(null);
+    }
+    pendingTableDragRef.current = null;
+    const shouldCommit = movedRef.current;
+    movedRef.current = false;
+    setLocalElements((prev) => {
+      if (prev && shouldCommit) {
+        onCommitRef.current?.({ ...slideRef.current, elements: prev });
+      }
+      return null;
+    });
+  }, []);
+
+  const openElementContextMenu = useCallback(
+    (el: SlideElement, clientX: number, clientY: number) => {
+      if (readOnly || el.locked) return;
+      const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
+      if (isBg) return;
+
+      releaseActivePointerCapture();
+
+      const ids = selectedIds.includes(el.id) ? selectedIds : [el.id];
+      if (!selectedIds.includes(el.id)) onSelect(ids);
+      contextTargetIdsRef.current = ids;
+
+      setSelectionMenu(null);
+      setShapeToolbarAnchor(null);
+      setTableToolbarAnchor(null);
+      setElementContextMenu({ x: clientX, y: clientY, targetIds: ids });
+    },
+    [readOnly, selectedIds, onSelect, releaseActivePointerCapture],
+  );
+
+  useEffect(() => {
+    if (!elementContextMenu) return;
+    releaseActivePointerCapture();
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const releaseAll = () => {
+      for (const id of [dragRef.current?.pointerId, marqueeRef.current?.pointerId, shapeDrawRef.current?.pointerId]) {
+        if (id == null) continue;
+        try {
+          canvas.releasePointerCapture(id);
+        } catch {
+          /* ignore */
+        }
+      }
+    };
+    releaseAll();
+    const onPointerDown = (e: PointerEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.closest('.element-ctx-menu') || target.closest('.element-ctx-backdrop')) return;
+      releaseAll();
+    };
+    window.addEventListener('pointerdown', onPointerDown, true);
+    return () => window.removeEventListener('pointerdown', onPointerDown, true);
+  }, [elementContextMenu, releaseActivePointerCapture]);
+
+  const handleElementContextMenu = useCallback(
+    (el: SlideElement, e: React.MouseEvent) => {
+      if (readOnly) return;
+      e.preventDefault();
+      e.stopPropagation();
+      openElementContextMenu(el, e.clientX, e.clientY);
+    },
+    [readOnly, openElementContextMenu],
+  );
+
+  const handleCanvasContextMenu = useCallback(
+    (e: React.MouseEvent) => {
+      if (readOnly) return;
+      e.preventDefault();
+      if ((e.target as HTMLElement).closest('.freeform-el')) return;
+
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      const { x, y } = clientToCanvasPct(e.clientX, e.clientY, canvas);
+      const hit = hitElementAtPoint(elements, x, y);
+      if (hit) openElementContextMenu(hit, e.clientX, e.clientY);
+    },
+    [readOnly, elements, openElementContextMenu],
+  );
+
+  const contextIds = elementContextMenu?.targetIds ?? contextTargetIdsRef.current;
+
+  const runContextAction = useCallback(
+    (fn: (ids: string[]) => void) => {
+      const ids = elementContextMenu?.targetIds ?? contextTargetIdsRef.current;
+      if (!ids.length) return;
+      fn(ids);
+    },
+    [elementContextMenu],
+  );
+
+  const canDeleteContext = Boolean(
+    elementContextMenu?.targetIds.some((id) => {
+      const el = elements.find((item) => item.id === id);
+      return el && !el.locked;
+    }),
+  );
 
   useImperativeHandle(
     ref,
@@ -982,8 +1213,9 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
     [baseElements, elements],
   );
 
-  const previewRect = shapePreview
-    ? rectFromDrag(
+  const previewBounds = shapePreview
+    ? boundsFromShapeDrag(
+        shapePreview.kind,
         shapePreview.startX,
         shapePreview.startY,
         shapePreview.currentX,
@@ -1014,14 +1246,14 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
           <button
             type="button"
             className="btn btn-ghost btn-sm"
-            onClick={() => onShapeToolChange?.('rect')}
+            onClick={() => onShapeToolChange?.({ kind: 'rect' })}
           >
             ▭ 矩形
           </button>
           <button
             type="button"
             className="btn btn-ghost btn-sm"
-            onClick={() => onShapeToolChange?.('ellipse')}
+            onClick={() => onShapeToolChange?.({ kind: 'ellipse' })}
           >
             ○ 椭圆
           </button>
@@ -1051,13 +1283,14 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
       >
         <div
           ref={canvasRef}
-          className={`freeform-canvas ${snapToGrid ? 'freeform-canvas--snap' : ''} ${draggingId ? 'freeform-canvas--dragging' : ''} ${shapeTool ? 'freeform-canvas--shape-tool' : ''} ${shapePreview ? 'freeform-canvas--drawing-shape' : ''} ${marqueePreview ? 'freeform-canvas--marquee' : ''}`}
+          className={`freeform-canvas ${snapToGrid ? 'freeform-canvas--snap' : ''} ${draggingId ? 'freeform-canvas--dragging' : ''} ${shapeTool ? 'freeform-canvas--shape-tool' : ''} ${shapePreview ? 'freeform-canvas--drawing-shape' : ''} ${marqueePreview ? 'freeform-canvas--marquee' : ''} ${elementContextMenu ? 'freeform-canvas--menu-open' : ''}`}
           style={{
             background: bgImage
               ? `url(${bgImage}) center/cover no-repeat`
               : `#${bgColor}`,
           }}
           onPointerDown={(e) => {
+            if (e.button !== 0 || menuOpenRef.current) return;
             if (readOnly || dragRef.current || shapeDrawRef.current || marqueeRef.current) return;
 
             const tool = shapeToolRef.current;
@@ -1068,7 +1301,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
               setEditingCell(null);
               const { x, y } = clientToCanvasPct(e.clientX, e.clientY, canvas);
               shapeDrawRef.current = {
-                kind: tool,
+                kind: tool.kind,
                 startX: x,
                 startY: y,
                 currentX: x,
@@ -1076,7 +1309,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
                 pointerId: e.pointerId,
               };
               setShapePreview({
-                kind: tool,
+                kind: tool.kind,
                 startX: x,
                 startY: y,
                 currentX: x,
@@ -1117,6 +1350,7 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
             else if (marqueeRef.current) cancelMarquee();
             else endDrag();
           }}
+          onContextMenu={handleCanvasContextMenu}
         >
           {marqueeRect && (
             <div
@@ -1129,15 +1363,49 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
               }}
             />
           )}
-          {previewRect && shapePreview && (
+          {previewBounds && shapePreview && (
             <div
-              className={`freeform-shape-preview freeform-shape-preview--${shapePreview.kind}`}
+              className={`freeform-shape-preview ${getShapeClassName(shapePreview.kind)} ${isLineLikeShape(shapePreview.kind) ? 'freeform-shape-preview-line' : ''}`}
               style={{
-                left: `${previewRect.x}%`,
-                top: `${previewRect.y}%`,
-                width: `${previewRect.w}%`,
-                height: `${previewRect.h}%`,
+                left: `${previewBounds.x}%`,
+                top: `${previewBounds.y}%`,
+                width: `${previewBounds.w}%`,
+                height: `${previewBounds.h}%`,
+                transform: previewBounds.rotation
+                  ? `rotate(${previewBounds.rotation}deg)`
+                  : undefined,
+                transformOrigin: isLineLikeShape(shapePreview.kind) ? 'left center' : 'center',
+                ...(isLineLikeShape(shapePreview.kind)
+                  ? {}
+                  : getShapeSurfaceStyle(
+                      shapePreview.kind,
+                      shapeTool
+                        ? {
+                            fill: shapeTool.fill,
+                            borderColor: shapeTool.borderColor,
+                            borderWidth: shapeTool.borderWidth,
+                          }
+                        : undefined,
+                      theme,
+                    )),
               }}
+            >
+              {isLineLikeShape(shapePreview.kind) && (
+                <ShapeLineVisual
+                  kind={shapePreview.kind}
+                  borderColor={shapeTool?.borderColor ?? theme.primary}
+                  borderWidth={shapeTool?.borderWidth ?? 2}
+                />
+              )}
+            </div>
+          )}
+          {shapeToolbarOpen && selectedShapeEl && shapeToolbarAnchor && (
+            <ShapeToolbar
+              open
+              anchor={shapeToolbarAnchor}
+              element={selectedShapeEl}
+              theme={theme}
+              onUpdate={updateSelectedShape}
             />
           )}
           {tableToolbarOpen && selectedTableEl?.table && tableToolbarAnchor && (
@@ -1220,8 +1488,52 @@ export const FreeformCanvas = forwardRef<FreeformCanvasHandle, Props>(function F
                 setEditingCell(null);
                 commitElements(next);
               }}
+              onContextMenu={(e) => handleElementContextMenu(el, e)}
             />
           ))}
+          <ElementContextMenu
+            menu={elementContextMenu}
+            canDelete={canDeleteContext}
+            canPaste={canPaste}
+            onClose={() => setElementContextMenu(null)}
+            onCopy={() => {
+              if (contextIds[0]) onCopy?.(contextIds[0]);
+            }}
+            onCut={() => onCut?.(contextIds)}
+            onPaste={() => onPaste?.()}
+            onDelete={() =>
+              runContextAction((ids) => {
+                const idSet = new Set(ids);
+                commitElements(elements.filter((el) => !idSet.has(el.id) || el.locked));
+                onSelect([]);
+                setSelectionMenu(null);
+              })
+            }
+            onDuplicate={() =>
+              runContextAction((ids) => {
+                const idSet = new Set(ids);
+                let z = nextElementZIndex(elements);
+                const copies = elements
+                  .filter((item) => idSet.has(item.id))
+                  .map((item) => duplicateElement(item, 3, z++));
+                if (!copies.length) return;
+                commitElements([...elements, ...copies]);
+                onSelect(copies.map((item) => item.id));
+              })
+            }
+            onOrder={(action) =>
+              runContextAction((ids) => commitElements(reorderElements(elements, ids, action)))
+            }
+            onRotate={(delta) =>
+              runContextAction((ids) => commitElements(rotateElements(elements, ids, delta)))
+            }
+            onFlip={(axis) =>
+              runContextAction((ids) => commitElements(flipElements(elements, ids, axis)))
+            }
+            onCenter={(axis) =>
+              runContextAction((ids) => commitElements(centerElementsOnPage(elements, ids, axis)))
+            }
+          />
         </div>
       </div>
     </div>

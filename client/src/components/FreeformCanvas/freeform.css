@@ -80,10 +80,15 @@
   cursor: crosshair;
 }
 
+.freeform-canvas--menu-open {
+  pointer-events: none;
+}
+
 .freeform-el {
   position: absolute;
   box-sizing: border-box;
   touch-action: none;
+  transform-origin: center center;
 }
 
 .freeform-el--text {

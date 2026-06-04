@@ -7,6 +7,8 @@ import type {
   TableCellData,
   SlideLayout,
 } from '../types/presentation';
+import type { ShapeKind } from '../types/shapes';
+import { defaultShapeStyle } from '../types/shapes';
 
 let idCounter = 0;
 
@@ -79,20 +81,17 @@ export function createTableElement(
 }
 
 export function createShapeElement(
-  shapeKind: 'rect' | 'ellipse',
+  shapeKind: ShapeKind,
   partial: Partial<SlideElement> & Pick<SlideElement, 'x' | 'y' | 'w' | 'h'>,
+  theme?: PresentationTheme,
+  styleOverrides?: Partial<ElementStyle>,
 ): SlideElement {
+  const t = theme ?? { primary: '1F2933', accent: '2F6F66', background: 'F8FAFC', text: '344054' };
   return {
     id: newElementId(),
     type: 'shape',
     zIndex: 0,
-    style: {
-      shapeKind,
-      fill: '2F6F66',
-      borderColor: '1F2933',
-      borderWidth: 1,
-      opacity: 1,
-    },
+    style: defaultShapeStyle(shapeKind, t, styleOverrides),
     ...partial,
   };
 }

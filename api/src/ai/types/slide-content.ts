@@ -42,7 +42,7 @@ export interface ElementStyle {
   align?: 'left' | 'center' | 'right';
   bullets?: boolean;
   background?: string;
-  shapeKind?: 'rect' | 'ellipse';
+  shapeKind?: 'rect' | 'roundRect' | 'ellipse' | 'triangle' | 'diamond' | 'line' | 'arrow';
   fill?: string;
   borderColor?: string;
   borderWidth?: number;

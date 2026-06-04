@@ -10,6 +10,7 @@ import {
   createShapeElement,
 } from '../../utils/slide-elements';
 import { alignElement, readImageFile, withTopZIndex } from '../../utils/editor-utils';
+import { SHAPE_CATALOG, isLineLikeShape, type ShapeKind } from '../../types/shapes';
 import './ElementInspector.css';
 
 interface Props {
@@ -184,7 +185,7 @@ export function ElementInspector({
             className="btn btn-ghost btn-sm"
             onClick={() => {
               const el = withTopZIndex(
-                createShapeElement('rect', { x: 30, y: 30, w: 25, h: 25 }),
+                createShapeElement('rect', { x: 30, y: 30, w: 25, h: 25 }, theme),
                 elements,
               );
               const next = { ...slide, elements: [...elements, el] };
@@ -200,7 +201,7 @@ export function ElementInspector({
             className="btn btn-ghost btn-sm"
             onClick={() => {
               const el = withTopZIndex(
-                createShapeElement('ellipse', { x: 30, y: 30, w: 25, h: 25 }),
+                createShapeElement('ellipse', { x: 30, y: 30, w: 25, h: 25 }, theme),
                 elements,
               );
               const next = { ...slide, elements: [...elements, el] };
@@ -417,14 +418,31 @@ export function ElementInspector({
 
       {selected.type === 'shape' && (
         <>
+          <p className="element-inspector-hint">选中形状后也可使用画布上方浮动工具栏</p>
           <div className="field-row">
-            <label>填充</label>
-            <input
-              type="color"
-              value={`#${selected.style?.fill ?? theme.accent}`}
-              onChange={(e) => updateStyle({ fill: e.target.value.replace('#', '') })}
-            />
-            <label>边框</label>
+            <select
+              value={selected.style?.shapeKind ?? 'rect'}
+              onChange={(e) => updateStyle({ shapeKind: e.target.value as ShapeKind })}
+            >
+              {SHAPE_CATALOG.map((s) => (
+                <option key={s.kind} value={s.kind}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="field-row">
+            {!isLineLikeShape(selected.style?.shapeKind) && (
+              <>
+                <label>填充</label>
+                <input
+                  type="color"
+                  value={`#${selected.style?.fill ?? theme.accent}`}
+                  onChange={(e) => updateStyle({ fill: e.target.value.replace('#', '') })}
+                />
+              </>
+            )}
+            <label>{isLineLikeShape(selected.style?.shapeKind) ? '线条' : '边框'}</label>
             <input
               type="color"
               value={`#${selected.style?.borderColor ?? theme.primary}`}

@@ -32,6 +32,8 @@ import {
   syncSlideFromElements,
 } from './utils/slide-elements';
 import { duplicateElement, isSelectableElement, nextElementZIndex } from './utils/editor-utils';
+import type { ShapeToolOptions } from './types/shapes';
+import { shapeLabel } from './types/shapes';
 import './App.css';
 
 export default function App() {
@@ -59,7 +61,7 @@ export default function App() {
   const [snapToGrid, setSnapToGrid] = useState(true);
   const [zoom, setZoom] = useState(100);
   const [showDraftBanner, setShowDraftBanner] = useState(Boolean(draft));
-  const [shapeTool, setShapeTool] = useState<'rect' | 'ellipse' | null>(null);
+  const [shapeTool, setShapeTool] = useState<ShapeToolOptions | null>(null);
 
   const clipboardRef = useRef<SlideElement | null>(null);
   const slideClipboardRef = useRef<{
@@ -70,6 +72,7 @@ export default function App() {
   const bgInputRef = useRef<HTMLInputElement>(null);
   const bgTargetIndexRef = useRef(0);
   const [canPasteSlide, setCanPasteSlide] = useState(false);
+  const [canPasteElement, setCanPasteElement] = useState(false);
   useLocalDraft(content);
 
   const theme = mergeTheme(content.theme);
@@ -326,11 +329,26 @@ export default function App() {
     setSelectedElementIds([]);
   };
 
-  const copyElement = useCallback(() => {
-    const id = selectedElementIds[0];
-    const el = activeSlide?.elements?.find((e) => e.id === id);
-    if (el) clipboardRef.current = el;
+  const copyElement = useCallback((id?: string) => {
+    const targetId = id ?? selectedElementIds[0];
+    const el = activeSlide?.elements?.find((e) => e.id === targetId);
+    if (el) {
+      clipboardRef.current = el;
+      setCanPasteElement(true);
+    }
   }, [activeSlide, selectedElementIds]);
+
+  const cutElement = useCallback((ids?: string[]) => {
+    const targetIds = ids ?? selectedElementIds;
+    if (!activeSlide || !targetIds.length) return;
+    copyElement(targetIds[0]);
+    const idSet = new Set(targetIds);
+    commitSlide(activeIndex, {
+      ...activeSlide,
+      elements: (activeSlide.elements ?? []).filter((el) => !idSet.has(el.id) || el.locked),
+    });
+    setSelectedElementIds([]);
+  }, [activeSlide, activeIndex, selectedElementIds, commitSlide, copyElement]);
 
   const pasteElement = useCallback(() => {
     const source = clipboardRef.current;
@@ -408,6 +426,7 @@ export default function App() {
       <Ribbon
         activeTab={ribbonTab}
         onTabChange={setRibbonTab}
+        theme={theme}
         canUndo={canUndo}
         canRedo={canRedo}
         onUndo={undo}
@@ -417,8 +436,10 @@ export default function App() {
         onDeleteSlide={() => handleDelete(activeIndex)}
         onAddText={() => canvasRef.current?.addTextBox()}
         onAddImage={() => canvasRef.current?.addImageBox()}
-        onAddRect={() => setShapeTool('rect')}
-        onAddEllipse={() => setShapeTool('ellipse')}
+        onSelectShape={(tool) => {
+          setSelectedElementIds([]);
+          setShapeTool(tool);
+        }}
         onInsertTable={(rows, cols) => canvasRef.current?.addTable(rows, cols)}
         onBringForward={() => canvasRef.current?.bringForward()}
         onSendBackward={() => canvasRef.current?.sendBackward()}
@@ -514,6 +535,10 @@ export default function App() {
                 hideToolbar
                 shapeTool={shapeTool}
                 onShapeToolChange={setShapeTool}
+                onCopy={copyElement}
+                onCut={cutElement}
+                onPaste={pasteElement}
+                canPaste={canPasteElement}
               />
             )}
           </div>
@@ -552,7 +577,7 @@ export default function App() {
         <span>幻灯片 {activeIndex + 1} / {content.slides.length}</span>
         <span>
           {shapeTool
-            ? `绘制${shapeTool === 'rect' ? '矩形' : '椭圆'} · 在画布拖动一次 · Esc 取消`
+            ? `绘制${shapeLabel(shapeTool.kind)} · 在画布拖动${shapeTool.keepDrawing ? '（连续插入）' : '一次'} · Esc 取消`
             : selectedElementIds.length > 1
               ? `已选中 ${selectedElementIds.length} 个元素`
               : `${zoom}% · 拖动框选 · Ctrl 框选显示菜单 · ${snapToGrid ? '网格吸附开' : '网格吸附关'}`}
