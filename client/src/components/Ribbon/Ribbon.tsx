@@ -1,3 +1,4 @@
+import { type ReactNode } from 'react';
 import { GeneratePanel } from '../GeneratePanel/GeneratePanel';
 import { TablePicker } from './TablePicker';
 import { ShapePicker } from './ShapePicker';
@@ -8,6 +9,7 @@ import './ribbon.css';
 export type RibbonTab = 'start' | 'insert' | 'view';
 
 interface Props {
+  titleBar?: ReactNode;
   activeTab: RibbonTab;
   onTabChange: (tab: RibbonTab) => void;
   theme: PresentationTheme;
@@ -78,6 +80,7 @@ function Tool({
 }
 
 export function Ribbon({
+  titleBar,
   activeTab,
   onTabChange,
   theme,
@@ -116,17 +119,20 @@ export function Ribbon({
 
   return (
     <div className="ribbon">
-      <div className="ribbon-tabs">
-        {tabs.map((t) => (
-          <button
-            key={t.id}
-            type="button"
-            className={`ribbon-tab ${activeTab === t.id ? 'ribbon-tab--active' : ''}`}
-            onClick={() => onTabChange(t.id)}
-          >
-            {t.label}
-          </button>
-        ))}
+      <div className="ribbon-header">
+        {titleBar && <div className="ribbon-title">{titleBar}</div>}
+        <div className="ribbon-tabs">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              className={`ribbon-tab ${activeTab === t.id ? 'ribbon-tab--active' : ''}`}
+              onClick={() => onTabChange(t.id)}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="ribbon-panel">

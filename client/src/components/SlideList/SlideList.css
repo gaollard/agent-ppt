@@ -27,9 +27,8 @@
 
 .slide-list-tabs button.slide-list-tab--active {
   background: #f3f3f3;
-  color: #333;
+  color: #e07a3a;
   font-weight: 600;
-  box-shadow: inset 0 -2px 0 #e07a3a;
 }
 
 .slide-list-outline {

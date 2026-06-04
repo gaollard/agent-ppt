@@ -2815,7 +2815,7 @@
       "label": "RibbonTab",
       "file_type": "code",
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "ribbon_ribbon_ribbontab",
       "community": 3,
       "norm_label": "ribbontab"
@@ -2824,7 +2824,7 @@
       "label": "Props",
       "file_type": "code",
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "ribbon_ribbon_props",
       "community": 3,
       "norm_label": "props"
@@ -2833,7 +2833,7 @@
       "label": "Group()",
       "file_type": "code",
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
-      "source_location": "L42",
+      "source_location": "L44",
       "id": "ribbon_ribbon_group",
       "community": 3,
       "norm_label": "group()"
@@ -2842,7 +2842,7 @@
       "label": "Tool()",
       "file_type": "code",
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "ribbon_ribbon_tool",
       "community": 3,
       "norm_label": "tool()"
@@ -2851,7 +2851,7 @@
       "label": "Ribbon()",
       "file_type": "code",
       "source_file": "client/src/components/Ribbon/Ribbon.tsx",
-      "source_location": "L80",
+      "source_location": "L82",
       "id": "ribbon_ribbon_ribbon",
       "community": 3,
       "norm_label": "ribbon()"
@@ -3132,7 +3132,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L27",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u73b0\u72b6\u4e0e\u5dee\u8ddd",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u73b0\u72b6\u4e0e\u5dee\u8ddd"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L29",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d\u6d41\u7a0b",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u5f53\u524d\u6d41\u7a0b"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L31",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_1",
-      "community": 21,
+      "community": 20,
       "norm_label": "code:block1 (post /ppt/generate { topic, slidecount })"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L50",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_json_\u7ed3\u6784",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u5f53\u524d json \u7ed3\u6784"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L52",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_2",
-      "community": 21,
+      "community": 20,
       "norm_label": "code:json ({)"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L62",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5dee\u8ddd\u4e00\u89c8",
-      "community": 21,
+      "community": 20,
       "norm_label": "\u5dee\u8ddd\u4e00\u89c8"
     },
     {
@@ -3591,7 +3591,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L620",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u6d4b\u8bd5\u4e0e\u9a8c\u6536",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u6d4b\u8bd5\u4e0e\u9a8c\u6536"
     },
     {
@@ -3600,7 +3600,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L622",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f53\u524d_api_\u5192\u70df_\u7eaf\u6587\u5b57",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u5f53\u524d api \u5192\u70df(\u7eaf\u6587\u5b57)"
     },
     {
@@ -3609,7 +3609,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L624",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_20",
-      "community": 20,
+      "community": 21,
       "norm_label": "code:bash (curl -x post http://localhost:3000/ppt/generate \\)"
     },
     {
@@ -3618,7 +3618,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L635",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u56fe\u6587\u5e76\u8302\u9a8c\u6536\u6e05\u5355"
     },
     {
@@ -3627,7 +3627,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L645",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u5f00\u53d1\u9636\u6bb5\u8c03\u8bd5\u6280\u5de7"
     },
     {
@@ -3636,7 +3636,7 @@
       "source_file": "docs/\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684PPT.md",
       "source_location": "L647",
       "id": "docs_\u5982\u4f55\u751f\u6210\u56fe\u6587\u5e76\u8c8c\u7684ppt_codeblock_21",
-      "community": 20,
+      "community": 21,
       "norm_label": "code:bash (# \u53ea\u6d4b llm json \u8f93\u51fa(\u4e34\u65f6\u5728 controller \u6253\u65e5\u5fd7))"
     },
     {
@@ -7636,9 +7636,9 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_app_tsx",
-      "target": "client_src_components_slidelist_slide_list_actions_ts",
-      "confidence_score": 1.0
+      "target": "client_src_components_slidelist_slide_list_actions_ts"
     },
     {
       "relation": "imports",
@@ -7647,9 +7647,9 @@
       "source_file": "client/src/App.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_app_tsx",
-      "target": "slidelist_slide_list_actions_slidelistactions",
-      "confidence_score": 1.0
+      "target": "slidelist_slide_list_actions_slidelistactions"
     },
     {
       "relation": "imports_from",
@@ -8398,9 +8398,9 @@
       "source_file": "client/src/components/SlideList/slide-list-actions.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slide_list_actions_ts",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -8453,9 +8453,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -8475,9 +8475,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "client_src_types_presentation_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_presentation_ts"
     },
     {
       "relation": "imports_from",
@@ -8585,9 +8585,9 @@
       "source_file": "client/src/components/SlideList/slide-list-actions.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slide_list_actions_ts",
-      "target": "types_presentation_slidelayout",
-      "confidence_score": 1.0
+      "target": "types_presentation_slidelayout"
     },
     {
       "relation": "imports",
@@ -8750,9 +8750,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "types_presentation_presentationtheme",
-      "confidence_score": 1.0
+      "target": "types_presentation_presentationtheme"
     },
     {
       "relation": "imports",
@@ -8981,9 +8981,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -9003,9 +9003,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "types_presentation_slideelement",
-      "confidence_score": 1.0
+      "target": "types_presentation_slideelement"
     },
     {
       "relation": "imports",
@@ -9304,9 +9304,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "client_src_types_shapes_ts",
-      "confidence_score": 1.0
+      "target": "client_src_types_shapes_ts"
     },
     {
       "relation": "imports_from",
@@ -9392,9 +9392,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "types_shapes_shapekind",
-      "confidence_score": 1.0
+      "target": "types_shapes_shapekind"
     },
     {
       "relation": "imports",
@@ -9535,9 +9535,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "types_shapes_islinelikeshape",
-      "confidence_score": 1.0
+      "target": "types_shapes_islinelikeshape"
     },
     {
       "relation": "calls",
@@ -9663,9 +9663,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "client_src_utils_shape_utils_ts",
-      "confidence_score": 1.0
+      "target": "client_src_utils_shape_utils_ts"
     },
     {
       "relation": "imports",
@@ -9696,9 +9696,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_shape_utils_getshapeclassname",
-      "confidence_score": 1.0
+      "target": "utils_shape_utils_getshapeclassname"
     },
     {
       "relation": "imports",
@@ -9718,9 +9718,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_shape_utils_getshapesurfacestyle",
-      "confidence_score": 1.0
+      "target": "utils_shape_utils_getshapesurfacestyle"
     },
     {
       "relation": "imports_from",
@@ -10355,9 +10355,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "client_src_utils_slide_elements_ts",
-      "confidence_score": 1.0
+      "target": "client_src_utils_slide_elements_ts"
     },
     {
       "relation": "calls",
@@ -10597,9 +10597,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "utils_slide_elements_clamp",
-      "confidence_score": 1.0
+      "target": "utils_slide_elements_clamp"
     },
     {
       "relation": "calls",
@@ -10832,9 +10832,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "client_src_utils_table_utils_ts",
-      "confidence_score": 1.0
+      "target": "client_src_utils_table_utils_ts"
     },
     {
       "relation": "imports_from",
@@ -10876,9 +10876,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_table_utils_normalizecell",
-      "confidence_score": 1.0
+      "target": "utils_table_utils_normalizecell"
     },
     {
       "relation": "imports",
@@ -11019,9 +11019,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_table_utils_celltext",
-      "confidence_score": 1.0
+      "target": "utils_table_utils_celltext"
     },
     {
       "relation": "imports",
@@ -11096,9 +11096,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_table_utils_iscellvisible",
-      "confidence_score": 1.0
+      "target": "utils_table_utils_iscellvisible"
     },
     {
       "relation": "imports",
@@ -11173,9 +11173,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "utils_table_utils_cellstyletocss",
-      "confidence_score": 1.0
+      "target": "utils_table_utils_cellstyletocss"
     },
     {
       "relation": "imports",
@@ -11291,9 +11291,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "client_src_components_contextmenu_contextmenu_tsx",
-      "confidence_score": 1.0
+      "target": "client_src_components_contextmenu_contextmenu_tsx"
     },
     {
       "relation": "imports",
@@ -11302,9 +11302,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenudivider",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenudivider"
     },
     {
       "relation": "imports",
@@ -11313,9 +11313,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuiconbtn",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuiconbtn"
     },
     {
       "relation": "imports",
@@ -11324,9 +11324,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuitem"
     },
     {
       "relation": "imports",
@@ -11335,9 +11335,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenushell",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenushell"
     },
     {
       "relation": "imports",
@@ -11346,9 +11346,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusub",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusub"
     },
     {
       "relation": "imports",
@@ -11357,9 +11357,9 @@
       "source_file": "client/src/components/SlideList/SlideContextMenu.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidecontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusubitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusubitem"
     },
     {
       "relation": "contains",
@@ -11460,9 +11460,9 @@
       "source_file": "client/src/components/SlideList/slide-list-actions.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slide_list_actions_ts",
-      "target": "slidelist_slide_list_actions_slidelistactions",
-      "confidence_score": 1.0
+      "target": "slidelist_slide_list_actions_slidelistactions"
     },
     {
       "relation": "imports_from",
@@ -11471,9 +11471,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "client_src_components_slidelist_slide_list_actions_ts",
-      "confidence_score": 1.0
+      "target": "client_src_components_slidelist_slide_list_actions_ts"
     },
     {
       "relation": "imports",
@@ -11482,9 +11482,9 @@
       "source_file": "client/src/components/SlideList/SlideList.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_slidelist_slidelist_tsx",
-      "target": "slidelist_slide_list_actions_slidelistactions",
-      "confidence_score": 1.0
+      "target": "slidelist_slide_list_actions_slidelistactions"
     },
     {
       "relation": "contains",
@@ -11720,9 +11720,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_stopmenuevent",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_stopmenuevent"
     },
     {
       "relation": "contains",
@@ -11730,9 +11730,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenudivider",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenudivider"
     },
     {
       "relation": "contains",
@@ -11740,9 +11740,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuiconbtn",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuiconbtn"
     },
     {
       "relation": "contains",
@@ -11750,9 +11750,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuitem"
     },
     {
       "relation": "contains",
@@ -11760,9 +11760,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusubitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusubitem"
     },
     {
       "relation": "contains",
@@ -11770,9 +11770,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusub",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusub"
     },
     {
       "relation": "contains",
@@ -11780,9 +11780,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenushellprops",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenushellprops"
     },
     {
       "relation": "contains",
@@ -11790,9 +11790,9 @@
       "source_file": "client/src/components/ContextMenu/ContextMenu.tsx",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_contextmenu_contextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenushell",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenushell"
     },
     {
       "relation": "imports_from",
@@ -11801,9 +11801,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "client_src_components_contextmenu_contextmenu_tsx",
-      "confidence_score": 1.0
+      "target": "client_src_components_contextmenu_contextmenu_tsx"
     },
     {
       "relation": "imports",
@@ -11812,9 +11812,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenudivider",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenudivider"
     },
     {
       "relation": "imports",
@@ -11823,9 +11823,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuiconbtn",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuiconbtn"
     },
     {
       "relation": "imports",
@@ -11834,9 +11834,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenuitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenuitem"
     },
     {
       "relation": "imports",
@@ -11845,9 +11845,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusubitem",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusubitem"
     },
     {
       "relation": "imports",
@@ -11856,9 +11856,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenusub",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenusub"
     },
     {
       "relation": "imports",
@@ -11867,9 +11867,9 @@
       "source_file": "client/src/components/FreeformCanvas/ElementContextMenu.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_elementcontextmenu_tsx",
-      "target": "contextmenu_contextmenu_contextmenushell",
-      "confidence_score": 1.0
+      "target": "contextmenu_contextmenu_contextmenushell"
     },
     {
       "relation": "imports_from",
@@ -11977,9 +11977,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "confidence_score": 1.0
+      "target": "client_src_components_freeformcanvas_canvaselement_tsx"
     },
     {
       "relation": "imports",
@@ -11988,9 +11988,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvaselement_canvaselement",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_canvaselement"
     },
     {
       "relation": "imports",
@@ -11999,9 +11999,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvaselement_shapelinevisual",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_shapelinevisual"
     },
     {
       "relation": "imports",
@@ -12010,9 +12010,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvaselement_resizehandle",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_resizehandle"
     },
     {
       "relation": "imports_from",
@@ -12021,9 +12021,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "confidence_score": 1.0
+      "target": "client_src_components_freeformcanvas_canvas_geometry_ts"
     },
     {
       "relation": "imports",
@@ -12032,9 +12032,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct"
     },
     {
       "relation": "imports",
@@ -12043,9 +12043,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvas_geometry_hitelementatpoint",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_hitelementatpoint"
     },
     {
       "relation": "imports",
@@ -12054,9 +12054,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvas_geometry_rectfrompoints",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_rectfrompoints"
     },
     {
       "relation": "imports",
@@ -12065,9 +12065,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvas_geometry_rectsintersect",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_rectsintersect"
     },
     {
       "relation": "imports",
@@ -12076,9 +12076,9 @@
       "source_file": "client/src/components/FreeformCanvas/FreeformCanvas.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_freeformcanvas_tsx",
-      "target": "freeformcanvas_canvas_geometry_sortelements",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_sortelements"
     },
     {
       "relation": "contains",
@@ -12307,9 +12307,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_clienttocanvaspct"
     },
     {
       "relation": "contains",
@@ -12317,9 +12317,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "freeformcanvas_canvas_geometry_hitelementatpoint",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_hitelementatpoint"
     },
     {
       "relation": "contains",
@@ -12327,9 +12327,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "freeformcanvas_canvas_geometry_rectfrompoints",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_rectfrompoints"
     },
     {
       "relation": "contains",
@@ -12337,9 +12337,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "freeformcanvas_canvas_geometry_rectsintersect",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_rectsintersect"
     },
     {
       "relation": "contains",
@@ -12347,9 +12347,9 @@
       "source_file": "client/src/components/FreeformCanvas/canvas-geometry.ts",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvas_geometry_ts",
-      "target": "freeformcanvas_canvas_geometry_sortelements",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvas_geometry_sortelements"
     },
     {
       "relation": "contains",
@@ -12377,9 +12377,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_resizehandle",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_resizehandle"
     },
     {
       "relation": "contains",
@@ -12387,9 +12387,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_canvaselementprops",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_canvaselementprops"
     },
     {
       "relation": "contains",
@@ -12397,9 +12397,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_rendertextcontent",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_rendertextcontent"
     },
     {
       "relation": "contains",
@@ -12407,9 +12407,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_elementtransform",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_elementtransform"
     },
     {
       "relation": "contains",
@@ -12417,9 +12417,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_shapelinevisual",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_shapelinevisual"
     },
     {
       "relation": "contains",
@@ -12427,9 +12427,9 @@
       "source_file": "client/src/components/FreeformCanvas/CanvasElement.tsx",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "client_src_components_freeformcanvas_canvaselement_tsx",
-      "target": "freeformcanvas_canvaselement_canvaselement",
-      "confidence_score": 1.0
+      "target": "freeformcanvas_canvaselement_canvaselement"
     },
     {
       "relation": "contains",
@@ -14072,5 +14072,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cbf87bc29d1c0be577db80ab957667d33adacb77"
+  "built_at_commit": "d1d0538ad61bbb38b1fd8c66f1b7ffe6921e177a"
 }

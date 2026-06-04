@@ -1,7 +1,7 @@
 # Graph Report - smart-ppt  (2026-06-04)
 
 ## Corpus Check
-- 66 files · ~24,961 words
+- 66 files · ~24,973 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cbf87bc2`
+- Built from commit: `d1d0538a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -143,11 +143,11 @@ Nodes (6): Step 1 — 扩展类型与 Prompt（P0）, Step 2 — 新增 ImageSer
 
 ### Community 20 - "Community 20"
 Cohesion: 0.33
-Nodes (6): code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), 图文并茂验收清单, 开发阶段调试技巧, 当前 API 冒烟（纯文字）, 测试与验收
+Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
 
 ### Community 21 - "Community 21"
 Cohesion: 0.33
-Nodes (6): code:block1 (POST /ppt/generate { topic, slideCount }), code:json ({), 差距一览, 当前 JSON 结构, 当前流程, 现状与差距
+Nodes (6): code:bash (curl -X POST http://localhost:3000/ppt/generate \), code:bash (# 只测 LLM JSON 输出（临时在 controller 打日志）), 图文并茂验收清单, 开发阶段调试技巧, 当前 API 冒烟（纯文字）, 测试与验收
 
 ### Community 22 - "Community 22"
 Cohesion: 0.67

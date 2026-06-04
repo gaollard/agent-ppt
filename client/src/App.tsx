@@ -421,25 +421,23 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="app-titlebar">
-        <div className="app-titlebar-left">
-          <span className="app-titlebar-logo">P</span>
-          <input
-            className="app-title-input"
-            value={content.title}
-            onChange={(e) =>
-              setContent((prev) => ({ ...prev, title: e.target.value }), false)
-            }
-            onBlur={(e) =>
-              commitContent({ ...content, title: e.target.value })
-            }
-            placeholder="未命名演示"
-          />
-        </div>
-        <span className="app-titlebar-right">Smart PPT Editor</span>
-      </div>
-
       <Ribbon
+        titleBar={
+          <>
+            <span className="app-titlebar-logo">P</span>
+            <input
+              className="app-title-input"
+              value={content.title}
+              onChange={(e) =>
+                setContent((prev) => ({ ...prev, title: e.target.value }), false)
+              }
+              onBlur={(e) =>
+                commitContent({ ...content, title: e.target.value })
+              }
+              placeholder="未命名演示"
+            />
+          </>
+        }
         activeTab={ribbonTab}
         onTabChange={setRibbonTab}
         theme={theme}
