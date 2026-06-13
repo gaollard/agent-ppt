@@ -17,6 +17,16 @@
   background-color: #fff;
 }
 
+.freeform-slide-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .freeform-canvas--snap {
   background-image:
     linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
@@ -91,20 +101,54 @@
   transform-origin: center center;
 }
 
-.freeform-el--text {
-  border: 1px solid transparent;
-  border-radius: 2px;
-  padding: 4px 6px;
-  overflow: hidden;
+.freeform-focus-ring {
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  border: 1px solid #5f6368;
+  border-radius: inherit;
+  box-sizing: border-box;
+  z-index: 20;
 }
 
-.freeform-el--text:not(.freeform-el--bg) {
-  background: rgba(255, 255, 255, 0.6);
+.freeform-focus-ring--selected {
+  border-color: #1a73e8;
 }
 
 .freeform-el--selected {
-  border-color: #e07a3a !important;
-  box-shadow: 0 0 0 1px #e07a3a;
+  overflow: visible;
+}
+
+.freeform-el--text {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.freeform-el--text.freeform-el--selected {
+  overflow: visible;
+}
+
+.freeform-el--text:not(.freeform-el--bg) {
+  background: transparent;
+}
+
+.freeform-el--image,
+.freeform-el--table {
+  border: 1px solid transparent;
+}
+
+.freeform-el--table {
+  overflow: hidden;
+}
+
+.freeform-el--table.freeform-el--selected,
+.freeform-el--image.freeform-el--selected {
+  overflow: visible;
 }
 
 .freeform-el--bg {
@@ -150,19 +194,50 @@
 
 .freeform-text-display,
 .freeform-text-editor {
+  flex: none;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  line-height: 1.45;
+  min-height: 0;
+  overflow: visible;
+  line-height: 1.5;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 10px 12px;
 }
 
 .freeform-text-editor {
   border: none;
   outline: none;
   resize: none;
-  background: rgba(255, 255, 255, 0.95);
-  font-family: inherit;
-  padding: 2px;
+  background: transparent;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
+  line-height: inherit;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+}
+
+.freeform-text-editor:focus {
+  outline: none;
+}
+
+.freeform-el--text.freeform-el--editing {
+  overflow: visible;
+}
+
+.freeform-el--text.freeform-el--editing.freeform-el--selected {
+  overflow: visible;
+}
+
+.freeform-el--text.freeform-el--editing .freeform-text-editor {
+  flex: none;
+  overflow: visible;
 }
 
 .freeform-text-bullets {
@@ -179,20 +254,70 @@
   word-break: break-word;
 }
 
+.freeform-text-placeholder {
+  color: #94a3b8;
+}
+
 .freeform-handle {
   position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1.5px solid #1a73e8;
+  z-index: 30;
+}
+
+.freeform-handle--nw,
+.freeform-handle--ne,
+.freeform-handle--sw,
+.freeform-handle--se {
   width: 8px;
   height: 8px;
-  background: #fff;
-  border: 2px solid #e07a3a;
-  border-radius: 1px;
-  z-index: 10;
+  border-radius: 50%;
+}
+
+.freeform-handle--n,
+.freeform-handle--s {
+  width: 10px;
+  height: 6px;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.freeform-handle--e,
+.freeform-handle--w {
+  width: 6px;
+  height: 10px;
+  border-radius: 4px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .freeform-handle--nw { top: -4px; left: -4px; cursor: nwse-resize; }
 .freeform-handle--ne { top: -4px; right: -4px; cursor: nesw-resize; }
 .freeform-handle--sw { bottom: -4px; left: -4px; cursor: nesw-resize; }
 .freeform-handle--se { bottom: -4px; right: -4px; cursor: nwse-resize; }
+.freeform-handle--n { top: -3px; cursor: ns-resize; }
+.freeform-handle--s { bottom: -3px; cursor: ns-resize; }
+.freeform-handle--e { right: -3px; cursor: ew-resize; }
+.freeform-handle--w { left: -3px; cursor: ew-resize; }
+
+.freeform-handle--rotate {
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: grab;
+  background: #fff;
+  border: 2px solid #2563eb;
+  z-index: 3;
+}
+
+.freeform-handle--rotate:active {
+  cursor: grabbing;
+}
 
 .freeform-el--table {
   overflow: hidden;

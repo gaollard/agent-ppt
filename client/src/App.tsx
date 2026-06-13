@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   createEmptyPresentation,
   createEmptySlide,
   mergeTheme,
+  type ElementStyle,
   type PresentationContent,
   type SlideContent,
   type SlideElement,
@@ -15,7 +16,8 @@ import {
   FreeformCanvas,
   type FreeformCanvasHandle,
 } from './components/FreeformCanvas/FreeformCanvas';
-import { ElementInspector } from './components/ElementInspector/ElementInspector';
+import { SlideBackgroundDialog, type SlideBackgroundValue } from './components/SlideBackgroundDialog/SlideBackgroundDialog';
+import { EditorSidebar } from './components/EditorSidebar/EditorSidebar';
 import { Ribbon, type RibbonTab } from './components/Ribbon/Ribbon';
 import { PresentationMode } from './components/PresentationMode/PresentationMode';
 import { useHistory } from './hooks/useHistory';
@@ -32,7 +34,7 @@ import {
   resetSlideFromLayout,
   syncSlideFromElements,
 } from './utils/slide-elements';
-import { duplicateElement, isSelectableElement, nextElementZIndex } from './utils/editor-utils';
+import { duplicateElement, isLayoutBackgroundElement, isSelectableElement, nextElementZIndex } from './utils/editor-utils';
 import type { ShapeToolOptions } from './types/shapes';
 import { shapeLabel } from './types/shapes';
 import './App.css';
@@ -59,7 +61,7 @@ export default function App() {
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState(null as string | null);
   const [presenting, setPresenting] = useState(false);
-  const [snapToGrid, setSnapToGrid] = useState(true);
+  const [snapToGrid, setSnapToGrid] = useState(false);
   const [zoom, setZoom] = useState(100);
   const [showDraftBanner, setShowDraftBanner] = useState(Boolean(draft));
   const [shapeTool, setShapeTool] = useState<ShapeToolOptions | null>(null);
@@ -70,8 +72,7 @@ export default function App() {
     cut: boolean;
     cutIndex?: number;
   } | null>(null);
-  const bgInputRef = useRef<HTMLInputElement>(null);
-  const bgTargetIndexRef = useRef(0);
+  const [bgDialogIndex, setBgDialogIndex] = useState<number | null>(null);
   const [canPasteSlide, setCanPasteSlide] = useState(false);
   const [canPasteElement, setCanPasteElement] = useState(false);
   useLocalDraft(content);
@@ -112,6 +113,34 @@ export default function App() {
       );
     },
     [setContent],
+  );
+
+  const selectedTextElement = useMemo(() => {
+    if (!activeSlide || selectedElementIds.length !== 1) return null;
+    const el = activeSlide.elements?.find((item) => item.id === selectedElementIds[0]);
+    if (!el || el.type !== 'text' || isLayoutBackgroundElement(el)) return null;
+    return el;
+  }, [activeSlide, selectedElementIds]);
+
+  const updateSelectedTextStyle = useCallback(
+    (patch: Partial<ElementStyle>) => {
+      if (!activeSlide || !selectedTextElement) return;
+      commitSlide(activeIndex, {
+        ...activeSlide,
+        elements: (activeSlide.elements ?? []).map((el) => {
+          if (el.id !== selectedTextElement.id) return el;
+          const next: SlideElement = {
+            ...el,
+            style: { ...el.style, ...patch },
+          };
+          if ('bullets' in patch) {
+            next.richText = undefined;
+          }
+          return next;
+        }),
+      });
+    },
+    [activeIndex, activeSlide, commitSlide, selectedTextElement],
   );
 
   const handleGenerate = async (topic: string, slideCount: number) => {
@@ -266,42 +295,34 @@ export default function App() {
     );
   };
 
-  const handleChangeBackground = (index: number) => {
-    bgTargetIndexRef.current = index;
-    bgInputRef.current?.click();
+  const handleOpenBackground = (index: number) => {
+    setActiveIndex(index);
+    setSelectedElementIds([]);
+    setBgDialogIndex(index);
   };
 
-  const handleBackgroundFile = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    e.target.value = '';
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = reader.result as string;
-      const index = bgTargetIndexRef.current;
-      setContent(
-        (prev) => ({
-          ...prev,
-          slides: prev.slides.map((s, i) =>
-            i === index ? { ...s, backgroundImage: dataUrl } : s,
-          ),
-        }),
-        true,
-      );
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const handleRemoveBackground = (index: number) => {
+  const handleApplyBackground = (
+    index: number,
+    value: SlideBackgroundValue,
+    applyToAll: boolean,
+  ) => {
     setContent(
       (prev) => ({
         ...prev,
-        slides: prev.slides.map((s, i) =>
-          i === index ? { ...s, backgroundImage: undefined } : s,
-        ),
+        slides: prev.slides.map((s, i) => {
+          if (!applyToAll && i !== index) return s;
+          return {
+            ...s,
+            backgroundColor: value.backgroundColor,
+            backgroundImage: value.backgroundImage,
+          };
+        }),
       }),
       true,
     );
+    setActiveIndex(index);
+    setSelectedElementIds([]);
+    setBgDialogIndex(null);
   };
 
   const handleChangeLayout = (index: number, layout: SlideLayout) => {
@@ -339,8 +360,7 @@ export default function App() {
     onCutSlide: handleCutSlide,
     onPasteSlide: handlePasteSlide,
     onToggleHidden: handleToggleHidden,
-    onChangeBackground: handleChangeBackground,
-    onRemoveBackground: handleRemoveBackground,
+    onOpenBackground: handleOpenBackground,
     onChangeLayout: handleChangeLayout,
     onResetSlide: handleResetSlide,
   };
@@ -381,8 +401,11 @@ export default function App() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const mod = e.metaKey || e.ctrlKey;
-      const tag = (e.target as HTMLElement).tagName;
-      const editing = tag === 'INPUT' || tag === 'TEXTAREA';
+      const target = e.target as HTMLElement;
+      const editing =
+        target.tagName === 'INPUT' ||
+        target.tagName === 'TEXTAREA' ||
+        target.isContentEditable;
 
       if (mod && e.key === 'z' && !e.shiftKey) { e.preventDefault(); undo(); return; }
       if (mod && (e.key === 'y' || (e.key === 'z' && e.shiftKey))) { e.preventDefault(); redo(); return; }
@@ -474,6 +497,8 @@ export default function App() {
         onZoomChange={setZoom}
         hasSelection={selectedElementIds.length > 0}
         activeShapeTool={shapeTool}
+        selectedTextElement={selectedTextElement}
+        onUpdateTextStyle={updateSelectedTextStyle}
       />
 
       {showDraftBanner && (
@@ -507,14 +532,19 @@ export default function App() {
         />
       )}
 
-      <div className={`app-body ${presenting ? 'app-body--hidden' : ''}`}>
-        <input
-          ref={bgInputRef}
-          type="file"
-          accept="image/*"
-          hidden
-          onChange={handleBackgroundFile}
+      {bgDialogIndex != null && content.slides[bgDialogIndex] && (
+        <SlideBackgroundDialog
+          open
+          slide={content.slides[bgDialogIndex]}
+          theme={theme}
+          onClose={() => setBgDialogIndex(null)}
+          onApply={(value, applyToAll) =>
+            handleApplyBackground(bgDialogIndex, value, applyToAll)
+          }
         />
+      )}
+
+      <div className={`app-body ${presenting ? 'app-body--hidden' : ''}`}>
         <SlideList
           content={content}
           activeIndex={activeIndex}
@@ -562,18 +592,18 @@ export default function App() {
           </div>
         </div>
 
-        <aside className="editor-pane">
-          {activeSlide && (
-            <ElementInspector
-              slide={activeSlide}
-              theme={theme}
-              selectedIds={selectedElementIds}
-              onChange={(s) => updateSlideLive(activeIndex, s)}
-              onCommit={(s) => commitSlide(activeIndex, s)}
-              onSelect={setSelectedElementIds}
-            />
-          )}
-        </aside>
+        {activeSlide && (
+          <EditorSidebar
+            slide={activeSlide}
+            slideIndex={activeIndex}
+            presentation={content}
+            theme={theme}
+            selectedIds={selectedElementIds}
+            onChange={(s) => updateSlideLive(activeIndex, s)}
+            onCommit={(s) => commitSlide(activeIndex, s)}
+            onSelect={setSelectedElementIds}
+          />
+        )}
       </div>
 
       <div className="app-statusbar">

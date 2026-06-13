@@ -11,8 +11,11 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
       fill: { color: theme.primary, transparency: 55 },
     });
   } else {
-    page.background = { color: theme.primary };
+    page.background = { color: theme.background };
   }
+
+  const titleColor = slide.imagePath ? 'FFFFFF' : theme.text;
+  const subtitleColor = slide.imagePath ? 'DCE3EC' : theme.text;
 
   page.addText(slide.title, {
     x: 0.5,
@@ -21,7 +24,7 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
     h: 1.5,
     fontSize: 32,
     bold: true,
-    color: 'FFFFFF',
+    color: titleColor,
     align: 'center',
     fit: 'shrink',
   });
@@ -34,7 +37,7 @@ export function renderCover({ slide, page, theme }: LayoutContext): void {
       w: 9,
       h: 0.8,
       fontSize: 16,
-      color: 'DCE3EC',
+      color: subtitleColor,
       align: 'center',
       fit: 'shrink',
     });

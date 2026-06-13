@@ -32,8 +32,7 @@ interface Props {
   onDuplicate: () => void;
   onDelete: () => void;
   onToggleHidden: () => void;
-  onChangeBackground: () => void;
-  onRemoveBackground: () => void;
+  onOpenBackground: () => void;
   onChangeLayout: (layout: SlideLayout) => void;
   onResetSlide: () => void;
 }
@@ -51,14 +50,12 @@ export function SlideContextMenu({
   onDuplicate,
   onDelete,
   onToggleHidden,
-  onChangeBackground,
-  onRemoveBackground,
+  onOpenBackground,
   onChangeLayout,
   onResetSlide,
 }: Props) {
   if (!menu || !slide) return null;
 
-  const hasBgImage = Boolean(slide.backgroundImage);
   const isHidden = Boolean(slide.hidden);
 
   const run = (fn: () => void) => {
@@ -108,14 +105,7 @@ export function SlideContextMenu({
 
       <ContextMenuDivider />
 
-      <ContextMenuItem icon="🖼" label="更换背景图片" shortcut="B" onAction={() => run(onChangeBackground)} />
-      <ContextMenuItem
-        icon="✕"
-        label="删除背景图片"
-        shortcut="G"
-        disabled={!hasBgImage}
-        onAction={() => run(onRemoveBackground)}
-      />
+      <ContextMenuItem icon="🎨" label="背景" shortcut="B" onAction={() => run(onOpenBackground)} />
 
       <ContextMenuDivider />
 

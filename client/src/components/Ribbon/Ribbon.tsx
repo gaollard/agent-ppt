@@ -2,7 +2,8 @@ import { type ReactNode } from 'react';
 import { GeneratePanel } from '../GeneratePanel/GeneratePanel';
 import { TablePicker } from './TablePicker';
 import { ShapePicker } from './ShapePicker';
-import type { PresentationTheme } from '../../types/presentation';
+import { TextFormatControls } from '../TextFormat/TextFormatControls';
+import type { ElementStyle, PresentationTheme, SlideElement } from '../../types/presentation';
 import type { ShapeToolOptions } from '../../types/shapes';
 import './ribbon.css';
 
@@ -39,6 +40,8 @@ interface Props {
   onZoomChange: (v: number) => void;
   hasSelection: boolean;
   activeShapeTool?: ShapeToolOptions | null;
+  selectedTextElement?: SlideElement | null;
+  onUpdateTextStyle?: (patch: Partial<ElementStyle>) => void;
 }
 
 function Group({ label, children }: { label: string; children: React.ReactNode }) {
@@ -110,6 +113,8 @@ export function Ribbon({
   onZoomChange,
   hasSelection,
   activeShapeTool,
+  selectedTextElement,
+  onUpdateTextStyle,
 }: Props) {
   const tabs: { id: RibbonTab; label: string }[] = [
     { id: 'start', label: '开始' },
@@ -138,6 +143,16 @@ export function Ribbon({
       <div className="ribbon-panel">
         {activeTab === 'start' && (
           <>
+            {selectedTextElement && onUpdateTextStyle && (
+              <Group label="文本">
+                <TextFormatControls
+                  style={selectedTextElement.style ?? {}}
+                  theme={theme}
+                  onChange={onUpdateTextStyle}
+                  variant="ribbon"
+                />
+              </Group>
+            )}
             <Group label="剪贴板">
               <Tool icon="↩" label="撤销" onClick={onUndo} disabled={!canUndo} />
               <Tool icon="↪" label="重做" onClick={onRedo} disabled={!canRedo} />

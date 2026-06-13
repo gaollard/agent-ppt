@@ -32,9 +32,17 @@ class ColumnDto {
 class ElementStyleDto {
   @IsOptional() @IsNumber() fontSize?: number;
   @IsOptional() @IsIn(['normal', 'bold']) fontWeight?: 'normal' | 'bold';
+  @IsOptional() @IsIn(['normal', 'italic']) fontStyle?: 'normal' | 'italic';
+  @IsOptional() @IsBoolean() underline?: boolean;
+  @IsOptional() @IsBoolean() strikethrough?: boolean;
+  @IsOptional() @IsString() fontFamily?: string;
+  @IsOptional() @IsString() highlight?: string;
   @IsOptional() @IsString() color?: string;
   @IsOptional() @IsIn(['left', 'center', 'right']) align?: 'left' | 'center' | 'right';
   @IsOptional() @IsBoolean() bullets?: boolean;
+  @IsOptional() @IsNumber() lineHeight?: number;
+  @IsOptional() @IsNumber() marginLeft?: number;
+  @IsOptional() @IsNumber() textIndent?: number;
   @IsOptional() @IsString() background?: string;
   @IsOptional() @IsIn(['rect', 'roundRect', 'ellipse', 'triangle', 'diamond', 'line', 'arrow']) shapeKind?:
     | 'rect'
@@ -48,6 +56,26 @@ class ElementStyleDto {
   @IsOptional() @IsString() borderColor?: string;
   @IsOptional() @IsNumber() borderWidth?: number;
   @IsOptional() @IsNumber() opacity?: number;
+}
+
+class TextRunStyleDto {
+  @IsOptional() @IsNumber() fontSize?: number;
+  @IsOptional() @IsIn(['normal', 'bold']) fontWeight?: 'normal' | 'bold';
+  @IsOptional() @IsIn(['normal', 'italic']) fontStyle?: 'normal' | 'italic';
+  @IsOptional() @IsBoolean() underline?: boolean;
+  @IsOptional() @IsBoolean() strikethrough?: boolean;
+  @IsOptional() @IsString() color?: string;
+  @IsOptional() @IsString() highlight?: string;
+  @IsOptional() @IsString() fontFamily?: string;
+}
+
+class TextRunDto {
+  @IsString() text!: string;
+  @IsOptional() @ValidateNested() @Type(() => TextRunStyleDto) style?: TextRunStyleDto;
+}
+
+class RichTextContentDto {
+  @IsArray() @ValidateNested({ each: true }) @Type(() => TextRunDto) runs!: TextRunDto[];
 }
 
 class TableCellStyleDto {
@@ -84,6 +112,7 @@ class SlideElementDto {
   @IsNumber() w!: number;
   @IsNumber() h!: number;
   @IsOptional() @IsString() content?: string;
+  @IsOptional() @ValidateNested() @Type(() => RichTextContentDto) richText?: RichTextContentDto;
   @IsOptional() @ValidateNested() @Type(() => ElementStyleDto) style?: ElementStyleDto;
   @IsOptional() @IsString() imagePath?: string;
   @IsOptional() @ValidateNested() @Type(() => TableDataDto) table?: TableDataDto;

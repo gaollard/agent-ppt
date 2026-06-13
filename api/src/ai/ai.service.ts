@@ -134,7 +134,7 @@ Return JSON with this shape:
   "title": "slide title",
   "layout": "cover|title-bullets|image-left|image-right|full-image|two-column|chart",
   "bullets": ["point 1", "point 2"],
-  "imagePrompt": "optional visual description, no text in image",
+  "imagePrompt": "visual summary of this slide's key message, no text in image",
   "columnB": { "title": "right column title", "bullets": ["point"] },
   "chart": { "type": "bar", "labels": ["2023", "2024"], "values": [10, 20] }
 }
@@ -150,9 +150,15 @@ Layout rules:
 Content rules:
 - 4-6 bullet points, each 20-50 words with specifics (data, examples, actionable insight).
 - Do NOT use generic filler without substance.
-- imagePrompt: realistic photography style, natural lighting, clean composition, no text/words in image, avoid abstract illustration style.
-- Visual style: technical sharing minimalist, clean corporate look, restrained palette, avoid playful or decorative aesthetics.
-- Use the same language as the topic.`;
+- Use the same language as the topic.
+
+imagePrompt rules (when layout needs an image):
+- imagePrompt MUST be a visual summary of THIS slide's title and bullets — a reader should guess the slide topic from the image alone.
+- Extract 1-2 concrete, drawable nouns or scenes from the bullets (people, places, objects, workflows, equipment). No vague "tech vibe" or "futuristic feel".
+- FORBIDDEN: generic backgrounds such as "abstract tech background", "blue gradient", "neural network visualization", "futuristic digital", "AI concept art" unless the slide is specifically about that exact subject.
+- Style: realistic photography, natural lighting, clean composition, minimalist corporate look, restrained palette; no text/words/logos in the image.
+- Good example — slide about microservice benefits: "overhead view of modular server racks connected by thin cables in a clean data center, soft natural light".
+- Bad example — same slide: "abstract blue technology background with glowing nodes".`;
 
     const raw = await this.callLlm(
       `expand-slide-${slideNo}`,
@@ -191,11 +197,12 @@ ${JSON.stringify(content, null, 2)}
 
 Return the SAME JSON shape with these improvements:
 - Keep the same number of slides and layouts.
-- Keep theme technical minimalist: primary=1F2933, accent=2F6F66, background=F8FAFC, text=344054.
+- Keep theme clean and light: primary=1E293B (titles/accent), accent=2563EB, background=FFFFFF (slide fill), text=475569. Do not use primary as slide background.
 - Enrich bullets: add missing specifics (numbers, names, comparisons), merge duplicates, ensure each bullet teaches something new.
 - Ensure two-column slides have balanced, substantive bullets in both columns.
 - Ensure chart slides have plausible labels/values aligned with the topic.
-- Improve imagePrompt descriptions to be realistic photo style and avoid abstract/illustration effects.
+- imagePrompt alignment: for every slide with imagePrompt, rewrite it so it visually summarizes that slide's title and bullets. If someone cannot infer the slide topic from imagePrompt alone, rewrite it using concrete scenes/objects from the bullets.
+- imagePrompt style: realistic photography, natural lighting, no text in image; forbid generic filler ("abstract tech background", "blue gradient", "futuristic digital") unless the slide is literally about that subject.
 - Titles should be clear and engaging, not generic.
 
 Respond with valid JSON only.`;

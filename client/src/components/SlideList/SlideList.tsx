@@ -5,6 +5,7 @@ import {
   type SlideContent,
   type SlideLayout,
 } from '../../types/presentation';
+import { hasCustomSlideBackground, isLayoutBackgroundElement } from '../../utils/editor-utils';
 import { SlideContextMenu, type SlideContextMenuState } from './SlideContextMenu';
 import type { SlideListActions } from './slide-list-actions';
 import './SlideList.css';
@@ -43,13 +44,17 @@ function MiniPreview({
   background: string;
 }) {
   const bg = slide.backgroundColor ?? background;
+  const hideLayoutBg = hasCustomSlideBackground(slide);
+  const visibleElements = (slide.elements ?? []).filter(
+    (el) => !(hideLayoutBg && isLayoutBackgroundElement(el)),
+  );
 
   if (slide.backgroundImage) {
     return (
       <div className="mini-preview">
         <img className="mini-preview-cover-img" src={slide.backgroundImage} alt="" />
-        {slide.elements?.length ? (
-          slide.elements.map((el) => (
+        {visibleElements.length ? (
+          visibleElements.map((el) => (
             <div
               key={el.id}
               className={`mini-el mini-el--${el.type}`}
@@ -67,10 +72,10 @@ function MiniPreview({
     );
   }
 
-  if (slide.elements?.length) {
+  if (visibleElements.length) {
     return (
       <div className="mini-preview" style={{ background: `#${bg}` }}>
-        {slide.elements.map((el) => (
+        {visibleElements.map((el) => (
           <div
             key={el.id}
             className={`mini-el mini-el--${el.type}`}
@@ -246,8 +251,7 @@ export function SlideList({
     onCutSlide,
     onPasteSlide,
     onToggleHidden,
-    onChangeBackground,
-    onRemoveBackground,
+    onOpenBackground,
     onChangeLayout,
     onResetSlide,
   } = actions;
@@ -412,8 +416,7 @@ export function SlideList({
         onDuplicate={() => onDuplicate(contextIndex)}
         onDelete={() => onDelete(contextIndex)}
         onToggleHidden={() => onToggleHidden(contextIndex)}
-        onChangeBackground={() => onChangeBackground(contextIndex)}
-        onRemoveBackground={() => onRemoveBackground(contextIndex)}
+        onOpenBackground={() => onOpenBackground(contextIndex)}
         onChangeLayout={(layout) => onChangeLayout(contextIndex, layout)}
         onResetSlide={() => onResetSlide(contextIndex)}
       />

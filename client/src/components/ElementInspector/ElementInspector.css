@@ -159,3 +159,18 @@
 .field-row input[type='range'] {
   grid-column: span 2;
 }
+
+.element-inspector-bg-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.element-inspector-bg-preview img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}

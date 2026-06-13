@@ -7,8 +7,10 @@ import type {
   TableCellData,
   SlideLayout,
 } from '../types/presentation';
+import { DEFAULT_THEME } from '../types/presentation';
 import type { ShapeKind } from '../types/shapes';
 import { defaultShapeStyle } from '../types/shapes';
+import { hasCustomSlideBackground, isLayoutBackgroundElement } from './editor-utils';
 
 let idCounter = 0;
 
@@ -86,7 +88,7 @@ export function createShapeElement(
   theme?: PresentationTheme,
   styleOverrides?: Partial<ElementStyle>,
 ): SlideElement {
-  const t = theme ?? { primary: '1F2933', accent: '2F6F66', background: 'F8FAFC', text: '344054' };
+  const t = theme ?? { primary: '1E293B', accent: '2563EB', background: 'FFFFFF', text: '475569' };
   return {
     id: newElementId(),
     type: 'shape',
@@ -165,14 +167,14 @@ export function layoutToElements(
         w: 100,
         h: 100,
         content: '',
-        style: { background: theme.primary },
+        style: { background: theme.background },
         zIndex: 0,
       });
       els.push(
         textEl(5, 38, 90, 14, slide.title, {
           fontSize: 32,
           fontWeight: 'bold',
-          color: 'FFFFFF',
+          color: theme.text,
           align: 'center',
         }, 1),
       );
@@ -180,7 +182,7 @@ export function layoutToElements(
         els.push(
           textEl(10, 58, 80, 8, slide.bullets[0], {
             fontSize: 16,
-            color: 'DCE3EC',
+            color: theme.text,
             align: 'center',
           }, 1),
         );
@@ -202,7 +204,7 @@ export function layoutToElements(
         w: 100,
         h: 100,
         content: '',
-        style: { background: theme.primary },
+        style: { background: theme.background },
         zIndex: 0,
       });
     }
@@ -210,7 +212,7 @@ export function layoutToElements(
       textEl(5, 72, 90, 12, slide.title, {
         fontSize: 28,
         fontWeight: 'bold',
-        color: 'FFFFFF',
+        color: slide.imagePath ? 'FFFFFF' : theme.text,
         align: 'left',
       }, 1),
     );
@@ -218,7 +220,7 @@ export function layoutToElements(
       els.push(
         textEl(5, 84, 90, 8, slide.bullets[0], {
           fontSize: 14,
-          color: 'DCE3EC',
+          color: slide.imagePath ? 'DCE3EC' : theme.text,
           align: 'left',
         }, 1),
       );
@@ -359,15 +361,45 @@ function cloneSlide(slide: SlideContent): SlideContent {
 export { cloneSlide };
 
 export function ensurePresentationElements(content: PresentationContent): PresentationContent {
-  const theme = content.theme ?? {
-    primary: '1F2933',
-    accent: '2F6F66',
-    background: 'F8FAFC',
-    text: '344054',
-  };
+  const theme = { ...DEFAULT_THEME, ...content.theme };
   return {
     ...content,
-    slides: content.slides.map((s, i) => ensureSlideElements(s, theme, i)),
+    theme,
+    slides: content.slides.map((s, i) => migrateLegacyDarkTheme(ensureSlideElements(s, theme, i), theme)),
+  };
+}
+
+const LEGACY_DARK_BACKGROUNDS = new Set(['1F2933', '1F2937', '111827']);
+
+function normalizeHex(color?: string): string {
+  return (color ?? '').replace(/^#/, '').toUpperCase();
+}
+
+/** One-time refresh for drafts saved with the old dark primary-as-background theme. */
+function migrateLegacyDarkTheme(slide: SlideContent, theme: PresentationTheme): SlideContent {
+  if (!slide.elements?.length || hasCustomSlideBackground(slide)) return slide;
+  const hasLegacyDarkBg = slide.elements.some(
+    (el) =>
+      isLayoutBackgroundElement(el) &&
+      LEGACY_DARK_BACKGROUNDS.has(normalizeHex(el.style?.background)),
+  );
+  if (!hasLegacyDarkBg) return slide;
+
+  const onLightBg = !slide.imagePath;
+  return {
+    ...slide,
+    elements: slide.elements.map((el) => {
+      if (isLayoutBackgroundElement(el)) {
+        return { ...el, style: { ...el.style, background: theme.background } };
+      }
+      if (onLightBg && el.type === 'text') {
+        const color = normalizeHex(el.style?.color);
+        if (color === 'FFFFFF' || color === 'DCE3EC') {
+          return { ...el, style: { ...el.style, color: theme.text } };
+        }
+      }
+      return el;
+    }),
   };
 }
 

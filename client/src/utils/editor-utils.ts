@@ -2,8 +2,18 @@ import type { SlideElement } from '../types/presentation';
 import { cloneTable } from './table-utils';
 
 export function isSelectableElement(el: SlideElement): boolean {
-  const isBg = el.type === 'text' && el.style?.background && el.w >= 99;
-  return !isBg && !el.locked;
+  return !isLayoutBackgroundElement(el) && !el.locked;
+}
+
+export function isLayoutBackgroundElement(el: SlideElement): boolean {
+  return el.type === 'text' && Boolean(el.style?.background) && el.w >= 99;
+}
+
+export function hasCustomSlideBackground(slide: {
+  backgroundColor?: string;
+  backgroundImage?: string;
+}): boolean {
+  return slide.backgroundColor !== undefined || Boolean(slide.backgroundImage);
 }
 
 export function snap(value: number, grid = 2): number {

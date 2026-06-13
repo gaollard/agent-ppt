@@ -4,12 +4,15 @@ import type {
   SlideContent,
   SlideElement,
 } from '../../types/presentation';
+import { SLIDE_INSET } from '../FreeformCanvas/canvas-geometry';
 import {
   createTextElement,
   createImageElement,
   createShapeElement,
 } from '../../utils/slide-elements';
 import { alignElement, readImageFile, withTopZIndex } from '../../utils/editor-utils';
+import { TextFormatControls } from '../TextFormat/TextFormatControls';
+import { FillBorderControls } from '../TextFormat/FillBorderControls';
 import { SHAPE_CATALOG, isLineLikeShape, type ShapeKind } from '../../types/shapes';
 import './ElementInspector.css';
 
@@ -118,7 +121,19 @@ export function ElementInspector({
         </div>
 
         <div className="field">
-          <label>背景图 URL</label>
+          <label>背景图</label>
+          {slide.backgroundImage && (
+            <div className="element-inspector-bg-preview">
+              <img src={slide.backgroundImage} alt="" />
+              <button
+                type="button"
+                className="btn btn-ghost btn-sm"
+                onClick={() => updateSlide({ backgroundImage: undefined })}
+              >
+                删除背景图
+              </button>
+            </div>
+          )}
           <textarea
             rows={2}
             value={slide.backgroundImage ?? ''}
@@ -134,6 +149,17 @@ export function ElementInspector({
           >
             上传背景图
           </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="image/*"
+            hidden
+            onChange={(e) => {
+              const file = e.target.files?.[0];
+              e.target.value = '';
+              if (file) void handleImageUpload(file);
+            }}
+          />
         </div>
 
         <div className="field">
@@ -153,7 +179,13 @@ export function ElementInspector({
             className="btn btn-ghost btn-sm"
             onClick={() => {
               const el = withTopZIndex(
-                createTextElement({ x: 15, y: 20, w: 40, h: 20, content: '文本框' }),
+                createTextElement({
+                  x: SLIDE_INSET + 6,
+                  y: SLIDE_INSET + 6,
+                  w: 40,
+                  h: 22,
+                  content: '',
+                }),
                 elements,
               );
               const next = { ...slide, elements: [...elements, el] };
@@ -213,18 +245,6 @@ export function ElementInspector({
             + 椭圆
           </button>
         </div>
-
-        <input
-          ref={fileRef}
-          type="file"
-          accept="image/*"
-          hidden
-          onChange={(e) => {
-            const file = e.target.files?.[0];
-            if (file) void handleImageUpload(file);
-            e.target.value = '';
-          }}
-        />
       </div>
     );
   }
@@ -344,60 +364,29 @@ export function ElementInspector({
               onBlur={(e) => updateElement({ content: e.target.value }, true)}
             />
           </div>
-          <div className="field-row">
-            <label>字号</label>
-            <input
-              type="number"
-              min={8}
-              max={96}
-              value={selected.style?.fontSize ?? 16}
-              onChange={(e) => updateStyle({ fontSize: Number(e.target.value) })}
+          <div className="field">
+            <label>文本样式</label>
+            <TextFormatControls
+              style={selected.style ?? {}}
+              theme={theme}
+              onChange={(patch) => updateStyle(patch, true)}
+              variant="ribbon"
             />
-            <label>颜色</label>
-            <input
-              type="color"
-              value={`#${selected.style?.color ?? theme.text}`}
-              onChange={(e) => updateStyle({ color: e.target.value.replace('#', '') })}
-            />
-          </div>
-          <div className="field-row">
-            <label>对齐</label>
-            <select
-              value={selected.style?.align ?? 'left'}
-              onChange={(e) =>
-                updateStyle({ align: e.target.value as 'left' | 'center' | 'right' })
-              }
-            >
-              <option value="left">左对齐</option>
-              <option value="center">居中</option>
-              <option value="right">右对齐</option>
-            </select>
-          </div>
-          <div className="field-row field-row--check">
-            <label>
-              <input
-                type="checkbox"
-                checked={selected.style?.fontWeight === 'bold'}
-                onChange={(e) =>
-                  updateStyle({ fontWeight: e.target.checked ? 'bold' : 'normal' })
-                }
-              />
-              粗体
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={Boolean(selected.style?.bullets)}
-                onChange={(e) => updateStyle({ bullets: e.target.checked })}
-              />
-              项目符号
-            </label>
           </div>
         </>
       )}
 
       {selected.type === 'image' && (
         <>
+          <div className="field">
+            <label>边框</label>
+            <FillBorderControls
+              style={selected.style ?? {}}
+              theme={theme}
+              onChange={(patch) => updateStyle(patch, true)}
+              showFill={false}
+            />
+          </div>
           <div className="field">
             <label>图片 URL / Base64</label>
             <textarea
@@ -431,33 +420,17 @@ export function ElementInspector({
               ))}
             </select>
           </div>
-          <div className="field-row">
-            {!isLineLikeShape(selected.style?.shapeKind) && (
-              <>
-                <label>填充</label>
-                <input
-                  type="color"
-                  value={`#${selected.style?.fill ?? theme.accent}`}
-                  onChange={(e) => updateStyle({ fill: e.target.value.replace('#', '') })}
-                />
-              </>
-            )}
-            <label>{isLineLikeShape(selected.style?.shapeKind) ? '线条' : '边框'}</label>
-            <input
-              type="color"
-              value={`#${selected.style?.borderColor ?? theme.primary}`}
-              onChange={(e) => updateStyle({ borderColor: e.target.value.replace('#', '') })}
+          <div className="field">
+            <label>填充与边框</label>
+            <FillBorderControls
+              style={selected.style ?? {}}
+              theme={theme}
+              onChange={(patch) => updateStyle(patch, true)}
+              fillKey="fill"
+              showFill={!isLineLikeShape(selected.style?.shapeKind)}
             />
           </div>
           <div className="field-row">
-            <label>线宽</label>
-            <input
-              type="number"
-              min={0}
-              max={10}
-              value={selected.style?.borderWidth ?? 1}
-              onChange={(e) => updateStyle({ borderWidth: Number(e.target.value) })}
-            />
             <label>透明度</label>
             <input
               type="range"

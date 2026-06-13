@@ -35,12 +35,40 @@ export interface SlideColumn {
   bullets: string[];
 }
 
+export interface TextRunStyle {
+  fontSize?: number;
+  fontWeight?: 'normal' | 'bold';
+  fontStyle?: 'normal' | 'italic';
+  underline?: boolean;
+  strikethrough?: boolean;
+  color?: string;
+  highlight?: string;
+  fontFamily?: string;
+}
+
+export interface TextRun {
+  text: string;
+  style?: TextRunStyle;
+}
+
+export interface RichTextContent {
+  runs: TextRun[];
+}
+
 export interface ElementStyle {
   fontSize?: number;
   fontWeight?: 'normal' | 'bold';
+  fontStyle?: 'normal' | 'italic';
+  underline?: boolean;
+  strikethrough?: boolean;
+  fontFamily?: string;
+  highlight?: string;
   color?: string;
   align?: 'left' | 'center' | 'right';
   bullets?: boolean;
+  lineHeight?: number;
+  marginLeft?: number;
+  textIndent?: number;
   background?: string;
   shapeKind?: 'rect' | 'roundRect' | 'ellipse' | 'triangle' | 'diamond' | 'line' | 'arrow';
   fill?: string;
@@ -83,6 +111,7 @@ export interface SlideElement {
   w: number;
   h: number;
   content?: string;
+  richText?: RichTextContent;
   style?: ElementStyle;
   imagePath?: string;
   table?: TableData;
@@ -114,10 +143,10 @@ export interface PresentationContent {
 }
 
 export const DEFAULT_THEME: PresentationTheme = {
-  primary: '1F2933',
-  accent: '2F6F66',
-  background: 'F8FAFC',
-  text: '344054',
+  primary: '1E293B',
+  accent: '2563EB',
+  background: 'FFFFFF',
+  text: '475569',
 };
 
 export function mergeTheme(theme?: PresentationTheme): PresentationTheme {

@@ -1,0 +1,43 @@
+.editor-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.editor-pane-tabs {
+  display: flex;
+  flex-shrink: 0;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.editor-pane-tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.editor-pane-tab--active {
+  color: #e07a3a;
+  background: #fff;
+  box-shadow: inset 0 -2px 0 #e07a3a;
+}
+
+.editor-pane-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.editor-pane-content .element-inspector {
+  height: auto;
+}
+
+.editor-pane-content .json-preview {
+  height: 100%;
+}

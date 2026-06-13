@@ -11,8 +11,11 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
       fill: { color: theme.primary, transparency: 40 },
     });
   } else {
-    page.background = { color: theme.primary };
+    page.background = { color: theme.background };
   }
+
+  const titleColor = slide.imagePath ? 'FFFFFF' : theme.text;
+  const subtitleColor = slide.imagePath ? 'DCE3EC' : theme.text;
 
   page.addText(slide.title, {
     x: 0.5,
@@ -21,7 +24,7 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
     h: 1.0,
     fontSize: 28,
     bold: true,
-    color: 'FFFFFF',
+    color: titleColor,
     fit: 'shrink',
   });
 
@@ -33,7 +36,7 @@ export function renderFullImage({ slide, page, theme }: LayoutContext): void {
       w: 9,
       h: 0.5,
       fontSize: 14,
-      color: 'DCE3EC',
+      color: subtitleColor,
       fit: 'shrink',
     });
   }

@@ -1,5 +1,11 @@
 import { addBullets, LayoutContext } from './helpers';
-import { SlideElement, TableCellData } from '../../ai/types/slide-content';
+import {
+  ElementStyle,
+  SlideElement,
+  TableCellData,
+  TextRun,
+  TextRunStyle,
+} from '../../ai/types/slide-content';
 
 function pptxShapeName(kind: string | undefined): string {
   switch (kind) {
@@ -34,6 +40,35 @@ function toInches(el: SlideElement) {
 function normalizeCell(cell: string | TableCellData): TableCellData {
   if (typeof cell === 'string') return { text: cell };
   return { ...cell, text: cell.text ?? '' };
+}
+
+function runToPptxOptions(
+  run: TextRun,
+  base: ElementStyle,
+  theme: { text: string },
+) {
+  const rs: TextRunStyle = run.style ?? {};
+  return {
+    fontSize: rs.fontSize ?? base.fontSize ?? 14,
+    bold: (rs.fontWeight ?? base.fontWeight) === 'bold',
+    italic: (rs.fontStyle ?? base.fontStyle) === 'italic',
+    underline: rs.underline ?? base.underline ? { style: 'sng' as const } : undefined,
+    strike: rs.strikethrough ?? base.strikethrough ? ('sngStrike' as const) : undefined,
+    color: rs.color ?? base.color ?? theme.text,
+    fontFace:
+      rs.fontFamily && rs.fontFamily !== 'inherit'
+        ? rs.fontFamily
+        : base.fontFamily && base.fontFamily !== 'inherit'
+          ? base.fontFamily
+          : undefined,
+    highlight: rs.highlight ? rs.highlight : base.highlight,
+  };
+}
+
+function hasRichRuns(el: SlideElement): boolean {
+  return Boolean(
+    el.richText?.runs?.some((r) => r.style && Object.keys(r.style).length > 0),
+  );
 }
 
 export function renderFreeform({ slide, page, theme }: LayoutContext): void {
@@ -127,6 +162,8 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
 
     const color = style.color ?? theme.text;
     const content = el.content ?? '';
+    const lineSpacing = style.lineHeight ?? 1.25;
+    const indent = style.marginLeft ? Math.round(style.marginLeft / 12) : undefined;
 
     if (style.bullets) {
       const bullets = content.split('\n').filter(Boolean);
@@ -134,15 +171,41 @@ export function renderFreeform({ slide, page, theme }: LayoutContext): void {
       continue;
     }
 
+    if (el.richText?.runs?.length && hasRichRuns(el)) {
+      page.addText(
+        el.richText.runs.map((run) => ({
+          text: run.text,
+          options: runToPptxOptions(run, style, theme),
+        })),
+        {
+          ...box,
+          align: style.align ?? 'left',
+          valign: 'top',
+          fit: 'shrink',
+          rotate,
+          lineSpacingMultiple: lineSpacing,
+          indentLevel: indent,
+        },
+      );
+      continue;
+    }
+
     page.addText(content, {
       ...box,
       fontSize: style.fontSize ?? 14,
       bold: style.fontWeight === 'bold',
+      italic: style.fontStyle === 'italic',
+      underline: style.underline ? { style: 'sng' as const } : undefined,
+      strike: style.strikethrough ? ('sngStrike' as const) : undefined,
+      fontFace:
+        style.fontFamily && style.fontFamily !== 'inherit' ? style.fontFamily : undefined,
       color,
       align: style.align ?? 'left',
       valign: 'top',
       fit: 'shrink',
       rotate,
+      lineSpacingMultiple: lineSpacing,
+      indentLevel: indent,
     });
   }
 }
